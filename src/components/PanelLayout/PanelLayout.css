@@ -1,0 +1,17 @@
+.PanelLayout__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.PanelLayout__panel {
+  height: 100%;
+  width: 20rem;
+  flex: 0 0 auto;
+}
+
+.PanelLayout__center {
+  height: 100%;
+  flex: 1 1 auto;
+}
+

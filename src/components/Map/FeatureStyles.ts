@@ -2,7 +2,7 @@ import { Style, Icon } from 'ol/style';
 
 export const CaveStyle = new Style({
   image: new Icon({
-    src: '/public/icons/radar/cave.png'
+    src: '/public/icons/radar/caveEntrance.png'
   })
 });
 

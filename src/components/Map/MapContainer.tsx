@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { Feature, Map, MapBrowserEvent, Overlay, View } from "ol";
+import { Feature, Map, View } from "ol";
 import { Image } from "ol/layer";
 import { Projection } from 'ol/proj';
 import { ImageStatic } from "ol/source";
@@ -24,10 +24,7 @@ export interface MapContainerProps {
 
 export const MapContainer = ({ mapId, onSelect }: MapContainerProps) => {
   const mapContainerRef = useRef<HTMLDivElement>(null);
-  const popupContainerRef = useRef<HTMLDivElement>(null);
   const [map, setMap] = useState<Map>(() => new Map({}));
-  const [popup] = useState<Overlay>(() => new Overlay({ autoPan: { animation: { duration: 250 } } }));
-  const [popupData, setPopupData] = useState<any>();
 
   useEffect(() => {
     const load = async () => {
@@ -112,28 +109,6 @@ export const MapContainer = ({ mapId, onSelect }: MapContainerProps) => {
     }
   }, [map, handleSelect])
 
-  const closePopup = useCallback(() => {
-    popup.setPosition(undefined);
-    setPopupData(undefined)
-  }, [popup]);
-
-  const openPopup = useCallback((evt: MapBrowserEvent<UIEvent>) => {
-    const feature = map.getFeaturesAtPixel(evt.pixel)[0];
-    setPopupData(`coords: ${evt.coordinate[0]}, ${evt.coordinate[1]}; pixels: ${evt.pixel[0]}, ${evt.pixel[1]}; feature? ${!!feature}`);
-    popup.setPosition(evt.coordinate);
-  }, [map, popup, closePopup]);
-
-  useEffect(() => {
-    popup.setElement(popupContainerRef.current || undefined);
-    map.addOverlay(popup);
-    map.on('singleclick', openPopup);
-
-    return () => {
-      map.removeOverlay(popup);
-      map.un('singleclick', openPopup);
-    }
-  }, [map, popup, openPopup]);
-
   useEffect(() => {
     if (mapContainerRef.current) {
       map.setTarget(mapContainerRef.current);
@@ -146,11 +121,5 @@ export const MapContainer = ({ mapId, onSelect }: MapContainerProps) => {
 
   return <div className='MapContainer__container'>
     <div className="MapContainer__map" ref={mapContainerRef}></div>
-    <div className="MapContainer__popup-container" ref={popupContainerRef}>
-      <div className='MapContainer__popup-header'>
-        <button className="MapContainer__popup-closer" onClick={closePopup}>&times;</button>
-      </div>
-      { popupData && <div className="MapContainer__popup-content">{ popupData }</div> }
-    </div>
   </div>;
 };

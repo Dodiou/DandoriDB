@@ -15,7 +15,7 @@ export const LegendItem = ({
   const containerClass = 'LegendItem__container' + selected ? '' : 'LegendItem__container__deselected';
 
   return <button className={containerClass} onClick={() => onClick}>
-    <img className='DandoriDB__icon' src='/public/icons/cave.png' />
+    <img className='DandoriDB__icon' src='/public/icons/radar/caveEntrance.png' />
     <span className='LegendItem__name'>{ name }</span>
     { count !== undefined && <span>{ count }</span> }
   </button>;
