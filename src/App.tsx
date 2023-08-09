@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+// import { useEffect, useState } from 'react';
+// import { CaveSummary } from './components/CaveSummary/CaveSummary';
+// import { CaveData, getCaveData } from './api/MapAPI';
+import { MapContainer } from './components/Map/MapContainer';
 import './App.css';
 
 function App() {
+  // const [data, setData] = useState<CaveData>();
+
+  // useEffect(() => {
+  //   const load = async () => {
+  //     setData(await getCaveData('C0'))
+  //   };
+  //   load();
+  // }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MapContainer mapId={'0'} />
     </div>
   );
 }
