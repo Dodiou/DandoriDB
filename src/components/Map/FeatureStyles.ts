@@ -2,7 +2,7 @@ import { Style, Icon } from 'ol/style';
 
 export const CaveStyle = new Style({
   image: new Icon({
-    src: '/public/icons/cave.png'
+    src: '/public/icons/radar/cave.png'
   })
 });
 
@@ -14,30 +14,30 @@ export const MoundStyle = new Style({
 
 export const TreasureStyle = new Style({
   image: new Icon({
-    src: '/public/icons/treasure.png'
+    src: '/public/icons/radar/treasure.png'
   })
 });
 
 export const CreatureStyle = new Style({
   image: new Icon({
-    src: '/public/icons/creature.png'
+    src: '/public/icons/radar/creature.png'
   })
 });
 
 export const SurfaceBaseStyle = new Style({
   image: new Icon({
-    src: '/public/icons/baseSurface.png'
+    src: '/public/icons/radar/baseOnion.png'
   })
 })
 
 export const CaveBaseStyle = new Style({
   image: new Icon({
-    src: '/public/icons/baseCave.png'
+    src: '/public/icons/radar/baseBeagle.png'
   })
 })
 
 export const MaterialStyle = new Style({
   image: new Icon({
-    src: '/public/icons/materials.png'
+    src: '/public/icons/radar/materials.png'
   })
 })

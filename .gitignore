@@ -23,3 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 *.code-workspace
+
+# Temporary Paint.net files while I try to figure out how things line up on the radar
+*.pdn
