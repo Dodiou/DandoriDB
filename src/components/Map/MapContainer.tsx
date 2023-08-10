@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { Feature, Map, View } from "ol";
+import { Map, MapBrowserEvent, View } from "ol";
 import { Image } from "ol/layer";
 import { Projection } from 'ol/proj';
 import { ImageStatic } from "ol/source";
@@ -7,22 +7,20 @@ import { useEffect, useRef, useState } from "react";
 import { Select, defaults as defaultInteractions } from 'ol/interaction';
 import { defaults as defaultControls } from 'ol/control';
 
-import { getMapData } from "../../api/MapAPI";
+import { getMapData, getMarkerData } from "../../api/MapAPI";
 
 import './MapContainer.css';
 import { getCenter } from 'ol/extent';
-import { Point } from 'ol/geom';
-import VectorSource from 'ol/source/Vector';
-import VectorLayer from 'ol/layer/Vector';
 import { SelectEvent } from 'ol/interaction/Select';
-import { CaveStyle } from './FeatureStyles';
+import { MapDebugInfoProps } from '../MapDebugInfo/MapDebugInfo';
 
 export interface MapContainerProps {
   mapId: string;
   onSelect?: (data: any | undefined) => void;
+  onMouseMove?: (data: MapDebugInfoProps) => void;
 }
 
-export const MapContainer = ({ mapId, onSelect }: MapContainerProps) => {
+export const MapContainer = ({ mapId, onSelect, onMouseMove }: MapContainerProps) => {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const [map, setMap] = useState<Map>(() => new Map({}));
 
@@ -51,20 +49,13 @@ export const MapContainer = ({ mapId, onSelect }: MapContainerProps) => {
         projection: projection,
         center: getCenter(extent),
         zoom: 2,
-        rotation: 77.56 * Math.PI / 180,
+        rotation: 75 * Math.PI / 180,
         maxZoom: 4,
         minZoom: 1,
       });
 
       // add markers
-      const cave = new Feature({
-        geometry: new Point([500, 125]),
-      });
-      cave.setStyle(CaveStyle);
-
-      const markerLayer = new VectorLayer({
-        source: new VectorSource({ features: [cave] })
-      });
+      const markerLayer = await getMarkerData("");
 
       // TODO figure out why map.setLayers and map.setView aren't working
       const map = new Map({
@@ -110,11 +101,23 @@ export const MapContainer = ({ mapId, onSelect }: MapContainerProps) => {
   }, [map, handleSelect])
 
   useEffect(() => {
+    const round = (n: number) => Math.round(1000 * n) / 1000;
+    const moveListener = (event: MapBrowserEvent<any>) => {
+      onMouseMove?.({
+        x: round(event.coordinate[0]),
+        y: round(event.coordinate[1]),
+        scale: round(event.map.getView().getZoom() || -1),
+        rotation: round(event.map.getView().getRotation() * 180 / Math.PI)
+      })
+    };
+
     if (mapContainerRef.current) {
       map.setTarget(mapContainerRef.current);
+      map.on('pointermove', moveListener);
     }
 
     return () => {
+      map.un('pointermove', moveListener);
       map.dispose();
     }
   }, [map]);

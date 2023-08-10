@@ -1,43 +1,39 @@
 import { Style, Icon } from 'ol/style';
 
-export const CaveStyle = new Style({
-  image: new Icon({
-    src: '/public/icons/radar/caveEntrance.png'
-  })
-});
+export enum ObjectTypes {
+  Candypop = 'candypop',
+  Conveyor = 'conveyor',
+  Fan = 'fan',
+  Fence = 'fence',
+  FirePit = 'firePit',
+  Gate = 'gate',
+  GlowPellets = 'glowPellets',
+  HydroJelly = 'hydroJelly',
+  Item = 'item',
+  MapLink = 'mapLink',
+  Materials = 'materials',
+  Mound = 'mound',
+  Pikmin = 'pikmin',
+  Pot = 'pot',
+  Shortcut = 'shortcut',
+  Straw = 'straw',
+  Switch = 'switch',
+  Structure = 'structure',
+  Treasure = 'treasure',
+  Water = 'water',
+  Zipline = 'zipline', // aka the "Slide Rails"
+}
 
-export const MoundStyle = new Style({
-  image: new Icon({
-    src: 'https://pikmin.wiki.gallery/images/8/89/Cave_icon.png'
+const ROOT_ICON_URL = '/images/icons/radar';
+export const MarkerStyles = Object.fromEntries(
+  Object.values(ObjectTypes).map(obj => {
+    return [
+      obj,
+      new Style({
+        image: new Icon({
+          src: ROOT_ICON_URL + '/' + obj + '.png'
+        })
+      })
+    ];
   })
-});
-
-export const TreasureStyle = new Style({
-  image: new Icon({
-    src: '/public/icons/radar/treasure.png'
-  })
-});
-
-export const CreatureStyle = new Style({
-  image: new Icon({
-    src: '/public/icons/radar/creature.png'
-  })
-});
-
-export const SurfaceBaseStyle = new Style({
-  image: new Icon({
-    src: '/public/icons/radar/baseOnion.png'
-  })
-})
-
-export const CaveBaseStyle = new Style({
-  image: new Icon({
-    src: '/public/icons/radar/baseBeagle.png'
-  })
-})
-
-export const MaterialStyle = new Style({
-  image: new Icon({
-    src: '/public/icons/radar/materials.png'
-  })
-})
+);

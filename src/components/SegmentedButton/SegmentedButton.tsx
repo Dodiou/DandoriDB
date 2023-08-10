@@ -20,8 +20,8 @@ export const SegmentedButton = ({
   const buttons = options.map(({ icon, id, label }) => {
     const buttonClass = 'SegmentedButton__button' + id === selectedId ? 'SegmentedButton__button__selected' : '';
 
-    return <button className={buttonClass} onClick={() => onSelect?.(id)}>
-      { icon && <img className="DandoriDB__icon" src="/public/icons/radar/caveEntrance.png" /> }
+    return <button key={id} className={buttonClass} onClick={() => onSelect?.(id)}>
+      { icon && <img className="DandoriDB__icon" src="/icons/radar/caveEntrance.png" /> }
       { (!hideLabel || !icon) && <span className="SegmentedButton__label">{ label }</span> }
     </button>;
   })

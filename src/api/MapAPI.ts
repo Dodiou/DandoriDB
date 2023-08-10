@@ -1,4 +1,9 @@
-
+import { Feature } from 'ol';
+import { default as MapMarkerData } from './day.json';
+import { Point } from 'ol/geom';
+import { MarkerStyles, ObjectTypes } from '../components/Map/FeatureStyles';
+import VectorLayer from 'ol/layer/Vector';
+import VectorSource from 'ol/source/Vector';
 
 export interface MapData {
   imageUrl: string;
@@ -200,57 +205,35 @@ export const getMapData = async (mapEngId: string): Promise<MapData> => {
   const mapId = MapNamesToId[mapEngId] || 'Area001';
 
   return {
-    imageUrl: `./maps/${mapId}/T_ui_Map_${mapId}_D.png`,
-    rotation: 
+    imageUrl: `/images/maps/${mapId}/T_ui_Map_${mapId}_D.png`,
   }
 }
 
-export const getCaveData = async (id: string): Promise<CaveData> => {
-  return {
-    id,
-    name: 'Hectic Hollows',
-    sublevels: 2,
-    castaways: 1,
-    treasures: [
-      {
-        id: 'T0',
-        name: 'Empty Vase',
-        value: 150,
-      },
-      {
-        id: 'T1',
-        name: 'Mama Doll Head',
-        value: 150,
-      },
-      {
-        id: 'T2',
-        name: 'Aspiration-Ritual Pole',
-        value: 150,
-      },
-    ],
-    creatures: [
-      {
-        id: 'Cr0',
-        name: 'Bulborb',
-        amount: 1,
-        value: -1
-      },
-      {
-        id: 'Cr1',
-        name: 'Dwarf Bulborb',
-        amount: 4,
-        value: -1
-      },
-      {
-        id: 'Cr2',
-        name: 'Tusked Blowhog',
-        amount: 1,
-        value: -1
-      },
-    ],
-    pikmin: {
-      ice: 20
-    },
-    materials: 15
+type Marker = {
+  type: ObjectTypes;
+  transform: {
+    translation: {
+      x: number;
+      y: number;
+    };
+    rotation?: number;
+    scale?: number;
   };
-};
+}
+export const getMarkerData = async (_mapEngId: string): Promise<any> => {
+  const objectLocations: Marker[] = Object.values(MapMarkerData).reduce((collector, values) => {
+    return [...collector, ...values ];
+  }, [] as any[]);
+
+  const markers = objectLocations.map(obj => {
+    const marker = new Feature({
+      // Why are x and y flipped???
+      geometry: new Point([(obj.transform.translation.y / 12 + 500), obj.transform.translation.x / 12 + 500])
+    })
+    marker.setStyle(MarkerStyles[obj.type]);
+    return marker;
+  });
+  return new VectorLayer({
+    source: new VectorSource({ features: markers })
+  });
+}
