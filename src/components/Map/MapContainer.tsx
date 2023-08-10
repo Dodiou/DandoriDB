@@ -28,7 +28,7 @@ export const MapContainer = ({ mapId, onSelect, onMouseMove }: MapContainerProps
     const load = async () => {
       // load map data
       const mapData = await getMapData(mapId);
-      const extent = [0, 0, 1024, 968];
+      const extent = [mapData.extent.xMin, mapData.extent.yMin, mapData.extent.xMax, mapData.extent.yMax];
       const projection = new Projection({
         code: 'map',
         units: 'pixels',
@@ -49,13 +49,13 @@ export const MapContainer = ({ mapId, onSelect, onMouseMove }: MapContainerProps
         projection: projection,
         center: getCenter(extent),
         zoom: 2,
-        rotation: 75 * Math.PI / 180,
+        rotation: -mapData.rotation * Math.PI / 180,
         maxZoom: 4,
         minZoom: 1,
       });
 
       // add markers
-      const markerLayer = await getMarkerData("");
+      const markerLayer = await getMarkerData(mapId);
 
       // TODO figure out why map.setLayers and map.setView aren't working
       const map = new Map({
@@ -85,6 +85,7 @@ export const MapContainer = ({ mapId, onSelect, onMouseMove }: MapContainerProps
       onSelect?.(undefined);
       return;
     }
+    onSelect?.(firstFeature.getProperties().data);
   }, [onSelect])
 
   useEffect(() => {

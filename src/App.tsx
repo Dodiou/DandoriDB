@@ -19,15 +19,17 @@ function App() {
   //   load();
   // }, [])
 
+  const [mapId, setMapId] = useState<string>('Area001');
   const [debugInfo, setDebugInfo] = useState<MapDebugInfoProps>({ x: 0, y: 0, scale: -1, rotation: 0});
+  const [selectedMarker, setSelectedMarker] = useState<{ type: string }>();
 
-  const navPanel = <NavigationPanel mapId='Area001' mapDebugInfo={debugInfo} />
-  const infoPanel = <InfoPanel />
+  const navPanel = <NavigationPanel mapId={mapId} onMapChange={setMapId} mapDebugInfo={debugInfo} />
+  const infoPanel = <InfoPanel marker={selectedMarker} />
 
   return (
     <div className="App">
       <PanelLayout leftPanel={navPanel} rightPanel={infoPanel}>
-        <MapContainer mapId={'0'} onMouseMove={setDebugInfo}/>
+        <MapContainer mapId={mapId} onMouseMove={setDebugInfo} onSelect={setSelectedMarker}/>
       </PanelLayout>
     </div>
   );

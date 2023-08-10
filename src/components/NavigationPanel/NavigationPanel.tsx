@@ -1,18 +1,21 @@
 import { Legend } from "../Legend/Legend";
 import { MapDebugInfo, MapDebugInfoProps } from "../MapDebugInfo/MapDebugInfo";
+import { MapSelect, MapSelectProps } from "../MapSelect/MapSelect";
 import { SegmentedButton, SegmentedButtonOption } from "../SegmentedButton/SegmentedButton";
 
 export interface NavigationPanelProps {
   mapDebugInfo?: MapDebugInfoProps;
   mapId: string;
   floor?: string;
+  onMapChange?: MapSelectProps['onSelect'];
   onLegendChange?: () => void;
 }
 
 export const NavigationPanel = ({
   mapDebugInfo,
   mapId,
-  floor
+  floor,
+  onMapChange
 }: NavigationPanelProps) => {
   const isCave: boolean = false;
   const timeOptions: SegmentedButtonOption[] = isCave ? [] : [
@@ -25,6 +28,7 @@ export const NavigationPanel = ({
   return <div className="NavigationPanel__container">
     { timeOptions.length !== 0 && <SegmentedButton options={timeOptions} selectedId="day" /> }
     <Legend />
+    <MapSelect onSelect={onMapChange} />
     { mapDebugInfo && <MapDebugInfo { ...mapDebugInfo }/> }
   </div>;
 };

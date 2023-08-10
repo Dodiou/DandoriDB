@@ -1,13 +1,23 @@
 import { Feature } from 'ol';
-import { default as MapMarkerData } from './day.json';
+import { default as MapExtentOverrides } from './extent-overrides.json';
+import { default as MapTransforms } from './map-transforms.json';
 import { Point } from 'ol/geom';
 import { MarkerStyles, ObjectTypes } from '../components/Map/FeatureStyles';
 import VectorLayer from 'ol/layer/Vector';
 import VectorSource from 'ol/source/Vector';
 
-export interface MapData {
+type MapExtent = {
+  xMin: number;
+  xMax: number;
+  yMin: number;
+  yMax: number;
+};
+interface MapTransform {
+  rotation: number;
+  extent: MapExtent;
+}
+export interface MapData extends MapTransform {
   imageUrl: string;
-  markers?: ObjectMarker[];
 }
 
 export interface TreasureData {
@@ -133,79 +143,15 @@ export enum ObjectType {
   Materials = 'materials'
 }
 
-export const ObjectIcons = {
-  [ObjectType.Castaway]: '',
-  [ObjectType.Battle]: 'https://img.game8.jp/8402583/a1b67e8fb74e7b81f27cd3570b2b1999.png/show',
-  [ObjectType.Challenge]: 'https://img.game8.jp/8402584/edfbdd62cf95d579275873b3dd4bde8b.png/show',
-  [ObjectType.Onion]: 'https://img.game8.jp/8401767/f4e6745281182771b95a5bd56ff0e9e6.png/show',
-}
-
-const AreaNameToID = {
-  'sun-speckled-terrace': 'Area001',
-  'blossoming-arcadia': 'Area002',
-  'serene-shores': 'Area003',
-  'giants-hearth': 'Area004',
-  'primordial-thicket': 'Area006',
-  'heros-hideaway': 'Area010',
-  'prologue': 'Area011',
-  'rescue-command-post': 'Area500',
-};
-const OstAreaNameToId = {
-  'ost-sun-speckled-terrace': 'HeroStory001',
-  'ost-blossoming-arcadia': 'HeroStory002',
-  'ost-serene-shores': 'HeroStory003',
-  'ost-heros-hideaway': 'HeroStory010',
-};
-const CaveNameToID = {
-  "burrow-of-beginnings": "Cave000",
-  "last-frost-cavern": "Cave001",
-  "hectic-hollows": "Cave033",
-  "crackling-cauldron": "Cave002",
-  "aquiferous-summit": "Cave004",
-  "industrial-maze": "Cave005",
-  "drafty-gallery": "Cave006",
-  "secluded-courtyard": "Cave007",
-  "sightless-passage": "Cave009",
-  "kingdom-of-beasts": "Cave010",
-  "seafloor-resort": "Cave011",
-  "subzero-sauna": "Cave012",
-  "below-grade-discotheque": "Cave013",
-  "engulfed-castle": "Cave014",
-  "doppelgangers-den": "Cave021",
-  "frozen-inferno": "Cave022",
-  "plunder-palace": "Cave023",
-  "ultimate-testing-range": "Cave024",
-  "dream-home": "Cave025",
-  "cradle-of-the-beast": "Cave026",
-  "cavern-for-a-king": "Cave016",
-  "the-mud-pit": "Cave018",
-  "subterranean-swarm": "Cave019",
-  "trial-run": "DDB_AI001_P",
-  "battle-in-a-box": "DDB_AI002_P",
-  "dandori-castle": "DDB_AI003_P",
-  "leafy-showdown": "DDB_AI004_P",
-  "hot-sandy-duel": "DDB_AI005_P",
-  "final-battle": "DDB_AI006_P",
-  "dandori-day-care": "Cave003_F00_P",
-  "hotshock-canyon": "Cave008_F00_P",
-  "test-tubs": "Cave015_F00_P",
-  "ice-cross-course": "Cave034_F00_P",
-  "hefty-haulway": "Cave031_F00_P",
-  "rockaway-cellars": "Cave029_F00_P",
-  "aerial-incinerator": "Cave027_F00_P",
-  "strategic-freezeway": "Cave028_F00_P",
-  "planning-pools": "Cave030_F00_P",
-  "toggle-training": "Cave017_F00_P",
-  "cliff-hangers-hold": "Cave020_F00_P",
-  "oasis-of-order": "Cave032_F00_P",
-  "trial-of-the-sage-leaf": "CaveESP000_Title"
-};
-const MapNamesToId: {[name: string]: string} = { ...AreaNameToID, ...OstAreaNameToId, ...CaveNameToID };
-export const getMapData = async (mapEngId: string): Promise<MapData> => {
-  const mapId = MapNamesToId[mapEngId] || 'Area001';
+export const getMapData = async (mapId: string): Promise<MapData> => {
+  const mapTransform: MapTransform = MapTransforms[mapId as keyof typeof MapTransforms];
+  const extentOverride: MapExtent | undefined = MapExtentOverrides[mapId as keyof typeof MapExtentOverrides];
 
   return {
+    // imageUrl: `/images/maps/Cave009_F00/T_ui_Map_Cave009_F00_D.png`,
     imageUrl: `/images/maps/${mapId}/T_ui_Map_${mapId}_D.png`,
+    rotation: mapTransform.rotation,
+    extent: extentOverride || mapTransform.extent,
   }
 }
 
@@ -220,15 +166,29 @@ type Marker = {
     scale?: number;
   };
 }
-export const getMarkerData = async (_mapEngId: string): Promise<any> => {
-  const objectLocations: Marker[] = Object.values(MapMarkerData).reduce((collector, values) => {
-    return [...collector, ...values ];
-  }, [] as any[]);
+export const getMarkerData = async (mapId: string): Promise<any> => {
+  let dataUrl = '/data';
+  if (mapId.startsWith('Cave')) {
+    const caveId = mapId.split('_')[0];
+    dataUrl += `/${caveId}/${mapId}.json`;
+  }
+  else {
+    dataUrl += `/${mapId}/day.json`;
+  }
+
+  const mapMarkerReq = await fetch(dataUrl);
+  const mapMarkerData: {[key: string]: Marker[]} = await mapMarkerReq.json();
+  console.log(mapMarkerData);
+  const objectLocations: Marker[] = Object.values(mapMarkerData).reduce((collector, values) => {
+    return [...collector, ...values];
+  }, [] as Marker[]);
 
   const markers = objectLocations.map(obj => {
     const marker = new Feature({
       // Why are x and y flipped???
-      geometry: new Point([(obj.transform.translation.y / 12 + 500), obj.transform.translation.x / 12 + 500])
+      // SST: / 12 + 500
+      geometry: new Point([(obj.transform.translation.y), obj.transform.translation.x]),
+      data: obj
     })
     marker.setStyle(MarkerStyles[obj.type]);
     return marker;

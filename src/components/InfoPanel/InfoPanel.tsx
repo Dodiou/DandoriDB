@@ -1,12 +1,18 @@
-import { Fragment } from "react";
-import { CaveSummary } from "../CaveSummary/CaveSummary";
+import { ExoticComponent, Fragment } from "react";
+import { DefaultInfo, DefaultInfoProps } from "./DefaultInfo";
 
-const TypeComponentMap = {
-  'cave': CaveSummary,
+export type InfoPanelProps = DefaultInfoProps;
+
+const TypeComponentMap: {[key: string]: ExoticComponent<DefaultInfoProps>} = {
+
 }
 
-export const InfoPanel = () => {
+export const InfoPanel = ({
+  marker
+}: InfoPanelProps) => {
+  const Renderer = marker ? TypeComponentMap[marker.type] || DefaultInfo : DefaultInfo;
+
   return <Fragment>
-    { /* TODO */ }
+    <Renderer marker={marker} />
   </Fragment>
 };
