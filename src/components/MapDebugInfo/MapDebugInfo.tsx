@@ -1,3 +1,5 @@
+import './MapDebugInfo.css';
+
 export interface MapDebugInfoProps {
   x: number;
   y: number;

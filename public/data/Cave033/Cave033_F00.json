@@ -42,9 +42,22 @@
       }
     }
   ],
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "link": "Cave033_F01",
+      "transform": {
+        "translation": {
+          "x": -700,
+          "y": 1120
+        }
+      }
+    }
+  ],
   "fence": [
     {
       "type": "fence",
+      "variant": "normal",
       "transform": {
         "translation": {
           "x": -1071.0029,
@@ -61,7 +74,8 @@
         {
           "item": "GOtaMatDollLB_C",
           "chance": 1,
-          "min": 1
+          "min": 1,
+          "max": 1
         }
       ],
       "transform": {
@@ -77,7 +91,8 @@
         {
           "item": "GPikminIce_C",
           "chance": 1,
-          "min": 5
+          "min": 5,
+          "max": 5
         }
       ],
       "transform": {
@@ -130,6 +145,35 @@
       }
     }
   ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTAMATDOLLLA",
+      "name": "Mama Doll Head",
+      "weight": 10,
+      "carryMax": 20,
+      "value": 150,
+      "transform": {
+        "translation": {
+          "x": 1035,
+          "y": 612
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 415.589,
+          "y": -570.55334
+        }
+      }
+    }
+  ],
   "pot": [
     {
       "type": "pot",
@@ -159,6 +203,20 @@
           "x": -740,
           "y": 812.0477
         }
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "pushbag",
+      "weight": 10,
+      "transform": {
+        "translation": {
+          "x": -182,
+          "y": -135
+        },
+        "rotation": 90
       }
     }
   ]

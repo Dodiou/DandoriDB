@@ -3,6 +3,8 @@ import { MapDebugInfo, MapDebugInfoProps } from "../MapDebugInfo/MapDebugInfo";
 import { MapSelect, MapSelectProps } from "../MapSelect/MapSelect";
 import { SegmentedButton, SegmentedButtonOption } from "../SegmentedButton/SegmentedButton";
 
+import './NavigationPanel.css';
+
 export interface NavigationPanelProps {
   mapDebugInfo?: MapDebugInfoProps;
   mapId: string;

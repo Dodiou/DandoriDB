@@ -1,8 +1,45 @@
 {
+  "firePit": [
+    {
+      "type": "firePit",
+      "isLit": true,
+      "transform": {
+        "translation": {
+          "x": -565,
+          "y": -1247.5
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": -2,
+          "y": 1236
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": -1112,
+          "y": 137.5
+        }
+      }
+    }
+  ],
   "treasure": [
     {
       "type": "treasure",
+      "treasureId": "KINKAISTATION",
+      "name": "Gold Nugget",
       "amount": 60,
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
       "transform": {
         "translation": {
           "x": 822.55664,
@@ -12,7 +49,12 @@
     },
     {
       "type": "treasure",
+      "treasureId": "KINKAISTATION",
+      "name": "Gold Nugget",
       "amount": 40,
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
       "transform": {
         "translation": {
           "x": 1270.2734,
@@ -22,7 +64,12 @@
     },
     {
       "type": "treasure",
+      "treasureId": "KINKAISTATION",
+      "name": "Gold Nugget",
       "amount": 50,
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
       "transform": {
         "translation": {
           "x": -2.7265625,
@@ -32,12 +79,172 @@
     },
     {
       "type": "treasure",
+      "treasureId": "KINKAISTATION",
+      "name": "Gold Nugget",
       "amount": 71,
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
       "transform": {
         "translation": {
           "x": -822.67596,
           "y": 1136.1025
         }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAHANDBELL",
+      "name": "Time Marker",
+      "weight": 12,
+      "carryMax": 24,
+      "value": 180,
+      "transform": {
+        "translation": {
+          "x": 1296.5,
+          "y": -552
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTARAPPA",
+      "name": "Mega Horn",
+      "weight": 15,
+      "carryMax": 30,
+      "value": 250,
+      "transform": {
+        "translation": {
+          "x": 164,
+          "y": -969
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTACASTANETS",
+      "name": "Harmonic Synthesizer",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": -826,
+          "y": -1016
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAHARMONICA",
+      "name": "Wind Detector",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": -1003.5233,
+          "y": 686.96576
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAGARAGARA",
+      "name": "Shake-a-Smile",
+      "weight": 12,
+      "carryMax": 24,
+      "value": 180,
+      "transform": {
+        "translation": {
+          "x": -974,
+          "y": 963
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAOCARINABRN",
+      "name": "Ambiguous Hostel",
+      "weight": 10,
+      "carryMax": 20,
+      "value": 150,
+      "transform": {
+        "translation": {
+          "x": 301,
+          "y": 1263
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAWHISTLE",
+      "name": "Emperor Whistle",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 80,
+      "transform": {
+        "translation": {
+          "x": 1031.531,
+          "y": 1031.3997
+        }
+      }
+    }
+  ],
+  "conveyor": [
+    {
+      "type": "conveyor",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 270.5,
+          "y": -686
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "conveyor",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 549.5,
+          "y": 414
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "conveyor",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 1.5,
+          "y": 689
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "conveyor",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 828.5,
+          "y": 141
+        },
+        "rotation": 180
+      }
+    },
+    {
+      "type": "conveyor",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": -271.5,
+          "y": -412
+        },
+        "rotation": 180
       }
     }
   ],
@@ -109,9 +316,38 @@
       }
     }
   ],
-  "straw": [
+  "switch": [
     {
-      "type": "straw",
+      "type": "switch",
+      "variant": "double",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 542,
+          "y": -371.5
+        },
+        "rotation": -90
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -96.209015,
+          "y": 337.10822
+        }
+      }
+    }
+  ],
+  "heatObstacle": [
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": -877,
@@ -120,7 +356,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 138,
@@ -129,7 +367,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 143,
@@ -138,7 +378,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 170,
@@ -147,7 +389,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 322,
@@ -156,7 +400,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 243,
@@ -165,7 +411,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 552,
@@ -174,7 +422,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 832.0098,
@@ -183,7 +433,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 823.02435,
@@ -192,7 +444,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 708,
@@ -201,7 +455,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 821,
@@ -210,7 +466,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 784,
@@ -219,7 +477,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 666.5,
@@ -228,7 +488,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 691,
@@ -237,7 +499,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": -826,
@@ -246,7 +510,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 690,
@@ -255,7 +521,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": -773,
@@ -264,7 +532,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 663,
@@ -273,7 +543,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 689,
@@ -282,7 +554,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 660,
@@ -291,7 +565,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 665.5,
@@ -300,7 +576,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 638.5,
@@ -309,7 +587,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 576,
@@ -318,7 +598,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 515,
@@ -327,7 +609,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 448,
@@ -336,7 +620,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 627,

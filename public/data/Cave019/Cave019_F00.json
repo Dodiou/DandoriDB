@@ -1,4 +1,16 @@
 {
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "link": "Cave019_F01",
+      "transform": {
+        "translation": {
+          "x": 415,
+          "y": 855
+        }
+      }
+    }
+  ],
   "materials": [
     {
       "type": "materials",
@@ -17,6 +29,112 @@
         "translation": {
           "x": 324.1703,
           "y": -1092.7092
+        }
+      }
+    }
+  ],
+  "floor": [
+    {
+      "type": "floor",
+      "variant": "mushroom",
+      "isPoison": false,
+      "radius": 100,
+      "drops": [],
+      "transform": {
+        "translation": {
+          "x": 412.14532,
+          "y": -647.7278
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "mushroom",
+      "isPoison": false,
+      "radius": 175,
+      "drops": [],
+      "transform": {
+        "translation": {
+          "x": 82.20697,
+          "y": -823.8362
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "mushroom",
+      "isPoison": false,
+      "radius": 175,
+      "drops": [],
+      "transform": {
+        "translation": {
+          "x": 420,
+          "y": 851
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "mushroom",
+      "isPoison": false,
+      "radius": 175,
+      "drops": [],
+      "transform": {
+        "translation": {
+          "x": 605,
+          "y": -950
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "mushroom",
+      "isPoison": false,
+      "radius": 175,
+      "drops": [],
+      "transform": {
+        "translation": {
+          "x": -145,
+          "y": 900
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "mushroom",
+      "isPoison": false,
+      "radius": 175,
+      "drops": [],
+      "transform": {
+        "translation": {
+          "x": -65,
+          "y": -276
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "mushroom",
+      "isPoison": false,
+      "radius": 175,
+      "drops": [],
+      "transform": {
+        "translation": {
+          "x": -261,
+          "y": -262
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "mushroom",
+      "isPoison": false,
+      "radius": 175,
+      "drops": [],
+      "transform": {
+        "translation": {
+          "x": -161,
+          "y": -94
         }
       }
     }
@@ -58,6 +176,63 @@
         "translation": {
           "x": -145,
           "y": 900
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 625.5175,
+          "y": -46.21411
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTALIGHTUPRINGBLU",
+      "name": "Hoop of Healing",
+      "weight": 3,
+      "carryMax": 6,
+      "value": 130,
+      "transform": {
+        "translation": {
+          "x": -474.5161,
+          "y": 487.96625
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTALIGHTUPRINGYEL",
+      "name": "Hoop of Fortune",
+      "weight": 3,
+      "carryMax": 6,
+      "value": 130,
+      "transform": {
+        "translation": {
+          "x": -474.5161,
+          "y": 627.81616
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTABILLIARDBALL6",
+      "name": "Sphere of Calm",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": 392.10315,
+          "y": -250
         }
       }
     }

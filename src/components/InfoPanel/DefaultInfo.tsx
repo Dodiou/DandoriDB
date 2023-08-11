@@ -21,7 +21,7 @@ const objectToList = (obj: object | null | undefined) => {
       </li>;
     }
 
-    return <li>{ key }: { value }</li>;
+    return <li>{ key }: { value + "" }</li>;
   });
 }
 

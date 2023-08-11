@@ -66,7 +66,7 @@ export const MapContainer = ({ mapId, onSelect, onMouseMove }: MapContainerProps
         target: 'map',
         view,
         // disable rotation
-        interactions: defaultInteractions({altShiftDragRotate: false, pinchRotate: false}),
+        interactions: defaultInteractions(),
         // disable "resetNorth" button; TODO: see if rotateOptions.resetNorth can reset to original rotation
         controls: defaultControls({rotate: false})
       });

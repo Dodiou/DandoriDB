@@ -143,6 +143,17 @@ export enum ObjectType {
   Materials = 'materials'
 }
 
+
+/*
+TODO:
+extents to check:
+  023_F00
+  023_F03
+  030_F00
+  035_F04
+*/
+
+
 export const getMapData = async (mapId: string): Promise<MapData> => {
   const mapTransform: MapTransform = MapTransforms[mapId as keyof typeof MapTransforms];
   const extentOverride: MapExtent | undefined = MapExtentOverrides[mapId as keyof typeof MapExtentOverrides];
@@ -178,7 +189,7 @@ export const getMarkerData = async (mapId: string): Promise<any> => {
 
   const mapMarkerReq = await fetch(dataUrl);
   const mapMarkerData: {[key: string]: Marker[]} = await mapMarkerReq.json();
-  console.log(mapMarkerData);
+
   const objectLocations: Marker[] = Object.values(mapMarkerData).reduce((collector, values) => {
     return [...collector, ...values];
   }, [] as Marker[]);
@@ -186,14 +197,27 @@ export const getMarkerData = async (mapId: string): Promise<any> => {
   const markers = objectLocations.map(obj => {
     const marker = new Feature({
       // Why are x and y flipped???
-      // SST: / 12 + 500
       geometry: new Point([(obj.transform.translation.y), obj.transform.translation.x]),
       data: obj
-    })
-    marker.setStyle(MarkerStyles[obj.type]);
+    });
+
+    let markerStyle = MarkerStyles[obj.type];
+
+    if (obj.transform.rotation !== undefined) {
+      markerStyle = markerStyle.clone();
+      markerStyle.getImage().setRotateWithView(true);
+      // I *think* object look off b/c the images might need to be flipped along y = x, but I'm not sure.
+      // except conveyors... those rotations look correct
+      markerStyle.getImage().setRotation(-(obj.transform.rotation) * Math.PI / 180);
+    }
+
+    marker.setStyle(markerStyle);
     return marker;
   });
   return new VectorLayer({
-    source: new VectorSource({ features: markers })
+    source: new VectorSource({ features: markers }),
+    style: (feature, resolution) => {
+      console.log("HERE", feature)
+    }
   });
 }

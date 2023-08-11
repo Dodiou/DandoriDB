@@ -1,7 +1,31 @@
 {
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "link": "Cave004_F00",
+      "transform": {
+        "translation": {
+          "x": -813.4767,
+          "y": -317.2708
+        }
+      }
+    },
+    {
+      "type": "caveLink",
+      "link": "Area001",
+      "transform": {
+        "translation": {
+          "x": -1016.92163,
+          "y": 154.13611
+        }
+      }
+    }
+  ],
   "fence": [
     {
       "type": "fence",
+      "variant": "iron",
+      "switchId": "switch01",
       "transform": {
         "translation": {
           "x": 395,
@@ -14,12 +38,52 @@
   "switch": [
     {
       "type": "switch",
+      "variant": "single",
+      "switchId": "switch01",
       "transform": {
         "translation": {
           "x": 805.59863,
           "y": -223.0531
         },
         "rotation": -11.346
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "pushbag",
+      "weight": 10,
+      "transform": {
+        "translation": {
+          "x": 276.99622,
+          "y": 200.9823
+        },
+        "rotation": 180
+      }
+    }
+  ],
+  "floor": [
+    {
+      "type": "floor",
+      "variant": "fire",
+      "radius": 175,
+      "transform": {
+        "translation": {
+          "x": 4.102844,
+          "y": -11.965759
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "fire",
+      "radius": 175,
+      "transform": {
+        "translation": {
+          "x": -1.897156,
+          "y": 259.03424
+        }
       }
     }
   ],
@@ -54,7 +118,8 @@
         {
           "item": "GPikminIce_C",
           "chance": 1,
-          "min": 5
+          "min": 5,
+          "max": 5
         }
       ],
       "transform": {
@@ -70,12 +135,14 @@
         {
           "item": "GSurvivorA_C",
           "chance": 1,
-          "min": 1
+          "min": 1,
+          "max": 1
         },
         {
           "item": "GHoney_C",
           "chance": 1,
-          "min": 1
+          "min": 1,
+          "max": 1
         }
       ],
       "transform": {
@@ -129,14 +196,71 @@
       }
     }
   ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -813.4767,
+          "y": -317.2708
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 1,
+      "transform": {
+        "translation": {
+          "x": -1016.92163,
+          "y": 154.13611
+        }
+      }
+    }
+  ],
   "treasure": [
     {
       "type": "treasure",
+      "treasureId": "OTAPAPERCRANERED",
+      "name": "Skin of the Phoenix",
+      "weight": 3,
+      "carryMax": 6,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": 1109,
+          "y": -200
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "KINKAISTATION",
+      "name": "Gold Nugget",
       "amount": 10,
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
       "transform": {
         "translation": {
           "x": -10,
           "y": 685
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAPUZZLEA",
+      "name": "Memory Fragment (Top Left)",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 50,
+      "transform": {
+        "translation": {
+          "x": 93.02977,
+          "y": 558.7801
         }
       }
     }

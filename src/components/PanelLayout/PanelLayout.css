@@ -8,6 +8,9 @@
   height: 100%;
   width: 20rem;
   flex: 0 0 auto;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .PanelLayout__center {

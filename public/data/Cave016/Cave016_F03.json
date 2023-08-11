@@ -12,7 +12,46 @@
       }
     }
   ],
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "link": "Cave016_F04",
+      "transform": {
+        "translation": {
+          "x": 1.1284027,
+          "y": -1114.9473
+        }
+      }
+    }
+  ],
+  "floor": [
+    {
+      "type": "floor",
+      "variant": "mushroom",
+      "isPoison": false,
+      "radius": 100,
+      "drops": [],
+      "transform": {
+        "translation": {
+          "x": 1232.2004,
+          "y": -413.47614
+        }
+      }
+    }
+  ],
   "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "geyser",
+      "hasCrystal": true,
+      "transform": {
+        "translation": {
+          "x": -290.49475,
+          "y": -204.0232
+        },
+        "rotation": 0
+      }
+    },
     {
       "type": "shortcut",
       "variant": "clipboard",
@@ -23,6 +62,19 @@
           "y": -779.0724
         },
         "rotation": 0
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -687.29956,
+          "y": -239.05408
+        }
       }
     }
   ]

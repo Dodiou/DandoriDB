@@ -1,4 +1,26 @@
 {
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "link": "Area002",
+      "transform": {
+        "translation": {
+          "x": -0.5,
+          "y": -302.55896
+        }
+      }
+    },
+    {
+      "type": "caveLink",
+      "link": "Area002",
+      "transform": {
+        "translation": {
+          "x": -0.5,
+          "y": 283.07996
+        }
+      }
+    }
+  ],
   "materials": [
     {
       "type": "materials",
@@ -31,6 +53,48 @@
       }
     }
   ],
+  "spout": [
+    {
+      "type": "spout",
+      "variant": "fire",
+      "transform": {
+        "translation": {
+          "x": 1134.8188,
+          "y": 1086.3386
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "fire",
+      "transform": {
+        "translation": {
+          "x": 1102.5,
+          "y": 1505
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "fire",
+      "transform": {
+        "translation": {
+          "x": -517.8906,
+          "y": 1481.9481
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "fire",
+      "transform": {
+        "translation": {
+          "x": -1374.52,
+          "y": -1512.2766
+        }
+      }
+    }
+  ],
   "gate": [
     {
       "type": "gate",
@@ -55,6 +119,19 @@
       }
     }
   ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "stick",
+      "transform": {
+        "translation": {
+          "x": 914.1811,
+          "y": -253.29346
+        },
+        "rotation": 90
+      }
+    }
+  ],
   "pot": [
     {
       "type": "pot",
@@ -72,7 +149,8 @@
         {
           "item": "GPiecePick_C",
           "chance": 1,
-          "min": 5
+          "min": 5,
+          "max": 5
         }
       ],
       "transform": {
@@ -108,7 +186,8 @@
         {
           "item": "GPiecePick_C",
           "chance": 1,
-          "min": 1
+          "min": 1,
+          "max": 1
         }
       ],
       "transform": {
@@ -184,7 +263,8 @@
         {
           "item": "GHoney_C",
           "chance": 1,
-          "min": 1
+          "min": 1,
+          "max": 1
         }
       ],
       "transform": {
@@ -208,6 +288,7 @@
   "fence": [
     {
       "type": "fence",
+      "variant": "normal",
       "transform": {
         "translation": {
           "x": -1106.6798,
@@ -218,6 +299,7 @@
     },
     {
       "type": "fence",
+      "variant": "normal",
       "transform": {
         "translation": {
           "x": -541.0509,
@@ -228,6 +310,7 @@
     },
     {
       "type": "fence",
+      "variant": "normal",
       "transform": {
         "translation": {
           "x": -0.5,
@@ -238,6 +321,7 @@
     },
     {
       "type": "fence",
+      "variant": "normal",
       "transform": {
         "translation": {
           "x": -0.5,
@@ -302,6 +386,154 @@
         "translation": {
           "x": 1108.1799,
           "y": 1624.4131
+        }
+      }
+    }
+  ],
+  "castaway": [
+    {
+      "type": "castaway",
+      "isLeafling": false,
+      "weight": 3,
+      "carryMax": 6,
+      "transform": {
+        "translation": {
+          "x": 1,
+          "y": -1275
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTAGBMICROFC",
+      "name": "Micromanagement Station",
+      "weight": 10,
+      "carryMax": 20,
+      "value": 150,
+      "transform": {
+        "translation": {
+          "x": 1375.7887,
+          "y": 1110
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTATHERMOMETER",
+      "name": "Heat Sensor",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 120,
+      "transform": {
+        "translation": {
+          "x": -1041.9089,
+          "y": -1286.4292
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTALIGHTUPRINGBLU",
+      "name": "Hoop of Healing",
+      "weight": 3,
+      "carryMax": 6,
+      "value": 130,
+      "transform": {
+        "translation": {
+          "x": 1653,
+          "y": -1488
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAGBAROMYEL",
+      "name": "Masterpiece Plank",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": -552,
+          "y": 1830
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -0.5,
+          "y": 283.07996
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 1,
+      "transform": {
+        "translation": {
+          "x": -0.5,
+          "y": -302.55896
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 2,
+      "guardedBy": [
+        "ElecMushi"
+      ],
+      "transform": {
+        "translation": {
+          "x": -1098.8643,
+          "y": -1.1102295
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 3,
+      "guardedBy": [
+        "ElecSenbei"
+      ],
+      "transform": {
+        "translation": {
+          "x": 955.4855,
+          "y": -1097.7505
+        }
+      }
+    }
+  ],
+  "floor": [
+    {
+      "type": "floor",
+      "variant": "fire",
+      "radius": 350,
+      "transform": {
+        "translation": {
+          "x": -1250.1802,
+          "y": -983.11646
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "fire",
+      "radius": 350,
+      "transform": {
+        "translation": {
+          "x": -969.55396,
+          "y": -1251.3259
         }
       }
     }

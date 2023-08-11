@@ -51,6 +51,52 @@
       }
     }
   ],
+  "onion": [
+    {
+      "type": "onion",
+      "color": "yellow",
+      "weight": 20,
+      "transform": {
+        "translation": {
+          "x": -571.5303,
+          "y": -2858.6191
+        }
+      }
+    },
+    {
+      "type": "onion",
+      "color": "flarlic",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": -1800.8826,
+          "y": 1815.3215
+        }
+      }
+    },
+    {
+      "type": "onion",
+      "color": "flarlic",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": 3191.891,
+          "y": -577.04974
+        }
+      }
+    },
+    {
+      "type": "onion",
+      "color": "blue",
+      "weight": 20,
+      "transform": {
+        "translation": {
+          "x": 2348.7253,
+          "y": 1628.1357
+        }
+      }
+    }
+  ],
   "mound": [
     {
       "type": "mound",
@@ -58,7 +104,8 @@
         {
           "item": "GBomb_C",
           "chance": 1,
-          "min": 2
+          "min": 2,
+          "max": 2
         }
       ],
       "transform": {
@@ -74,7 +121,8 @@
         {
           "item": "GBomb_C",
           "chance": 1,
-          "min": 1
+          "min": 1,
+          "max": 1
         }
       ],
       "transform": {
@@ -90,7 +138,8 @@
         {
           "item": "GIceBomb_C",
           "chance": 1,
-          "min": 1
+          "min": 1,
+          "max": 1
         }
       ],
       "transform": {
@@ -106,7 +155,8 @@
         {
           "item": "GBomb_C",
           "chance": 1,
-          "min": 1
+          "min": 1,
+          "max": 1
         }
       ],
       "transform": {
@@ -155,9 +205,97 @@
       }
     }
   ],
-  "straw": [
+  "treasure": [
     {
-      "type": "straw",
+      "type": "treasure",
+      "treasureId": "OTAHEROPARTSC",
+      "name": "Ionium Jet",
+      "weight": 10,
+      "carryMax": 20,
+      "value": 0,
+      "transform": {
+        "translation": {
+          "x": -3365.131,
+          "y": -876.052
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAHEROPARTSAB",
+      "name": "Automatic Gear",
+      "weight": 15,
+      "carryMax": 30,
+      "value": 0,
+      "transform": {
+        "translation": {
+          "x": -732.1941,
+          "y": -1152.184
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAHEROPARTSN",
+      "name": "Repair-Type Bolt",
+      "weight": 10,
+      "carryMax": 20,
+      "value": 0,
+      "transform": {
+        "translation": {
+          "x": 311.989,
+          "y": -1994.39
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAHEROPARTSJ",
+      "name": "Omega Stabilizer",
+      "weight": 15,
+      "carryMax": 30,
+      "value": 0,
+      "transform": {
+        "translation": {
+          "x": 449.4581,
+          "y": -610.1775
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAHEROPARTSU",
+      "name": "Extraordinary Bolt",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 0,
+      "transform": {
+        "translation": {
+          "x": -3242.2368,
+          "y": 1359.6681
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAHEROPARTSR",
+      "name": "Extraordinary Bolt",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 0,
+      "transform": {
+        "translation": {
+          "x": 5,
+          "y": 2340
+        }
+      }
+    }
+  ],
+  "heatObstacle": [
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 82.0648,
@@ -166,7 +304,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 103.63512,
@@ -175,7 +315,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 96.67503,
@@ -184,7 +326,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 73.14512,
@@ -193,7 +337,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 36.300358,
@@ -202,7 +348,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 213.31958,
@@ -211,7 +359,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 255.24103,
@@ -220,7 +370,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 221.33981,
@@ -229,7 +381,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 214.50945,
@@ -238,7 +392,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 181.81194,
@@ -247,7 +403,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 245.13136,
@@ -256,7 +414,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 239.93814,
@@ -265,7 +425,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 2269.2795,
@@ -274,7 +436,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 2328.7434,
@@ -283,7 +447,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 2428.3118,
@@ -292,7 +458,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 2402.9932,
@@ -301,7 +469,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 2291.8801,
@@ -310,7 +480,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": 2368.8801,
@@ -319,7 +491,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": -1565.2489,
@@ -328,7 +502,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": -1507.4524,
@@ -337,7 +513,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": -1396.7864,
@@ -346,7 +524,9 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": -1628.6997,
@@ -355,11 +535,85 @@
       }
     },
     {
-      "type": "straw",
+      "type": "heatObstacle",
+      "variant": "straw",
+      "drops": [],
       "transform": {
         "translation": {
           "x": -1452.4524,
           "y": -1131.8151
+        }
+      }
+    }
+  ],
+  "firePit": [
+    {
+      "type": "firePit",
+      "isLit": true,
+      "transform": {
+        "translation": {
+          "x": -766.8906,
+          "y": 1989.304
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": 3096,
+          "y": 67
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": 1263.292,
+          "y": 349.47842
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": -1407.1085,
+          "y": -119.03734
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": -499.68652,
+          "y": -661.4957
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": 1132.292,
+          "y": 1620.4784
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": -1180.708,
+          "y": 1833.4784
         }
       }
     }
@@ -414,6 +668,7 @@
   "fence": [
     {
       "type": "fence",
+      "variant": "normal",
       "transform": {
         "translation": {
           "x": -854.8299,
@@ -424,12 +679,81 @@
     },
     {
       "type": "fence",
+      "variant": "normal",
       "transform": {
         "translation": {
           "x": 2608,
           "y": 415
         },
         "rotation": 14
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "onion",
+      "baseId": 1,
+      "transform": {
+        "translation": {
+          "x": -1646.3981,
+          "y": -466.4656
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 1,
+      "transform": {
+        "translation": {
+          "x": -1545.5916,
+          "y": -678.3218
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "onion",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 1506.4707,
+          "y": 2343.4749
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 1483.9028,
+          "y": 2577.0037
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "onion",
+      "baseId": 2,
+      "transform": {
+        "translation": {
+          "x": 990.11426,
+          "y": -153.30273
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 2,
+      "transform": {
+        "translation": {
+          "x": 1160.8732,
+          "y": 8.148453
+        }
       }
     }
   ],
