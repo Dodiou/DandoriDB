@@ -5,6 +5,7 @@ import { Point } from 'ol/geom';
 import { MarkerStyles, ObjectTypes } from '../components/Map/FeatureStyles';
 import VectorLayer from 'ol/layer/Vector';
 import VectorSource from 'ol/source/Vector';
+import { Waterbox } from './getImageLayers';
 
 type MapExtent = {
   xMin: number;
@@ -17,7 +18,9 @@ interface MapTransform {
   extent: MapExtent;
 }
 export interface MapData extends MapTransform {
+  mapId: string;
   imageUrl: string;
+  waterboxes: Waterbox[];
 }
 
 export interface TreasureData {
@@ -158,12 +161,32 @@ export const getMapData = async (mapId: string): Promise<MapData> => {
   const mapTransform: MapTransform = MapTransforms[mapId as keyof typeof MapTransforms];
   const extentOverride: MapExtent | undefined = MapExtentOverrides[mapId as keyof typeof MapExtentOverrides];
 
+  // TODO need to reorganize all this stuff
+  const { water = [] } =  await _getMarkerData(mapId);
+
   return {
-    // imageUrl: `/images/maps/Cave009_F00/T_ui_Map_Cave009_F00_D.png`,
+    mapId,
     imageUrl: `/images/maps/${mapId}/T_ui_Map_${mapId}_D.png`,
     rotation: mapTransform.rotation,
     extent: extentOverride || mapTransform.extent,
+    waterboxes: water as any[],
   }
+}
+
+const _getMarkerData = async (mapId: string) => {
+  let dataUrl = '/data';
+  if (mapId.startsWith('Cave')) {
+    const caveId = mapId.split('_')[0];
+    dataUrl += `/${caveId}/${mapId}.json`;
+  }
+  else {
+    dataUrl += `/${mapId}/day.json`;
+  }
+
+  const mapMarkerReq = await fetch(dataUrl);
+  const mapMarkerData: {[key: string]: Marker[]} = await mapMarkerReq.json();
+
+  return mapMarkerData;
 }
 
 type Marker = {
@@ -178,17 +201,7 @@ type Marker = {
   };
 }
 export const getMarkerData = async (mapId: string): Promise<any> => {
-  let dataUrl = '/data';
-  if (mapId.startsWith('Cave')) {
-    const caveId = mapId.split('_')[0];
-    dataUrl += `/${caveId}/${mapId}.json`;
-  }
-  else {
-    dataUrl += `/${mapId}/day.json`;
-  }
-
-  const mapMarkerReq = await fetch(dataUrl);
-  const mapMarkerData: {[key: string]: Marker[]} = await mapMarkerReq.json();
+  const { water, ...mapMarkerData } = await _getMarkerData(mapId);
 
   const objectLocations: Marker[] = Object.values(mapMarkerData).reduce((collector, values) => {
     return [...collector, ...values];

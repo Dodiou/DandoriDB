@@ -1,8 +1,5 @@
 import { useCallback } from 'react';
 import { Map, MapBrowserEvent, View } from "ol";
-import { Image } from "ol/layer";
-import { Projection } from 'ol/proj';
-import { ImageStatic } from "ol/source";
 import { useEffect, useRef, useState } from "react";
 import { Select, defaults as defaultInteractions } from 'ol/interaction';
 import { defaults as defaultControls } from 'ol/control';
@@ -13,6 +10,7 @@ import './MapContainer.css';
 import { getCenter } from 'ol/extent';
 import { SelectEvent } from 'ol/interaction/Select';
 import { MapDebugInfoProps } from '../MapDebugInfo/MapDebugInfo';
+import { getImageLayersForMap, getProjectionForMap } from '../../api/getImageLayers';
 
 export interface MapContainerProps {
   mapId: string;
@@ -28,26 +26,13 @@ export const MapContainer = ({ mapId, onSelect, onMouseMove }: MapContainerProps
     const load = async () => {
       // load map data
       const mapData = await getMapData(mapId);
-      const extent = [mapData.extent.xMin, mapData.extent.yMin, mapData.extent.xMax, mapData.extent.yMax];
-      const projection = new Projection({
-        code: 'map',
-        units: 'pixels',
-        extent: extent,
-      });
 
-      // load map image
-      const mapImage = new Image({
-        source: new ImageStatic({
-          attributions: 'Nintendo',
-          url: mapData.imageUrl,
-          projection,
-          imageExtent: extent,
-        }),
-      });
+      const imageLayers = getImageLayersForMap(mapData, mapData.waterboxes);
+      const projection = getProjectionForMap(mapData);
 
       const view = new View({
         projection: projection,
-        center: getCenter(extent),
+        center: getCenter(projection.getExtent()),
         zoom: 2,
         rotation: -mapData.rotation * Math.PI / 180,
         maxZoom: 4,
@@ -60,7 +45,7 @@ export const MapContainer = ({ mapId, onSelect, onMouseMove }: MapContainerProps
       // TODO figure out why map.setLayers and map.setView aren't working
       const map = new Map({
         layers: [
-          mapImage,
+          ...imageLayers,
           markerLayer
         ],
         target: 'map',
