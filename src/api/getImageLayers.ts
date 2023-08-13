@@ -1,4 +1,4 @@
-import { Coordinate, rotate, scale } from "ol/coordinate";
+import { Coordinate, rotate } from "ol/coordinate";
 import { Extent } from "ol/extent";
 import { Projection, ProjectionLike, addCoordinateTransforms, addProjection, get as getProjection } from "ol/proj";
 import { ObjectTypes } from "../components/Map/FeatureStyles";
@@ -27,7 +27,7 @@ interface MarkerWithRotation extends MarkerBase {
   };
 }
 interface WaterInfo {
-  image: string;
+  image?: string;
   amountToFreeze: number;
   canSink?: boolean;
 }
@@ -60,20 +60,23 @@ export const getImageLayersForMap = (mapData: MapData, waterboxes: Waterbox[]) =
 
   // TODO: hacky way to get folderpath
   const folderpath = mapData.imageUrl.substring(0, mapData.imageUrl.lastIndexOf('/'));
-  const waterLayers = waterboxes.map((wb) => {
-    let wbProjection = getProjection(wb.normal.image);
-    if (!wbProjection) {
-      wbProjection = buildWaterboxProjection(mapProjection, wb);
-    }
 
-    return new Image({
-      source: new ImageStatic({
-        url: folderpath + '/' + wb.normal.image,
-        projection: wbProjection,
-        imageExtent: wbProjection.getExtent()
+  const waterLayers = waterboxes
+    .filter(wb => wb.normal.image)
+    .map((wb) => {
+      let wbProjection = getProjection(wb.normal.image);
+      if (!wbProjection) {
+        wbProjection = buildWaterboxProjection(mapProjection, wb);
+      }
+
+      return new Image({
+        source: new ImageStatic({
+          url: folderpath + '/' + wb.normal.image,
+          projection: wbProjection,
+          imageExtent: wbProjection.getExtent()
+        })
       })
-    })
-  });
+    });
 
   return [
     mapLayer,
@@ -125,17 +128,23 @@ const WaterBoxRadii = {
   'T_ui_Map_Area006_WaterBox04_D.png': 625,
   'T_ui_Map_Area006_WaterBox05_D.png': 550,
   // Hero's Hideaway
+  'T_ui_Map_Area010_WaterBox00_D.png': 425, // double check, this one gets drained
+  // Rescue Command Post (no water boxes)
   // Burrow of Beginnings (no waterboxes)
   // Last-Frost Cavern (no waterboxes)
   // Crackling Cauldron (no waterboxes)
   // Dandori Day Care (no waterboxes)
   // Aquiferous Summit
-  'T_ui_Map_Cave004_F00_WaterBox00_D.png': 255, // ?
-  'T_ui_Map_Cave004_F00_WaterBox01_D.png': 525,
+  'T_ui_Map_Cave004_F00_WaterBox00_D.png': 275,
+  'T_ui_Map_Cave004_F00_WaterBox01_D.png': 530,
+  // Industrial Maze (no waterboxes)
+  // Drafty Gallery (no waterboxes)
   // Secluded Courtyard
   'T_ui_Map_Cave007_F00_WaterBox00_D.png': 275,
   'T_ui_Map_Cave007_F00_WaterBox01_D.png': 250,
   'T_ui_Map_Cave007_F01_WaterBox00_D.png': 385,
+  // Hotshock Canyon (no waterboxes)
+  // Sightless Passage (no waterboxes)
   // Kingdom of Beasts
   'T_ui_Map_Cave010_F01_WaterBox00_D.png': 200,
   'T_ui_Map_Cave010_F03_WaterBox00_D.png': 335,
@@ -163,6 +172,11 @@ const WaterBoxRadii = {
   'T_ui_Map_Cave014_F03_WaterBox00_D.png': 325,
   'T_ui_Map_Cave014_F03_WaterBox01_D.png': 350,
   'T_ui_Map_Cave014_F03_WaterBox02_D.png': 325,
+  // Test Tubs
+  'T_ui_Map_Cave015_F00_WaterBox00_D.png': 150,
+  'T_ui_Map_Cave015_F00_WaterBox01_D.png': 550, // NOTE: waterbox is messed up in game too
+  'T_ui_Map_Cave015_F00_WaterBox02_D.png': 275,
+  'T_ui_Map_Cave015_F00_WaterBox03_D.png': 500, // NOTE: waterbox is messed up in game too
   // Cavern for a King
   'T_ui_Map_Cave016_F07_WaterBox00_D.png': 2250,
   'T_ui_Map_Cave016_F08_WaterBox00_D.png': 725,
@@ -172,16 +186,56 @@ const WaterBoxRadii = {
   'T_ui_Map_Cave016_F14_WaterBox00_D.png': 300,
   'T_ui_Map_Cave016_F14_WaterBox01_D.png': 375,
   'T_ui_Map_Cave016_F18_WaterBox00_D.png': 460,
+  // Toggle Training (no waterboxes)
   // The Mud Pit
   'T_ui_Map_Cave018_F00_WaterBox00_D.png': 2250,
   'T_ui_Map_Cave018_F01_WaterBox00_D.png': 2160,
   'T_ui_Map_Cave018_F02_WaterBox00_D.png': 700,
+  // Subterranean Swarm (no waterboxes)
+  // Cliff-hanger's Hold (no waterboxes)
+  // Doppelganger's Den
+  'T_ui_Map_Cave021_F00_WaterBox00_D.png': 375,
+  'T_ui_Map_Cave021_F00_WaterBox01_D.png': 330,
+  'T_ui_Map_Cave021_F01_WaterBox00_D.png': 380,
+  'T_ui_Map_Cave021_F02_WaterBox00_D.png': 350,
+  'T_ui_Map_Cave021_F02_WaterBox01_D.png': 225,
+  // FI
+  'T_ui_Map_Cave022_F02_WaterBox00_D.png': 275,
+  // Plunder Palace (no waterboxes)
+  // Ultimate Test Range (no waterboxes)
+  // Dream Home (no waterboxes)
+  // Cradle of the Beast (no waterboxes)
+  // Aerial Incinerator (no waterboxes)
+  // Strategic Freezeway (no waterboxes)
+  // Rockaway Cellars (no waterboxes)
+  // Planning Pools
+  'T_ui_Map_Cave030_F00_WaterBox00_D.png': 2125,
+  // Hefty Haulway
+  'T_ui_Map_Cave031_F00_WaterBox00_D.png': 525,
+  'T_ui_Map_Cave031_F00_WaterBox01_D.png': 550,
+  // Oasis of Order
+  'T_ui_Map_Cave032_F00_WaterBox00_D.png': 1000,
+  'T_ui_Map_Cave032_F00_WaterBox01_D.png': 750,
+  // Hectic Hollows
+  'T_ui_Map_Cave033_F00_WaterBox00_D.png': 665,
+  // Ice-Cross Course
+  'T_ui_Map_Cave034_F00_WaterBox00_D.png': 425,
+  'T_ui_Map_Cave034_F00_WaterBox01_D.png': 550,
+  'T_ui_Map_Cave034_F00_WaterBox02_D.png': 260,
+  'T_ui_Map_Cave034_F00_WaterBox03_D.png': 275,
+  // Trial of the Sage Leaf
+  'T_ui_Map_Cave035_F02_WaterBox00_D.png': 700,
+  'T_ui_Map_Cave035_F02_WaterBox01_D.png': 1000,
+  'T_ui_Map_Cave035_F03_WaterBox00_D.png': 2200,
 }
 // adapted from https://github.com/openlayers/openlayers/issues/4949#issuecomment-525272189
 const buildWaterboxProjection = (mapProjection: ProjectionLike, waterbox: Waterbox): Projection => {
   // Remember to swap x and y because they Ninten-do it that way.
   const wbLocation: Coordinate = [waterbox.transform.translation.y, waterbox.transform.translation.x];
-  const wbRadius: number = WaterBoxRadii[waterbox.normal.image as keyof typeof WaterBoxRadii] || 250;
+  const wbRadius: number = WaterBoxRadii[waterbox.normal.image as keyof typeof WaterBoxRadii];
+  if (!wbRadius) {
+    throw new Error(`Unknown extent for waterbox ${waterbox.normal.image}.`);
+  }
   const wbExtent: Extent = [-wbRadius, -wbRadius, wbRadius, wbRadius];
   // negate rotation
   const wbRotation: number = -waterbox.transform.rotation * Math.PI / 180;
@@ -209,7 +263,7 @@ const buildWaterboxProjection = (mapProjection: ProjectionLike, waterbox: Waterb
     ];
   }
   const wbProjection = new Projection({
-    code: waterbox.normal.image,
+    code: waterbox.normal.image!,
     units: mapProjection.getUnits(),
     extent: wbExtent,
   });

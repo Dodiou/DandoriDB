@@ -221,6 +221,9 @@ export const getMarkerData = async (mapId: string): Promise<any> => {
       markerStyle.getImage().setRotateWithView(true);
       // I *think* object look off b/c the images might need to be flipped along y = x, but I'm not sure.
       // except conveyors... those rotations look correct
+      if (obj.type !== ObjectTypes.Conveyor) {
+        obj.transform.rotation += 90;
+      }
       markerStyle.getImage().setRotation(-(obj.transform.rotation) * Math.PI / 180);
     }
 
