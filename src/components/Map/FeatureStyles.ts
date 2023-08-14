@@ -62,7 +62,7 @@ const getIconOptions = (type: ObjectTypes): Pick<Options, 'src' | 'scale'> => {
       scale: 1.3
     }
   }
-  else if (type === ObjectTypes.Crystal) {
+  else if (type === ObjectTypes.Egg) {
     return {
       src: 'https://www.pikminwiki.com/images/9/95/Egg_P3_icon.png',
       scale: 1.6
