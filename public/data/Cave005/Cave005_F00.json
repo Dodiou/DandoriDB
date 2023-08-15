@@ -116,15 +116,13 @@
         "translation": {
           "x": -651.36255,
           "y": -120.98114
-        },
-        "rotation": 0
+        }
       }
     }
   ],
   "pot": [
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -907.2584,
@@ -134,7 +132,6 @@
     },
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -1003.27515,
@@ -144,7 +141,6 @@
     },
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -969.74023,
@@ -154,7 +150,6 @@
     },
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -940.8684,
@@ -229,6 +224,26 @@
         "translation": {
           "x": 682.41235,
           "y": 538.15356
+        }
+      }
+    }
+  ],
+  "groupDropManager": [
+    {
+      "type": "groupDropManager",
+      "radius": 150,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -955.7699,
+          "y": 263.71045
         }
       }
     }

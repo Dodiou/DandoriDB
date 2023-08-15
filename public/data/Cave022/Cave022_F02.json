@@ -25,7 +25,6 @@
     {
       "type": "heatObstacle",
       "variant": "iceBox",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -776.3129,
@@ -36,7 +35,6 @@
     {
       "type": "heatObstacle",
       "variant": "straw",
-      "drops": [],
       "transform": {
         "translation": {
           "x": 253.29822,
@@ -47,7 +45,6 @@
     {
       "type": "heatObstacle",
       "variant": "straw",
-      "drops": [],
       "transform": {
         "translation": {
           "x": 311.66663,
@@ -58,7 +55,6 @@
     {
       "type": "heatObstacle",
       "variant": "straw",
-      "drops": [],
       "transform": {
         "translation": {
           "x": 312.74988,
@@ -69,7 +65,6 @@
     {
       "type": "heatObstacle",
       "variant": "straw",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -639.6537,
@@ -80,7 +75,6 @@
     {
       "type": "heatObstacle",
       "variant": "straw",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -719.6453,
@@ -91,7 +85,6 @@
     {
       "type": "heatObstacle",
       "variant": "straw",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -537.38544,
@@ -102,7 +95,6 @@
     {
       "type": "heatObstacle",
       "variant": "straw",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -565.9874,
@@ -113,7 +105,6 @@
     {
       "type": "heatObstacle",
       "variant": "straw",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -627.17737,
@@ -142,7 +133,6 @@
     {
       "type": "heatObstacle",
       "variant": "straw",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -572.6537,
@@ -171,7 +161,6 @@
     {
       "type": "heatObstacle",
       "variant": "straw",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -699.6537,
@@ -296,7 +285,6 @@
   "hydroJelly": [
     {
       "type": "hydroJelly",
-      "drops": [],
       "transform": {
         "translation": {
           "x": 413.5923,
@@ -306,7 +294,6 @@
     },
     {
       "type": "hydroJelly",
-      "drops": [],
       "transform": {
         "translation": {
           "x": 2.978943,
@@ -319,6 +306,7 @@
     {
       "type": "gate",
       "variant": "numbered",
+      "switchId": "switch01",
       "transform": {
         "translation": {
           "x": -745,
@@ -404,6 +392,86 @@
         "translation": {
           "x": 915,
           "y": 320
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "YUKIFUTAKUCHI",
+      "name": "Arctic Cannon Larva",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": 907.7462,
+          "y": 667.0187
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "YUKIFUTAKUCHI",
+      "name": "Arctic Cannon Larva",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": -276.86182,
+          "y": -274.61856
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICESENBEI",
+      "name": "Freezecake",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 10,
+      "drops": [
+        {
+          "item": "GOtaLime_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 575.0548,
+          "y": -428.60468
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICETANK",
+      "name": "Snowy Blowhog",
+      "carryMax": 10,
+      "value": 5,
+      "seeds": 5,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -533.3414,
+          "y": 324.1397
         }
       }
     }

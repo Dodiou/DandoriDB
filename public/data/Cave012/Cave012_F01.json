@@ -14,7 +14,6 @@
   "hydroJelly": [
     {
       "type": "hydroJelly",
-      "drops": [],
       "transform": {
         "translation": {
           "x": 960,
@@ -24,7 +23,6 @@
     },
     {
       "type": "hydroJelly",
-      "drops": [],
       "transform": {
         "translation": {
           "x": 897.66785,
@@ -102,7 +100,6 @@
     {
       "type": "heatObstacle",
       "variant": "iceBox",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -411.95508,
@@ -113,7 +110,6 @@
     {
       "type": "heatObstacle",
       "variant": "iceBox",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -685.9445,
@@ -345,6 +341,116 @@
         "translation": {
           "x": 946,
           "y": -1085
+        }
+      }
+    }
+  ],
+  "icicle": [
+    {
+      "type": "icicle",
+      "transform": {
+        "translation": {
+          "x": -443,
+          "y": -1.5
+        }
+      }
+    },
+    {
+      "type": "icicle",
+      "transform": {
+        "translation": {
+          "x": 530,
+          "y": -740.5
+        }
+      }
+    },
+    {
+      "type": "icicle",
+      "transform": {
+        "translation": {
+          "x": 389,
+          "y": -711.5
+        }
+      }
+    },
+    {
+      "type": "icicle",
+      "transform": {
+        "translation": {
+          "x": 137,
+          "y": 77.5
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "TOBIUO",
+      "name": "Puckering Blinnow",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": -357.14172,
+          "y": -444.96112
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBIUO",
+      "name": "Puckering Blinnow",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": -337.14172,
+          "y": -259.96112
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBIUO",
+      "name": "Puckering Blinnow",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": -267.14172,
+          "y": -344.96112
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "YUKIFUTAKUCHI",
+      "name": "Arctic Cannon Larva",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": 673,
+          "y": 250
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "YUKIFUTAKUCHI",
+      "name": "Arctic Cannon Larva",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": 510,
+          "y": -947
         }
       }
     }

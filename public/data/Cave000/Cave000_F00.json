@@ -24,7 +24,6 @@
   "pot": [
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -261,
@@ -34,7 +33,6 @@
     },
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -247,
@@ -44,7 +42,6 @@
     },
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -197,
@@ -54,7 +51,6 @@
     },
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -178.99606,
@@ -64,7 +60,6 @@
     },
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -211,
@@ -93,6 +88,50 @@
         "translation": {
           "x": 144.80737,
           "y": 968.58276
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "BABY",
+      "name": "Bulborb Larva",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "transform": {
+        "translation": {
+          "x": 47,
+          "y": 282
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "BABY",
+      "name": "Bulborb Larva",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "transform": {
+        "translation": {
+          "x": 46,
+          "y": 111
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "BABY",
+      "name": "Bulborb Larva",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "transform": {
+        "translation": {
+          "x": 52,
+          "y": 150
         }
       }
     }

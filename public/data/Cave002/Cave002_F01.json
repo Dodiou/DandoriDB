@@ -70,6 +70,80 @@
       }
     }
   ],
+  "charcoal": [
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": 633,
+          "y": 943.5
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": 536,
+          "y": 696.5
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": 388.49033,
+          "y": 954.6315
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": 681,
+          "y": -570
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": -664,
+          "y": -702.5
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": -776,
+          "y": -570.5
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": -382,
+          "y": 1098.5
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": 156.3301,
+          "y": 163.50534
+        }
+      }
+    }
+  ],
   "materials": [
     {
       "type": "materials",
@@ -242,6 +316,168 @@
         "translation": {
           "x": -940.31635,
           "y": -794.3253
+        }
+      }
+    }
+  ],
+  "egg": [
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -496,
+          "y": 860.5
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -548,
+          "y": 812.5
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "YAKISENBEI",
+      "name": "Scorchcake",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 10,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 755,
+          "y": -214.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOGANE",
+      "name": "Iridescent Flint Beetle",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 6,
+          "max": 6
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 10,
+          "max": 10
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 844,
+          "y": 281
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 331.03055,
+          "y": -378.2652
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -428.6154,
+          "y": -790.6198
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -610.22156,
+          "y": 259.82996
         }
       }
     }

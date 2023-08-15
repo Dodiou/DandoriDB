@@ -127,6 +127,53 @@
       }
     }
   ],
+  "charcoal": [
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": -825.78424,
+          "y": -35.53524
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": 506.8219,
+          "y": -112.59143
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": 177.46751,
+          "y": -56.44268
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": 177.46751,
+          "y": -191.44269
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": 53.538513,
+          "y": -124.42178
+        }
+      }
+    }
+  ],
   "pikmin": [
     {
       "type": "pikmin",
@@ -208,6 +255,52 @@
         "translation": {
           "x": -1120.3232,
           "y": -523.64886
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "CHAPPY",
+      "name": "Bulborb",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 10,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 361.0125,
+          "y": -101.72473
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "CHAPPY",
+      "name": "Bulborb",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 10,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -469.9447,
+          "y": 195.07458
         }
       }
     }

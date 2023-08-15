@@ -25,10 +25,77 @@
       }
     }
   ],
+  "tunnel": [
+    {
+      "type": "tunnel",
+      "variant": "pup",
+      "tunnelId": "HappyDoorID_0",
+      "transform": {
+        "translation": {
+          "x": -671.31696,
+          "y": -1371.9954
+        }
+      }
+    },
+    {
+      "type": "tunnel",
+      "variant": "pup",
+      "tunnelId": "HappyDoorID_0",
+      "transform": {
+        "translation": {
+          "x": -750.88184,
+          "y": -1318.5895
+        }
+      }
+    },
+    {
+      "type": "tunnel",
+      "variant": "captain",
+      "tunnelId": "WarpCarryID_0",
+      "transform": {
+        "translation": {
+          "x": -477.48007,
+          "y": 1101.1748
+        }
+      }
+    },
+    {
+      "type": "tunnel",
+      "variant": "captain",
+      "tunnelId": "WarpCarryID_0",
+      "transform": {
+        "translation": {
+          "x": -552.2742,
+          "y": 754.55493
+        }
+      }
+    },
+    {
+      "type": "tunnel",
+      "variant": "normal",
+      "tunnelId": "TunnelID_0",
+      "transform": {
+        "translation": {
+          "x": -275,
+          "y": 1410
+        }
+      }
+    },
+    {
+      "type": "tunnel",
+      "variant": "normal",
+      "tunnelId": "TunnelID_0",
+      "transform": {
+        "translation": {
+          "x": -412.5,
+          "y": 1410
+        }
+      }
+    }
+  ],
   "pot": [
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": 98.56323,
@@ -38,7 +105,6 @@
     },
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": 47.10089,
@@ -48,7 +114,6 @@
     },
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": 5.7211914,
@@ -58,7 +123,6 @@
     },
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -1429.3572,
@@ -68,7 +132,6 @@
     },
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -1388.0206,
@@ -78,7 +141,6 @@
     },
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -1348.698,
@@ -88,7 +150,6 @@
     },
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -902.89465,
@@ -98,7 +159,6 @@
     },
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -862.0958,
@@ -108,7 +168,6 @@
     },
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": 20.39746,
@@ -118,7 +177,6 @@
     },
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": 46.370117,
@@ -128,7 +186,6 @@
     },
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": 96.853516,
@@ -138,7 +195,6 @@
     },
     {
       "type": "pot",
-      "drops": [],
       "transform": {
         "translation": {
           "x": -926.7209,
@@ -175,6 +231,20 @@
         "translation": {
           "x": -760.90027,
           "y": 1451.3513
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTABANKCARDBLANK",
+      "name": "Deity's Portrait",
+      "weight": 1,
+      "carryMax": 1,
+      "value": 20,
+      "transform": {
+        "translation": {
+          "x": 250.1875,
+          "y": 1396.2273
         }
       }
     },
@@ -236,6 +306,48 @@
     },
     {
       "type": "treasure",
+      "treasureId": "OTABANKCARDD",
+      "name": "Love Emblem",
+      "weight": 1,
+      "carryMax": 1,
+      "value": 20,
+      "transform": {
+        "translation": {
+          "x": 870,
+          "y": 1370
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTABANKCARDE",
+      "name": "Money Emblem",
+      "weight": 1,
+      "carryMax": 1,
+      "value": 20,
+      "transform": {
+        "translation": {
+          "x": -1010.625,
+          "y": 952.2815
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTABANKCARDF",
+      "name": "Work Emblem",
+      "weight": 1,
+      "carryMax": 1,
+      "value": 20,
+      "transform": {
+        "translation": {
+          "x": 705.75256,
+          "y": -413.9436
+        }
+      }
+    },
+    {
+      "type": "treasure",
       "treasureId": "OTAPAPERBALLOON",
       "name": "Divine Balloon",
       "weight": 3,
@@ -245,6 +357,20 @@
         "translation": {
           "x": -1370,
           "y": -1383
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTABANKCARDBLANK2",
+      "name": "Devil's Portrait",
+      "weight": 1,
+      "carryMax": 1,
+      "value": 20,
+      "transform": {
+        "translation": {
+          "x": 335.6194,
+          "y": -1163.9039
         }
       }
     },
@@ -350,6 +476,116 @@
         },
         "rotation": -90
       }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": -477,
+          "y": -1158
+        },
+        "rotation": 135
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": -900.5,
+          "y": -756
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": 650,
+          "y": -1250
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": 855.406,
+          "y": -1006.25
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": 920,
+          "y": -1168.75
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": 650,
+          "y": -1087.5
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": 1025,
+          "y": -875
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": 752.5,
+          "y": -726.375
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": 1033.7128,
+          "y": -610
+        },
+        "rotation": 135
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": 650,
+          "y": -925
+        },
+        "rotation": -90
+      }
     }
   ],
   "onion": [
@@ -374,6 +610,282 @@
         "translation": {
           "x": -70,
           "y": 400
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -451.70197,
+          "y": -379.02966
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 40.36328,
+          "y": -637.589
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "MINIMOCHI",
+      "name": "Sunsquish",
+      "carryMax": 1,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": 57.926025,
+          "y": 1280.2412
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "MINIMOCHI",
+      "name": "Sunsquish",
+      "carryMax": 1,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": 818.329,
+          "y": -52.60315
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "SHIPPOZAKO",
+      "name": "Miniature Snootwhacker",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 6,
+      "transform": {
+        "translation": {
+          "x": -897.3953,
+          "y": -1029.9814
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "MINIMOCHI",
+      "name": "Sunsquish",
+      "carryMax": 1,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -1206.7338,
+          "y": -1084.2585
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "NISEZAKO",
+      "name": "Gildemandwee",
+      "carryMax": 10,
+      "value": 5,
+      "seeds": 6,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -1378.9268,
+          "y": -453.899
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "NISEZAKO",
+      "name": "Gildemandwee",
+      "carryMax": 10,
+      "value": 5,
+      "seeds": 6,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 922.1714,
+          "y": 101.73279
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "BIGCHAPPY_NIGHT",
+      "name": "Jumbo Bulborb",
+      "carryMax": 40,
+      "value": 15,
+      "seeds": 15,
+      "drops": [
+        {
+          "item": "GOtaJamIchigo_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 10,
+          "max": 10
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -214.71765,
+          "y": -554.1386
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "SHIPPOZAKO",
+      "name": "Miniature Snootwhacker",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 6,
+      "transform": {
+        "translation": {
+          "x": -9.395325,
+          "y": -994.98145
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "SHIPPO",
+      "name": "Mammoth Snootwhacker",
+      "carryMax": 40,
+      "value": 20,
+      "seeds": 20,
+      "drops": [
+        {
+          "item": "GSurvivorA_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 889,
+          "y": 907
+        }
+      }
+    }
+  ],
+  "groupDropManager": [
+    {
+      "type": "groupDropManager",
+      "radius": 150,
+      "drops": [
+        {
+          "item": "GOtaButtonPlastic_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -1376.8219,
+          "y": -723.864
+        }
+      }
+    },
+    {
+      "type": "groupDropManager",
+      "radius": 150,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -889.6415,
+          "y": -158.72888
+        }
+      }
+    }
+  ],
+  "egg": [
+    {
+      "type": "egg",
+      "isBig": true,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 3,
+          "max": 3
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 10,
+          "max": 10
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1022.6333,
+          "y": -1033.3098
         }
       }
     }
