@@ -2,6 +2,7 @@
   "caveLink": [
     {
       "type": "caveLink",
+      "variant": "exit",
       "link": "Area004",
       "transform": {
         "translation": {
@@ -392,7 +393,7 @@
   "candypop": [
     {
       "type": "candypop",
-      "color": "Wing",
+      "color": "wing",
       "amount": 1,
       "replacementCondition": 51,
       "replacement": "other",
@@ -405,7 +406,7 @@
     },
     {
       "type": "candypop",
-      "color": "Wing",
+      "color": "wing",
       "amount": 1,
       "replacementCondition": 51,
       "replacement": "other",
@@ -418,7 +419,7 @@
     },
     {
       "type": "candypop",
-      "color": "Purple",
+      "color": "purple",
       "amount": 1,
       "replacementCondition": 51,
       "replacement": "other",

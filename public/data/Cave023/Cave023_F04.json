@@ -2,6 +2,7 @@
   "caveLink": [
     {
       "type": "caveLink",
+      "variant": "exit",
       "link": "Area010",
       "transform": {
         "translation": {
@@ -103,7 +104,7 @@
   "candypop": [
     {
       "type": "candypop",
-      "color": "Purple",
+      "color": "purple",
       "amount": 1,
       "replacementCondition": 51,
       "replacement": "other",
@@ -116,7 +117,7 @@
     },
     {
       "type": "candypop",
-      "color": "Purple",
+      "color": "purple",
       "amount": 1,
       "replacementCondition": 51,
       "replacement": "other",
@@ -415,6 +416,20 @@
         "translation": {
           "x": 167.91574,
           "y": -266.989
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "MAR",
+      "name": "Puffy Blowhog",
+      "carryMax": 1,
+      "value": 7,
+      "seeds": 5,
+      "transform": {
+        "translation": {
+          "x": -577.0748,
+          "y": -707.8728
         }
       }
     }

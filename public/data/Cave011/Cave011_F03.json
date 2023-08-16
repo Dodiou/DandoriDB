@@ -16,6 +16,7 @@
   "caveLink": [
     {
       "type": "caveLink",
+      "variant": "exit",
       "link": "Area003",
       "transform": {
         "translation": {
@@ -41,10 +42,10 @@
   "candypop": [
     {
       "type": "candypop",
-      "color": "Blue",
+      "color": "blue",
       "amount": 1,
       "changeToCondition": 41,
-      "changeToColor": "Ice",
+      "changeToColor": "ice",
       "replacementCondition": 51,
       "replacement": "candypop",
       "transform": {
@@ -56,10 +57,10 @@
     },
     {
       "type": "candypop",
-      "color": "Blue",
+      "color": "blue",
       "amount": 1,
       "changeToCondition": 41,
-      "changeToColor": "Ice",
+      "changeToColor": "ice",
       "replacementCondition": 51,
       "replacement": "candypop",
       "transform": {
@@ -90,7 +91,7 @@
   "pikmin": [
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "sprouts",
       "amount": 5,
       "replacementCondition": 51,
@@ -104,7 +105,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "sprouts",
       "amount": 5,
       "replacementCondition": 51,
@@ -118,7 +119,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "sprouts",
       "amount": 5,
       "replacementCondition": 51,

@@ -2,7 +2,7 @@ import { Feature } from 'ol';
 import { default as MapExtentOverrides } from './extent-overrides.json';
 import { default as MapTransforms } from './map-transforms.json';
 import { Point } from 'ol/geom';
-import { MarkerStyles, ObjectTypes } from '../components/Map/FeatureStyles';
+import { MarkerStyles, ObjectTypes, getMarkerStyle } from '../components/Map/FeatureStyles';
 import VectorLayer from 'ol/layer/Vector';
 import VectorSource from 'ol/source/Vector';
 import { Waterbox } from './getImageLayers';
@@ -179,6 +179,10 @@ const _getMarkerData = async (mapId: string) => {
     const caveId = mapId.split('_')[0];
     dataUrl += `/${caveId}/${mapId}.json`;
   }
+  else if (mapId.startsWith('HeroStory')) {
+    const areaId = 'Area' + mapId.slice(-3);
+    dataUrl += `/${areaId}/olimar.json`;
+  }
   else {
     dataUrl += `/${mapId}/day.json`;
   }
@@ -191,6 +195,8 @@ const _getMarkerData = async (mapId: string) => {
 
 type Marker = {
   type: ObjectTypes;
+  variant?: string;
+  color?: string;
   transform: {
     translation: {
       x: number;
@@ -214,7 +220,8 @@ export const getMarkerData = async (mapId: string): Promise<any> => {
       data: obj
     });
 
-    let markerStyle = MarkerStyles[obj.type];
+    // TODO: hack-y way to get correct icons showing up. need to revisit
+    let markerStyle = getMarkerStyle(obj);
 
     if (obj.transform.rotation !== undefined) {
       markerStyle = markerStyle.clone();
@@ -231,9 +238,6 @@ export const getMarkerData = async (mapId: string): Promise<any> => {
     return marker;
   });
   return new VectorLayer({
-    source: new VectorSource({ features: markers }),
-    style: (feature, resolution) => {
-      console.log("HERE", feature)
-    }
+    source: new VectorSource({ features: markers })
   });
 }

@@ -169,6 +169,7 @@
   "caveLink": [
     {
       "type": "caveLink",
+      "variant": "exit",
       "link": "Area001",
       "transform": {
         "translation": {
@@ -205,10 +206,10 @@
   "pikmin": [
     {
       "type": "pikmin",
-      "color": "Yellow",
+      "color": "yellow",
       "variant": "sprouts",
       "amount": 5,
-      "changeToColor": "Undef",
+      "changeToColor": "unknown",
       "replacementCondition": 51,
       "replacement": "other",
       "transform": {
@@ -220,11 +221,11 @@
     },
     {
       "type": "pikmin",
-      "color": "Yellow",
+      "color": "yellow",
       "variant": "sprouts",
       "amount": 5,
       "changeToCondition": 0,
-      "changeToColor": "Yellow",
+      "changeToColor": "yellow",
       "replacementCondition": 51,
       "replacement": "candypop",
       "transform": {
@@ -309,7 +310,7 @@
   "candypop": [
     {
       "type": "candypop",
-      "color": "Red",
+      "color": "red",
       "amount": 1,
       "replacementCondition": 6,
       "transform": {

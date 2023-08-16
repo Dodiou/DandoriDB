@@ -2,6 +2,7 @@
   "caveLink": [
     {
       "type": "caveLink",
+      "variant": "exit",
       "link": "Area004",
       "transform": {
         "translation": {
@@ -94,7 +95,8 @@
           "x": 319.34314,
           "y": 99.73053
         }
-      }
+      },
+      "spawnNum": 3
     },
     {
       "type": "creature",
@@ -116,7 +118,8 @@
           "x": -14.121216,
           "y": 134.20728
         }
-      }
+      },
+      "spawnNum": 3
     },
     {
       "type": "creature",
@@ -130,7 +133,8 @@
           "x": -422.3413,
           "y": -653.27637
         }
-      }
+      },
+      "spawnNum": 3
     },
     {
       "type": "creature",

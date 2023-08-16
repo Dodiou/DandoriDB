@@ -2,6 +2,7 @@
   "caveLink": [
     {
       "type": "caveLink",
+      "variant": "cave",
       "link": "Cave019_F02",
       "transform": {
         "translation": {
@@ -338,7 +339,7 @@
   "candypop": [
     {
       "type": "candypop",
-      "color": "White",
+      "color": "white",
       "amount": 1,
       "replacementCondition": 51,
       "replacement": "other",
@@ -556,7 +557,8 @@
           "x": -608.00653,
           "y": -395.20892
         }
-      }
+      },
+      "spawnNum": 3
     },
     {
       "type": "creature",
@@ -569,6 +571,21 @@
         "translation": {
           "x": -773.3274,
           "y": 38.044556
+        }
+      },
+      "spawnNum": 3
+    },
+    {
+      "type": "creature",
+      "creatureId": "NOMI",
+      "name": "Shearflea",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 638.4806,
+          "y": -336.00012
         }
       }
     },
@@ -583,6 +600,49 @@
         "translation": {
           "x": -115.77026,
           "y": 128.64215
+        }
+      },
+      "spawnNum": 2
+    },
+    {
+      "type": "creature",
+      "creatureId": "NOMI",
+      "name": "Shearflea",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 890.5016,
+          "y": 413.40173
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "NOMI",
+      "name": "Shearflea",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 674.85876,
+          "y": -403.95615
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "NOMI",
+      "name": "Shearflea",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 680.5176,
+          "y": -332.7433
         }
       }
     },

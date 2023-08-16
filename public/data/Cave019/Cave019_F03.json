@@ -2,6 +2,7 @@
   "caveLink": [
     {
       "type": "caveLink",
+      "variant": "cave",
       "link": "Cave019_F04",
       "transform": {
         "translation": {
@@ -303,7 +304,7 @@
   "candypop": [
     {
       "type": "candypop",
-      "color": "White",
+      "color": "white",
       "amount": 1,
       "replacementCondition": 51,
       "replacement": "other",
@@ -316,7 +317,7 @@
     },
     {
       "type": "candypop",
-      "color": "White",
+      "color": "white",
       "amount": 1,
       "replacementCondition": 51,
       "replacement": "other",
@@ -474,7 +475,8 @@
           "x": -889.7161,
           "y": -467.55823
         }
-      }
+      },
+      "spawnNum": 4
     },
     {
       "type": "creature",
@@ -488,7 +490,8 @@
           "x": -954.8502,
           "y": 331.50958
         }
-      }
+      },
+      "spawnNum": 4
     },
     {
       "type": "creature",

@@ -617,13 +617,14 @@
   "item": [
     {
       "type": "item",
-      "variant": "bomb",
+      "variant": "iceBomb",
       "transform": {
         "translation": {
           "x": 2865,
           "y": -864
         }
-      }
+      },
+      "rebirthInterval": 2
     }
   ],
   "hydroJelly": [
@@ -687,7 +688,7 @@
   "pikmin": [
     {
       "type": "pikmin",
-      "color": "Yellow",
+      "color": "yellow",
       "variant": "idle",
       "amount": 4,
       "transform": {
@@ -699,7 +700,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "fighting",
       "amount": 3,
       "transform": {
@@ -711,7 +712,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Yellow",
+      "color": "yellow",
       "variant": "idle",
       "amount": 4,
       "transform": {
@@ -723,7 +724,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Yellow",
+      "color": "yellow",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -735,7 +736,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -747,7 +748,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -759,7 +760,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "idle",
       "amount": 5,
       "transform": {
@@ -771,7 +772,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -783,7 +784,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Yellow",
+      "color": "yellow",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -795,7 +796,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -807,7 +808,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "fighting",
       "amount": 1,
       "transform": {
@@ -819,7 +820,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "idle",
       "amount": 2,
       "transform": {
@@ -831,7 +832,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Yellow",
+      "color": "yellow",
       "variant": "idle",
       "amount": 3,
       "transform": {
@@ -843,7 +844,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "fighting",
       "amount": 1,
       "transform": {
@@ -855,7 +856,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "fighting",
       "amount": 1,
       "transform": {
@@ -867,7 +868,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "fighting",
       "amount": 1,
       "transform": {
@@ -879,7 +880,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "fighting",
       "amount": 1,
       "transform": {
@@ -891,7 +892,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "fighting",
       "amount": 1,
       "transform": {
@@ -903,7 +904,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "fighting",
       "amount": 5,
       "transform": {
@@ -915,7 +916,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -927,7 +928,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -939,7 +940,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -951,7 +952,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Yellow",
+      "color": "yellow",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -963,7 +964,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Yellow",
+      "color": "yellow",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -975,7 +976,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "fighting",
       "amount": 1,
       "transform": {
@@ -987,7 +988,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "fighting",
       "amount": 1,
       "transform": {
@@ -999,7 +1000,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Yellow",
+      "color": "yellow",
       "variant": "idle",
       "amount": 5,
       "transform": {
@@ -1011,7 +1012,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Yellow",
+      "color": "yellow",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1023,7 +1024,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "idle",
       "amount": 5,
       "transform": {
@@ -1035,7 +1036,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1047,7 +1048,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Yellow",
+      "color": "yellow",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1059,7 +1060,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1071,7 +1072,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1083,7 +1084,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1095,7 +1096,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1107,7 +1108,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1119,7 +1120,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1131,7 +1132,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1143,7 +1144,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1155,7 +1156,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1167,7 +1168,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1179,7 +1180,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1191,7 +1192,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1203,7 +1204,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1215,7 +1216,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1227,7 +1228,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1239,7 +1240,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Yellow",
+      "color": "yellow",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1251,7 +1252,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Yellow",
+      "color": "yellow",
       "variant": "idle",
       "amount": 1,
       "transform": {
@@ -1263,7 +1264,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Red",
+      "color": "red",
       "variant": "idle",
       "amount": 3,
       "replacementCondition": 31,
@@ -1276,7 +1277,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "idle",
       "amount": 3,
       "replacementCondition": 31,
@@ -1289,7 +1290,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Yellow",
+      "color": "yellow",
       "variant": "idle",
       "amount": 2,
       "replacementCondition": 31,
@@ -1302,7 +1303,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Yellow",
+      "color": "yellow",
       "variant": "idle",
       "amount": 1,
       "replacementCondition": 31,
@@ -1315,7 +1316,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Yellow",
+      "color": "yellow",
       "variant": "idle",
       "amount": 1,
       "replacementCondition": 31,
@@ -1617,6 +1618,20 @@
         "translation": {
           "x": 3013.2585,
           "y": 470.7981
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "WATEROTAKARA",
+      "name": "Hydro Dweevil",
+      "carryMax": 4,
+      "value": 2,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 2843.2676,
+          "y": -3871.6118
         }
       }
     }

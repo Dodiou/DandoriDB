@@ -2,6 +2,7 @@
   "caveLink": [
     {
       "type": "caveLink",
+      "variant": "cave",
       "link": "Cave024_F02",
       "transform": {
         "translation": {
@@ -154,7 +155,7 @@
   "candypop": [
     {
       "type": "candypop",
-      "color": "Wing",
+      "color": "wing",
       "amount": 1,
       "replacementCondition": 51,
       "replacement": "other",
@@ -167,7 +168,7 @@
     },
     {
       "type": "candypop",
-      "color": "Wing",
+      "color": "wing",
       "amount": 1,
       "replacementCondition": 51,
       "replacement": "other",
@@ -180,10 +181,10 @@
     },
     {
       "type": "candypop",
-      "color": "Wing",
+      "color": "wing",
       "amount": 1,
       "changeToCondition": 11,
-      "changeToColor": "White",
+      "changeToColor": "white",
       "replacementCondition": 51,
       "transform": {
         "translation": {

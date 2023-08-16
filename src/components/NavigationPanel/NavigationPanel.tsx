@@ -21,10 +21,10 @@ export const NavigationPanel = ({
 }: NavigationPanelProps) => {
   const isCave: boolean = false;
   const timeOptions: SegmentedButtonOption[] = isCave ? [] : [
-    { id: 'day', label: 'Day' },
-    { id: 'afternoon', label: 'Afternoon' },
-    { id: 'night', label: 'Night' },
-    { id: 'olimar', label: 'Olimar' },
+    // { id: 'day', label: 'Day' },
+    // { id: 'afternoon', label: 'Afternoon' },
+    // { id: 'night', label: 'Night' },
+    // { id: 'olimar', label: 'Olimar' },
   ];
 
   return <div className="NavigationPanel__container">

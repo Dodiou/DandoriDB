@@ -64,6 +64,7 @@
   "caveLink": [
     {
       "type": "caveLink",
+      "variant": "cave",
       "link": "Cave006_F00",
       "transform": {
         "translation": {
@@ -74,6 +75,7 @@
     },
     {
       "type": "caveLink",
+      "variant": "cave",
       "link": "Cave010_F00",
       "transform": {
         "translation": {
@@ -84,6 +86,7 @@
     },
     {
       "type": "caveLink",
+      "variant": "cave",
       "link": "Cave007_F00",
       "transform": {
         "translation": {
@@ -94,6 +97,7 @@
     },
     {
       "type": "caveLink",
+      "variant": "cave",
       "link": "Cave009_F00",
       "transform": {
         "translation": {
@@ -104,6 +108,7 @@
     },
     {
       "type": "caveLink",
+      "variant": "battle",
       "link": "CaveVS001_F00",
       "transform": {
         "translation": {
@@ -114,6 +119,7 @@
     },
     {
       "type": "caveLink",
+      "variant": "challenge",
       "link": "CaveSP002_F00",
       "transform": {
         "translation": {
@@ -124,6 +130,7 @@
     },
     {
       "type": "caveLink",
+      "variant": "challenge",
       "link": "CaveSP003_F00",
       "transform": {
         "translation": {
@@ -902,7 +909,8 @@
           "x": -2915.1821,
           "y": -1130.4326
         }
-      }
+      },
+      "rebirthInterval": 1
     },
     {
       "type": "mound",
@@ -936,7 +944,8 @@
           "x": -230.19147,
           "y": 2797.3735
         }
-      }
+      },
+      "rebirthInterval": 3
     },
     {
       "type": "mound",
@@ -953,7 +962,8 @@
           "x": 833,
           "y": -2446
         }
-      }
+      },
+      "rebirthInterval": 3
     },
     {
       "type": "mound",
@@ -970,7 +980,8 @@
           "x": -1288,
           "y": -2339
         }
-      }
+      },
+      "rebirthInterval": 3
     },
     {
       "type": "mound",
@@ -987,7 +998,8 @@
           "x": -405.18213,
           "y": 427.56738
         }
-      }
+      },
+      "rebirthInterval": 1
     },
     {
       "type": "mound",
@@ -1004,7 +1016,8 @@
           "x": 1695.8203,
           "y": -2320.4336
         }
-      }
+      },
+      "rebirthInterval": 1
     },
     {
       "type": "mound",
@@ -1021,7 +1034,8 @@
           "x": -2094.1821,
           "y": 2736.5674
         }
-      }
+      },
+      "rebirthInterval": 1
     }
   ],
   "onion": [

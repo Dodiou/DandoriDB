@@ -2,6 +2,7 @@
   "caveLink": [
     {
       "type": "caveLink",
+      "variant": "cave",
       "link": "Cave026_F02",
       "transform": {
         "translation": {
@@ -215,7 +216,7 @@
   "pikmin": [
     {
       "type": "pikmin",
-      "color": "Rock",
+      "color": "rock",
       "variant": "fighting",
       "amount": 5,
       "replacementCondition": 51,
@@ -228,7 +229,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Rock",
+      "color": "rock",
       "variant": "fighting",
       "amount": 5,
       "replacementCondition": 51,
@@ -243,7 +244,7 @@
   "candypop": [
     {
       "type": "candypop",
-      "color": "Purple",
+      "color": "purple",
       "amount": 1,
       "replacementCondition": 51,
       "replacement": "other",
@@ -348,7 +349,8 @@
           "x": 923.974,
           "y": 359.6291
         }
-      }
+      },
+      "spawnNum": 2
     },
     {
       "type": "creature",

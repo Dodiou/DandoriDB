@@ -2,6 +2,7 @@
   "caveLink": [
     {
       "type": "caveLink",
+      "variant": "cave",
       "link": "Cave022_F02",
       "transform": {
         "translation": {
@@ -12,6 +13,7 @@
     },
     {
       "type": "caveLink",
+      "variant": "cave",
       "link": "Cave022_F00",
       "transform": {
         "translation": {
@@ -122,7 +124,7 @@
   "pikmin": [
     {
       "type": "pikmin",
-      "color": "Rock",
+      "color": "rock",
       "variant": "sprouts",
       "amount": 5,
       "replacementCondition": 51,
@@ -135,7 +137,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Rock",
+      "color": "rock",
       "variant": "sprouts",
       "amount": 5,
       "replacementCondition": 51,
@@ -313,7 +315,7 @@
   "candypop": [
     {
       "type": "candypop",
-      "color": "Ice",
+      "color": "ice",
       "amount": 1,
       "replacementCondition": 6,
       "transform": {

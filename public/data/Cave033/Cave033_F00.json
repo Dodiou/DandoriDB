@@ -145,6 +145,7 @@
   "caveLink": [
     {
       "type": "caveLink",
+      "variant": "cave",
       "link": "Cave033_F01",
       "transform": {
         "translation": {
@@ -206,7 +207,7 @@
   "pikmin": [
     {
       "type": "pikmin",
-      "color": "Ice",
+      "color": "ice",
       "variant": "sprouts",
       "amount": 5,
       "replacementCondition": 51,
@@ -220,7 +221,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Ice",
+      "color": "ice",
       "variant": "fighting",
       "amount": 3,
       "replacementCondition": 51,
@@ -233,7 +234,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Ice",
+      "color": "ice",
       "variant": "fighting",
       "amount": 2,
       "replacementCondition": 51,

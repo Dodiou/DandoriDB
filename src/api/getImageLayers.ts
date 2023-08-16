@@ -59,7 +59,9 @@ export const getImageLayersForMap = (mapData: MapData, waterboxes: Waterbox[]) =
   });
 
   // TODO: hacky way to get folderpath
-  const folderpath = mapData.imageUrl.substring(0, mapData.imageUrl.lastIndexOf('/'));
+  const folderpath = mapData.mapId !== 'HeroStory010'
+    ? mapData.imageUrl.substring(0, mapData.imageUrl.lastIndexOf('/'))
+    : '/images/maps/Area010'
 
   const waterLayers = waterboxes
     .filter(wb => wb.normal.image)
@@ -99,11 +101,15 @@ const WaterBoxRadii = {
   // Sun-Speckled Terrace
   'T_ui_Map_Area001_WaterBox00_D.png': 900,
   'T_ui_Map_Area001_WaterBox01_D.png': 625,
+  // Sun-Speckled Terrace (Olimar)
+  'T_ui_Map_HeroStory001_WaterBox00_Hero_D.png': 750,
   // Blossoming Arcadia
   'T_ui_Map_Area002_WaterBox00_D.png': 1350,
+  // Blossoming Arcadia (Olimar)
+  'T_ui_Map_HeroStory002_WaterBox00_Hero_D.png': 1400,
   // Serene Shores
   'T_ui_Map_Area003_WaterBox00_D.png': 500, // double check, this one gets drained
-  'T_ui_Map_Area003_WaterBox01_D.png': 775, // double check, this one gets drained
+  'T_ui_Map_Area003_WaterBox01_D.png': 800,
   'T_ui_Map_Area003_WaterBox02_D.png': 350,
   'T_ui_Map_Area003_WaterBox03_D.png': 290,
   'T_ui_Map_Area003_WaterBox04_D.png': 550,
@@ -112,6 +118,16 @@ const WaterBoxRadii = {
   'T_ui_Map_Area003_WaterBox07_D.png': 750,
   'T_ui_Map_Area003_WaterBox08_D.png': 650, // probably perfect, hard to tell
   'T_ui_Map_Area003_WaterBox09_D.png': 3250,
+  // Serene Shores (Olimar)
+  'T_ui_Map_HeroStory003_WaterBox00_Hero_D.png': 800,
+  'T_ui_Map_HeroStory003_WaterBox01_Hero_D.png': 350,
+  'T_ui_Map_HeroStory003_WaterBox02_Hero_D.png': 290,
+  'T_ui_Map_HeroStory003_WaterBox03_Hero_D.png': 550,
+  'T_ui_Map_HeroStory003_WaterBox04_Hero_D.png': 1600,
+  'T_ui_Map_HeroStory003_WaterBox05_Hero_D.png': 575, // maybe a tad too small
+  'T_ui_Map_HeroStory003_WaterBox06_Hero_D.png': 750,
+  'T_ui_Map_HeroStory003_WaterBox07_Hero_D.png': 650, // probably perfect, hard to tell
+  'T_ui_Map_HeroStory003_WaterBox08_Hero_D.png': 3250,
   // Giant's Hearth
   'T_ui_Map_Area004_WaterBox00_D.png': 450,
   'T_ui_Map_Area004_WaterBox01_D.png': 525, // double check, this one gets drained
@@ -129,6 +145,8 @@ const WaterBoxRadii = {
   'T_ui_Map_Area006_WaterBox05_D.png': 550,
   // Hero's Hideaway
   'T_ui_Map_Area010_WaterBox00_D.png': 425, // double check, this one gets drained
+  // Hero's Hideaway (Olimar)
+  'T_ui_Map_HeroStory010_WaterBox00_D.png': 425, // double check, this one gets drained
   // Rescue Command Post (no water boxes)
   // Burrow of Beginnings (no waterboxes)
   // Last-Frost Cavern (no waterboxes)

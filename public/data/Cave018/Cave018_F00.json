@@ -2,6 +2,7 @@
   "caveLink": [
     {
       "type": "caveLink",
+      "variant": "cave",
       "link": "Cave018_F01",
       "transform": {
         "translation": {
@@ -135,7 +136,7 @@
   "pikmin": [
     {
       "type": "pikmin",
-      "color": "Wing",
+      "color": "wing",
       "variant": "sprouts",
       "amount": 5,
       "replacementCondition": 51,
@@ -149,7 +150,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Wing",
+      "color": "wing",
       "variant": "fighting",
       "amount": 5,
       "replacementCondition": 51,
@@ -165,7 +166,7 @@
   "candypop": [
     {
       "type": "candypop",
-      "color": "Wing",
+      "color": "wing",
       "amount": 1,
       "replacementCondition": 51,
       "replacement": "other",
@@ -178,7 +179,7 @@
     },
     {
       "type": "candypop",
-      "color": "Wing",
+      "color": "wing",
       "amount": 1,
       "replacementCondition": 51,
       "replacement": "other",
@@ -662,7 +663,8 @@
           "x": 1304,
           "y": 609
         }
-      }
+      },
+      "spawnNum": 2
     },
     {
       "type": "creature",

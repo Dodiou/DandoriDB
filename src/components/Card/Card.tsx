@@ -6,13 +6,15 @@ export interface CardProps {
   value?: number;
 }
 
-export const Card = ({ title, imageUrl, amount, value }: CardProps) => {
-  return <div>
+export const Card = ({ title, imageUrl, amount = 0, value }: CardProps) => {
+  const showAmount = amount > 1;
+
+  return <div className="Card__container">
     <h3>{ title }</h3>
     <img src={imageUrl} alt={title} />
     <div>
-      { !!amount && <span className='Card__amount'>{ amount }</span> }
-      { !!amount && !!value && <span className='Card__multiply-symbol'>x</span> }
+      { showAmount && <span className='Card__amount'>{ amount }</span> }
+      { showAmount && !!value && <span className='Card__multiply-symbol'>x</span> }
       { !!value && <span className='Card__value'>{ value }</span> }
     </div>
   </div>;

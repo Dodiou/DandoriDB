@@ -2,6 +2,7 @@
   "caveLink": [
     {
       "type": "caveLink",
+      "variant": "cave",
       "link": "Cave012_F02",
       "transform": {
         "translation": {
@@ -221,10 +222,10 @@
   "candypop": [
     {
       "type": "candypop",
-      "color": "White",
+      "color": "white",
       "amount": 1,
       "changeToCondition": 50,
-      "changeToColor": "Ice",
+      "changeToColor": "ice",
       "replacementCondition": 52,
       "replacement": "candypop",
       "transform": {
@@ -236,7 +237,7 @@
     },
     {
       "type": "candypop",
-      "color": "Ice",
+      "color": "ice",
       "amount": 1,
       "replacementCondition": 11,
       "transform": {
@@ -264,7 +265,7 @@
   "pikmin": [
     {
       "type": "pikmin",
-      "color": "Blue",
+      "color": "blue",
       "variant": "sprouts",
       "amount": 5,
       "replacementCondition": 6,
@@ -277,7 +278,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Ice",
+      "color": "ice",
       "variant": "sprouts",
       "amount": 5,
       "replacementCondition": 51,
@@ -381,6 +382,15 @@
           "y": 77.5
         }
       }
+    },
+    {
+      "type": "icicle",
+      "transform": {
+        "translation": {
+          "x": -683.33875,
+          "y": 924.79407
+        }
+      }
     }
   ],
   "creature": [
@@ -423,6 +433,20 @@
         "translation": {
           "x": -267.14172,
           "y": -344.96112
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICEOTAKARA",
+      "name": "Iceblown Dweevil",
+      "carryMax": 4,
+      "value": 2,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 228,
+          "y": -414
         }
       }
     },

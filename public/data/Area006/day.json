@@ -2,6 +2,7 @@
   "caveLink": [
     {
       "type": "caveLink",
+      "variant": "cave",
       "link": "Cave018_F00",
       "transform": {
         "translation": {
@@ -12,6 +13,7 @@
     },
     {
       "type": "caveLink",
+      "variant": "cave",
       "link": "Cave016_F00",
       "transform": {
         "translation": {
@@ -22,6 +24,7 @@
     },
     {
       "type": "caveLink",
+      "variant": "cave",
       "link": "Cave019_F00",
       "transform": {
         "translation": {
@@ -32,6 +35,7 @@
     },
     {
       "type": "caveLink",
+      "variant": "challenge",
       "link": "CaveSP010_F00",
       "transform": {
         "translation": {
@@ -42,6 +46,7 @@
     },
     {
       "type": "caveLink",
+      "variant": "battle",
       "link": "CaveVS005_F00",
       "transform": {
         "translation": {
@@ -52,6 +57,7 @@
     },
     {
       "type": "caveLink",
+      "variant": "challenge",
       "link": "CaveSP011_F00",
       "transform": {
         "translation": {
@@ -62,6 +68,7 @@
     },
     {
       "type": "caveLink",
+      "variant": "challenge",
       "link": "CaveSP012_F00",
       "transform": {
         "translation": {
@@ -2653,7 +2660,8 @@
           "x": 710,
           "y": -2493
         }
-      }
+      },
+      "rebirthInterval": 1
     },
     {
       "type": "mound",
@@ -2670,7 +2678,8 @@
           "x": 2515,
           "y": 288
         }
-      }
+      },
+      "rebirthInterval": 1
     },
     {
       "type": "mound",
@@ -2687,7 +2696,8 @@
           "x": 1672,
           "y": 2823
         }
-      }
+      },
+      "rebirthInterval": 1
     }
   ],
   "castaway": [
@@ -3161,7 +3171,8 @@
           "x": 1822.8052,
           "y": -720.24146
         }
-      }
+      },
+      "spawnNum": 5
     },
     {
       "type": "creature",
@@ -3231,7 +3242,8 @@
           "x": -2502.2866,
           "y": 327.13824
         }
-      }
+      },
+      "spawnNum": 5
     },
     {
       "type": "creature",

@@ -121,6 +121,10 @@ const MAPS = [
   "Area004",
   "Area006",
   "Area010",
+  "HeroStory001",
+  "HeroStory002",
+  "HeroStory003",
+  "HeroStory010",
 ];
 const IdToNameMap: {[key: string]: string} = {
   "Cave000": "Burrow of Beginnings",
@@ -162,9 +166,13 @@ const IdToNameMap: {[key: string]: string} = {
   "Area001": "Sun-Speckled Terrace",
   "Area002": "Blossoming Arcadia",
   "Area003": "Serene Shores",
-  "Area004": "Giant's Hearh",
+  "Area004": "Giant's Hearth",
   "Area006": "Primordial Thicket",
   "Area010": "Hero's Hideaway",
+  "HeroStory001": "Sun-Speckled Terrace (OST)",
+  "HeroStory002": "Blossoming Arcadia (OST)",
+  "HeroStory003": "Serene Shores (OST)",
+  "HeroStory010": "Hero's Hideaway (OST)",
 }
 
 export interface MapSelectProps {

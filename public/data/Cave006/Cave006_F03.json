@@ -2,6 +2,7 @@
   "caveLink": [
     {
       "type": "caveLink",
+      "variant": "exit",
       "link": "Area002",
       "transform": {
         "translation": {
@@ -27,7 +28,7 @@
   "pikmin": [
     {
       "type": "pikmin",
-      "color": "Ice",
+      "color": "ice",
       "variant": "idle",
       "amount": 5,
       "replacementCondition": 51,

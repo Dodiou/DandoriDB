@@ -1078,5 +1078,41 @@
       "yMin": -2000,
       "yMax": 2000
     }
+  },
+  "HeroStory001": {
+    "rotation": -75,
+    "extent": {
+      "xMin": -6000,
+      "xMax": 6000,
+      "yMin": -6000,
+      "yMax": 6000
+    }
+  },
+  "HeroStory002": {
+    "rotation": 154,
+    "extent": {
+      "xMin": -6000,
+      "xMax": 6000,
+      "yMin": -6000,
+      "yMax": 6000
+    }
+  },
+  "HeroStory003": {
+    "rotation": 92,
+    "extent": {
+      "xMin": -6000,
+      "xMax": 6000,
+      "yMin": -6000,
+      "yMax": 6000
+    }
+  },
+  "HeroStory010": {
+    "rotation": -90,
+    "extent": {
+      "xMin": -6000,
+      "xMax": 6000,
+      "yMin": -6000,
+      "yMax": 6000
+    }
   }
 }

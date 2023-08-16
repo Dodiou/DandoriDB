@@ -2,6 +2,7 @@
   "caveLink": [
     {
       "type": "caveLink",
+      "variant": "cave",
       "link": "Cave010_F05",
       "transform": {
         "translation": {
@@ -54,7 +55,7 @@
   "pikmin": [
     {
       "type": "pikmin",
-      "color": "Rock",
+      "color": "rock",
       "variant": "sprouts",
       "amount": 5,
       "replacementCondition": 51,
@@ -68,7 +69,7 @@
     },
     {
       "type": "pikmin",
-      "color": "Rock",
+      "color": "rock",
       "variant": "fighting",
       "amount": 5,
       "replacementCondition": 51,
@@ -150,7 +151,7 @@
   "candypop": [
     {
       "type": "candypop",
-      "color": "Rock",
+      "color": "rock",
       "amount": 1,
       "replacementCondition": 6,
       "transform": {
@@ -215,6 +216,20 @@
         "translation": {
           "x": -13.098999,
           "y": -344.14328
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KUMAKOCHAPPY",
+      "name": "Dwarf Bulbear",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -326.61758,
+          "y": 920.4931
         }
       }
     },
