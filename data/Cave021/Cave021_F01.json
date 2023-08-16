@@ -1,0 +1,689 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave021_F02",
+      "transform": {
+        "translation": {
+          "x": -1185,
+          "y": -822.5
+        }
+      }
+    }
+  ],
+  "switch": [
+    {
+      "type": "switch",
+      "variant": "double",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 390,
+          "y": 349.5
+        },
+        "rotation": 180
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "numbered",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 11.559502,
+          "y": 58.0625
+        },
+        "rotation": 90
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "numbered",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 0,
+          "y": 607.5
+        },
+        "rotation": 90
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "numbered",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 238.839,
+          "y": -216.87115
+        },
+        "rotation": 90
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "numbered",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": -247.55147,
+          "y": 357.5
+        },
+        "rotation": 90
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "numbered",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 729.1924,
+          "y": -439.2671
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "numbered",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": -570,
+          "y": -226.5
+        },
+        "rotation": 90
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "numbered",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": -242.28693,
+          "y": -226.78052
+        },
+        "rotation": 90
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "KINKAISTATION",
+      "name": "Gold Nugget",
+      "amount": 50,
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
+      "transform": {
+        "translation": {
+          "x": -955,
+          "y": -287.5
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAMATDOLLSA",
+      "name": "Granddaughter Doll Head",
+      "weight": 3,
+      "carryMax": 6,
+      "value": 50,
+      "transform": {
+        "translation": {
+          "x": -961.60925,
+          "y": -2.5
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTANESCLASSICMINI",
+      "name": "Life Controller",
+      "weight": 10,
+      "carryMax": 20,
+      "value": 150,
+      "transform": {
+        "translation": {
+          "x": -885,
+          "y": 290.5
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAMATDOLLSB",
+      "name": "Gifting Vase",
+      "weight": 3,
+      "carryMax": 6,
+      "value": 50,
+      "transform": {
+        "translation": {
+          "x": 1160,
+          "y": -827.5
+        }
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "ice",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 51,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": 324.6741,
+          "y": -619.94543
+        }
+      }
+    }
+  ],
+  "water": [
+    {
+      "type": "water",
+      "variant": "water",
+      "normal": {
+        "image": "T_ui_Map_Cave021_F01_WaterBox00_D.png",
+        "amountToFreeze": 20
+      },
+      "transform": {
+        "translation": {
+          "x": -546.0431,
+          "y": -686.3894
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "candypop": [
+    {
+      "type": "candypop",
+      "color": "white",
+      "amount": 1,
+      "replacementCondition": 51,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": -860,
+          "y": 957.5
+        }
+      }
+    }
+  ],
+  "spout": [
+    {
+      "type": "spout",
+      "variant": "water",
+      "transform": {
+        "translation": {
+          "x": -413,
+          "y": -247.5
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "water",
+      "transform": {
+        "translation": {
+          "x": -957.75446,
+          "y": -1090.2467
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 684.8048,
+          "y": 279.30444
+        }
+      }
+    }
+  ],
+  "tunnel": [
+    {
+      "type": "tunnel",
+      "variant": "normal",
+      "tunnelId": "TunnelID_0",
+      "transform": {
+        "translation": {
+          "x": -1249,
+          "y": 361
+        }
+      }
+    },
+    {
+      "type": "tunnel",
+      "variant": "normal",
+      "tunnelId": "TunnelID_0",
+      "transform": {
+        "translation": {
+          "x": -1050,
+          "y": 561
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "NISEZAKO",
+      "name": "Gildemandwee",
+      "carryMax": 10,
+      "value": 5,
+      "seeds": 6,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -323.91956,
+          "y": 890.2905
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "NISEZAKO",
+      "name": "Gildemandwee",
+      "carryMax": 10,
+      "value": 5,
+      "seeds": 6,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 441.3174,
+          "y": -342.1775
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "HARIUO",
+      "name": "Pricklepuff",
+      "carryMax": 14,
+      "value": 5,
+      "seeds": 8,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -537.8726,
+          "y": -733.67236
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KINOKOCHAPPY",
+      "name": "Moldy Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 716.0419,
+          "y": -817.5925
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KINOKOCHAPPY",
+      "name": "Moldy Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -814.57385,
+          "y": 280.38336
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.8,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1100,
+          "y": -825
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.8,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1110,
+          "y": -810
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.8,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1125,
+          "y": -795
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.8,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1140,
+          "y": -790
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.8,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1155,
+          "y": -800
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.8,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1165,
+          "y": -820
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.8,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1160,
+          "y": -845
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.8,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1145,
+          "y": -860
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.8,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1130,
+          "y": -855
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.8,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1115,
+          "y": -845
+        }
+      }
+    }
+  ],
+  "egg": [
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 922.6178,
+          "y": 274.5
+        }
+      }
+    }
+  ]
+}

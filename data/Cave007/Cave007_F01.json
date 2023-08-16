@@ -1,0 +1,353 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave007_F02",
+      "transform": {
+        "translation": {
+          "x": 778.13043,
+          "y": -857.22864
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "type": "materials",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": 396.87988,
+          "y": 1210.2839
+        }
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "stick",
+      "transform": {
+        "translation": {
+          "x": 6.9995046,
+          "y": -1100.8198
+        },
+        "rotation": 90
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "dirt",
+      "transform": {
+        "translation": {
+          "x": 114,
+          "y": -77.00008
+        },
+        "rotation": 90
+      }
+    }
+  ],
+  "spout": [
+    {
+      "type": "spout",
+      "variant": "water",
+      "transform": {
+        "translation": {
+          "x": 408,
+          "y": 206.5
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "water",
+      "transform": {
+        "translation": {
+          "x": 232,
+          "y": -956.5
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "water",
+      "transform": {
+        "translation": {
+          "x": -209,
+          "y": -853.5
+        }
+      }
+    }
+  ],
+  "water": [
+    {
+      "type": "water",
+      "variant": "water",
+      "normal": {
+        "image": "T_ui_Map_Cave007_F01_WaterBox00_D.png",
+        "amountToFreeze": 10
+      },
+      "transform": {
+        "translation": {
+          "x": 126,
+          "y": 974.5
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "yellow",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 51,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": -140,
+          "y": -1204.5
+        }
+      }
+    }
+  ],
+  "castaway": [
+    {
+      "type": "castaway",
+      "isLeafling": false,
+      "weight": 3,
+      "carryMax": 6,
+      "transform": {
+        "translation": {
+          "x": 1117.7532,
+          "y": -143.87943
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTAHANDBELL",
+      "name": "Time Marker",
+      "weight": 12,
+      "carryMax": 24,
+      "value": 180,
+      "transform": {
+        "translation": {
+          "x": 341.5158,
+          "y": -188.00488
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAHANAFUDAB",
+      "name": "Talisman of Life (Cherry Blossom)",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": -414,
+          "y": -1246.5
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAKIWI",
+      "name": "Disguised Delicacy",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": -154,
+          "y": -389
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -874.17053,
+          "y": -133.24341
+        }
+      }
+    }
+  ],
+  "egg": [
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -676,
+          "y": 43.5
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -642,
+          "y": 75.5
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "ELECOTAKARA",
+      "name": "Anode Dweevil",
+      "carryMax": 4,
+      "value": 2,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 430,
+          "y": -117.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ELECOTAKARA",
+      "name": "Anode Dweevil",
+      "carryMax": 4,
+      "value": 2,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 704,
+          "y": -129.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ELECOTAKARA",
+      "name": "Anode Dweevil",
+      "carryMax": 4,
+      "value": 2,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -159,
+          "y": -250.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ELECOTAKARA",
+      "name": "Anode Dweevil",
+      "carryMax": 4,
+      "value": 2,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 1099.6106,
+          "y": -149.08624
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "FROG",
+      "name": "Yellow Wollyhop",
+      "carryMax": 10,
+      "value": 5,
+      "seeds": 6,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 127.576904,
+          "y": 948.26184
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "FROG",
+      "name": "Yellow Wollyhop",
+      "carryMax": 10,
+      "value": 5,
+      "seeds": 6,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -314.26184,
+          "y": -854.1654
+        }
+      }
+    }
+  ]
+}

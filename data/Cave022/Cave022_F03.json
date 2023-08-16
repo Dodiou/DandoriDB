@@ -1,0 +1,242 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "exit",
+      "link": "Area010",
+      "transform": {
+        "translation": {
+          "x": 137.5,
+          "y": -1162.5
+        }
+      }
+    },
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave022_F02",
+      "transform": {
+        "translation": {
+          "x": 4.13855,
+          "y": 1118.7712
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "numbered",
+      "transform": {
+        "translation": {
+          "x": 57.51066,
+          "y": -800.5
+        },
+        "rotation": -179.985
+      }
+    }
+  ],
+  "castaway": [
+    {
+      "type": "castaway",
+      "isLeafling": true,
+      "weight": 3,
+      "carryMax": 6,
+      "transform": {
+        "translation": {
+          "x": 280.84454,
+          "y": -978.0499
+        }
+      }
+    }
+  ],
+  "firePit": [
+    {
+      "type": "firePit",
+      "isLit": true,
+      "transform": {
+        "translation": {
+          "x": -267.6947,
+          "y": 895.64136
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": 584.364,
+          "y": -134.36047
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": -585.376,
+          "y": -137.5
+        }
+      }
+    }
+  ],
+  "hydroJelly": [
+    {
+      "type": "hydroJelly",
+      "transform": {
+        "translation": {
+          "x": -585,
+          "y": -140
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 4.014618,
+          "y": 1120.2698
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 1,
+      "transform": {
+        "translation": {
+          "x": 141.49142,
+          "y": -1049.918
+        }
+      }
+    }
+  ],
+  "icicle": [
+    {
+      "type": "icicle",
+      "transform": {
+        "translation": {
+          "x": 260.7101,
+          "y": -923.6985
+        }
+      }
+    },
+    {
+      "type": "icicle",
+      "transform": {
+        "translation": {
+          "x": 225,
+          "y": -525
+        }
+      }
+    },
+    {
+      "type": "icicle",
+      "transform": {
+        "translation": {
+          "x": 232.04048,
+          "y": -954.7704
+        }
+      }
+    },
+    {
+      "type": "icicle",
+      "transform": {
+        "translation": {
+          "x": 231.63593,
+          "y": -996.12695
+        }
+      }
+    },
+    {
+      "type": "icicle",
+      "transform": {
+        "translation": {
+          "x": 303.70663,
+          "y": -1022.9938
+        }
+      }
+    },
+    {
+      "type": "icicle",
+      "transform": {
+        "translation": {
+          "x": 302,
+          "y": -919
+        }
+      }
+    },
+    {
+      "type": "icicle",
+      "transform": {
+        "translation": {
+          "x": 333.32758,
+          "y": -993.4708
+        }
+      }
+    },
+    {
+      "type": "icicle",
+      "transform": {
+        "translation": {
+          "x": 330.59143,
+          "y": -951.0116
+        }
+      }
+    },
+    {
+      "type": "icicle",
+      "transform": {
+        "translation": {
+          "x": 260.7101,
+          "y": -1025.3015
+        }
+      }
+    },
+    {
+      "type": "icicle",
+      "transform": {
+        "translation": {
+          "x": 270,
+          "y": -475
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "YUKIMUSHI",
+      "name": "Snowfake Fluttertail",
+      "carryMax": 30,
+      "value": 20,
+      "seeds": 20,
+      "drops": [
+        {
+          "item": "GOtaIcePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 209.95026,
+          "y": -142.72778
+        }
+      }
+    }
+  ]
+}

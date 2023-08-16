@@ -1,0 +1,219 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave016_F02",
+      "transform": {
+        "translation": {
+          "x": 606.44507,
+          "y": 2.5
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "numbered",
+      "transform": {
+        "translation": {
+          "x": 293.98926,
+          "y": -58.446045
+        },
+        "rotation": -90
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -412.5,
+          "y": 595.2042
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTAMUSICBOXB",
+      "name": "Mechanical Harp (Lullabies)",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 150,
+      "transform": {
+        "translation": {
+          "x": -721.1963,
+          "y": -435.69104
+        }
+      }
+    }
+  ],
+  "egg": [
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -561.1921,
+          "y": 438.84424
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -620.8327,
+          "y": 416.47095
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -697.5,
+          "y": 87.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -292.5,
+          "y": -92.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -192.5,
+          "y": -172.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -732.5,
+          "y": 187.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "CHAPPY",
+      "name": "Bulborb",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 10,
+      "transform": {
+        "translation": {
+          "x": -327.5,
+          "y": 127.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "BIGCHAPPY_NIGHT",
+      "name": "Jumbo Bulborb",
+      "carryMax": 40,
+      "value": 15,
+      "seeds": 15,
+      "drops": [
+        {
+          "item": "GOtaPaintsRED_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 10,
+          "max": 10
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -672.5,
+          "y": -318.5
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,397 @@
+{
+  "materials": [
+    {
+      "type": "materials",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 89.56979,
+          "y": -255.794
+        }
+      }
+    }
+  ],
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "exit",
+      "link": "Area001",
+      "transform": {
+        "translation": {
+          "x": 552,
+          "y": -1054.0544
+        }
+      }
+    }
+  ],
+  "castaway": [
+    {
+      "type": "castaway",
+      "isLeafling": false,
+      "weight": 3,
+      "carryMax": 6,
+      "transform": {
+        "translation": {
+          "x": 549.70557,
+          "y": -741.635
+        }
+      }
+    }
+  ],
+  "pot": [
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": 830.9091,
+          "y": 289.47336
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": 892.6327,
+          "y": 267.3994
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": 771.84,
+          "y": 263.57895
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 2,
+          "max": 2
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 113.653145,
+          "y": 449.61688
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -549.10596,
+          "y": 377.52634
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -613.6663,
+          "y": 392.71823
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -331.1454,
+          "y": -258.43457
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -377.6948,
+          "y": -296.64227
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -485.53378,
+          "y": 393
+        }
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "pushbag",
+      "weight": 10,
+      "transform": {
+        "translation": {
+          "x": 44.323334,
+          "y": 1
+        },
+        "rotation": -90
+      }
+    }
+  ],
+  "hydroJelly": [
+    {
+      "type": "hydroJelly",
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 2,
+          "max": 2
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 493.5,
+          "y": -445.5
+        }
+      }
+    },
+    {
+      "type": "hydroJelly",
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 579.5,
+          "y": -414.5
+        }
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "ice",
+      "variant": "fighting",
+      "amount": 5,
+      "replacementCondition": 51,
+      "replacement": "candypop",
+      "candypopOffset": {
+        "X": 1000,
+        "Y": -1000,
+        "Z": 0
+      },
+      "transform": {
+        "translation": {
+          "x": -229.5,
+          "y": 964.5
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTAPAINTSAQU",
+      "name": "Refreshing Goo",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 80,
+      "transform": {
+        "translation": {
+          "x": 740.8137,
+          "y": -201.54724
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTACOMPASS",
+      "name": "Director of Destiny",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": -698.86346,
+          "y": 164.1148
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -560.31915,
+          "y": -709.537
+        }
+      }
+    }
+  ],
+  "onion": [
+    {
+      "type": "onion",
+      "color": "flarlic",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": 766.5228,
+          "y": 522.6247
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "UJINKOA",
+      "name": "Female Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 1,
+      "transform": {
+        "translation": {
+          "x": -555.59155,
+          "y": -5.346924
+        }
+      },
+      "spawnNum": 3
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 379.3936,
+          "y": 48.23298
+        }
+      },
+      "spawnNum": 2
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICETANK",
+      "name": "Snowy Blowhog",
+      "carryMax": 10,
+      "value": 5,
+      "seeds": 5,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -121.5,
+          "y": 996.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOA",
+      "name": "Female Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 1,
+      "transform": {
+        "translation": {
+          "x": 315.0538,
+          "y": 181.79477
+        }
+      }
+    }
+  ],
+  "groupDropManager": [
+    {
+      "type": "groupDropManager",
+      "ignoreIds": [
+        "Kochappy",
+        "Mush"
+      ],
+      "radius": 125,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -374.16232,
+          "y": -264.78314
+        }
+      }
+    },
+    {
+      "type": "groupDropManager",
+      "ignoreIds": [
+        "Kochappy",
+        "Mush",
+        "CrackPotL",
+        "CrackPotS"
+      ],
+      "radius": 120,
+      "drops": [
+        {
+          "item": "GPikminIce_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 817.2479,
+          "y": 251.11688
+        }
+      }
+    },
+    {
+      "type": "groupDropManager",
+      "ignoreIds": [
+        "Kochappy",
+        "Mush"
+      ],
+      "radius": 69.201416,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 2,
+          "max": 2
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -600.3122,
+          "y": 416.39087
+        }
+      }
+    }
+  ]
+}

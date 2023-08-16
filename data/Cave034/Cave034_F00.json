@@ -1,0 +1,623 @@
+{
+  "water": [
+    {
+      "type": "water",
+      "variant": "water",
+      "normal": {
+        "image": "T_ui_Map_Cave034_F00_WaterBox00_D.png",
+        "amountToFreeze": 5
+      },
+      "transform": {
+        "translation": {
+          "x": 425.5,
+          "y": 412.5
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "water",
+      "variant": "water",
+      "normal": {
+        "image": "T_ui_Map_Cave034_F00_WaterBox01_D.png",
+        "amountToFreeze": 5
+      },
+      "transform": {
+        "translation": {
+          "x": -427.5,
+          "y": 563
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "water",
+      "variant": "water",
+      "normal": {
+        "image": "T_ui_Map_Cave034_F00_WaterBox02_D.png",
+        "amountToFreeze": 5
+      },
+      "transform": {
+        "translation": {
+          "x": 850,
+          "y": -575
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "water",
+      "variant": "swamp",
+      "normal": {
+        "image": "T_ui_Map_Cave034_F00_WaterBox03_D.png",
+        "amountToFreeze": 5,
+        "canSink": false
+      },
+      "transform": {
+        "translation": {
+          "x": -151.5,
+          "y": -313
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "clipboard",
+      "weight": 20,
+      "transform": {
+        "translation": {
+          "x": -25,
+          "y": -687.5
+        },
+        "rotation": -90
+      }
+    }
+  ],
+  "candypop": [
+    {
+      "type": "candypop",
+      "color": "ice",
+      "amount": 1,
+      "transform": {
+        "translation": {
+          "x": -647.75,
+          "y": -480.25
+        }
+      }
+    },
+    {
+      "type": "candypop",
+      "color": "ice",
+      "amount": 1,
+      "transform": {
+        "translation": {
+          "x": -728.75,
+          "y": -617.75
+        }
+      }
+    },
+    {
+      "type": "candypop",
+      "color": "ice",
+      "amount": 1,
+      "transform": {
+        "translation": {
+          "x": 136.75,
+          "y": -138
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "KINKAISTATION",
+      "name": "Gold Nugget",
+      "amount": 30,
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
+      "transform": {
+        "translation": {
+          "x": 480.75,
+          "y": -987.75
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "KINKAISTATION",
+      "name": "Gold Nugget",
+      "amount": 40,
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
+      "transform": {
+        "translation": {
+          "x": 433.5,
+          "y": 664.5
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTATAKOWIENER",
+      "name": "Octoplus",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": 997.0168,
+          "y": -163
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTATAKOWIENER",
+      "name": "Octoplus",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": 1049.5,
+          "y": -71
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTATAKOWIENER",
+      "name": "Octoplus",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": 1049.5,
+          "y": -254
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAFISHCRUET",
+      "name": "Mystery Squish Fish",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": 640.25,
+          "y": -943.25
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAFISHCRUET",
+      "name": "Mystery Squish Fish",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": 735.75,
+          "y": -1029.75
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTADUCKM",
+      "name": "Planetary Rubber Cutie",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": -688,
+          "y": 153
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTADUCKL",
+      "name": "Universal Rubber Cutie",
+      "weight": 10,
+      "carryMax": 20,
+      "value": 90,
+      "transform": {
+        "translation": {
+          "x": 985,
+          "y": 992
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTABOAT",
+      "name": "Unfloatable Boat",
+      "weight": 12,
+      "carryMax": 24,
+      "value": 180,
+      "transform": {
+        "translation": {
+          "x": 690.5,
+          "y": 688
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTASPONGEC",
+      "name": "Fishy Bed",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": 146,
+          "y": 136
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTASPONGEB",
+      "name": "Birdy Bed",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": -963,
+          "y": -961
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTASPONGEA",
+      "name": "Doggy Bed",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": -687,
+          "y": -963
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTABOAT",
+      "name": "Unfloatable Boat",
+      "weight": 12,
+      "carryMax": 24,
+      "value": 180,
+      "transform": {
+        "translation": {
+          "x": 965.55286,
+          "y": -679.9861
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTADUCKL",
+      "name": "Universal Rubber Cutie",
+      "weight": 10,
+      "carryMax": 20,
+      "value": 90,
+      "transform": {
+        "translation": {
+          "x": 136.75443,
+          "y": -413.7642
+        }
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "blue",
+      "variant": "sprouts",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": 1019.75,
+          "y": -1017.5
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "blue",
+      "variant": "fighting",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": -116,
+          "y": -1014.25
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "blue",
+      "variant": "fighting",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 958,
+          "y": 415.75
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "blue",
+      "variant": "fighting",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": -939,
+          "y": 864.75
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "blue",
+      "variant": "sprouts",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": 72.75,
+          "y": 635.5
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "ice",
+      "variant": "idle",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": -461,
+          "y": 632.75
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -343.75,
+          "y": 343.75
+        }
+      }
+    }
+  ],
+  "egg": [
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 469.75,
+          "y": -772.5
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 540.5,
+          "y": -771.25
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -451.25,
+          "y": 1045.5
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -362.5,
+          "y": 1046.75
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "BABYCROW",
+      "name": "Downy Snagret",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -963.5,
+          "y": 344.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "BABYCROW",
+      "name": "Downy Snagret",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -963.5,
+          "y": 799.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "BABYCROW",
+      "name": "Downy Snagret",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 963.5,
+          "y": 413.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "AWADAKO",
+      "name": "Waddlepus",
+      "carryMax": 14,
+      "value": 5,
+      "seeds": 6,
+      "transform": {
+        "translation": {
+          "x": 273.5,
+          "y": 977.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "BABYCROW",
+      "name": "Downy Snagret",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -160.5,
+          "y": -1013.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "MINIMOCHI",
+      "name": "Sunsquish",
+      "carryMax": 1,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": 439.5,
+          "y": -308.5
+        }
+      }
+    }
+  ]
+}

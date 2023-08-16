@@ -1,0 +1,968 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "exit",
+      "link": "Area002",
+      "transform": {
+        "translation": {
+          "x": -0.5,
+          "y": -302.55896
+        }
+      }
+    },
+    {
+      "type": "caveLink",
+      "variant": "exit",
+      "link": "Area002",
+      "transform": {
+        "translation": {
+          "x": -0.5,
+          "y": 283.07996
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "type": "materials",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": -552.12964,
+          "y": 541.8889
+        }
+      }
+    },
+    {
+      "type": "materials",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 632.5011,
+          "y": -275.50354
+        }
+      }
+    },
+    {
+      "type": "materials",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": -1650,
+          "y": -1375
+        }
+      }
+    }
+  ],
+  "spout": [
+    {
+      "type": "spout",
+      "variant": "fire",
+      "transform": {
+        "translation": {
+          "x": 1134.8188,
+          "y": 1086.3386
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "fire",
+      "transform": {
+        "translation": {
+          "x": 1102.5,
+          "y": 1505
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "fire",
+      "transform": {
+        "translation": {
+          "x": -517.8906,
+          "y": 1481.9481
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "fire",
+      "transform": {
+        "translation": {
+          "x": -1374.52,
+          "y": -1512.2766
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "electric",
+      "transform": {
+        "translation": {
+          "x": 1298.8687,
+          "y": -394.62854
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "dirt",
+      "transform": {
+        "translation": {
+          "x": 467.18323,
+          "y": -1029.8867
+        },
+        "rotation": 90
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "stick",
+      "transform": {
+        "translation": {
+          "x": 914.1811,
+          "y": -253.29346
+        },
+        "rotation": 90
+      }
+    }
+  ],
+  "tunnel": [
+    {
+      "type": "tunnel",
+      "variant": "pup",
+      "tunnelId": "HappyDoorID_0",
+      "transform": {
+        "translation": {
+          "x": 1451.0867,
+          "y": -1199.2661
+        }
+      }
+    },
+    {
+      "type": "tunnel",
+      "variant": "pup",
+      "tunnelId": "HappyDoorID_0",
+      "transform": {
+        "translation": {
+          "x": 1647.5,
+          "y": -1268
+        }
+      }
+    }
+  ],
+  "pot": [
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -157.31915,
+          "y": 1050.1226
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1419.3936,
+          "y": -1123.7592
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": 1368.0585,
+          "y": -1212.0706
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": 1423.3949,
+          "y": -1271.4103
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1361.5009,
+          "y": -1149.2059
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -188.39983,
+          "y": -26.443583
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -148.95981,
+          "y": 63.132126
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -208.85474,
+          "y": 40.860638
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -131.08333,
+          "y": 0.124675
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -105.3031,
+          "y": 1090.7772
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -147.13785,
+          "y": -63.08943
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1369.2435,
+          "y": -1275.6289
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -120,
+          "y": 1154
+        }
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": -1106.6798,
+          "y": -398.24655
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": -541.0509,
+          "y": 826.8266
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": -0.5,
+          "y": 135
+        },
+        "rotation": 180
+      }
+    },
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": -0.5,
+          "y": -140
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "structure": [
+    {
+      "type": "structure",
+      "variant": "slope",
+      "materialsNeeded": 20,
+      "transform": {
+        "translation": {
+          "x": 0.0000019073493,
+          "y": -718
+        },
+        "rotation": 180
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "yellow",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 51,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": -3.965332,
+          "y": 1652
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "yellow",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 51,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": -800,
+          "y": -549.8572
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "red",
+      "variant": "sprouts",
+      "amount": 5,
+      "changeToColor": "yellow",
+      "replacementCondition": 51,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": 1108.1799,
+          "y": 1624.4131
+        }
+      }
+    }
+  ],
+  "castaway": [
+    {
+      "type": "castaway",
+      "isLeafling": false,
+      "weight": 3,
+      "carryMax": 6,
+      "transform": {
+        "translation": {
+          "x": 1,
+          "y": -1275
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTAGBMICROFC",
+      "name": "Micromanagement Station",
+      "weight": 10,
+      "carryMax": 20,
+      "value": 150,
+      "transform": {
+        "translation": {
+          "x": 1375.7887,
+          "y": 1110
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTATHERMOMETER",
+      "name": "Heat Sensor",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 120,
+      "transform": {
+        "translation": {
+          "x": -1041.9089,
+          "y": -1286.4292
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTALIGHTUPRINGBLU",
+      "name": "Hoop of Healing",
+      "weight": 3,
+      "carryMax": 6,
+      "value": 130,
+      "transform": {
+        "translation": {
+          "x": 1653,
+          "y": -1488
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAGBAROMYEL",
+      "name": "Masterpiece Plank",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": -552,
+          "y": 1830
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -0.5,
+          "y": 283.07996
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 1,
+      "transform": {
+        "translation": {
+          "x": -0.5,
+          "y": -302.55896
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 2,
+      "guardedBy": [
+        "ElecMushi"
+      ],
+      "transform": {
+        "translation": {
+          "x": -1098.8643,
+          "y": -1.1102295
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 3,
+      "guardedBy": [
+        "ElecSenbei"
+      ],
+      "transform": {
+        "translation": {
+          "x": 955.4855,
+          "y": -1097.7505
+        }
+      }
+    }
+  ],
+  "groupDropManager": [
+    {
+      "type": "groupDropManager",
+      "radius": 100,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -160,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "floor": [
+    {
+      "type": "floor",
+      "variant": "fire",
+      "radius": 350,
+      "transform": {
+        "translation": {
+          "x": -1250.1802,
+          "y": -983.11646
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "fire",
+      "radius": 350,
+      "transform": {
+        "translation": {
+          "x": -969.55396,
+          "y": -1251.3259
+        }
+      }
+    }
+  ],
+  "egg": [
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -1342.1309,
+          "y": 854.29407
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -1409.3289,
+          "y": 881.05853
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "ELECMUSHI",
+      "name": "Anode Beetle",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -1099.0662,
+          "y": 0.9559326
+        }
+      },
+      "spawnNum": 4
+    },
+    {
+      "type": "creature",
+      "creatureId": "KAJIOKOSHI",
+      "name": "Pyroclasmic Slooch",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": 1019.1653,
+          "y": 1105.5543
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "NAMAZU",
+      "name": "Water Dumple",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": 442.2754,
+          "y": 926.50165
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KAJIOKOSHI",
+      "name": "Pyroclasmic Slooch",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -1212.7611,
+          "y": -1009.7163
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KAJIOKOSHI",
+      "name": "Pyroclasmic Slooch",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -938.9737,
+          "y": -1223.4792
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ELECSENBEI",
+      "name": "Shockcake",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 10,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 909.54205,
+          "y": -1033.2926
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "NAMAZU",
+      "name": "Water Dumple",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -453.0227,
+          "y": 1179.412
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1022,
+          "y": 19
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 939,
+          "y": -7
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 948,
+          "y": -41
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1008,
+          "y": -33
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 997,
+          "y": -54
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 926,
+          "y": 30
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 997,
+          "y": 50
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1025,
+          "y": -12
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 949,
+          "y": 45
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TAMAGOMUSHI",
+      "name": "Mitite",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1004,
+          "y": 44
+        }
+      }
+    }
+  ]
+}

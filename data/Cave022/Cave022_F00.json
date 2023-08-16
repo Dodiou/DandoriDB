@@ -1,0 +1,544 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave022_F01",
+      "transform": {
+        "translation": {
+          "x": -414.53003,
+          "y": 654.50146
+        }
+      }
+    },
+    {
+      "type": "caveLink",
+      "variant": "exit",
+      "link": "Area010",
+      "disabledPikmin": {
+        "blue": true,
+        "yellow": true,
+        "rock": true,
+        "wing": true,
+        "purple": true,
+        "white": true,
+        "ice": true
+      },
+      "transform": {
+        "translation": {
+          "x": 1.2141113,
+          "y": 661.9595
+        }
+      }
+    }
+  ],
+  "heatObstacle": [
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -460.52844,
+          "y": 404.50623
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -406.06958,
+          "y": 368.62457
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -364.55627,
+          "y": 421.4806
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 281,
+          "y": 600
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 261.10938,
+          "y": 551
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 283,
+          "y": 502
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 887.54944,
+          "y": 323.10822
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 941.68256,
+          "y": 274.65314
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 889.5239,
+          "y": 223.13562
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -791.4374,
+          "y": -48.766235
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 461.0417,
+          "y": -670.0665
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 411.58673,
+          "y": -623.23236
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 364.06915,
+          "y": -675.0408
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -655.77435,
+          "y": -41.366486
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -714.1802,
+          "y": 47.763214
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -723.5165,
+          "y": -23.957016
+        }
+      }
+    }
+  ],
+  "floor": [
+    {
+      "type": "floor",
+      "variant": "fire",
+      "radius": 525,
+      "transform": {
+        "translation": {
+          "x": 459.94403,
+          "y": -257.7948
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "fire",
+      "radius": 525,
+      "transform": {
+        "translation": {
+          "x": -471.37378,
+          "y": -359.45792
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "type": "materials",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": 408.79004,
+          "y": 806.50555
+        }
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": 805.78375,
+          "y": -274
+        },
+        "rotation": -90
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTAISOBEYAKI",
+      "name": "Deceptive Snack",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": 409.77893,
+          "y": -833.3529
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAPRETZEL",
+      "name": "Puzzle Snack",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": 958.6723,
+          "y": 46.806274
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAWAFFLE",
+      "name": "Cushion Cake",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": -346.95007,
+          "y": -388.14856
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTATAKOWIENER",
+      "name": "Octoplus",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": -1009,
+          "y": 33
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAFRUITSPICKORN",
+      "name": "Heroic Sword",
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
+      "transform": {
+        "translation": {
+          "x": -968,
+          "y": 1
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 0.343994,
+          "y": 661.9625
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 1,
+      "transform": {
+        "translation": {
+          "x": -410.40613,
+          "y": 643.794
+        }
+      }
+    }
+  ],
+  "firePit": [
+    {
+      "type": "firePit",
+      "isLit": true,
+      "transform": {
+        "translation": {
+          "x": 449.1516,
+          "y": -251.15042
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": 533.1516,
+          "y": 383.8496
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": -153.15527,
+          "y": -16.009766
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "FIRECHAPPY",
+      "name": "Fiery Bulblax",
+      "carryMax": 24,
+      "value": 12,
+      "seeds": 15,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 355.80902,
+          "y": -356.27213
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBIKABURI",
+      "name": "Flighty Joustmite",
+      "carryMax": 14,
+      "value": 5,
+      "seeds": 8,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -114.217896,
+          "y": -284.28333
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KAJIOKOSHI",
+      "name": "Pyroclasmic Slooch",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -426.78632,
+          "y": -280.37994
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KAJIOKOSHI",
+      "name": "Pyroclasmic Slooch",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -520.6166,
+          "y": -465.16663
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOGANE",
+      "name": "Iridescent Flint Beetle",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 7,
+          "max": 7
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 10,
+          "max": 10
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -414,
+          "y": -761
+        }
+      }
+    }
+  ],
+  "egg": [
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 691.92957,
+          "y": 539.3198
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 657.63306,
+          "y": 571.7182
+        }
+      }
+    }
+  ]
+}

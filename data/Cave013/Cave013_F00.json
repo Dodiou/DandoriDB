@@ -1,0 +1,219 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave013_F01",
+      "transform": {
+        "translation": {
+          "x": 744.0485,
+          "y": -277.96912
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "type": "materials",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": 825,
+          "y": 867.5
+        }
+      }
+    }
+  ],
+  "mound": [
+    {
+      "type": "mound",
+      "drops": [
+        {
+          "item": "GOtaBilliardBall5_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 700.0522,
+          "y": 435.25125
+        }
+      }
+    }
+  ],
+  "structure": [
+    {
+      "type": "structure",
+      "variant": "slope",
+      "materialsNeeded": 15,
+      "transform": {
+        "translation": {
+          "x": 550,
+          "y": -112.5
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "red",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 51,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": 275,
+          "y": -769
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTABILLIARDBALLCUE",
+      "name": "Sphere of Truth",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": 68,
+          "y": -550
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTARAILWAYLINEE",
+      "name": "Thrill-Ride Track",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 150,
+      "transform": {
+        "translation": {
+          "x": -319.09198,
+          "y": 531.4716
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -305,
+          "y": -549.5
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "RUSHER",
+      "name": "Tusked Blowhog",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 6,
+      "transform": {
+        "translation": {
+          "x": -302,
+          "y": 273.75
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "RUSHER",
+      "name": "Tusked Blowhog",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 6,
+      "transform": {
+        "translation": {
+          "x": 495.7849,
+          "y": 349.05493
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "RUSHER",
+      "name": "Tusked Blowhog",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 6,
+      "transform": {
+        "translation": {
+          "x": 747.3266,
+          "y": 618.8184
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KURIONE",
+      "name": "Honeywisp",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 495,
+          "y": -505
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KURIONE",
+      "name": "Honeywisp",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -860,
+          "y": 0
+        }
+      }
+    }
+  ]
+}

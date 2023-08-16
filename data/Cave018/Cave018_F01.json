@@ -1,0 +1,539 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave018_F02",
+      "transform": {
+        "translation": {
+          "x": 93.444824,
+          "y": 75.87183
+        }
+      }
+    }
+  ],
+  "water": [
+    {
+      "type": "water",
+      "variant": "swamp",
+      "normal": {
+        "image": "T_ui_Map_Cave018_F01_WaterBox00_D.png",
+        "amountToFreeze": 100,
+        "canSink": true
+      },
+      "transform": {
+        "translation": {
+          "x": 48.603363,
+          "y": -0.011475
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "hydroJelly": [
+    {
+      "type": "hydroJelly",
+      "drops": [
+        {
+          "item": "GOtaTomatoS_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 748.5989,
+          "y": 230.4238
+        }
+      }
+    },
+    {
+      "type": "hydroJelly",
+      "transform": {
+        "translation": {
+          "x": 975.5394,
+          "y": 667.234
+        }
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "wing",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 51,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": 975.5394,
+          "y": 667.234
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "wing",
+      "variant": "fighting",
+      "amount": 5,
+      "replacementCondition": 51,
+      "transform": {
+        "translation": {
+          "x": -269,
+          "y": -586
+        }
+      }
+    }
+  ],
+  "pot": [
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -463.19528,
+          "y": 968.9244
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -478.90277,
+          "y": 1109.3579
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -455.91022,
+          "y": 1049.5474
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -516.31866,
+          "y": 1054.7355
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -741.44696,
+          "y": 238.07057
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "drops": [
+        {
+          "item": "GPikminWing_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -813.48584,
+          "y": 186.84251
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -870.62054,
+          "y": 217.31618
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "drops": [
+        {
+          "item": "GKinkaiPick_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -374,
+          "y": -555
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -401.50668,
+          "y": 1007.73254
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -747.62054,
+          "y": 181.31618
+        }
+      }
+    }
+  ],
+  "candypop": [
+    {
+      "type": "candypop",
+      "color": "wing",
+      "amount": 1,
+      "replacementCondition": 51,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": 1193,
+          "y": 657
+        }
+      }
+    }
+  ],
+  "onion": [
+    {
+      "type": "onion",
+      "color": "flarlic",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": 830,
+          "y": -1115
+        }
+      }
+    }
+  ],
+  "structure": [
+    {
+      "type": "structure",
+      "variant": "bridge",
+      "materialsNeeded": 34,
+      "transform": {
+        "translation": {
+          "x": 676.7096,
+          "y": -472.44492
+        },
+        "rotation": -46.787
+      }
+    }
+  ],
+  "materials": [
+    {
+      "type": "materials",
+      "amount": 20,
+      "transform": {
+        "translation": {
+          "x": -489.76492,
+          "y": -693.11584
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 10.329376,
+          "y": 1205.1088
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 1,
+      "guardedBy": [
+        "NumaSuitori"
+      ],
+      "transform": {
+        "translation": {
+          "x": 917.6791,
+          "y": -722.89124
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTAPAPERCRANEBLU",
+      "name": "Sweat-Soaked Blue Bird",
+      "weight": 3,
+      "carryMax": 6,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": 828.89404,
+          "y": -207.7687
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAPAPERCRANERED",
+      "name": "Skin of the Phoenix",
+      "weight": 3,
+      "carryMax": 6,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": 812.4613,
+          "y": -137.00316
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "NUMASUITORI",
+      "name": "Bogswallow",
+      "carryMax": 14,
+      "value": 10,
+      "seeds": 10,
+      "drops": [
+        {
+          "item": "GOtaKaki_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -834,
+          "y": 620
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "NUMASUITORI",
+      "name": "Bogswallow",
+      "carryMax": 14,
+      "value": 10,
+      "seeds": 10,
+      "transform": {
+        "translation": {
+          "x": 1087.5426,
+          "y": -888.61743
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "NAMAZU",
+      "name": "Water Dumple",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -276.8032,
+          "y": -617.4625
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "NAMAZU",
+      "name": "Water Dumple",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": 132.8162,
+          "y": -633.06946
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "BIGICETANK",
+      "name": "Blizzarding Blowhog",
+      "carryMax": 30,
+      "value": 15,
+      "seeds": 15,
+      "drops": [
+        {
+          "item": "GOtaMuscat_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 15,
+          "max": 15
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 825.6333,
+          "y": 467.05222
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "NAMAZU",
+      "name": "Water Dumple",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": 746.2056,
+          "y": -707.32947
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "NAMAZU",
+      "name": "Water Dumple",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": 1038.422,
+          "y": -647.8437
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "DOROMBO",
+      "name": "Muckerskate",
+      "carryMax": 4,
+      "value": 2,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 799.4926,
+          "y": -75.86787
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "DOROMBO",
+      "name": "Muckerskate",
+      "carryMax": 4,
+      "value": 2,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 1234,
+          "y": -343
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "DOROMBO",
+      "name": "Muckerskate",
+      "carryMax": 4,
+      "value": 2,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -723,
+          "y": -70
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "DOROMBO",
+      "name": "Muckerskate",
+      "carryMax": 4,
+      "value": 2,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 324,
+          "y": -592
+        }
+      }
+    }
+  ],
+  "egg": [
+    {
+      "type": "egg",
+      "isBig": true,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 3,
+          "max": 3
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 10,
+          "max": 10
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -544.09,
+          "y": -252.71643
+        }
+      }
+    }
+  ],
+  "groupDropManager": [
+    {
+      "type": "groupDropManager",
+      "radius": 150,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 10,
+          "max": 10
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -453.50595,
+          "y": 1040.7258
+        }
+      }
+    }
+  ]
+}

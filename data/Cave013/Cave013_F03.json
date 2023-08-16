@@ -1,0 +1,466 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave013_F04",
+      "transform": {
+        "translation": {
+          "x": 1237.5,
+          "y": 412.5
+        }
+      }
+    }
+  ],
+  "sprinkler": [
+    {
+      "type": "sprinkler",
+      "valveId": "valve1",
+      "radius": 300,
+      "transform": {
+        "translation": {
+          "x": 550,
+          "y": 417.5
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "KINKAISTATION",
+      "name": "Gold Nugget",
+      "amount": 15,
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
+      "transform": {
+        "translation": {
+          "x": -202.5,
+          "y": -687.5
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTABILLIARDBALL4",
+      "name": "Sphere of Beginnings",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": 886.7781,
+          "y": 413.32922
+        }
+      }
+    }
+  ],
+  "spout": [
+    {
+      "type": "spout",
+      "variant": "bubble",
+      "transform": {
+        "translation": {
+          "x": -1375,
+          "y": -137.5
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "bubble",
+      "transform": {
+        "translation": {
+          "x": 512.5,
+          "y": 925
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "bubble",
+      "transform": {
+        "translation": {
+          "x": 0,
+          "y": -687.5
+        }
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "iron",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 0,
+          "y": -567.95154
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "fence",
+      "variant": "iron",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 954.5,
+          "y": 412.5
+        },
+        "rotation": -90
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "dirt",
+      "transform": {
+        "translation": {
+          "x": -607.5,
+          "y": -33.5
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "switch": [
+    {
+      "type": "switch",
+      "variant": "single",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 275,
+          "y": -471.77393
+        },
+        "rotation": 90
+      }
+    }
+  ],
+  "floor": [
+    {
+      "type": "floor",
+      "variant": "fire",
+      "radius": 525,
+      "transform": {
+        "translation": {
+          "x": 550,
+          "y": 412.5
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "fire",
+      "radius": 350,
+      "transform": {
+        "translation": {
+          "x": 583.76355,
+          "y": -559.848
+        }
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "clipboardYellow",
+      "weight": 10,
+      "transform": {
+        "translation": {
+          "x": 275,
+          "y": -576.489
+        },
+        "rotation": -180
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "geyser",
+      "hasCrystal": true,
+      "transform": {
+        "translation": {
+          "x": -1100,
+          "y": -90
+        }
+      }
+    }
+  ],
+  "tunnel": [
+    {
+      "type": "tunnel",
+      "variant": "pup",
+      "tunnelId": "HappyDoorID_0",
+      "transform": {
+        "translation": {
+          "x": 825,
+          "y": -1053.553
+        }
+      }
+    },
+    {
+      "type": "tunnel",
+      "variant": "pup",
+      "tunnelId": "HappyDoorID_0",
+      "transform": {
+        "translation": {
+          "x": 825,
+          "y": -787.5
+        }
+      }
+    }
+  ],
+  "candypop": [
+    {
+      "type": "candypop",
+      "color": "wing",
+      "amount": 1,
+      "replacementCondition": 51,
+      "transform": {
+        "translation": {
+          "x": -900,
+          "y": 135
+        }
+      }
+    },
+    {
+      "type": "candypop",
+      "color": "yellow",
+      "amount": 1,
+      "replacementCondition": 6,
+      "transform": {
+        "translation": {
+          "x": -1159.0183,
+          "y": 159.1177
+        }
+      }
+    },
+    {
+      "type": "candypop",
+      "color": "red",
+      "amount": 1,
+      "replacementCondition": 6,
+      "transform": {
+        "translation": {
+          "x": -1322.8596,
+          "y": 110.37032
+        }
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "red",
+      "variant": "fighting",
+      "amount": 2,
+      "transform": {
+        "translation": {
+          "x": 516.4049,
+          "y": -430.66208
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "red",
+      "variant": "fighting",
+      "amount": 3,
+      "transform": {
+        "translation": {
+          "x": 481.27185,
+          "y": -632.64215
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -305,
+          "y": 478.75
+        }
+      }
+    }
+  ],
+  "structure": [
+    {
+      "valveId": "valve1",
+      "type": "structure",
+      "variant": "valve",
+      "materialsNeeded": 16,
+      "transform": {
+        "translation": {
+          "x": 584.10266,
+          "y": -567.046
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "KAJIOKOSHI",
+      "name": "Pyroclasmic Slooch",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": 535.04987,
+          "y": -457.84686
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "RUSHER",
+      "name": "Tusked Blowhog",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 6,
+      "drops": [
+        {
+          "item": "GOtaDarts_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -823.05853,
+          "y": -299.09842
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KAJIOKOSHI",
+      "name": "Pyroclasmic Slooch",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": 446.77185,
+          "y": -616.64215
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "FIRETANK",
+      "name": "Fiery Blowhog",
+      "carryMax": 10,
+      "value": 5,
+      "seeds": 5,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 622.5,
+          "y": 310.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "FIRETANK",
+      "name": "Fiery Blowhog",
+      "carryMax": 10,
+      "value": 5,
+      "seeds": 5,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 596.5,
+          "y": 531.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KURIONE",
+      "name": "Honeywisp",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -723,
+          "y": 399
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KURIONE",
+      "name": "Honeywisp",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -458,
+          "y": -951
+        }
+      }
+    }
+  ]
+}

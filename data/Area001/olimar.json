@@ -1,0 +1,1553 @@
+{
+  "water": [
+    {
+      "type": "water",
+      "variant": "water",
+      "normal": {
+        "image": "T_ui_Map_HeroStory001_WaterBox00_Hero_D.png",
+        "amountToFreeze": 30
+      },
+      "transform": {
+        "translation": {
+          "x": -3444,
+          "y": 334
+        },
+        "rotation": -50
+      }
+    }
+  ],
+  "onion": [
+    {
+      "type": "onion",
+      "color": "flarlic",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": 1573.1206,
+          "y": -345.98407
+        }
+      }
+    },
+    {
+      "type": "onion",
+      "color": "flarlic",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": -842.4343,
+          "y": -872.82184
+        }
+      }
+    },
+    {
+      "type": "onion",
+      "color": "yellow",
+      "weight": 20,
+      "transform": {
+        "translation": {
+          "x": 1640,
+          "y": 1951
+        }
+      }
+    }
+  ],
+  "structure": [
+    {
+      "type": "structure",
+      "variant": "bridge",
+      "materialsNeeded": 11,
+      "transform": {
+        "translation": {
+          "x": 507.55365,
+          "y": 2280.5796
+        },
+        "rotation": -145
+      }
+    },
+    {
+      "type": "structure",
+      "variant": "slope",
+      "materialsNeeded": 20,
+      "transform": {
+        "translation": {
+          "x": -1359.5387,
+          "y": 1222.5869
+        },
+        "rotation": -41.433
+      }
+    },
+    {
+      "type": "structure",
+      "variant": "bridge",
+      "materialsNeeded": 34,
+      "transform": {
+        "translation": {
+          "x": -3262.596,
+          "y": 1165.9136
+        },
+        "rotation": -158.952
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "string",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": -552.09314,
+          "y": 2709.0474
+        },
+        "rotation": 180
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "stick",
+      "transform": {
+        "translation": {
+          "x": -365.0952,
+          "y": -1214.0156
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "squashbag",
+      "weight": 25,
+      "transform": {
+        "translation": {
+          "x": 183,
+          "y": 20
+        },
+        "rotation": 62
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "clipboardYellow",
+      "weight": 20,
+      "transform": {
+        "translation": {
+          "x": -1819,
+          "y": 3002
+        },
+        "rotation": -178
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "stick",
+      "transform": {
+        "translation": {
+          "x": -2626.2139,
+          "y": 3622.0713
+        },
+        "rotation": 45
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTAHEROPARTSF",
+      "name": "Libra",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 0,
+      "transform": {
+        "translation": {
+          "x": -3561.1145,
+          "y": 2106.1472
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAHEROPARTSA",
+      "name": "Whimsical Radar",
+      "weight": 10,
+      "carryMax": 20,
+      "value": 0,
+      "transform": {
+        "translation": {
+          "x": 2250.6477,
+          "y": -107.97095
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAHEROPARTSL",
+      "name": "Repair-Type Bolt",
+      "weight": 10,
+      "carryMax": 20,
+      "value": 0,
+      "transform": {
+        "translation": {
+          "x": 946.5487,
+          "y": 3783.325
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAHEROPARTSV",
+      "name": "Extraordinary Bolt",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 0,
+      "transform": {
+        "translation": {
+          "x": -391.59244,
+          "y": -1481.9832
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAHEROPARTSAA",
+      "name": "Automatic Gear",
+      "weight": 15,
+      "carryMax": 30,
+      "value": 0,
+      "transform": {
+        "translation": {
+          "x": -1495.3934,
+          "y": -76.39349
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAHEROPARTSO",
+      "name": "Nova Blaster",
+      "weight": 20,
+      "carryMax": 40,
+      "value": 0,
+      "transform": {
+        "translation": {
+          "x": -11.111801,
+          "y": 3316.007
+        }
+      }
+    }
+  ],
+  "pot": [
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -2714.6118,
+          "y": 197.44154
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -2773.154,
+          "y": 112.2377
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -2835.642,
+          "y": 95.18047
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": 1970.7323,
+          "y": 474.4356
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": 1994.4883,
+          "y": 412.31067
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 2,
+          "max": 2
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 2320.2354,
+          "y": 1049.1846
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -2170,
+          "y": 984
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -2198,
+          "y": 1101
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -3555.204,
+          "y": 1630.075
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -3494.632,
+          "y": 1677.114
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -3614.833,
+          "y": 1682.1302
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -1072,
+          "y": 3391
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -1072,
+          "y": 3446
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -1072,
+          "y": 3501
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -2160,
+          "y": 1053
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -2122,
+          "y": 914
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -2778.0854,
+          "y": 186.75734
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": 2320.6167,
+          "y": 700.3535
+        }
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": -1364.8839,
+          "y": 363.9289
+        },
+        "rotation": 61.942
+      }
+    },
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": 1996.8824,
+          "y": 32.026302
+        },
+        "rotation": -30
+      }
+    }
+  ],
+  "mound": [
+    {
+      "type": "mound",
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 10,
+          "max": 10
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -215.12631,
+          "y": 2811.9014
+        }
+      }
+    },
+    {
+      "type": "mound",
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -958.5104,
+          "y": -1506.1768
+        }
+      }
+    },
+    {
+      "type": "mound",
+      "drops": [
+        {
+          "item": "GBomb_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1543,
+          "y": 534
+        }
+      },
+      "rebirthInterval": 3
+    },
+    {
+      "type": "mound",
+      "drops": [
+        {
+          "item": "GBomb_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -2357.7422,
+          "y": 1541.3086
+        }
+      },
+      "rebirthInterval": 3
+    },
+    {
+      "type": "mound",
+      "drops": [
+        {
+          "item": "GBomb_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -1415.1263,
+          "y": 836.90137
+        }
+      },
+      "rebirthInterval": 3
+    }
+  ],
+  "materials": [
+    {
+      "type": "materials",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 907.8625,
+          "y": 3366.5654
+        }
+      }
+    },
+    {
+      "type": "materials",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": -4180.999,
+          "y": 878
+        }
+      }
+    },
+    {
+      "type": "materials",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": -2077.259,
+          "y": 661.3129
+        }
+      }
+    },
+    {
+      "type": "materials",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": -1083.9905,
+          "y": 115.21028
+        }
+      }
+    },
+    {
+      "type": "materials",
+      "amount": 12,
+      "transform": {
+        "translation": {
+          "x": 904.52094,
+          "y": -1117.5173
+        }
+      }
+    },
+    {
+      "type": "materials",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 918.5913,
+          "y": 1380.92
+        }
+      }
+    },
+    {
+      "type": "materials",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 520.7396,
+          "y": -380.14236
+        }
+      }
+    },
+    {
+      "type": "materials",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": -2912.0615,
+          "y": 3284.4885
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "electric",
+      "transform": {
+        "translation": {
+          "x": -1982,
+          "y": 1662
+        },
+        "rotation": -70
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "dirt",
+      "transform": {
+        "translation": {
+          "x": -599,
+          "y": -301.4386
+        },
+        "rotation": -4
+      }
+    }
+  ],
+  "mushroom": [
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": true,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 2,
+          "max": 2
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1446,
+          "y": -120
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": true,
+      "transform": {
+        "translation": {
+          "x": 1565,
+          "y": -110
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 1357,
+          "y": -143
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 1625,
+          "y": -104
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 1404,
+          "y": -81
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 1613,
+          "y": -65
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 1392,
+          "y": -135
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 1517,
+          "y": -124
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 1501,
+          "y": -94
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": true,
+      "transform": {
+        "translation": {
+          "x": -307.91315,
+          "y": 359.96075
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": true,
+      "transform": {
+        "translation": {
+          "x": -349,
+          "y": 410.5
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "onion",
+      "baseId": 1,
+      "transform": {
+        "translation": {
+          "x": 2067.2705,
+          "y": 2938.707
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 1,
+      "transform": {
+        "translation": {
+          "x": 1852,
+          "y": 3032
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -377.3774,
+          "y": 1370.7882
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "onion",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -439.86432,
+          "y": 1596.9305
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "onion",
+      "baseId": 2,
+      "guardedBy": [
+        "FUTAKUCHIADULT"
+      ],
+      "transform": {
+        "translation": {
+          "x": -2614.3838,
+          "y": 2513.1536
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 2,
+      "transform": {
+        "translation": {
+          "x": -2832.8074,
+          "y": 2427.502
+        }
+      }
+    }
+  ],
+  "egg": [
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -257.9635,
+          "y": 758.1133
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -318.87097,
+          "y": 795.3965
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -881.0648,
+          "y": 2459.494
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "BIGFIRETANK",
+      "name": "Titan Blowhog",
+      "carryMax": 30,
+      "value": 15,
+      "seeds": 15,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 2,
+          "max": 2
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -826.6605,
+          "y": 64.325195
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "MAR",
+      "name": "Puffy Blowhog",
+      "carryMax": 1,
+      "value": 7,
+      "seeds": 5,
+      "transform": {
+        "translation": {
+          "x": -1346.287,
+          "y": -273.75208
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "MIULIN",
+      "name": "Mamuta",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 12,
+      "transform": {
+        "translation": {
+          "x": -1821.6592,
+          "y": 2441.426
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 1843.6345,
+          "y": 357.31473
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 2117.343,
+          "y": 611.55707
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 2187.2488,
+          "y": 928.5744
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KABURI",
+      "name": "Joustmite",
+      "carryMax": 14,
+      "value": 5,
+      "seeds": 6,
+      "transform": {
+        "translation": {
+          "x": -2351.7095,
+          "y": 855.41064
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOGANE",
+      "name": "Iridescent Flint Beetle",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "drops": [
+        {
+          "item": "GPellet1_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPellet1_C",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        },
+        {
+          "item": "GPellet5_C",
+          "chance": 1,
+          "min": 2,
+          "max": 2
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -2717.616,
+          "y": 3442.288
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "FUTAKUCHIADULT",
+      "name": "Horned Cannon Beetle",
+      "carryMax": 60,
+      "value": 20,
+      "seeds": 50,
+      "transform": {
+        "translation": {
+          "x": -2625.4631,
+          "y": 2512.341
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KABURI",
+      "name": "Joustmite",
+      "carryMax": 14,
+      "value": 5,
+      "seeds": 6,
+      "transform": {
+        "translation": {
+          "x": -2249,
+          "y": 1814
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "BIGUJINKO",
+      "name": "Mama Sheargrub",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 10,
+      "transform": {
+        "translation": {
+          "x": 1886.6246,
+          "y": 2078.9473
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "BIGUJINKO",
+      "name": "Mama Sheargrub",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 10,
+      "transform": {
+        "translation": {
+          "x": 1269,
+          "y": 3526
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 1246,
+          "y": 3325
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOA",
+      "name": "Female Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 1,
+      "transform": {
+        "translation": {
+          "x": 1414,
+          "y": 3456
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "YELLOWSHIJIMI",
+      "name": "Yellow Spectralids",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 1,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -1823,
+          "y": 2227
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "WHITESHIJIMI",
+      "name": "White Spectralids",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 1,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -1868,
+          "y": 2523
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "WHITESHIJIMI",
+      "name": "White Spectralids",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 1,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -1667,
+          "y": 2491
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 1095,
+          "y": 3182
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "YELLOWSHIJIMI",
+      "name": "Yellow Spectralids",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 1,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1322,
+          "y": -1286
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "WHITESHIJIMI",
+      "name": "White Spectralids",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 1,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1557,
+          "y": -1223
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 1776,
+          "y": 2265
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOA",
+      "name": "Female Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 1,
+      "transform": {
+        "translation": {
+          "x": 1634,
+          "y": 2245
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -1891,
+          "y": 1136
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -1888,
+          "y": 1427
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -1597,
+          "y": 1556
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "MAR",
+      "name": "Puffy Blowhog",
+      "carryMax": 1,
+      "value": 7,
+      "seeds": 5,
+      "transform": {
+        "translation": {
+          "x": -319.97775,
+          "y": 3361.9111
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "WATERTANK",
+      "name": "Watery Blowhog",
+      "carryMax": 10,
+      "value": 5,
+      "seeds": 5,
+      "transform": {
+        "translation": {
+          "x": 41,
+          "y": -884
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "CHAPPY",
+      "name": "Bulborb",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 10,
+      "transform": {
+        "translation": {
+          "x": -1789.4972,
+          "y": 1300.8652
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 1307.3694,
+          "y": 1398.6388
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "WHITESHIJIMI",
+      "name": "White Spectralids",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 1,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1379,
+          "y": -969
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "WATERTANK",
+      "name": "Watery Blowhog",
+      "carryMax": 10,
+      "value": 5,
+      "seeds": 5,
+      "transform": {
+        "translation": {
+          "x": 1063,
+          "y": 29
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "FUTAKUCHI",
+      "name": "Armored Cannon Larva",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": 2315.747,
+          "y": -360.60486
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "FUTAKUCHI",
+      "name": "Armored Cannon Larva",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": -1920,
+          "y": 3495
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -671.6306,
+          "y": -1363.3612
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -417.6306,
+          "y": -1090.3612
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KURIONE",
+      "name": "Honeywisp",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -32,
+          "y": -157
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 1887,
+          "y": 1901
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "MAR",
+      "name": "Puffy Blowhog",
+      "carryMax": 1,
+      "value": 7,
+      "seeds": 5,
+      "transform": {
+        "translation": {
+          "x": -3536.4465,
+          "y": 515.4378
+        }
+      }
+    }
+  ],
+  "groupDropManager": [
+    {
+      "type": "groupDropManager",
+      "radius": 150,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -2737.955,
+          "y": 159.85815
+        }
+      }
+    },
+    {
+      "type": "groupDropManager",
+      "ignoreIds": [
+        "KOCHAPPY"
+      ],
+      "radius": 100,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1987.2949,
+          "y": 438.35815
+        }
+      }
+    }
+  ]
+}

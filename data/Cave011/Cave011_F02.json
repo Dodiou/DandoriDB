@@ -1,0 +1,548 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave011_F03",
+      "transform": {
+        "translation": {
+          "x": 10.46167,
+          "y": 1348.0889
+        }
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "clipboard",
+      "weight": 10,
+      "transform": {
+        "translation": {
+          "x": -368,
+          "y": -963
+        },
+        "rotation": 90
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "geyser",
+      "transform": {
+        "translation": {
+          "x": 246,
+          "y": -1305
+        }
+      }
+    }
+  ],
+  "spout": [
+    {
+      "type": "spout",
+      "variant": "bubble",
+      "transform": {
+        "translation": {
+          "x": -1381,
+          "y": -657
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "bubble",
+      "transform": {
+        "translation": {
+          "x": -682,
+          "y": -824
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "bubble",
+      "transform": {
+        "translation": {
+          "x": 813,
+          "y": 361
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "bubble",
+      "transform": {
+        "translation": {
+          "x": -280,
+          "y": 390
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "bubble",
+      "transform": {
+        "translation": {
+          "x": 1015,
+          "y": -273
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "bubble",
+      "transform": {
+        "translation": {
+          "x": 5,
+          "y": -323
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "type": "materials",
+      "amount": 20,
+      "transform": {
+        "translation": {
+          "x": -575,
+          "y": 391
+        }
+      }
+    },
+    {
+      "type": "materials",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": -1080.1204,
+          "y": 1256.2042
+        }
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "iron",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": -827.0357,
+          "y": 428.19916
+        },
+        "rotation": 180
+      }
+    },
+    {
+      "type": "fence",
+      "variant": "iron",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 824.98816,
+          "y": -550.854
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "KINKAISTATION",
+      "name": "Gold Nugget",
+      "amount": 15,
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
+      "transform": {
+        "translation": {
+          "x": 1438,
+          "y": 418
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAFRUITSPICKGRN",
+      "name": "Spirit Sword",
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
+      "transform": {
+        "translation": {
+          "x": 546.3018,
+          "y": -594.4991
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAFRUITSPICKGRN",
+      "name": "Spirit Sword",
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
+      "transform": {
+        "translation": {
+          "x": 567.29126,
+          "y": -515.7877
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAFRUITSPICKGRN",
+      "name": "Spirit Sword",
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
+      "transform": {
+        "translation": {
+          "x": 492.56577,
+          "y": -530.474
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAFISHCRUET",
+      "name": "Mystery Squish Fish",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": 175.08276,
+          "y": 136.3362
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAFISHCRUET",
+      "name": "Mystery Squish Fish",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": 102.873856,
+          "y": 119.75608
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAFISHCRUET",
+      "name": "Mystery Squish Fish",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": -512.1991,
+          "y": -73.152336
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTABRUSHB",
+      "name": "Brush of Foolishness",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 80,
+      "transform": {
+        "translation": {
+          "x": 1171.1262,
+          "y": 716.56696
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTATOOTHMODEL",
+      "name": "Monster Teeth",
+      "weight": 20,
+      "carryMax": 40,
+      "value": 300,
+      "transform": {
+        "translation": {
+          "x": -1372.2953,
+          "y": -933.9447
+        }
+      }
+    }
+  ],
+  "structure": [
+    {
+      "type": "structure",
+      "variant": "bridge",
+      "materialsNeeded": 27,
+      "transform": {
+        "translation": {
+          "x": 825,
+          "y": -237
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "blue",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 51,
+      "replacement": "candypop",
+      "candypopOffset": {
+        "X": -760,
+        "Y": 345,
+        "Z": 115
+      },
+      "transform": {
+        "translation": {
+          "x": -353,
+          "y": -748
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "blue",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 51,
+      "replacement": "candypop",
+      "candypopOffset": {
+        "X": -177,
+        "Y": 389.50687,
+        "Z": 125
+      },
+      "transform": {
+        "translation": {
+          "x": 288.1897,
+          "y": 248.90234
+        }
+      }
+    }
+  ],
+  "water": [
+    {
+      "type": "water",
+      "variant": "water",
+      "normal": {
+        "image": "T_ui_Map_Cave011_F02_WaterBox00_D.png",
+        "amountToFreeze": 100
+      },
+      "transform": {
+        "translation": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "dirt",
+      "transform": {
+        "translation": {
+          "x": -58,
+          "y": -870
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "dirt",
+      "transform": {
+        "translation": {
+          "x": -58,
+          "y": 1073
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "switch": [
+    {
+      "type": "switch",
+      "variant": "single",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 938,
+          "y": 550
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 861.722,
+          "y": -1229.4124
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "KURAGE",
+      "name": "Lesser Spotted Jellyfloat",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 623,
+          "y": 609
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KANITAMA",
+      "name": "Peckish Aristocrab",
+      "carryMax": 14,
+      "value": 12,
+      "seeds": 12,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -1615,
+          "y": 141
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "OOKURAGE",
+      "name": "Greater Spotted Jellyfloat",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -140,
+          "y": 682
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "HARIUO",
+      "name": "Pricklepuff",
+      "carryMax": 14,
+      "value": 5,
+      "seeds": 8,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 397.76685,
+          "y": -46.01761
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "HARIUO",
+      "name": "Pricklepuff",
+      "carryMax": 14,
+      "value": 5,
+      "seeds": 8,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -435,
+          "y": -458
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "HARIUO",
+      "name": "Pricklepuff",
+      "carryMax": 14,
+      "value": 5,
+      "seeds": 8,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1174,
+          "y": -168
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOGANI",
+      "name": "Aristocrab Offspring",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -1080,
+          "y": -235
+        }
+      }
+    }
+  ]
+}

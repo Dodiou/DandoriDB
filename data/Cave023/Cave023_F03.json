@@ -1,0 +1,376 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave023_F04",
+      "transform": {
+        "translation": {
+          "x": -424.85754,
+          "y": -4.781494
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTACASINOCHIP1",
+      "name": "Disk of Joyous Wisdom",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 1,
+      "transform": {
+        "translation": {
+          "x": 865.2235,
+          "y": 739.0489
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTACASINOCHIP1",
+      "name": "Disk of Joyous Wisdom",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 1,
+      "transform": {
+        "translation": {
+          "x": 906.9093,
+          "y": 661.68134
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTACASINOCHIP1",
+      "name": "Disk of Joyous Wisdom",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 1,
+      "transform": {
+        "translation": {
+          "x": 809.5615,
+          "y": 676.02844
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTADUCKM",
+      "name": "Planetary Rubber Cutie",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": -940,
+          "y": -448
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "KINKAISTATION",
+      "name": "Gold Nugget",
+      "amount": 20,
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
+      "transform": {
+        "translation": {
+          "x": 420,
+          "y": 500
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAHANAFUDAD",
+      "name": "Talisman of Life (Rain)",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": 603.96606,
+          "y": -896.8894
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAPUZZLEI",
+      "name": "Memory Fragment (Bottom Left)",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 50,
+      "transform": {
+        "translation": {
+          "x": 830.47705,
+          "y": 1172.3712
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTACASINOCHIP50",
+      "name": "Disk of Amusing Wisdom",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 50,
+      "transform": {
+        "translation": {
+          "x": -11.988525,
+          "y": 178.4253
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTACASINOCHIP100",
+      "name": "Disk of Surprising Wisdom",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 100,
+      "transform": {
+        "translation": {
+          "x": 626.44165,
+          "y": 480.31665
+        }
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "string",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": 137,
+          "y": -755
+        },
+        "rotation": 90
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "string",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": -549.6969,
+          "y": 204.74377
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "string",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": 251,
+          "y": 590
+        },
+        "rotation": -90
+      }
+    }
+  ],
+  "fan": [
+    {
+      "type": "fan",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 386.20264,
+          "y": -517.8584
+        }
+      }
+    },
+    {
+      "type": "fan",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": -444.57092,
+          "y": 406.4889
+        }
+      }
+    }
+  ],
+  "switch": [
+    {
+      "type": "switch",
+      "variant": "double",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": -189.1167,
+          "y": -687.4946
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -712,
+          "y": 800
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "crystal",
+      "transform": {
+        "translation": {
+          "x": -688,
+          "y": 58.75
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "PANMODOKI",
+      "name": "Breadbug",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 5,
+      "transform": {
+        "translation": {
+          "x": 153.26648,
+          "y": 304.42578
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "PANMODOKI",
+      "name": "Breadbug",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 5,
+      "transform": {
+        "translation": {
+          "x": -712.7117,
+          "y": -387.8435
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "PANMODOKI",
+      "name": "Breadbug",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 5,
+      "transform": {
+        "translation": {
+          "x": 342.8026,
+          "y": -114.755005
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "SUITORI",
+      "name": "Waddlequaff",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": 754.5051,
+          "y": 557.8546
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBIKABURI",
+      "name": "Flighty Joustmite",
+      "carryMax": 14,
+      "value": 5,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": 133.7489,
+          "y": 6.671509
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBIKABURI",
+      "name": "Flighty Joustmite",
+      "carryMax": 14,
+      "value": 5,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": -550.3346,
+          "y": -740.0847
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "SUITORI",
+      "name": "Waddlequaff",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": 105.025024,
+          "y": 685.83575
+        }
+      }
+    }
+  ],
+  "egg": [
+    {
+      "type": "egg",
+      "isBig": true,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 3,
+          "max": 3
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 10,
+          "max": 10
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 750.4773,
+          "y": 920.5228
+        }
+      }
+    }
+  ]
+}

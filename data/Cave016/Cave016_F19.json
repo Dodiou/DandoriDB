@@ -1,0 +1,58 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "exit",
+      "link": "Area006",
+      "transform": {
+        "translation": {
+          "x": -205.08919,
+          "y": -1033.1902
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 0,
+          "y": -912.5
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "BOSSINU",
+      "name": "Ancient Sirehound",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "drops": [
+        {
+          "item": "GOtaCollar_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GSurvivorLouie_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 0,
+          "y": 408.4
+        }
+      }
+    }
+  ]
+}

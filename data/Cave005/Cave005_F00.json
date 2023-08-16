@@ -1,0 +1,252 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave005_F01",
+      "transform": {
+        "translation": {
+          "x": 415.1964,
+          "y": -1092.6165
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "dirt",
+      "transform": {
+        "translation": {
+          "x": 469.61084,
+          "y": -710.5697
+        },
+        "rotation": 180
+      }
+    }
+  ],
+  "switch": [
+    {
+      "type": "switch",
+      "variant": "double",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": -104.41528,
+          "y": -250.13074
+        },
+        "rotation": 180
+      }
+    }
+  ],
+  "conveyor": [
+    {
+      "type": "conveyor",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 137.5,
+          "y": -412
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "conveyor",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 138,
+          "y": 412.5
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "conveyor",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": -412,
+          "y": 412.5
+        },
+        "rotation": 90
+      }
+    },
+    {
+      "type": "conveyor",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": -138,
+          "y": 140
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": 687.88,
+          "y": -16.292908
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": -858.1865,
+          "y": 138
+        },
+        "rotation": 90
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "geyser",
+      "transform": {
+        "translation": {
+          "x": -651.36255,
+          "y": -120.98114
+        }
+      }
+    }
+  ],
+  "pot": [
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -907.2584,
+          "y": 240.79257
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -1003.27515,
+          "y": 281.9358
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -969.74023,
+          "y": 227.0947
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -940.8684,
+          "y": 294.89783
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "type": "materials",
+      "amount": 20,
+      "transform": {
+        "translation": {
+          "x": 633.3169,
+          "y": -387.69604
+        }
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "yellow",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 51,
+      "transform": {
+        "translation": {
+          "x": -396.33606,
+          "y": -412.5089
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTAFINGERBOARD",
+      "name": "Personal-Injury Plank",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 80,
+      "transform": {
+        "translation": {
+          "x": 867,
+          "y": -134
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAPUZZLED",
+      "name": "Memory Fragment (Top Right)",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 50,
+      "transform": {
+        "translation": {
+          "x": -984.7115,
+          "y": 92.24266
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 682.41235,
+          "y": 538.15356
+        }
+      }
+    }
+  ],
+  "groupDropManager": [
+    {
+      "type": "groupDropManager",
+      "radius": 150,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -955.7699,
+          "y": 263.71045
+        }
+      }
+    }
+  ]
+}

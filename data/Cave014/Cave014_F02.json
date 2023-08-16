@@ -1,0 +1,595 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave014_F03",
+      "transform": {
+        "translation": {
+          "x": -1249.5,
+          "y": 550
+        }
+      }
+    },
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave014_F01",
+      "transform": {
+        "translation": {
+          "x": 448.91187,
+          "y": 871.39404
+        }
+      }
+    }
+  ],
+  "water": [
+    {
+      "type": "water",
+      "variant": "water",
+      "normal": {
+        "image": "T_ui_Map_Cave014_F02_WaterBox00_D.png",
+        "amountToFreeze": 5
+      },
+      "transform": {
+        "translation": {
+          "x": 145.5,
+          "y": 687.5
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "water",
+      "variant": "water",
+      "normal": {
+        "image": "T_ui_Map_Cave014_F02_WaterBox01_D.png",
+        "amountToFreeze": 5
+      },
+      "transform": {
+        "translation": {
+          "x": -136.5,
+          "y": -944.5
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "spout": [
+    {
+      "type": "spout",
+      "variant": "electric",
+      "transform": {
+        "translation": {
+          "x": 752.5,
+          "y": 825.5
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "electric",
+      "transform": {
+        "translation": {
+          "x": -825.5,
+          "y": 5.5
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "electric",
+      "transform": {
+        "translation": {
+          "x": -576.5,
+          "y": -385.5
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "electric",
+      "transform": {
+        "translation": {
+          "x": -172.5,
+          "y": 550
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "electric",
+      "transform": {
+        "translation": {
+          "x": 275,
+          "y": 0
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "electric",
+      "transform": {
+        "translation": {
+          "x": 2.5,
+          "y": -515.5
+        }
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "iron",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": -462.5,
+          "y": 0
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "fence",
+      "variant": "iron",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 276,
+          "y": 137.5
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "fence",
+      "variant": "iron",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 0,
+          "y": -672.5
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "fence",
+      "variant": "iron",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 412.5,
+          "y": 0
+        },
+        "rotation": -90
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "dirt",
+      "transform": {
+        "translation": {
+          "x": 1043.5,
+          "y": -141.5
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "dirt",
+      "transform": {
+        "translation": {
+          "x": -1042.5,
+          "y": -475
+        },
+        "rotation": 180
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "dirt",
+      "transform": {
+        "translation": {
+          "x": -926,
+          "y": 492.5
+        },
+        "rotation": -90
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "blue",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 51,
+      "transform": {
+        "translation": {
+          "x": -262.5,
+          "y": -262.5
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "blue",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 51,
+      "transform": {
+        "translation": {
+          "x": 12.5,
+          "y": 912.5
+        }
+      }
+    }
+  ],
+  "switch": [
+    {
+      "type": "switch",
+      "variant": "single",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": -1100,
+          "y": -737.5
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "materials": [
+    {
+      "type": "materials",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": -562.5,
+          "y": 302.5
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 448.91187,
+          "y": 871.39404
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 2,
+      "guardedBy": [
+        "Hanachirashi"
+      ],
+      "transform": {
+        "translation": {
+          "x": 137.5,
+          "y": -275
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 1,
+      "transform": {
+        "translation": {
+          "x": -1249.5,
+          "y": 550
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTAPUZZLEK",
+      "name": "Memory Fragment (Bottom...Probably?)",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 50,
+      "transform": {
+        "translation": {
+          "x": -187.7771,
+          "y": -495.47485
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAAVOCADO",
+      "name": "Scaly Custard",
+      "weight": 10,
+      "carryMax": 20,
+      "value": 70,
+      "transform": {
+        "translation": {
+          "x": 520,
+          "y": -12
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAPOTATO",
+      "name": "Child of the Earth",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 60,
+      "transform": {
+        "translation": {
+          "x": -259.27838,
+          "y": -1069.0355
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "ELECOTAKARA",
+      "name": "Anode Dweevil",
+      "carryMax": 4,
+      "value": 2,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 573,
+          "y": -550
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "AMEBOZU",
+      "name": "Waterwraith",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "transform": {
+        "translation": {
+          "x": -551.5,
+          "y": -815.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "MAROFROG",
+      "name": "Wollyhop",
+      "carryMax": 10,
+      "value": 7,
+      "seeds": 8,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -550,
+          "y": 600
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "HANACHIRASHI",
+      "name": "Withering Blowhog",
+      "carryMax": 1,
+      "value": 5,
+      "seeds": 4,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 137.5,
+          "y": -275
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "MAROFROG",
+      "name": "Wollyhop",
+      "carryMax": 10,
+      "value": 7,
+      "seeds": 8,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 0,
+          "y": -1024.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ELECOTAKARA",
+      "name": "Anode Dweevil",
+      "carryMax": 4,
+      "value": 2,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 37.5,
+          "y": -375
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KABURI",
+      "name": "Joustmite",
+      "carryMax": 14,
+      "value": 5,
+      "seeds": 6,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -1053.5,
+          "y": -252.5
+        }
+      }
+    }
+  ],
+  "egg": [
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 304.5,
+          "y": -518.4999
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 279.50012,
+          "y": -577.5001
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1407.5,
+          "y": 582.5
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1382.5,
+          "y": 528.5
+        }
+      }
+    }
+  ]
+}

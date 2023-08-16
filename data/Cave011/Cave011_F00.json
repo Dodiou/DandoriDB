@@ -1,0 +1,422 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave011_F01",
+      "transform": {
+        "translation": {
+          "x": -134.53833,
+          "y": 1382.0889
+        }
+      }
+    }
+  ],
+  "water": [
+    {
+      "type": "water",
+      "variant": "water",
+      "normal": {
+        "image": "T_ui_Map_Cave011_F00_WaterBox00_D.png",
+        "amountToFreeze": 100
+      },
+      "transform": {
+        "translation": {
+          "x": 300,
+          "y": 200
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "KINKAISTATION",
+      "name": "Gold Nugget",
+      "amount": 15,
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
+      "transform": {
+        "translation": {
+          "x": 752,
+          "y": -866
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAOSHABURIBLU",
+      "name": "False Lollipop",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 80,
+      "transform": {
+        "translation": {
+          "x": 1377.6139,
+          "y": -500.2832
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTABOTTLE",
+      "name": "Maternal Sculpture",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": 288.63257,
+          "y": 361
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAICHIGO",
+      "name": "Sunseed Berry",
+      "weight": 3,
+      "carryMax": 6,
+      "value": 70,
+      "transform": {
+        "translation": {
+          "x": -993.3683,
+          "y": 266.35825
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTASUSHIMAGURO",
+      "name": "Maestro of Flavor",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 80,
+      "transform": {
+        "translation": {
+          "x": 1470.276,
+          "y": 638.35175
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTASUSHIMAGURO",
+      "name": "Maestro of Flavor",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 80,
+      "transform": {
+        "translation": {
+          "x": 1470.0289,
+          "y": 592.4251
+        }
+      }
+    }
+  ],
+  "onion": [
+    {
+      "type": "onion",
+      "color": "flarlic",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": -429,
+          "y": 1123
+        }
+      }
+    }
+  ],
+  "sprinkler": [
+    {
+      "type": "sprinkler",
+      "valveId": "valve1",
+      "radius": 225,
+      "transform": {
+        "translation": {
+          "x": -517.95483,
+          "y": 144.38292
+        }
+      }
+    },
+    {
+      "type": "sprinkler",
+      "valveId": "valve1",
+      "radius": 330,
+      "transform": {
+        "translation": {
+          "x": -312.5343,
+          "y": 942.9324
+        }
+      }
+    }
+  ],
+  "spout": [
+    {
+      "type": "spout",
+      "variant": "water",
+      "transform": {
+        "translation": {
+          "x": 364,
+          "y": -690
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "water",
+      "transform": {
+        "translation": {
+          "x": 601,
+          "y": -171
+        }
+      }
+    }
+  ],
+  "structure": [
+    {
+      "valveId": "valve1",
+      "type": "structure",
+      "variant": "valve",
+      "materialsNeeded": 12,
+      "transform": {
+        "translation": {
+          "x": 545,
+          "y": 696
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "dirt",
+      "transform": {
+        "translation": {
+          "x": -470,
+          "y": 475
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "ropeFishing": [
+    {
+      "type": "ropeFishing",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": 1391.7163,
+          "y": -347.77747
+        },
+        "rotation": -90
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": 284,
+          "y": 824
+        },
+        "rotation": -90
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "blue",
+      "variant": "idle",
+      "amount": 5,
+      "replacementCondition": 51,
+      "transform": {
+        "translation": {
+          "x": 702,
+          "y": -373
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "blue",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 51,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": -1140,
+          "y": 1089
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "ice",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 51,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": -5.044983,
+          "y": -69.978485
+        }
+      }
+    }
+  ],
+  "hydroJelly": [
+    {
+      "type": "hydroJelly",
+      "transform": {
+        "translation": {
+          "x": -429,
+          "y": 1123
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -545.93115,
+          "y": -600.1523
+        }
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "geyser",
+      "transform": {
+        "translation": {
+          "x": -901,
+          "y": 577
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "KURAGE",
+      "name": "Lesser Spotted Jellyfloat",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 696,
+          "y": -364
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KURAGE",
+      "name": "Lesser Spotted Jellyfloat",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 510,
+          "y": -546
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "FIRETANK",
+      "name": "Fiery Blowhog",
+      "carryMax": 10,
+      "value": 5,
+      "seeds": 5,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1454.4531,
+          "y": 294.09192
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "FIRETANK",
+      "name": "Fiery Blowhog",
+      "carryMax": 10,
+      "value": 5,
+      "seeds": 5,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1256,
+          "y": 422
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KURAGE",
+      "name": "Lesser Spotted Jellyfloat",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -402,
+          "y": 784
+        }
+      }
+    }
+  ]
+}

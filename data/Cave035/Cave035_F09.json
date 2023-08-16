@@ -1,0 +1,496 @@
+{
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 167.94164,
+          "y": 697.77826
+        }
+      }
+    }
+  ],
+  "onion": [
+    {
+      "type": "onion",
+      "color": "purple",
+      "weight": 100,
+      "transform": {
+        "translation": {
+          "x": -433,
+          "y": -500
+        }
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": -414,
+          "y": 549.5
+        },
+        "rotation": 90
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "ice",
+      "variant": "idle",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": -990,
+          "y": 718
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "ice",
+      "variant": "sprouts",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": -523.2274,
+          "y": -247.10889
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "ice",
+      "variant": "sprouts",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": -291.22742,
+          "y": 631.8911
+        }
+      }
+    }
+  ],
+  "hydroJelly": [
+    {
+      "type": "hydroJelly",
+      "drops": [
+        {
+          "item": "GPikminPurple_C",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -305,
+          "y": 270
+        }
+      }
+    },
+    {
+      "type": "hydroJelly",
+      "drops": [
+        {
+          "item": "GPikminIce_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -522,
+          "y": 1097
+        }
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "squashbag",
+      "weight": 100,
+      "transform": {
+        "translation": {
+          "x": 420,
+          "y": 825
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "root",
+      "transform": {
+        "translation": {
+          "x": 275,
+          "y": -350
+        },
+        "rotation": -180
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "squashbag",
+      "weight": 50,
+      "transform": {
+        "translation": {
+          "x": -701,
+          "y": -1
+        },
+        "rotation": -90
+      }
+    }
+  ],
+  "candypop": [
+    {
+      "type": "candypop",
+      "color": "purple",
+      "amount": 1,
+      "transform": {
+        "translation": {
+          "x": -825,
+          "y": 1083
+        }
+      }
+    },
+    {
+      "type": "candypop",
+      "color": "purple",
+      "amount": 1,
+      "transform": {
+        "translation": {
+          "x": 1056,
+          "y": 553
+        }
+      }
+    }
+  ],
+  "tunnel": [
+    {
+      "type": "tunnel",
+      "variant": "captain",
+      "tunnelId": "WarpCarryID_0",
+      "transform": {
+        "translation": {
+          "x": 0,
+          "y": 460
+        }
+      }
+    },
+    {
+      "type": "tunnel",
+      "variant": "captain",
+      "tunnelId": "WarpCarryID_0",
+      "transform": {
+        "translation": {
+          "x": 0,
+          "y": 361
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "numbered",
+      "transform": {
+        "translation": {
+          "x": 105,
+          "y": -883
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "crystal",
+      "transform": {
+        "translation": {
+          "x": -935,
+          "y": -375
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "dirt",
+      "transform": {
+        "translation": {
+          "x": -1157,
+          "y": 174
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "ice",
+      "transform": {
+        "translation": {
+          "x": 750,
+          "y": -168
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "mound": [
+    {
+      "type": "mound",
+      "drops": [
+        {
+          "item": "GBomb_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -1345,
+          "y": 275
+        }
+      }
+    },
+    {
+      "type": "mound",
+      "drops": [
+        {
+          "item": "GBaby_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -1251,
+          "y": -1066
+        }
+      }
+    }
+  ],
+  "floor": [
+    {
+      "type": "floor",
+      "variant": "mushroom",
+      "isPoison": false,
+      "radius": 175,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -587,
+          "y": 810
+        }
+      }
+    }
+  ],
+  "mushroom": [
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": -546,
+          "y": 788
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": -568,
+          "y": 830
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": -624,
+          "y": 801
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "AMEBOZU",
+      "name": "Waterwraith",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "transform": {
+        "translation": {
+          "x": -69.93042,
+          "y": -492.7854
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KUMAKOCHAPPY",
+      "name": "Dwarf Bulbear",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -790.5279,
+          "y": 716.00635
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KUMAKOCHAPPY",
+      "name": "Dwarf Bulbear",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -915.5279,
+          "y": 616.00635
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KURAGE",
+      "name": "Lesser Spotted Jellyfloat",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "transform": {
+        "translation": {
+          "x": -990,
+          "y": 718
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KUMAKOCHAPPY",
+      "name": "Dwarf Bulbear",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -955.5279,
+          "y": 546.00635
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "FIRETANK",
+      "name": "Fiery Blowhog",
+      "carryMax": 10,
+      "value": 5,
+      "seeds": 5,
+      "transform": {
+        "translation": {
+          "x": -107,
+          "y": -1067
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICETANK",
+      "name": "Snowy Blowhog",
+      "carryMax": 10,
+      "value": 5,
+      "seeds": 5,
+      "transform": {
+        "translation": {
+          "x": -282,
+          "y": -877
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "BIKKURIKINOKO",
+      "name": "Startle Spore",
+      "carryMax": 20,
+      "value": 12,
+      "seeds": 12,
+      "transform": {
+        "translation": {
+          "x": 414,
+          "y": 135
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KAREHAMBO",
+      "name": "Desiccated Skitter Leaf",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 691,
+          "y": -423
+        }
+      },
+      "spawnNum": 5
+    },
+    {
+      "type": "creature",
+      "creatureId": "KUMAKOCHAPPY",
+      "name": "Dwarf Bulbear",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -414.5279,
+          "y": -139.99365
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "YUKIFUTAKUCHI",
+      "name": "Arctic Cannon Larva",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": 824.6376,
+          "y": 828.81775
+        }
+      }
+    }
+  ]
+}

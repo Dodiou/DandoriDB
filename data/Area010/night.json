@@ -1,0 +1,2353 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave021_F00",
+      "transform": {
+        "translation": {
+          "x": 1289.4199,
+          "y": 4021.2935
+        }
+      }
+    },
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave023_F00",
+      "transform": {
+        "translation": {
+          "x": -725.8672,
+          "y": 512.65894
+        }
+      }
+    },
+    {
+      "type": "caveLink",
+      "variant": "challenge",
+      "link": "CaveSP006_F00",
+      "transform": {
+        "translation": {
+          "x": 1028.5068,
+          "y": -4107.469
+        }
+      }
+    },
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave022_F00",
+      "disabledPikmin": {
+        "blue": true,
+        "yellow": true,
+        "rock": true,
+        "wing": true,
+        "purple": true,
+        "white": true,
+        "ice": true
+      },
+      "transform": {
+        "translation": {
+          "x": 2882.7532,
+          "y": -3299.921
+        }
+      }
+    },
+    {
+      "type": "caveLink",
+      "link": "Cave022_F03",
+      "transform": {
+        "translation": {
+          "x": 3053.0625,
+          "y": -3859.9768
+        }
+      }
+    },
+    {
+      "type": "caveLink",
+      "variant": "battle",
+      "link": "CaveVS003_F00",
+      "transform": {
+        "translation": {
+          "x": 3336.0002,
+          "y": 511.99963
+        }
+      }
+    }
+  ],
+  "water": [
+    {
+      "type": "water",
+      "variant": "water",
+      "normal": {
+        "image": "T_ui_Map_Area010_WaterBox00_D.png",
+        "amountToFreeze": 15
+      },
+      "transform": {
+        "translation": {
+          "x": 2909,
+          "y": -1953
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "switch": [
+    {
+      "type": "switch",
+      "variant": "double",
+      "switchId": "CirculatorSwitch00",
+      "transform": {
+        "translation": {
+          "x": 449.03424,
+          "y": 1898.3843
+        },
+        "rotation": 90
+      }
+    },
+    {
+      "type": "switch",
+      "variant": "single",
+      "switchId": "WaterBox00",
+      "transform": {
+        "translation": {
+          "x": 3133.001,
+          "y": -2178
+        },
+        "rotation": 90
+      }
+    },
+    {
+      "type": "switch",
+      "variant": "double",
+      "switchId": "CirculatorSwitch01",
+      "transform": {
+        "translation": {
+          "x": 671.03174,
+          "y": -1814.1836
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "switch",
+      "variant": "double",
+      "switchId": "CirculatorSwitch04",
+      "transform": {
+        "translation": {
+          "x": 436,
+          "y": -2695
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "switch",
+      "variant": "double",
+      "switchId": "CirculatorSwitch05",
+      "transform": {
+        "translation": {
+          "x": 2432,
+          "y": -3808
+        },
+        "rotation": 115
+      }
+    }
+  ],
+  "fan": [
+    {
+      "type": "fan",
+      "switchId": "CirculatorSwitch01",
+      "transform": {
+        "translation": {
+          "x": 1004.9993,
+          "y": -1506.9995
+        }
+      }
+    },
+    {
+      "type": "fan",
+      "switchId": "CirculatorSwitch00",
+      "transform": {
+        "translation": {
+          "x": 789,
+          "y": 1947
+        }
+      }
+    },
+    {
+      "type": "fan",
+      "switchId": "CirculatorSwitch04",
+      "transform": {
+        "translation": {
+          "x": 465,
+          "y": -2857
+        }
+      }
+    },
+    {
+      "type": "fan",
+      "switchId": "CirculatorSwitch04",
+      "transform": {
+        "translation": {
+          "x": -491,
+          "y": -3765
+        }
+      }
+    },
+    {
+      "type": "fan",
+      "switchId": "CirculatorSwitch05",
+      "transform": {
+        "translation": {
+          "x": 2343,
+          "y": -3289
+        }
+      }
+    },
+    {
+      "type": "fan",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 2270,
+          "y": 514
+        }
+      }
+    }
+  ],
+  "floor": [
+    {
+      "type": "floor",
+      "variant": "movable",
+      "transform": {
+        "translation": {
+          "x": 2227,
+          "y": -437
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "movable",
+      "transform": {
+        "translation": {
+          "x": -405,
+          "y": -547
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "movable",
+      "transform": {
+        "translation": {
+          "x": 1521,
+          "y": 1184
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "movable",
+      "transform": {
+        "translation": {
+          "x": -269,
+          "y": 3182
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "movable",
+      "transform": {
+        "translation": {
+          "x": 1986,
+          "y": -3459
+        }
+      }
+    }
+  ],
+  "structure": [
+    {
+      "type": "structure",
+      "variant": "wall",
+      "materialsNeeded": 30,
+      "transform": {
+        "translation": {
+          "x": -19,
+          "y": 3824
+        },
+        "rotation": 90
+      }
+    },
+    {
+      "type": "structure",
+      "variant": "slope",
+      "materialsNeeded": 21,
+      "transform": {
+        "translation": {
+          "x": 455,
+          "y": -632
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "tunnel": [
+    {
+      "type": "tunnel",
+      "variant": "captain",
+      "tunnelId": "TunnelID_02",
+      "transform": {
+        "translation": {
+          "x": -816,
+          "y": -1513
+        }
+      }
+    },
+    {
+      "type": "tunnel",
+      "variant": "captain",
+      "tunnelId": "TunnelID_02",
+      "transform": {
+        "translation": {
+          "x": -588,
+          "y": -805
+        }
+      }
+    },
+    {
+      "type": "tunnel",
+      "variant": "normal",
+      "tunnelId": "WarpCarryID_3",
+      "transform": {
+        "translation": {
+          "x": -1071,
+          "y": 857
+        }
+      }
+    },
+    {
+      "type": "tunnel",
+      "variant": "normal",
+      "tunnelId": "WarpCarryID_3",
+      "transform": {
+        "translation": {
+          "x": -520,
+          "y": 767
+        }
+      }
+    },
+    {
+      "type": "tunnel",
+      "variant": "normal",
+      "tunnelId": "WarpCarryID_04",
+      "transform": {
+        "translation": {
+          "x": 1727,
+          "y": -1540
+        }
+      }
+    },
+    {
+      "type": "tunnel",
+      "variant": "normal",
+      "tunnelId": "WarpCarryID_04",
+      "transform": {
+        "translation": {
+          "x": 1715,
+          "y": -1263
+        }
+      }
+    },
+    {
+      "type": "tunnel",
+      "variant": "normal",
+      "tunnelId": "TunnelID_0",
+      "transform": {
+        "translation": {
+          "x": 4097,
+          "y": 2030
+        }
+      }
+    },
+    {
+      "type": "tunnel",
+      "variant": "normal",
+      "tunnelId": "TunnelID_0",
+      "transform": {
+        "translation": {
+          "x": 4099,
+          "y": 1760
+        }
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "pushbag",
+      "weight": 10,
+      "transform": {
+        "translation": {
+          "x": -715,
+          "y": -1551
+        },
+        "rotation": 180
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "string",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": 718.17365,
+          "y": -4046
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "string",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": 852,
+          "y": -3780
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "zipline",
+      "transform": {
+        "translation": {
+          "x": 3000,
+          "y": -600
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "pushbag",
+      "weight": 10,
+      "transform": {
+        "translation": {
+          "x": 93,
+          "y": -1218
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "string",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": 3719,
+          "y": 1677
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "zipline",
+      "transform": {
+        "translation": {
+          "x": -482.4806,
+          "y": -973.82715
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "string",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": 2072,
+          "y": 1034
+        },
+        "rotation": 167
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "onion",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -1141.0902,
+          "y": 2724.9968
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -1322.1783,
+          "y": 2874.1682
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "onion",
+      "baseId": 1,
+      "guardedBy": [
+        "NOMI"
+      ],
+      "transform": {
+        "translation": {
+          "x": -190.30975,
+          "y": -2600.3005
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 1,
+      "transform": {
+        "translation": {
+          "x": 28.42218,
+          "y": -2517.9668
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "onion",
+      "baseId": 2,
+      "guardedBy": [
+        "BILLY"
+      ],
+      "transform": {
+        "translation": {
+          "x": 3036.5967,
+          "y": 2394.9512
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 2,
+      "transform": {
+        "translation": {
+          "x": 3067.1477,
+          "y": 2627.5703
+        }
+      }
+    }
+  ],
+  "spout": [
+    {
+      "type": "spout",
+      "transform": {
+        "translation": {
+          "x": 2884.7532,
+          "y": -3300.921
+        }
+      }
+    }
+  ],
+  "pot": [
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": 3345,
+          "y": -1664
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 10,
+          "max": 10
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 3290,
+          "y": -1620
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": 3236,
+          "y": -1649
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": 4010,
+          "y": 2021
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": 3999.0002,
+          "y": 2083.0002
+        }
+      }
+    }
+  ],
+  "glowPellets": [
+    {
+      "type": "glowPellets",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": 256.3463,
+          "y": -2980.6306
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 25,
+      "transform": {
+        "translation": {
+          "x": 2184,
+          "y": -1151
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": -169.98108,
+          "y": -181.27809
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": 15.135002,
+          "y": -709.7857
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 948.41376,
+          "y": 507.29004
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": -433,
+          "y": -1281
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 1097,
+          "y": -1882
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": 184,
+          "y": -484
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 874,
+          "y": -555
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 350,
+          "y": -1335
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": 42.96519,
+          "y": 815.35846
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": 3801.2195,
+          "y": 2203.3289
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": 1521.215,
+          "y": -511.5523
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 853.57,
+          "y": 2631.899
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 2647.218,
+          "y": 1028.5985
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": -1357.37,
+          "y": 1780.8207
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 25,
+      "transform": {
+        "translation": {
+          "x": 89.78634,
+          "y": 3944.768
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 1534.7036,
+          "y": 2143.6848
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": 3036.6008,
+          "y": 3139.7842
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 806.8492,
+          "y": 1298.571
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 1943.1825,
+          "y": 2640.9438
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": -425.00378,
+          "y": 3943.0112
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": -473.32687,
+          "y": 2769.2607
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 1087.418,
+          "y": 3638.302
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 20,
+      "transform": {
+        "translation": {
+          "x": 1188.7228,
+          "y": 2605.157
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": 3068.8682,
+          "y": 478.1809
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 74.033936,
+          "y": 3475.502
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 543,
+          "y": 196
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": -472.9945,
+          "y": 1575.016
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 2005.5833,
+          "y": 295.80136
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": -719.9811,
+          "y": -131.27809
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": -559.9811,
+          "y": 528.7219
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 124.24977,
+          "y": -1825.2092
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 20,
+      "transform": {
+        "translation": {
+          "x": 397,
+          "y": -1845
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 907,
+          "y": -1785
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": -490,
+          "y": -861
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 3017.527,
+          "y": 1721.8691
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": 1896.6415,
+          "y": 2638.7224
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 880.67596,
+          "y": 3194.9534
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 649.5182,
+          "y": 3601.6062
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 1262,
+          "y": 362
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": 2913.8071,
+          "y": 2583.1077
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 2397.3523,
+          "y": 2548.3901
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": 1303.7844,
+          "y": 693.0057
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 3875.804,
+          "y": 2106.2542
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": 3847.5293,
+          "y": 1731.0651
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": -9,
+          "y": -2338
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 20,
+      "transform": {
+        "translation": {
+          "x": 1861,
+          "y": -1785
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 2316.4849,
+          "y": 1651.25
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": 2805.5737,
+          "y": -2490.0393
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 743.5799,
+          "y": 2569.1096
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": 444.07526,
+          "y": 2386.935
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 25,
+      "transform": {
+        "translation": {
+          "x": 642.99414,
+          "y": 2249.6514
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 664.4002,
+          "y": 2369.6565
+        }
+      }
+    },
+    {
+      "type": "glowPellets",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 402.6101,
+          "y": 1644.8381
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 812.6381,
+          "y": -2100.5093
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 758.2096,
+          "y": -2288.953
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 611.698,
+          "y": -2261.3462
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 632.931,
+          "y": -2131.9724
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 668.6952,
+          "y": -2388.5007
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -387.63354,
+          "y": 1341.0516
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -254.6335,
+          "y": 1279.0516
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -57.633453,
+          "y": 1814.0519
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 1507,
+          "y": 811
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 1576.2214,
+          "y": 571
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 1719,
+          "y": 815
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 890.9266,
+          "y": 2342.3325
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 538.0396,
+          "y": 2083.0093
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 556.1221,
+          "y": 2248.0515
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 852.096,
+          "y": 2161.4438
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 709.75415,
+          "y": 2144.9272
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 3941,
+          "y": 1573
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 730.8461,
+          "y": 862.5148
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 839,
+          "y": 896
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 617.2482,
+          "y": 863.2521
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 926,
+          "y": 961
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 732,
+          "y": 937
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 613.75,
+          "y": 949
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 646,
+          "y": 907
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 3395,
+          "y": 1754
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 512.3985,
+          "y": 919.37463
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 875.9896,
+          "y": 909.4244
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 712.70013,
+          "y": 870.5031
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -285.4324,
+          "y": 667.1107
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -176.88596,
+          "y": 473.81415
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -573.98065,
+          "y": 2710.12
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -172.26942,
+          "y": 2866.0308
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 2672.5452,
+          "y": -318.54498
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 2888.8628,
+          "y": 18.602453
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 2658.054,
+          "y": -51.878242
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBIKABURI",
+      "name": "Flighty Joustmite",
+      "carryMax": 14,
+      "value": 5,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": 3881.223,
+          "y": 3100.1797
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBIKABURI",
+      "name": "Flighty Joustmite",
+      "carryMax": 14,
+      "value": 5,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": 2059.6208,
+          "y": 325.34143
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBIKABURI",
+      "name": "Flighty Joustmite",
+      "carryMax": 14,
+      "value": 5,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": -163.82742,
+          "y": 724.0886
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBIKABURI",
+      "name": "Flighty Joustmite",
+      "carryMax": 14,
+      "value": 5,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": -499.22586,
+          "y": 3745.1306
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBIKABURI",
+      "name": "Flighty Joustmite",
+      "carryMax": 14,
+      "value": 5,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": -196.01994,
+          "y": 3600.7905
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICECHAPPY",
+      "name": "Frosty Bulborb",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 12,
+      "transform": {
+        "translation": {
+          "x": -296,
+          "y": 1914
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 722.3153,
+          "y": 1278.7057
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 835,
+          "y": 1517.8682
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 539.65826,
+          "y": 1355.4628
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 544.30316,
+          "y": 1455.8357
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 754.78375,
+          "y": 1587.7256
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 864.73883,
+          "y": 1432.4105
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 614.7019,
+          "y": 1579.0001
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 620.27026,
+          "y": 1300.2787
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "UJINKOB",
+      "name": "Male Sheargrub",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 2,
+      "transform": {
+        "translation": {
+          "x": 805.7764,
+          "y": 1337.5566
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICECHAPPY",
+      "name": "Frosty Bulborb",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 12,
+      "transform": {
+        "translation": {
+          "x": 1546.6575,
+          "y": -2240.8987
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICECHAPPY",
+      "name": "Frosty Bulborb",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 12,
+      "transform": {
+        "translation": {
+          "x": 1926.8738,
+          "y": -2845.6829
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICECHAPPY",
+      "name": "Frosty Bulborb",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 12,
+      "transform": {
+        "translation": {
+          "x": 58.243774,
+          "y": -3048.321
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICECHAPPY",
+      "name": "Frosty Bulborb",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 12,
+      "transform": {
+        "translation": {
+          "x": 1572.7438,
+          "y": 1240.679
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICECHAPPY",
+      "name": "Frosty Bulborb",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 12,
+      "transform": {
+        "translation": {
+          "x": 642.2438,
+          "y": 1536.679
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -80.36417,
+          "y": 575.1276
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICECHAPPY",
+      "name": "Frosty Bulborb",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 12,
+      "transform": {
+        "translation": {
+          "x": -394,
+          "y": 1235
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "RUSHER",
+      "name": "Tusked Blowhog",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 6,
+      "transform": {
+        "translation": {
+          "x": 2176,
+          "y": -2780
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "RUSHER",
+      "name": "Tusked Blowhog",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 6,
+      "transform": {
+        "translation": {
+          "x": 2369,
+          "y": -2438
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "RUSHER",
+      "name": "Tusked Blowhog",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 6,
+      "transform": {
+        "translation": {
+          "x": 1395,
+          "y": -1798
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICECHAPPY",
+      "name": "Frosty Bulborb",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 12,
+      "transform": {
+        "translation": {
+          "x": 1485.2438,
+          "y": 2886.679
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "BIGCHAPPY_NIGHT",
+      "name": "Jumbo Bulborb",
+      "carryMax": 40,
+      "value": 15,
+      "seeds": 15,
+      "transform": {
+        "translation": {
+          "x": 1569.25,
+          "y": 106.25
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "BIGCHAPPY_NIGHT",
+      "name": "Jumbo Bulborb",
+      "carryMax": 40,
+      "value": 15,
+      "seeds": 15,
+      "transform": {
+        "translation": {
+          "x": 1692.5,
+          "y": -221.25
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -45.95945,
+          "y": 3213.364
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -235.509,
+          "y": 3450.8855
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -539.9479,
+          "y": 2985.1902
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 2716.1243,
+          "y": 1545.9899
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 2838.342,
+          "y": 1324.5979
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 2788.0156,
+          "y": 1111.3907
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -236.97539,
+          "y": 1070.0948
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -162.73083,
+          "y": 1262.4977
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -418.85623,
+          "y": 1073.4421
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -253.35303,
+          "y": 941.39496
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 3749.409,
+          "y": 3103.0002
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 3879.5066,
+          "y": 2877.0576
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 2760.5369,
+          "y": 382.9222
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 2964.283,
+          "y": 378.86615
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 2886.9812,
+          "y": 622.9757
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 2931.8606,
+          "y": 902.8162
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 2966.3145,
+          "y": 111.4796
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 2984.8625,
+          "y": -278.5973
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "DODORO",
+      "name": "Smoky Progg",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "transform": {
+        "translation": {
+          "x": 681,
+          "y": 1424.3043
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "DODORO",
+      "name": "Smoky Progg",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "transform": {
+        "translation": {
+          "x": 899.98456,
+          "y": -3918.355
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "DODORO",
+      "name": "Smoky Progg",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "transform": {
+        "translation": {
+          "x": 961,
+          "y": -1201
+        }
+      }
+    }
+  ]
+}

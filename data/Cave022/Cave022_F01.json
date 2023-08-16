@@ -1,0 +1,411 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave022_F02",
+      "transform": {
+        "translation": {
+          "x": -550,
+          "y": -884.0905
+        }
+      }
+    },
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave022_F00",
+      "transform": {
+        "translation": {
+          "x": 521.2844,
+          "y": 450.1516
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "type": "materials",
+      "amount": 25,
+      "transform": {
+        "translation": {
+          "x": 1045.9154,
+          "y": -969.3462
+        }
+      }
+    }
+  ],
+  "heatObstacle": [
+    {
+      "type": "heatObstacle",
+      "variant": "iceBox",
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 134.93945,
+          "y": 411.7173
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "iceBox",
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -584.6089,
+          "y": 478.8097
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 501.38623,
+          "y": -10.4104
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 597.4348,
+          "y": -8.855957
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 551.0149,
+          "y": 40.234314
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "iceBox",
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -286.5981,
+          "y": -669.8677
+        }
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "rock",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 51,
+      "transform": {
+        "translation": {
+          "x": -21.291931,
+          "y": 933.2296
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "rock",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 51,
+      "transform": {
+        "translation": {
+          "x": 594.87286,
+          "y": -457.83594
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTARINGO",
+      "name": "Insect Condo",
+      "weight": 12,
+      "carryMax": 24,
+      "value": 90,
+      "transform": {
+        "translation": {
+          "x": -1041.2334,
+          "y": -419.04846
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTATOMATOS",
+      "name": "Crush Nugget",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 20,
+      "transform": {
+        "translation": {
+          "x": -767.93835,
+          "y": 852.15656
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "ice",
+      "transform": {
+        "translation": {
+          "x": -624.58374,
+          "y": -793.44446
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "crystal",
+      "transform": {
+        "translation": {
+          "x": -919,
+          "y": -413
+        },
+        "rotation": 90
+      }
+    }
+  ],
+  "structure": [
+    {
+      "type": "structure",
+      "variant": "slope",
+      "materialsNeeded": 20,
+      "transform": {
+        "translation": {
+          "x": -274.72287,
+          "y": 24.196045
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "pushbag",
+      "weight": 10,
+      "transform": {
+        "translation": {
+          "x": -318.16064,
+          "y": -414.0456
+        },
+        "rotation": 90
+      }
+    }
+  ],
+  "spout": [
+    {
+      "type": "spout",
+      "variant": "ice",
+      "transform": {
+        "translation": {
+          "x": 823.0121,
+          "y": -271.1458
+        }
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": 947.311,
+          "y": 137.5
+        },
+        "rotation": -90
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 521.6145,
+          "y": 449.313
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 1,
+      "transform": {
+        "translation": {
+          "x": -550,
+          "y": -875
+        }
+      }
+    }
+  ],
+  "firePit": [
+    {
+      "type": "firePit",
+      "isLit": true,
+      "transform": {
+        "translation": {
+          "x": 17.354828,
+          "y": -660.7827
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": -758.66626,
+          "y": 207.54166
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": 330,
+          "y": 195
+        }
+      }
+    }
+  ],
+  "candypop": [
+    {
+      "type": "candypop",
+      "color": "ice",
+      "amount": 1,
+      "replacementCondition": 6,
+      "transform": {
+        "translation": {
+          "x": -826.1025,
+          "y": 441.247
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "ICEKOCHAPPY",
+      "name": "Dwarf Frosty Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -489.4682,
+          "y": -248.84827
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICECHAPPY",
+      "name": "Frosty Bulborb",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 12,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -645.06836,
+          "y": -506.58417
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICEMAR",
+      "name": "Icy Blowhog",
+      "carryMax": 1,
+      "value": 7,
+      "seeds": 5,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 835.6378,
+          "y": -708.18054
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICEFROG",
+      "name": "Chillyhop",
+      "carryMax": 10,
+      "value": 7,
+      "seeds": 8,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -219,
+          "y": 410
+        }
+      }
+    }
+  ]
+}

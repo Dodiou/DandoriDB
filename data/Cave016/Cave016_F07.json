@@ -1,0 +1,89 @@
+{
+  "water": [
+    {
+      "type": "water",
+      "variant": "swamp",
+      "normal": {
+        "image": "T_ui_Map_Cave016_F07_WaterBox00_D.png",
+        "amountToFreeze": 100,
+        "canSink": true
+      },
+      "transform": {
+        "translation": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "numbered",
+      "transform": {
+        "translation": {
+          "x": 743.8809,
+          "y": -55.745598
+        },
+        "rotation": -90
+      }
+    }
+  ],
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave016_F08",
+      "transform": {
+        "translation": {
+          "x": 1342.9951,
+          "y": -145.40158
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -1538.0067,
+          "y": 7.193017
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "SAKADACHI",
+      "name": "Crusted Rumpup",
+      "carryMax": 40,
+      "value": 20,
+      "seeds": 30,
+      "drops": [
+        {
+          "item": "GOtaMangosteen_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -277.7915,
+          "y": 5.376007
+        }
+      }
+    }
+  ]
+}

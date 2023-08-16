@@ -1,0 +1,93 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave016_F17",
+      "transform": {
+        "translation": {
+          "x": 932.4049,
+          "y": -101.71544
+        }
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "geyser",
+      "transform": {
+        "translation": {
+          "x": 143.83864,
+          "y": -198
+        }
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "geyser",
+      "transform": {
+        "translation": {
+          "x": 417.3583,
+          "y": -618
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "numbered",
+      "transform": {
+        "translation": {
+          "x": 534.8851,
+          "y": 192.42754
+        },
+        "rotation": 90
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -560.93463,
+          "y": 254.65848
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "QUEEN",
+      "name": "Empress Bulblax",
+      "carryMax": 40,
+      "value": 20,
+      "seeds": 50,
+      "drops": [
+        {
+          "item": "GOtaDragonFruit_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 252.22638,
+          "y": -408
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave006_F03",
+      "transform": {
+        "translation": {
+          "x": -0.067230225,
+          "y": -313.2555
+        }
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "geyser",
+      "hasCrystal": true,
+      "transform": {
+        "translation": {
+          "x": 272.27594,
+          "y": -1061.0063
+        }
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "geyser",
+      "transform": {
+        "translation": {
+          "x": -547.71027,
+          "y": 74.20691
+        }
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "clipboard",
+      "weight": 20,
+      "transform": {
+        "translation": {
+          "x": -138,
+          "y": 1925
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "squashbag",
+      "weight": 10,
+      "transform": {
+        "translation": {
+          "x": -302.0426,
+          "y": 274.734
+        },
+        "rotation": 90
+      }
+    }
+  ],
+  "materials": [
+    {
+      "type": "materials",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": -282.91736,
+          "y": -1864.1257
+        }
+      }
+    },
+    {
+      "type": "materials",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": -1034.3895,
+          "y": 966.48114
+        }
+      }
+    },
+    {
+      "type": "materials",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 273.67484,
+          "y": 1060.5483
+        }
+      }
+    }
+  ],
+  "spout": [
+    {
+      "type": "spout",
+      "variant": "fire",
+      "transform": {
+        "translation": {
+          "x": 823.45245,
+          "y": 878.9068
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "fire",
+      "transform": {
+        "translation": {
+          "x": -551.28937,
+          "y": 824.7218
+        }
+      }
+    }
+  ],
+  "structure": [
+    {
+      "type": "structure",
+      "variant": "bridge",
+      "materialsNeeded": 29,
+      "transform": {
+        "translation": {
+          "x": -1.5220642,
+          "y": -969
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTATRAINB",
+      "name": "Middle-Management Tank Car",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": 4.7693787,
+          "y": 1700.9741
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTACOUNTER",
+      "name": "Internal-Clock Measurer",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 120,
+      "transform": {
+        "translation": {
+          "x": 240,
+          "y": 832
+        }
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "ice",
+      "variant": "fighting",
+      "amount": 5,
+      "replacementCondition": 51,
+      "transform": {
+        "translation": {
+          "x": -355,
+          "y": 1455
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "ice",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 51,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": -551,
+          "y": -745
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 2.5679932,
+          "y": -1495.6809
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 1,
+      "guardedBy": [
+        "KABURI"
+      ],
+      "transform": {
+        "translation": {
+          "x": 559.48206,
+          "y": 426.7232
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "FIRETANK",
+      "name": "Fiery Blowhog",
+      "carryMax": 10,
+      "value": 5,
+      "seeds": 5,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 551.96497,
+          "y": 1260.099
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KABURI",
+      "name": "Joustmite",
+      "carryMax": 14,
+      "value": 5,
+      "seeds": 6,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 559.48206,
+          "y": 427.64032
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KABURI",
+      "name": "Joustmite",
+      "carryMax": 14,
+      "value": 5,
+      "seeds": 6,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -408.3764,
+          "y": 1505.9269
+        }
+      }
+    }
+  ],
+  "egg": [
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -794,
+          "y": 1120
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -852.60815,
+          "y": 1142.6774
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 871,
+          "y": 1374
+        }
+      }
+    }
+  ]
+}

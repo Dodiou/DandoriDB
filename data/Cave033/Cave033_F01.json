@@ -1,0 +1,245 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "exit",
+      "link": "Area001",
+      "transform": {
+        "translation": {
+          "x": 1120,
+          "y": 2.5
+        }
+      }
+    }
+  ],
+  "hydroJelly": [
+    {
+      "type": "hydroJelly",
+      "transform": {
+        "translation": {
+          "x": 361,
+          "y": -180.5
+        }
+      }
+    }
+  ],
+  "castaway": [
+    {
+      "type": "castaway",
+      "isLeafling": false,
+      "weight": 3,
+      "carryMax": 6,
+      "transform": {
+        "translation": {
+          "x": 231.30206,
+          "y": 172.01308
+        }
+      }
+    }
+  ],
+  "pot": [
+    {
+      "type": "pot",
+      "drops": [
+        {
+          "item": "GPikminIce_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -33.20836,
+          "y": -63.928932
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": 1084.936,
+          "y": 84.843315
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": 1164.0238,
+          "y": -60.50428
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -77.85445,
+          "y": 25.382458
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -652.6542,
+          "y": 221.56847
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -655.08673,
+          "y": -230.2327
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -636.00507,
+          "y": -177.22285
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -87.64232,
+          "y": -28.95374
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -86.868164,
+          "y": 87.04773
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": 1043.1213,
+          "y": 31.830084
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": 1120,
+          "y": 2
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTAKENDAMAB",
+      "name": "Aspiration-Ritual Pole",
+      "weight": 10,
+      "carryMax": 20,
+      "value": 150,
+      "transform": {
+        "translation": {
+          "x": 602,
+          "y": -197
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -1126,
+          "y": 4.5
+        }
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "ice",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 6,
+      "transform": {
+        "translation": {
+          "x": -812.6569,
+          "y": 262.61606
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "RUSHER",
+      "name": "Tusked Blowhog",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 6,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 123.84918,
+          "y": 12.721313
+        }
+      }
+    }
+  ],
+  "groupDropManager": [
+    {
+      "type": "groupDropManager",
+      "radius": 100,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -700.38293,
+          "y": -184.09613
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "red",
+      "variant": "sprouts",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": 807,
+          "y": -826
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "red",
+      "variant": "sprouts",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": -628,
+          "y": 242
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "ice",
+      "variant": "sprouts",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": 277,
+          "y": 968
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "ice",
+      "variant": "sprouts",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": -963,
+          "y": -822
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "red",
+      "variant": "sprouts",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": 977,
+          "y": 554
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "dirt",
+      "transform": {
+        "translation": {
+          "x": 355,
+          "y": 448.4048
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "ice",
+      "transform": {
+        "translation": {
+          "x": -762,
+          "y": -378
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "mushroom": [
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": -820,
+          "y": 59
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": -820,
+          "y": -60
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 188,
+          "y": -858
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 338,
+          "y": -889
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 218,
+          "y": -755
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 272,
+          "y": -783
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 348,
+          "y": -704
+        }
+      }
+    }
+  ],
+  "item": [
+    {
+      "type": "item",
+      "variant": "bomb",
+      "transform": {
+        "translation": {
+          "x": -988,
+          "y": -6
+        }
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": -413,
+          "y": -446
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "spout": [
+    {
+      "type": "spout",
+      "variant": "fire",
+      "transform": {
+        "translation": {
+          "x": 907.0011,
+          "y": -170.36104
+        }
+      }
+    }
+  ],
+  "floor": [
+    {
+      "type": "floor",
+      "variant": "mushroom",
+      "isPoison": false,
+      "radius": 100,
+      "transform": {
+        "translation": {
+          "x": 283,
+          "y": -814
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 152.44055,
+          "y": -0.230896
+        }
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": 424,
+          "y": -826
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "CHAPPY",
+      "name": "Bulborb",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 10,
+      "transform": {
+        "translation": {
+          "x": -852,
+          "y": -0.52557397
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -541.91943,
+          "y": 100.38208
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -480.8181,
+          "y": -84.45459
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ARIKUI",
+      "name": "Whiptongue Bulborb",
+      "carryMax": 20,
+      "value": 12,
+      "seeds": 12,
+      "transform": {
+        "translation": {
+          "x": -820.5699,
+          "y": -684.5932
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICECHAPPY",
+      "name": "Frosty Bulborb",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 12,
+      "transform": {
+        "translation": {
+          "x": 806.9309,
+          "y": 32.57242
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "FIRECHAPPY",
+      "name": "Fiery Bulblax",
+      "carryMax": 24,
+      "value": 12,
+      "seeds": 15,
+      "transform": {
+        "translation": {
+          "x": -257,
+          "y": -830.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KUMACHAPPY",
+      "name": "Spotty Bulbear",
+      "carryMax": 24,
+      "value": 12,
+      "seeds": 15,
+      "transform": {
+        "translation": {
+          "x": -424.5,
+          "y": 886
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TENTENCHAPPY",
+      "name": "Orange Bulborb",
+      "carryMax": 20,
+      "value": 12,
+      "seeds": 12,
+      "transform": {
+        "translation": {
+          "x": 826.703,
+          "y": 693.80884
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TENKOCHAPPY",
+      "name": "Dwarf Orange Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 730,
+          "y": 600
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KUMAKOCHAPPY",
+      "name": "Dwarf Bulbear",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -580,
+          "y": 775
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KUMAKOCHAPPY",
+      "name": "Dwarf Bulbear",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -530,
+          "y": 720
+        }
+      }
+    }
+  ]
+}

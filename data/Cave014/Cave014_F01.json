@@ -1,0 +1,464 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave014_F02",
+      "transform": {
+        "translation": {
+          "x": -2864.0708,
+          "y": 1856.5715
+        }
+      }
+    },
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave014_F00",
+      "transform": {
+        "translation": {
+          "x": -1941.1282,
+          "y": 1365.5104
+        }
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "blue",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 51,
+      "transform": {
+        "translation": {
+          "x": -261.95532,
+          "y": 82.66855
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "blue",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 51,
+      "transform": {
+        "translation": {
+          "x": -3048.155,
+          "y": 1577.7446
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "dirt",
+      "transform": {
+        "translation": {
+          "x": -2330.568,
+          "y": 1438.9781
+        },
+        "rotation": -155
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "dirt",
+      "transform": {
+        "translation": {
+          "x": -979.9054,
+          "y": 1143.4768
+        },
+        "rotation": -65
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "iron",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": -2463.632,
+          "y": 1170.0131
+        },
+        "rotation": 25
+      }
+    },
+    {
+      "type": "fence",
+      "variant": "iron",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 1053.1763,
+          "y": 184.40143
+        },
+        "rotation": -65
+      }
+    },
+    {
+      "type": "fence",
+      "variant": "iron",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 1120.3728,
+          "y": 328.50418
+        },
+        "rotation": -65
+      }
+    }
+  ],
+  "switch": [
+    {
+      "type": "switch",
+      "variant": "single",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 350.60553,
+          "y": 865.09674
+        },
+        "rotation": 25
+      }
+    }
+  ],
+  "water": [
+    {
+      "type": "water",
+      "variant": "water",
+      "normal": {
+        "image": "T_ui_Map_Cave014_F01_WaterBox00_D.png",
+        "amountToFreeze": 5
+      },
+      "transform": {
+        "translation": {
+          "x": -2952.4197,
+          "y": 1536.9644
+        },
+        "rotation": 25
+      }
+    },
+    {
+      "type": "water",
+      "variant": "water",
+      "normal": {
+        "image": "T_ui_Map_Cave014_F01_WaterBox01_D.png",
+        "amountToFreeze": 5
+      },
+      "transform": {
+        "translation": {
+          "x": 2470.1245,
+          "y": -520.4675
+        },
+        "rotation": 25
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -1941.1282,
+          "y": 1365.5104
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 1,
+      "transform": {
+        "translation": {
+          "x": -2864.0708,
+          "y": 1856.5715
+        }
+      }
+    }
+  ],
+  "mushroom": [
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 496,
+          "y": -356
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 530.5724,
+          "y": -313.15057
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": true,
+      "transform": {
+        "translation": {
+          "x": 558,
+          "y": -361.06595
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 472.90314,
+          "y": -323.24335
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 601,
+          "y": -402.24307
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": false,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 635.9031,
+          "y": -384.24316
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTASWEETPOTATO",
+      "name": "Daughter of the Earth",
+      "weight": 12,
+      "carryMax": 24,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": -3180.988,
+          "y": 1346.8013
+        }
+      }
+    }
+  ],
+  "tunnel": [
+    {
+      "type": "tunnel",
+      "variant": "pup",
+      "tunnelId": "HappyDoorID_0",
+      "transform": {
+        "translation": {
+          "x": 1028.916,
+          "y": 551.0024
+        }
+      }
+    },
+    {
+      "type": "tunnel",
+      "variant": "pup",
+      "tunnelId": "HappyDoorID_0",
+      "transform": {
+        "translation": {
+          "x": 2790.2168,
+          "y": -413.7456
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "CHAPPY",
+      "name": "Bulborb",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 10,
+      "drops": [
+        {
+          "item": "GOtaTomatoS_C",
+          "chance": 1,
+          "min": 2,
+          "max": 2
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 325.03668,
+          "y": 196.23535
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 68.1192,
+          "y": 230.46014
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 132.0238,
+          "y": 524.9296
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 556.3124,
+          "y": 204.9458
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 461.34686,
+          "y": -76.969246
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "FIREOTAKARA",
+      "name": "Fiery Dweevil",
+      "carryMax": 4,
+      "value": 2,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 221.4748,
+          "y": 904.3469
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "AMEBOZU",
+      "name": "Waterwraith",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "transform": {
+        "translation": {
+          "x": -1556.9304,
+          "y": 1238.2146
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -1759.3105,
+          "y": 1031.3635
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOCHAPPY",
+      "name": "Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -1657.3447,
+          "y": 1065.466
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "FIREOTAKARA",
+      "name": "Fiery Dweevil",
+      "carryMax": 4,
+      "value": 2,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 744.3202,
+          "y": 382.6478
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "YAMASHINJU",
+      "name": "Pearly Clamclamp",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 15,
+      "transform": {
+        "translation": {
+          "x": 2194.731,
+          "y": -1672.5969
+        }
+      }
+    }
+  ]
+}

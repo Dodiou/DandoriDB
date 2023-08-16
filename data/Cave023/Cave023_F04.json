@@ -1,0 +1,437 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "exit",
+      "link": "Area010",
+      "transform": {
+        "translation": {
+          "x": -1430,
+          "y": -1375
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "numbered",
+      "transform": {
+        "translation": {
+          "x": -1255.4329,
+          "y": -1268.3557
+        },
+        "rotation": 90
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "crystal",
+      "transform": {
+        "translation": {
+          "x": -276,
+          "y": -433
+        },
+        "rotation": 180
+      }
+    }
+  ],
+  "materials": [
+    {
+      "type": "materials",
+      "amount": 20,
+      "transform": {
+        "translation": {
+          "x": -1071.9757,
+          "y": -628.5161
+        }
+      }
+    }
+  ],
+  "castaway": [
+    {
+      "type": "castaway",
+      "isLeafling": true,
+      "weight": 3,
+      "carryMax": 6,
+      "transform": {
+        "translation": {
+          "x": 432.06348,
+          "y": -262.8291
+        }
+      }
+    }
+  ],
+  "floor": [
+    {
+      "type": "floor",
+      "variant": "movable",
+      "transform": {
+        "translation": {
+          "x": -772.87415,
+          "y": -19.894531
+        }
+      }
+    }
+  ],
+  "onion": [
+    {
+      "type": "onion",
+      "color": "flarlic",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": -501.07742,
+          "y": -923.1194
+        }
+      }
+    }
+  ],
+  "structure": [
+    {
+      "type": "structure",
+      "variant": "slope",
+      "materialsNeeded": 22,
+      "transform": {
+        "translation": {
+          "x": -281.2619,
+          "y": 687.5
+        },
+        "rotation": 180
+      }
+    }
+  ],
+  "candypop": [
+    {
+      "type": "candypop",
+      "color": "purple",
+      "amount": 1,
+      "replacementCondition": 51,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": 289.01282,
+          "y": 6.201538
+        }
+      }
+    },
+    {
+      "type": "candypop",
+      "color": "purple",
+      "amount": 1,
+      "replacementCondition": 51,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": 38.230644,
+          "y": -959.9096
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 535,
+          "y": -810
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTAYOSHICOOKIED",
+      "name": "Love's Fortune Cookie",
+      "weight": 3,
+      "carryMax": 6,
+      "value": 50,
+      "transform": {
+        "translation": {
+          "x": -866,
+          "y": 1351
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAECLAIR",
+      "name": "Sweet Torrent",
+      "weight": 10,
+      "carryMax": 20,
+      "value": 150,
+      "transform": {
+        "translation": {
+          "x": -335.75952,
+          "y": -558.40454
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAYOSHICOOKIEE",
+      "name": "Hearty Container",
+      "weight": 3,
+      "carryMax": 6,
+      "value": 50,
+      "transform": {
+        "translation": {
+          "x": -812,
+          "y": 1420
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTACANDYSTICK",
+      "name": "Sweet Stumble-Not",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 60,
+      "transform": {
+        "translation": {
+          "x": 819.4901,
+          "y": 1326.0457
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTABUTTONWOOD",
+      "name": "Perforated Raft",
+      "weight": 1,
+      "carryMax": 2,
+      "value": 10,
+      "transform": {
+        "translation": {
+          "x": -37.829903,
+          "y": 36.336
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAKIWI",
+      "name": "Disguised Delicacy",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": -659.7402,
+          "y": -427.92184
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "OOPANMODOKI",
+      "name": "Giant Breadbug",
+      "carryMax": 24,
+      "value": 15,
+      "seeds": 15,
+      "drops": [
+        {
+          "item": "GOtaMacaronA_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -302.77393,
+          "y": 298.0697
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KUMAKOCHAPPY",
+      "name": "Dwarf Bulbear",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": 797.2788,
+          "y": 539.3115
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KUMAKOCHAPPY",
+      "name": "Dwarf Bulbear",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": 154.3703,
+          "y": 520.2635
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KUMAKOCHAPPY",
+      "name": "Dwarf Bulbear",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": 99.47241,
+          "y": 377.5017
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KUMACHAPPY",
+      "name": "Spotty Bulbear",
+      "carryMax": 24,
+      "value": 12,
+      "seeds": 15,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -69.44122,
+          "y": 1088.7499
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KUMAKOCHAPPY",
+      "name": "Dwarf Bulbear",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -580.91565,
+          "y": -571.47876
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KUMAKOCHAPPY",
+      "name": "Dwarf Bulbear",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -836.86273,
+          "y": -616.714
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KUMAKOCHAPPY",
+      "name": "Dwarf Bulbear",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -834.94055,
+          "y": 999.3203
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KUMAKOCHAPPY",
+      "name": "Dwarf Bulbear",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -980.39105,
+          "y": 862.5299
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KUMAKOCHAPPY",
+      "name": "Dwarf Bulbear",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -972.0292,
+          "y": 1081.9099
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "OOPANMODOKI",
+      "name": "Giant Breadbug",
+      "carryMax": 24,
+      "value": 15,
+      "seeds": 15,
+      "drops": [
+        {
+          "item": "GOtaCasinoChip10_C",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 10,
+          "max": 10
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 167.91574,
+          "y": -266.989
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "MAR",
+      "name": "Puffy Blowhog",
+      "carryMax": 1,
+      "value": 7,
+      "seeds": 5,
+      "transform": {
+        "translation": {
+          "x": -577.0748,
+          "y": -707.8728
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,555 @@
+{
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -1103,
+          "y": 536.14075
+        }
+      }
+    }
+  ],
+  "structure": [
+    {
+      "type": "structure",
+      "variant": "slope",
+      "materialsNeeded": 45,
+      "transform": {
+        "translation": {
+          "x": -1101,
+          "y": 940
+        },
+        "rotation": -180
+      }
+    }
+  ],
+  "firePit": [
+    {
+      "type": "firePit",
+      "isLit": true,
+      "transform": {
+        "translation": {
+          "x": -846,
+          "y": 801
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": -190.98474,
+          "y": -385.96545
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": 262.01526,
+          "y": 285.03455
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": 825.01526,
+          "y": -979.96545
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": 1487.0153,
+          "y": 538.03455
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": -864.98474,
+          "y": -784.96545
+        }
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": -1100,
+          "y": 162.00366
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "ice",
+      "transform": {
+        "translation": {
+          "x": -1665,
+          "y": -1065
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "ice",
+      "transform": {
+        "translation": {
+          "x": 1252,
+          "y": 662
+        },
+        "rotation": -90
+      }
+    }
+  ],
+  "materials": [
+    {
+      "type": "materials",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": -1840,
+          "y": -932
+        }
+      }
+    },
+    {
+      "type": "materials",
+      "amount": 10,
+      "transform": {
+        "translation": {
+          "x": 1113,
+          "y": -557
+        }
+      }
+    },
+    {
+      "type": "materials",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": -266,
+          "y": 1321
+        }
+      }
+    },
+    {
+      "type": "materials",
+      "amount": 6,
+      "transform": {
+        "translation": {
+          "x": 161,
+          "y": -736
+        }
+      }
+    },
+    {
+      "type": "materials",
+      "amount": 4,
+      "transform": {
+        "translation": {
+          "x": -1668,
+          "y": 827
+        }
+      }
+    },
+    {
+      "type": "materials",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": -2,
+          "y": -1365
+        }
+      }
+    },
+    {
+      "type": "materials",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": 1420,
+          "y": 63
+        }
+      }
+    }
+  ],
+  "heatObstacle": [
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 440,
+          "y": 511
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 439.99994,
+          "y": 589
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 507,
+          "y": 549.00006
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -1500.0001,
+          "y": 781.9997
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -1499.9999,
+          "y": 862.99994
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 41.000183,
+          "y": -1166
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -39.999817,
+          "y": -1166
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -579.00006,
+          "y": -512
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -579.00006,
+          "y": -589
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -649,
+          "y": -550
+        }
+      }
+    }
+  ],
+  "hydroJelly": [
+    {
+      "type": "hydroJelly",
+      "transform": {
+        "translation": {
+          "x": 161,
+          "y": -736
+        }
+      }
+    },
+    {
+      "type": "hydroJelly",
+      "drops": [
+        {
+          "item": "GPikminRed_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -439,
+          "y": 366
+        }
+      }
+    },
+    {
+      "type": "hydroJelly",
+      "transform": {
+        "translation": {
+          "x": 1116,
+          "y": -548
+        }
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "red",
+      "variant": "idle",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": 887.7766,
+          "y": 764.7974
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "red",
+      "variant": "sprouts",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": -1803,
+          "y": -550
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "red",
+      "variant": "sprouts",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": 2128,
+          "y": 70
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "red",
+      "variant": "sprouts",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": 1308,
+          "y": -770
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "ICEKOCHAPPY",
+      "name": "Dwarf Frosty Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -127.27161,
+          "y": 1117.9558
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICEKOCHAPPY",
+      "name": "Dwarf Frosty Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -436.8556,
+          "y": 1083.9883
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICEMAR",
+      "name": "Icy Blowhog",
+      "carryMax": 1,
+      "value": 7,
+      "seeds": 5,
+      "transform": {
+        "translation": {
+          "x": -4,
+          "y": -572
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICEKOCHAPPY",
+      "name": "Dwarf Frosty Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 1711.7284,
+          "y": 420.95575
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICEKOCHAPPY",
+      "name": "Dwarf Frosty Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 1016.5592,
+          "y": 512.13513
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICEKOCHAPPY",
+      "name": "Dwarf Frosty Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 1020.5592,
+          "y": 273.13513
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "YUKIFUTAKUCHI",
+      "name": "Arctic Cannon Larva",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": 2024.6376,
+          "y": 527.81775
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "YUKIFUTAKUCHI",
+      "name": "Arctic Cannon Larva",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": 637.86975,
+          "y": -543.90466
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "YUKIFUTAKUCHI",
+      "name": "Arctic Cannon Larva",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": -1095,
+          "y": -1070
+        }
+      }
+    }
+  ],
+  "egg": [
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -1752,
+          "y": -382
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -1713,
+          "y": -347
+        }
+      }
+    }
+  ]
+}

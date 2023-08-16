@@ -1,0 +1,400 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave007_F03",
+      "transform": {
+        "translation": {
+          "x": -386.38928,
+          "y": 818.7693
+        }
+      }
+    }
+  ],
+  "spout": [
+    {
+      "type": "spout",
+      "variant": "water",
+      "transform": {
+        "translation": {
+          "x": 688.08594,
+          "y": 551.8725
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "water",
+      "transform": {
+        "translation": {
+          "x": 322,
+          "y": 1096.5
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "water",
+      "transform": {
+        "translation": {
+          "x": -462,
+          "y": -293.5
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "type": "materials",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": 1122,
+          "y": -270.5
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "KINKAISTATION",
+      "name": "Gold Nugget",
+      "amount": 15,
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
+      "transform": {
+        "translation": {
+          "x": 852,
+          "y": 1098.8513
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAGRAPEFRUIT",
+      "name": "Astringent Clump",
+      "weight": 12,
+      "carryMax": 24,
+      "value": 90,
+      "transform": {
+        "translation": {
+          "x": 692.84204,
+          "y": 554.65625
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAKIWIGLD",
+      "name": "Blonde Impostor",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": -134.16878,
+          "y": -1160.4698
+        }
+      }
+    }
+  ],
+  "onion": [
+    {
+      "type": "onion",
+      "color": "flarlic",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": -101.00001,
+          "y": -675.5
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "electric",
+      "transform": {
+        "translation": {
+          "x": 226,
+          "y": 199.5
+        },
+        "rotation": -90
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "blue",
+      "variant": "fighting",
+      "amount": 5,
+      "replacementCondition": 51,
+      "transform": {
+        "translation": {
+          "x": 550,
+          "y": 1050
+        }
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": 845,
+          "y": -8
+        },
+        "rotation": -70
+      }
+    },
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": -9,
+          "y": -1076.5
+        },
+        "rotation": 80
+      }
+    }
+  ],
+  "mound": [
+    {
+      "type": "mound",
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 25,
+          "max": 25
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -8,
+          "y": -910
+        }
+      }
+    }
+  ],
+  "honey": [
+    {
+      "type": "honey",
+      "transform": {
+        "translation": {
+          "x": -391,
+          "y": -684.5
+        }
+      }
+    },
+    {
+      "type": "honey",
+      "transform": {
+        "translation": {
+          "x": -578,
+          "y": -895.5
+        }
+      }
+    }
+  ],
+  "candypop": [
+    {
+      "type": "candypop",
+      "color": "yellow",
+      "amount": 1,
+      "replacementCondition": 6,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": -1059,
+          "y": 165.5
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -514.6782,
+          "y": 213.78949
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "KAREHAMBO",
+      "name": "Desiccated Skitter Leaf",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 170,
+          "y": -670.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KAREHAMBO",
+      "name": "Desiccated Skitter Leaf",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 324,
+          "y": -902.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "MINIMOCHI",
+      "name": "Sunsquish",
+      "carryMax": 1,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": 627,
+          "y": 1003.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KAREHAMBO",
+      "name": "Desiccated Skitter Leaf",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 283,
+          "y": -727
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "MINIMOCHI",
+      "name": "Sunsquish",
+      "carryMax": 1,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": 633.26764,
+          "y": 208.38806
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "MINIMOCHI",
+      "name": "Sunsquish",
+      "carryMax": 1,
+      "value": 3,
+      "seeds": 4,
+      "transform": {
+        "translation": {
+          "x": -352,
+          "y": -893.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KAREHAMBO",
+      "name": "Desiccated Skitter Leaf",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 183,
+          "y": -627
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KAREHAMBO",
+      "name": "Desiccated Skitter Leaf",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 233,
+          "y": -877
+        }
+      }
+    }
+  ],
+  "egg": [
+    {
+      "type": "egg",
+      "isBig": true,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 3,
+          "max": 3
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 10,
+          "max": 10
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 553,
+          "y": 137.5
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": true,
+      "drops": [
+        {
+          "item": "GMiniMochi_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 203,
+          "y": 567.5
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,574 @@
+{
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "KINKAISTATION",
+      "name": "Gold Nugget",
+      "amount": 50,
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
+      "transform": {
+        "translation": {
+          "x": -940,
+          "y": 0
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "KINKAISTATION",
+      "name": "Gold Nugget",
+      "amount": 42,
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
+      "transform": {
+        "translation": {
+          "x": 687,
+          "y": 219
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "KINKAISTATION",
+      "name": "Gold Nugget",
+      "amount": 50,
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
+      "transform": {
+        "translation": {
+          "x": 146.99994,
+          "y": -1061
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAHANDBELL",
+      "name": "Time Marker",
+      "weight": 12,
+      "carryMax": 24,
+      "value": 180,
+      "transform": {
+        "translation": {
+          "x": -101,
+          "y": 229
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAGARAGARA",
+      "name": "Shake-a-Smile",
+      "weight": 12,
+      "carryMax": 24,
+      "value": 180,
+      "transform": {
+        "translation": {
+          "x": 920.8134,
+          "y": -1074.9116
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAOCARINABRN",
+      "name": "Ambiguous Hostel",
+      "weight": 10,
+      "carryMax": 20,
+      "value": 150,
+      "transform": {
+        "translation": {
+          "x": -97,
+          "y": -235
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAWHISTLE",
+      "name": "Emperor Whistle",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 80,
+      "transform": {
+        "translation": {
+          "x": -155,
+          "y": 589
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAHORNBELL",
+      "name": "Path Creator",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 100,
+      "transform": {
+        "translation": {
+          "x": 449,
+          "y": 55
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTACASTANETS",
+      "name": "Harmonic Synthesizer",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": 928,
+          "y": 0
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAHARMONICA",
+      "name": "Wind Detector",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": 954,
+          "y": 558
+        }
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "rock",
+      "variant": "sprouts",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": -664,
+          "y": 1085
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "yellow",
+      "variant": "sprouts",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": -652,
+          "y": 242
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "rock",
+      "variant": "sprouts",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": 274,
+          "y": 1125
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "yellow",
+      "variant": "idle",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": 390,
+          "y": 260
+        }
+      }
+    }
+  ],
+  "tunnel": [
+    {
+      "type": "tunnel",
+      "variant": "pup",
+      "tunnelId": "HappyDoorID_0",
+      "transform": {
+        "translation": {
+          "x": 493,
+          "y": -1114
+        }
+      }
+    },
+    {
+      "type": "tunnel",
+      "variant": "pup",
+      "tunnelId": "HappyDoorID_0",
+      "transform": {
+        "translation": {
+          "x": 701.47955,
+          "y": -1160
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "electric",
+      "transform": {
+        "translation": {
+          "x": -1,
+          "y": -900
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "electric",
+      "transform": {
+        "translation": {
+          "x": -763,
+          "y": -412
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "crystal",
+      "transform": {
+        "translation": {
+          "x": 567,
+          "y": -825
+        },
+        "rotation": 90
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "crystal",
+      "transform": {
+        "translation": {
+          "x": -273,
+          "y": 0
+        },
+        "rotation": 90
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "string",
+      "weight": 15,
+      "transform": {
+        "translation": {
+          "x": 527,
+          "y": -47
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": 280,
+          "y": 826
+        }
+      }
+    }
+  ],
+  "mound": [
+    {
+      "type": "mound",
+      "drops": [
+        {
+          "item": "GBomb_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 354,
+          "y": -222
+        }
+      }
+    },
+    {
+      "type": "mound",
+      "drops": [
+        {
+          "item": "GBomb_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -440,
+          "y": 257
+        }
+      }
+    },
+    {
+      "type": "mound",
+      "drops": [
+        {
+          "item": "GHotExtract_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 447,
+          "y": 1077
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -855.55945,
+          "y": -653.2309
+        }
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": 636,
+          "y": 0
+        },
+        "rotation": 90
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "TENTENCHAPPY",
+      "name": "Orange Bulborb",
+      "carryMax": 20,
+      "value": 12,
+      "seeds": 12,
+      "transform": {
+        "translation": {
+          "x": 274,
+          "y": -823
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TENKOCHAPPY",
+      "name": "Dwarf Orange Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 201,
+          "y": -690
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TENKOCHAPPY",
+      "name": "Dwarf Orange Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -282,
+          "y": -944
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TENKOCHAPPY",
+      "name": "Dwarf Orange Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -376,
+          "y": -625
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TENKOCHAPPY",
+      "name": "Dwarf Orange Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 297,
+          "y": -1035
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TENKOCHAPPY",
+      "name": "Dwarf Orange Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -209,
+          "y": -760
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "BIGFROG",
+      "name": "Masterhop",
+      "carryMax": 30,
+      "value": 15,
+      "seeds": 15,
+      "transform": {
+        "translation": {
+          "x": -415,
+          "y": 845
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TENTENCHAPPY",
+      "name": "Orange Bulborb",
+      "carryMax": 20,
+      "value": 12,
+      "seeds": 12,
+      "transform": {
+        "translation": {
+          "x": 140,
+          "y": -5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "MAROFROG",
+      "name": "Wollyhop",
+      "carryMax": 10,
+      "value": 7,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": -550,
+          "y": 0
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "MAROFROG",
+      "name": "Wollyhop",
+      "carryMax": 10,
+      "value": 7,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": 822,
+          "y": -820
+        }
+      }
+    }
+  ],
+  "egg": [
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1008,
+          "y": 819
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 957,
+          "y": 874
+        }
+      }
+    }
+  ]
+}

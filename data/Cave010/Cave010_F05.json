@@ -1,0 +1,248 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "exit",
+      "link": "Area002",
+      "transform": {
+        "translation": {
+          "x": -355,
+          "y": -640
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "numbered",
+      "transform": {
+        "translation": {
+          "x": -71,
+          "y": 9
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "water": [
+    {
+      "type": "water",
+      "variant": "water",
+      "normal": {
+        "image": "T_ui_Map_Cave010_F05_WaterBox00_D.png",
+        "amountToFreeze": 10
+      },
+      "transform": {
+        "translation": {
+          "x": -64.015015,
+          "y": -730.3662
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "spout": [
+    {
+      "type": "spout",
+      "variant": "fire",
+      "transform": {
+        "translation": {
+          "x": 4.7802124,
+          "y": -760.2888
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "fire",
+      "transform": {
+        "translation": {
+          "x": 371.2865,
+          "y": -558.4098
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "fire",
+      "transform": {
+        "translation": {
+          "x": 83.01898,
+          "y": -1049.5615
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "fire",
+      "transform": {
+        "translation": {
+          "x": -81.428345,
+          "y": -1049.5615
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "fire",
+      "transform": {
+        "translation": {
+          "x": -32.237534,
+          "y": -853.41846
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTADOGUHEAD",
+      "name": "Ancient Statue Head",
+      "weight": 12,
+      "carryMax": 24,
+      "value": 200,
+      "transform": {
+        "translation": {
+          "x": 1.292725,
+          "y": -1183.2515
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 0,
+          "y": 1095
+        }
+      }
+    }
+  ],
+  "groupDropManager": [
+    {
+      "type": "groupDropManager",
+      "ignoreIds": [
+        "Kogane",
+        "Egg"
+      ],
+      "radius": 600,
+      "drops": [
+        {
+          "item": "GSurvivorA_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 15,
+          "max": 15
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -10,
+          "y": 420
+        }
+      }
+    }
+  ],
+  "egg": [
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 489.3081,
+          "y": 449.34418
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 436.66748,
+          "y": 402.9709
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "KINGCHAPPY",
+      "name": "Emperor Bulblax",
+      "carryMax": 30,
+      "value": 15,
+      "seeds": 20,
+      "transform": {
+        "translation": {
+          "x": -38,
+          "y": 443
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KINGCHAPPY",
+      "name": "Emperor Bulblax",
+      "carryMax": 30,
+      "value": 15,
+      "seeds": 20,
+      "transform": {
+        "translation": {
+          "x": 53,
+          "y": 362
+        }
+      }
+    }
+  ]
+}

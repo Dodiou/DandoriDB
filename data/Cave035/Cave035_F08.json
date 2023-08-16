@@ -1,0 +1,206 @@
+{
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -3.5,
+          "y": 385
+        }
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "rock",
+      "variant": "sprouts",
+      "amount": 5,
+      "transform": {
+        "translation": {
+          "x": -959,
+          "y": 497
+        }
+      }
+    }
+  ],
+  "candypop": [
+    {
+      "type": "candypop",
+      "color": "purple",
+      "amount": 1,
+      "transform": {
+        "translation": {
+          "x": 816,
+          "y": -968
+        }
+      }
+    },
+    {
+      "type": "candypop",
+      "color": "purple",
+      "amount": 1,
+      "transform": {
+        "translation": {
+          "x": -595,
+          "y": -939
+        }
+      }
+    },
+    {
+      "type": "candypop",
+      "color": "purple",
+      "amount": 1,
+      "transform": {
+        "translation": {
+          "x": 525,
+          "y": 406
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "crystal",
+      "transform": {
+        "translation": {
+          "x": -694,
+          "y": -682
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "crystal",
+      "transform": {
+        "translation": {
+          "x": 277,
+          "y": 550
+        },
+        "rotation": -90
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": 137,
+          "y": -690
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "mound": [
+    {
+      "type": "mound",
+      "drops": [
+        {
+          "item": "GHotExtract_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -402,
+          "y": 1127
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "MITSUMOCHI",
+      "name": "Foolix",
+      "carryMax": 10,
+      "value": 20,
+      "seeds": 30,
+      "transform": {
+        "translation": {
+          "x": 135,
+          "y": -1101
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "BIGUJINKO",
+      "name": "Mama Sheargrub",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 10,
+      "transform": {
+        "translation": {
+          "x": -825,
+          "y": 195
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "BIGUJINKO",
+      "name": "Mama Sheargrub",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 10,
+      "transform": {
+        "translation": {
+          "x": -405,
+          "y": -370
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KINGCHAPPY",
+      "name": "Emperor Bulblax",
+      "carryMax": 30,
+      "value": 15,
+      "seeds": 20,
+      "transform": {
+        "translation": {
+          "x": 119,
+          "y": -259
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "SNAKECROW",
+      "name": "Burrowing Snagret",
+      "carryMax": 30,
+      "value": 15,
+      "seeds": 20,
+      "transform": {
+        "translation": {
+          "x": 963,
+          "y": -260
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "HARI",
+      "name": "Porquillion",
+      "carryMax": 24,
+      "value": 12,
+      "seeds": 20,
+      "transform": {
+        "translation": {
+          "x": -538.51904,
+          "y": 692.19116
+        }
+      }
+    }
+  ]
+}

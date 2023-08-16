@@ -1,0 +1,309 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave010_F01",
+      "transform": {
+        "translation": {
+          "x": -545.5485,
+          "y": 948.6513
+        }
+      }
+    }
+  ],
+  "spout": [
+    {
+      "type": "spout",
+      "variant": "fire",
+      "transform": {
+        "translation": {
+          "x": -275.84192,
+          "y": 41.949493
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "fire",
+      "transform": {
+        "translation": {
+          "x": -0.8497925,
+          "y": 245.5138
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "fire",
+      "transform": {
+        "translation": {
+          "x": -633.9919,
+          "y": 383.2422
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "dirt",
+      "transform": {
+        "translation": {
+          "x": -474.89346,
+          "y": -502.50012
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "dirt",
+      "transform": {
+        "translation": {
+          "x": -472.60052,
+          "y": 699.8142
+        },
+        "rotation": 180
+      }
+    }
+  ],
+  "materials": [
+    {
+      "type": "materials",
+      "amount": 12,
+      "transform": {
+        "translation": {
+          "x": -1088,
+          "y": 429.5
+        }
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": -730.02716,
+          "y": 138.25383
+        },
+        "rotation": 65
+      }
+    }
+  ],
+  "floor": [
+    {
+      "type": "floor",
+      "variant": "fire",
+      "radius": 175,
+      "transform": {
+        "translation": {
+          "x": -823.7805,
+          "y": -34.299847
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "fire",
+      "radius": 175,
+      "transform": {
+        "translation": {
+          "x": 503.62012,
+          "y": -114.23859
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "fire",
+      "radius": 350,
+      "transform": {
+        "translation": {
+          "x": 129,
+          "y": -123
+        }
+      }
+    }
+  ],
+  "charcoal": [
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": -825.78424,
+          "y": -35.53524
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": 506.8219,
+          "y": -112.59143
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": 177.46751,
+          "y": -56.44268
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": 177.46751,
+          "y": -191.44269
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": 53.538513,
+          "y": -124.42178
+        }
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "red",
+      "variant": "fighting",
+      "amount": 5,
+      "replacementCondition": 51,
+      "transform": {
+        "translation": {
+          "x": -549.66486,
+          "y": 222.2916
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "red",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 51,
+      "transform": {
+        "translation": {
+          "x": 555,
+          "y": -420
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -924.5563,
+          "y": -506.40594
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTACROISSANT",
+      "name": "Flaky Temptation",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": 535,
+          "y": 62
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAPUZZLEL",
+      "name": "Memory Fragment (Bottom Right)",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 50,
+      "transform": {
+        "translation": {
+          "x": -281,
+          "y": -126
+        }
+      }
+    }
+  ],
+  "candypop": [
+    {
+      "type": "candypop",
+      "color": "red",
+      "amount": 1,
+      "replacementCondition": 6,
+      "transform": {
+        "translation": {
+          "x": -1120.3232,
+          "y": -523.64886
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "CHAPPY",
+      "name": "Bulborb",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 10,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 361.0125,
+          "y": -101.72473
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "CHAPPY",
+      "name": "Bulborb",
+      "carryMax": 20,
+      "value": 10,
+      "seeds": 10,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -469.9447,
+          "y": 195.07458
+        }
+      }
+    }
+  ]
+}

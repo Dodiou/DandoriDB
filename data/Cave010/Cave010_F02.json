@@ -1,0 +1,115 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave010_F03",
+      "transform": {
+        "translation": {
+          "x": 0,
+          "y": 930
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "numbered",
+      "transform": {
+        "translation": {
+          "x": -57,
+          "y": 550
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 35,
+          "y": -874
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTACASINOCHIP1",
+      "name": "Disk of Joyous Wisdom",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 1,
+      "transform": {
+        "translation": {
+          "x": -173.56636,
+          "y": 810.95074
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTACASINOCHIP1",
+      "name": "Disk of Joyous Wisdom",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 1,
+      "transform": {
+        "translation": {
+          "x": -114.56299,
+          "y": 734.88
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTACASINOCHIP1",
+      "name": "Disk of Joyous Wisdom",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 1,
+      "transform": {
+        "translation": {
+          "x": -158.93117,
+          "y": 719.51355
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "QUEEN",
+      "name": "Empress Bulblax",
+      "carryMax": 40,
+      "value": 20,
+      "seeds": 50,
+      "drops": [
+        {
+          "item": "GSurvivorA_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 30.000435,
+          "y": 60
+        }
+      }
+    }
+  ]
+}

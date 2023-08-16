@@ -1,0 +1,502 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave026_F01",
+      "transform": {
+        "translation": {
+          "x": -1162.83,
+          "y": -399.03857
+        }
+      }
+    }
+  ],
+  "heatObstacle": [
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 304.5,
+          "y": 727.5
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -1074.0142,
+          "y": 101.56604
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -1084.0142,
+          "y": 176.31
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 14.486298,
+          "y": -375.35608
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 12.638733,
+          "y": -457.44336
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -135.24396,
+          "y": -104.5
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -210.34769,
+          "y": -84.5
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 297.5,
+          "y": 650.5
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 729.46545,
+          "y": -133.72803
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -61.7287,
+          "y": -416.44128
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 722.46545,
+          "y": -208.41891
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 730.46545,
+          "y": -281.63293
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "type": "materials",
+      "amount": 20,
+      "transform": {
+        "translation": {
+          "x": -671.5,
+          "y": -663.5
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "KINKAISTATION",
+      "name": "Gold Nugget",
+      "amount": 15,
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
+      "transform": {
+        "translation": {
+          "x": 939.14136,
+          "y": 949.26624
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAPUZZLEJ",
+      "name": "Memory Fragment (Bottom-ish)",
+      "weight": 2,
+      "carryMax": 4,
+      "value": 50,
+      "transform": {
+        "translation": {
+          "x": -801.5176,
+          "y": 507.4382
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAMIKAN",
+      "name": "Citrus Lump",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 60,
+      "transform": {
+        "translation": {
+          "x": 1246.0986,
+          "y": 687.17834
+        }
+      }
+    }
+  ],
+  "firePit": [
+    {
+      "type": "firePit",
+      "isLit": true,
+      "transform": {
+        "translation": {
+          "x": -410.49976,
+          "y": -1002.8511
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": -168.5986,
+          "y": 993.0253
+        }
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "squashbag",
+      "weight": 30,
+      "transform": {
+        "translation": {
+          "x": -413.9115,
+          "y": -830.7981
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "squashbag",
+      "weight": 30,
+      "transform": {
+        "translation": {
+          "x": 1107,
+          "y": 688
+        },
+        "rotation": 90
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": 138,
+          "y": 268.67786
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "spout": [
+    {
+      "type": "spout",
+      "variant": "water",
+      "transform": {
+        "translation": {
+          "x": -551.94403,
+          "y": -265.25366
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "water",
+      "transform": {
+        "translation": {
+          "x": -412.5,
+          "y": -622.8307
+        }
+      }
+    }
+  ],
+  "candypop": [
+    {
+      "type": "candypop",
+      "color": "purple",
+      "amount": 1,
+      "replacementCondition": 51,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": 693.5,
+          "y": -638.5
+        }
+      }
+    },
+    {
+      "type": "candypop",
+      "color": "purple",
+      "amount": 1,
+      "replacementCondition": 51,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": -784.2691,
+          "y": 197.07704
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "dirt",
+      "transform": {
+        "translation": {
+          "x": 630,
+          "y": 311.33673
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "red",
+      "variant": "idle",
+      "amount": 5,
+      "replacementCondition": 6,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": -983.8428,
+          "y": -173.15112
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "red",
+      "variant": "sprouts",
+      "amount": 5,
+      "replacementCondition": 6,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": -435,
+          "y": 375
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 2.1110535,
+          "y": 797.18506
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "SUITORI",
+      "name": "Waddlequaff",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 8,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 337.87982,
+          "y": -251.48535
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "SUITORI",
+      "name": "Waddlequaff",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 8,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -562.4391,
+          "y": 527.46674
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "FIRECHAPPY",
+      "name": "Fiery Bulblax",
+      "carryMax": 24,
+      "value": 12,
+      "seeds": 15,
+      "drops": [
+        {
+          "item": "GOtaIchijiku_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -357.53894,
+          "y": -368.02795
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "YAKISENBEI",
+      "name": "Scorchcake",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 10,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 590.7449,
+          "y": 603.60516
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "MAR",
+      "name": "Puffy Blowhog",
+      "carryMax": 1,
+      "value": 7,
+      "seeds": 5,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 742.3109,
+          "y": 729.6951
+        }
+      }
+    }
+  ],
+  "groupDropManager": [
+    {
+      "type": "groupDropManager",
+      "ignoreIds": [
+        "GBurning"
+      ],
+      "radius": 150,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 338.5,
+          "y": 694.5
+        }
+      }
+    }
+  ]
+}

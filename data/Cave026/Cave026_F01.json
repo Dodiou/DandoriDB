@@ -1,0 +1,489 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave026_F02",
+      "transform": {
+        "translation": {
+          "x": -550,
+          "y": 280
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "type": "materials",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": -218.59045,
+          "y": 522.18536
+        }
+      }
+    }
+  ],
+  "crystal": [
+    {
+      "type": "crystal",
+      "transform": {
+        "translation": {
+          "x": 647.0821,
+          "y": 641.90186
+        }
+      }
+    },
+    {
+      "type": "crystal",
+      "transform": {
+        "translation": {
+          "x": 715.3951,
+          "y": 408.75275
+        }
+      }
+    },
+    {
+      "type": "crystal",
+      "transform": {
+        "translation": {
+          "x": 1068.4912,
+          "y": 700.2676
+        }
+      }
+    },
+    {
+      "type": "crystal",
+      "transform": {
+        "translation": {
+          "x": 966.8667,
+          "y": 749
+        }
+      }
+    },
+    {
+      "type": "crystal",
+      "transform": {
+        "translation": {
+          "x": 1054.4299,
+          "y": 456.08203
+        }
+      }
+    }
+  ],
+  "tunnel": [
+    {
+      "type": "tunnel",
+      "variant": "pup",
+      "tunnelId": "HappyDoorID_1",
+      "transform": {
+        "translation": {
+          "x": 825,
+          "y": -896
+        }
+      }
+    },
+    {
+      "type": "tunnel",
+      "variant": "pup",
+      "tunnelId": "HappyDoorID_1",
+      "transform": {
+        "translation": {
+          "x": 618.5,
+          "y": -825
+        }
+      }
+    }
+  ],
+  "pot": [
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": 49.46338,
+          "y": -146.89221
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -50.11859,
+          "y": -146.89221
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -0.2078247,
+          "y": -186.8197
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": 55.436607,
+          "y": -83.38286
+        }
+      }
+    },
+    {
+      "type": "pot",
+      "transform": {
+        "translation": {
+          "x": -0.2078247,
+          "y": -102.20691
+        }
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": 825,
+          "y": 130
+        },
+        "rotation": 0
+      }
+    },
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": 882,
+          "y": 818
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": 275,
+          "y": 685
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "structure": [
+    {
+      "type": "structure",
+      "variant": "slope",
+      "materialsNeeded": 25,
+      "transform": {
+        "translation": {
+          "x": -385,
+          "y": -550
+        },
+        "rotation": 90
+      }
+    }
+  ],
+  "spout": [
+    {
+      "type": "spout",
+      "variant": "water",
+      "transform": {
+        "translation": {
+          "x": 139.57886,
+          "y": 59.58008
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "water",
+      "transform": {
+        "translation": {
+          "x": 70.572876,
+          "y": 463.96674
+        }
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "rock",
+      "variant": "fighting",
+      "amount": 5,
+      "replacementCondition": 51,
+      "transform": {
+        "translation": {
+          "x": -615,
+          "y": -485
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "rock",
+      "variant": "fighting",
+      "amount": 5,
+      "replacementCondition": 51,
+      "transform": {
+        "translation": {
+          "x": 115,
+          "y": -685
+        }
+      }
+    }
+  ],
+  "candypop": [
+    {
+      "type": "candypop",
+      "color": "purple",
+      "amount": 1,
+      "replacementCondition": 51,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": -1110,
+          "y": 560
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTASHINJITSU",
+      "name": "Mouth of Lies",
+      "weight": 15,
+      "carryMax": 30,
+      "value": 350,
+      "transform": {
+        "translation": {
+          "x": 987.08594,
+          "y": 645.4481
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "KINKAISTATION",
+      "name": "Gold Nugget",
+      "amount": 20,
+      "weight": 1,
+      "carryMax": 1,
+      "value": 5,
+      "transform": {
+        "translation": {
+          "x": -1085,
+          "y": -504.2558
+        }
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "pushbag",
+      "weight": 10,
+      "transform": {
+        "translation": {
+          "x": 230,
+          "y": 275
+        },
+        "rotation": 90
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": 962.59875,
+          "y": -281.8064
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "MAROFROG",
+      "name": "Wollyhop",
+      "carryMax": 10,
+      "value": 7,
+      "seeds": 8,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 32.416565,
+          "y": 273.6975
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "IWAKKO",
+      "name": "Skutterchuck",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 923.974,
+          "y": 359.6291
+        }
+      },
+      "spawnNum": 2
+    },
+    {
+      "type": "creature",
+      "creatureId": "MAROFROG",
+      "name": "Wollyhop",
+      "carryMax": 10,
+      "value": 7,
+      "seeds": 8,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -157.98724,
+          "y": 126.484924
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "FUTAKUCHI",
+      "name": "Armored Cannon Larva",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": -1089.806,
+          "y": 51
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "IWAKKO",
+      "name": "Skutterchuck",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 574.34375,
+          "y": 719.127
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "HARI",
+      "name": "Porquillion",
+      "carryMax": 24,
+      "value": 12,
+      "seeds": 20,
+      "drops": [
+        {
+          "item": "GOtaHam_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 10,
+          "max": 10
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -730.51904,
+          "y": -413.80884
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "FUTAKUCHI",
+      "name": "Armored Cannon Larva",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": 21,
+          "y": -550
+        }
+      }
+    }
+  ],
+  "groupDropManager": [
+    {
+      "type": "groupDropManager",
+      "radius": 500,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 848.5244,
+          "y": 531.7346
+        }
+      }
+    },
+    {
+      "type": "groupDropManager",
+      "ignoreIds": [
+        "None"
+      ],
+      "radius": 200,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -1.7545776,
+          "y": -150.1958
+        }
+      }
+    }
+  ]
+}

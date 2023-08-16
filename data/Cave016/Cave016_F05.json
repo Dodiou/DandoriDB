@@ -1,0 +1,228 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave016_F06",
+      "transform": {
+        "translation": {
+          "x": 137,
+          "y": -925
+        }
+      }
+    },
+    {
+      "type": "caveLink",
+      "variant": "exit",
+      "link": "Area006",
+      "transform": {
+        "translation": {
+          "x": -413.44995,
+          "y": 469.42816
+        }
+      }
+    }
+  ],
+  "candypop": [
+    {
+      "type": "candypop",
+      "color": "ice",
+      "amount": 1,
+      "replacementCondition": 51,
+      "transform": {
+        "translation": {
+          "x": 962.81494,
+          "y": -135.65833
+        }
+      }
+    },
+    {
+      "type": "candypop",
+      "color": "ice",
+      "amount": 1,
+      "replacementCondition": 51,
+      "transform": {
+        "translation": {
+          "x": -131.39117,
+          "y": -686.3441
+        }
+      }
+    }
+  ],
+  "fan": [
+    {
+      "type": "fan",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 174.19446,
+          "y": -135.57903
+        }
+      }
+    },
+    {
+      "type": "fan",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": -129.04245,
+          "y": 1032.3395
+        }
+      }
+    }
+  ],
+  "floor": [
+    {
+      "type": "floor",
+      "variant": "movable",
+      "transform": {
+        "translation": {
+          "x": 410.39227,
+          "y": -410.1742
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "movable",
+      "transform": {
+        "translation": {
+          "x": -313.46094,
+          "y": 171.71582
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "movable",
+      "transform": {
+        "translation": {
+          "x": 685,
+          "y": 140
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "movable",
+      "transform": {
+        "translation": {
+          "x": 140,
+          "y": 965
+        }
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "clipboard",
+      "weight": 20,
+      "transform": {
+        "translation": {
+          "x": -139.60318,
+          "y": -307.62744
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -850.8706,
+          "y": 133.95886
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTADUCKM",
+      "name": "Planetary Rubber Cutie",
+      "weight": 5,
+      "carryMax": 10,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": -322.58484,
+          "y": 164.10254
+        }
+      }
+    }
+  ],
+  "hydroJelly": [
+    {
+      "type": "hydroJelly",
+      "transform": {
+        "translation": {
+          "x": 137,
+          "y": -925
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "KURIONE",
+      "name": "Honeywisp",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -124.8822,
+          "y": -460.25854
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KURIONE",
+      "name": "Honeywisp",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 681.5677,
+          "y": -135.72272
+        }
+      }
+    }
+  ]
+}

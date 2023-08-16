@@ -1,0 +1,481 @@
+{
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave022_F03",
+      "transform": {
+        "translation": {
+          "x": -824.1967,
+          "y": -691.65137
+        }
+      }
+    },
+    {
+      "type": "caveLink",
+      "variant": "cave",
+      "link": "Cave022_F01",
+      "transform": {
+        "translation": {
+          "x": -902.4725,
+          "y": 727.59717
+        }
+      }
+    }
+  ],
+  "heatObstacle": [
+    {
+      "type": "heatObstacle",
+      "variant": "iceBox",
+      "transform": {
+        "translation": {
+          "x": -776.3129,
+          "y": 514.8315
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 253.29822,
+          "y": 274.75153
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 311.66663,
+          "y": 322.38422
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": 312.74988,
+          "y": 229.80127
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -639.6537,
+          "y": 633.79004
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -719.6453,
+          "y": 470.56604
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -537.38544,
+          "y": 552.7582
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -565.9874,
+          "y": 488.5739
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -627.17737,
+          "y": 459.8404
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "iceBox",
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 977.8181,
+          "y": 848.53
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -572.6537,
+          "y": 612.79004
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "iceBox",
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 417.8181,
+          "y": -741.47
+        }
+      }
+    },
+    {
+      "type": "heatObstacle",
+      "variant": "straw",
+      "transform": {
+        "translation": {
+          "x": -699.6537,
+          "y": 603.79004
+        }
+      }
+    }
+  ],
+  "firePit": [
+    {
+      "type": "firePit",
+      "isLit": true,
+      "transform": {
+        "translation": {
+          "x": -411.25403,
+          "y": -493.9641
+        }
+      }
+    },
+    {
+      "type": "firePit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": 2.9789429,
+          "y": 419.77783
+        }
+      }
+    }
+  ],
+  "water": [
+    {
+      "dynamic": {
+        "image": "T_ui_Map_Cave022_F02_WaterBox00_ChangeDist_D.png",
+        "amountToFreeze": 5
+      },
+      "type": "water",
+      "variant": "water",
+      "normal": {
+        "image": "T_ui_Map_Cave022_F02_WaterBox00_D.png",
+        "amountToFreeze": 5
+      },
+      "transform": {
+        "translation": {
+          "x": -789.4903,
+          "y": -116.91708
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "spout": [
+    {
+      "type": "spout",
+      "variant": "ice",
+      "transform": {
+        "translation": {
+          "x": 408.92078,
+          "y": -487.03482
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "ice",
+      "transform": {
+        "translation": {
+          "x": 409.2975,
+          "y": -101.36517
+        }
+      }
+    },
+    {
+      "type": "spout",
+      "variant": "ice",
+      "transform": {
+        "translation": {
+          "x": -963.08954,
+          "y": 157.09076
+        }
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": 795.07837,
+          "y": 479.49988
+        },
+        "rotation": 180
+      }
+    },
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": 954.41736,
+          "y": 479.49988
+        },
+        "rotation": 180
+      }
+    }
+  ],
+  "switch": [
+    {
+      "type": "switch",
+      "variant": "single",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": -824.4743,
+          "y": -137.77463
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "hydroJelly": [
+    {
+      "type": "hydroJelly",
+      "transform": {
+        "translation": {
+          "x": 413.5923,
+          "y": -744.5375
+        }
+      }
+    },
+    {
+      "type": "hydroJelly",
+      "transform": {
+        "translation": {
+          "x": 2.978943,
+          "y": 419.77783
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "numbered",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": -745,
+          "y": -416.4743
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTAPAPAYA",
+      "name": "Seed Hive",
+      "weight": 12,
+      "carryMax": 24,
+      "value": 90,
+      "transform": {
+        "translation": {
+          "x": -140,
+          "y": -61
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAMIKAN",
+      "name": "Citrus Lump",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 60,
+      "transform": {
+        "translation": {
+          "x": -622.7742,
+          "y": 548.6064
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -901.87085,
+          "y": 726.8009
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 1,
+      "transform": {
+        "translation": {
+          "x": -823.0124,
+          "y": -691.43036
+        }
+      }
+    }
+  ],
+  "candypop": [
+    {
+      "type": "candypop",
+      "color": "ice",
+      "amount": 1,
+      "replacementCondition": 6,
+      "transform": {
+        "translation": {
+          "x": 699.4258,
+          "y": 12.868717
+        }
+      }
+    },
+    {
+      "type": "candypop",
+      "color": "red",
+      "amount": 1,
+      "replacementCondition": 6,
+      "transform": {
+        "translation": {
+          "x": 915,
+          "y": 320
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "YUKIFUTAKUCHI",
+      "name": "Arctic Cannon Larva",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": 907.7462,
+          "y": 667.0187
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "YUKIFUTAKUCHI",
+      "name": "Arctic Cannon Larva",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": -276.86182,
+          "y": -274.61856
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICESENBEI",
+      "name": "Freezecake",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 10,
+      "drops": [
+        {
+          "item": "GOtaLime_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 575.0548,
+          "y": -428.60468
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "ICETANK",
+      "name": "Snowy Blowhog",
+      "carryMax": 10,
+      "value": 5,
+      "seeds": 5,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -533.3414,
+          "y": 324.1397
+        }
+      }
+    }
+  ]
+}

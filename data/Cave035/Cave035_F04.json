@@ -1,0 +1,660 @@
+{
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -180.00305,
+          "y": 528.84766
+        }
+      }
+    }
+  ],
+  "fence": [
+    {
+      "type": "fence",
+      "variant": "iron",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 736,
+          "y": -149
+        },
+        "rotation": -90
+      }
+    },
+    {
+      "type": "fence",
+      "variant": "normal",
+      "transform": {
+        "translation": {
+          "x": -976,
+          "y": -274
+        },
+        "rotation": -90
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTABILLIARDBALL2",
+      "name": "Sphere of Family",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": -62.674255,
+          "y": 1378.9326
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTABILLIARDBALL3",
+      "name": "Sphere of Heart",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": -173,
+          "y": 174
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTABILLIARDBALL4",
+      "name": "Sphere of Beginnings",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": 846,
+          "y": -864.79596
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTABILLIARDBALL1",
+      "name": "Sphere of Desire",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": -478,
+          "y": 492
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTABILLIARDBALL5",
+      "name": "Sphere of Vitality",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": 591,
+          "y": -1633
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTABILLIARDBALL6",
+      "name": "Sphere of Calm",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": -693,
+          "y": 275
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTABILLIARDBALL7",
+      "name": "Sphere of Good Fortune",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": 840,
+          "y": -415
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTABILLIARDBALL8",
+      "name": "Sphere of Trust",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": 900,
+          "y": 851
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTABILLIARDBALL9",
+      "name": "Sphere of Support",
+      "weight": 7,
+      "carryMax": 14,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": -716,
+          "y": 1306.0002
+        }
+      }
+    }
+  ],
+  "switch": [
+    {
+      "type": "switch",
+      "variant": "single",
+      "switchId": "switch01",
+      "transform": {
+        "translation": {
+          "x": 690,
+          "y": -1637
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "shortcut": [
+    {
+      "type": "shortcut",
+      "variant": "stick",
+      "transform": {
+        "translation": {
+          "x": 849,
+          "y": -1398
+        },
+        "rotation": 35
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": -792.5,
+          "y": 530
+        }
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": -655,
+          "y": 530
+        }
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": -340,
+          "y": 655
+        }
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": 550,
+          "y": 667.5
+        }
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": -825,
+          "y": 32
+        }
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": -825,
+          "y": -73
+        }
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": -625.5,
+          "y": -275
+        }
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": 529,
+          "y": -420
+        }
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": 529,
+          "y": -309
+        }
+      }
+    },
+    {
+      "type": "shortcut",
+      "variant": "bounceShroom",
+      "transform": {
+        "translation": {
+          "x": 529,
+          "y": 15
+        }
+      }
+    }
+  ],
+  "floor": [
+    {
+      "type": "floor",
+      "variant": "mushroom",
+      "isPoison": false,
+      "radius": 175,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 2,
+          "max": 2
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 496,
+          "y": -1105
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "mushroom",
+      "isPoison": false,
+      "radius": 175,
+      "transform": {
+        "translation": {
+          "x": -824,
+          "y": 1053
+        }
+      }
+    }
+  ],
+  "mushroom": [
+    {
+      "type": "mushroom",
+      "isPoison": true,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 444,
+          "y": -1075
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": true,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 466,
+          "y": -1152
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": true,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": 525,
+          "y": -1074
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": true,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": -867,
+          "y": 1092
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": true,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": -845,
+          "y": 1015
+        }
+      }
+    },
+    {
+      "type": "mushroom",
+      "isPoison": true,
+      "isLarge": false,
+      "transform": {
+        "translation": {
+          "x": -786,
+          "y": 1093
+        }
+      }
+    }
+  ],
+  "onion": [
+    {
+      "type": "onion",
+      "color": "white",
+      "weight": 10,
+      "transform": {
+        "translation": {
+          "x": -1239.5,
+          "y": -409
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "numbered",
+      "transform": {
+        "translation": {
+          "x": -1157.6339,
+          "y": -155
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "wing",
+      "variant": "fighting",
+      "amount": 3,
+      "transform": {
+        "translation": {
+          "x": 813.89056,
+          "y": -1234.5
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "wing",
+      "variant": "fighting",
+      "amount": 4,
+      "transform": {
+        "translation": {
+          "x": 922.2938,
+          "y": -1171.5
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "white",
+      "variant": "fighting",
+      "amount": 3,
+      "transform": {
+        "translation": {
+          "x": 241.75531,
+          "y": 1339.7976
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "white",
+      "variant": "fighting",
+      "amount": 4,
+      "transform": {
+        "translation": {
+          "x": 300.49188,
+          "y": 1371.3495
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "white",
+      "variant": "sprouts",
+      "amount": 7,
+      "replacement": "candypop",
+      "transform": {
+        "translation": {
+          "x": -820,
+          "y": -262
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "wing",
+      "variant": "sprouts",
+      "amount": 7,
+      "transform": {
+        "translation": {
+          "x": -930,
+          "y": 1219
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "rock",
+      "variant": "sprouts",
+      "amount": 7,
+      "transform": {
+        "translation": {
+          "x": -1577,
+          "y": 276
+        }
+      }
+    }
+  ],
+  "egg": [
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 644.34155,
+          "y": 1371.6451
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 653.14136,
+          "y": 1404.4866
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHotExtract_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 674.34143,
+          "y": 1346.645
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "FUTAKUCHI",
+      "name": "Armored Cannon Larva",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 8,
+      "transform": {
+        "translation": {
+          "x": -450.5,
+          "y": -592
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "SHIPPOZAKO",
+      "name": "Miniature Snootwhacker",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 6,
+      "transform": {
+        "translation": {
+          "x": 976.79376,
+          "y": -1245
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "SHIPPOZAKO",
+      "name": "Miniature Snootwhacker",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 6,
+      "transform": {
+        "translation": {
+          "x": 757.8936,
+          "y": -1262.8625
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "SHIPPO",
+      "name": "Mammoth Snootwhacker",
+      "carryMax": 40,
+      "value": 20,
+      "seeds": 20,
+      "drops": [
+        {
+          "item": "GHotExtract_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -1107.1456,
+          "y": 274.48706
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KINOKOCHAPPY",
+      "name": "Moldy Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 170,
+          "y": 1325
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KINOKOCHAPPY",
+      "name": "Moldy Dwarf Bulborb",
+      "carryMax": 6,
+      "value": 3,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 350.00006,
+          "y": 1454.9996
+        }
+      }
+    }
+  ]
+}

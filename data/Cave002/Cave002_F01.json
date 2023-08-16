@@ -1,0 +1,486 @@
+{
+  "castaway": [
+    {
+      "type": "castaway",
+      "isLeafling": false,
+      "weight": 3,
+      "carryMax": 6,
+      "transform": {
+        "translation": {
+          "x": -701.00006,
+          "y": -386.00003
+        }
+      }
+    }
+  ],
+  "floor": [
+    {
+      "type": "floor",
+      "variant": "fire",
+      "radius": 525,
+      "transform": {
+        "translation": {
+          "x": 531,
+          "y": 834.5
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "fire",
+      "radius": 175,
+      "transform": {
+        "translation": {
+          "x": 685,
+          "y": -566
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "fire",
+      "radius": 175,
+      "transform": {
+        "translation": {
+          "x": -387,
+          "y": 1103.5
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "fire",
+      "radius": 350,
+      "transform": {
+        "translation": {
+          "x": -700,
+          "y": -648.5
+        }
+      }
+    },
+    {
+      "type": "floor",
+      "variant": "fire",
+      "radius": 175,
+      "transform": {
+        "translation": {
+          "x": 154.96097,
+          "y": 156.79796
+        }
+      }
+    }
+  ],
+  "charcoal": [
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": 633,
+          "y": 943.5
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": 536,
+          "y": 696.5
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": 388.49033,
+          "y": 954.6315
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": 681,
+          "y": -570
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": -664,
+          "y": -702.5
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": -776,
+          "y": -570.5
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": -382,
+          "y": 1098.5
+        }
+      }
+    },
+    {
+      "type": "charcoal",
+      "transform": {
+        "translation": {
+          "x": 156.3301,
+          "y": 163.50534
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "type": "materials",
+      "amount": 20,
+      "transform": {
+        "translation": {
+          "x": -679,
+          "y": 53.5
+        }
+      }
+    },
+    {
+      "type": "materials",
+      "amount": 15,
+      "transform": {
+        "translation": {
+          "x": 140.58997,
+          "y": -567.4131
+        }
+      }
+    }
+  ],
+  "caveLink": [
+    {
+      "type": "caveLink",
+      "variant": "exit",
+      "link": "Area001",
+      "transform": {
+        "translation": {
+          "x": 687,
+          "y": -826.5
+        }
+      }
+    }
+  ],
+  "gate": [
+    {
+      "type": "gate",
+      "variant": "electric",
+      "transform": {
+        "translation": {
+          "x": -887.2465,
+          "y": -148.47362
+        },
+        "rotation": -180
+      }
+    },
+    {
+      "type": "gate",
+      "variant": "dirt",
+      "transform": {
+        "translation": {
+          "x": 0.80009854,
+          "y": -333
+        },
+        "rotation": -90
+      }
+    }
+  ],
+  "pikmin": [
+    {
+      "type": "pikmin",
+      "color": "yellow",
+      "variant": "sprouts",
+      "amount": 5,
+      "changeToColor": "unknown",
+      "replacementCondition": 51,
+      "replacement": "other",
+      "transform": {
+        "translation": {
+          "x": 930,
+          "y": 822.5
+        }
+      }
+    },
+    {
+      "type": "pikmin",
+      "color": "yellow",
+      "variant": "sprouts",
+      "amount": 5,
+      "changeToCondition": 0,
+      "changeToColor": "yellow",
+      "replacementCondition": 51,
+      "replacement": "candypop",
+      "transform": {
+        "translation": {
+          "x": -452,
+          "y": -272.5
+        }
+      }
+    }
+  ],
+  "treasure": [
+    {
+      "type": "treasure",
+      "treasureId": "OTASWEETPOTATO",
+      "name": "Daughter of the Earth",
+      "weight": 12,
+      "carryMax": 24,
+      "value": 110,
+      "transform": {
+        "translation": {
+          "x": 544.53815,
+          "y": 843.5971
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAYOSHICOOKIEA",
+      "name": "Cookie of Nibbled Circles",
+      "weight": 3,
+      "carryMax": 6,
+      "value": 50,
+      "transform": {
+        "translation": {
+          "x": 360.55463,
+          "y": -115.34644
+        }
+      }
+    },
+    {
+      "type": "treasure",
+      "treasureId": "OTAMACARONC",
+      "name": "S.S. Chocolate",
+      "weight": 3,
+      "carryMax": 6,
+      "value": 40,
+      "transform": {
+        "translation": {
+          "x": 336.60385,
+          "y": -26.5
+        }
+      }
+    }
+  ],
+  "base": [
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -855,
+          "y": 1270
+        }
+      }
+    },
+    {
+      "type": "base",
+      "variant": "beagle",
+      "baseId": 1,
+      "guardedBy": [
+        "YAKISENBEI"
+      ],
+      "transform": {
+        "translation": {
+          "x": 754.76733,
+          "y": -214.79065
+        }
+      }
+    }
+  ],
+  "candypop": [
+    {
+      "type": "candypop",
+      "color": "red",
+      "amount": 1,
+      "replacementCondition": 6,
+      "transform": {
+        "translation": {
+          "x": -940.31635,
+          "y": -794.3253
+        }
+      }
+    }
+  ],
+  "egg": [
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -496,
+          "y": 860.5
+        }
+      }
+    },
+    {
+      "type": "egg",
+      "isBig": false,
+      "drops": [
+        {
+          "item": "GHoney_C",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "GHotExtract_C",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": -548,
+          "y": 812.5
+        }
+      }
+    }
+  ],
+  "creature": [
+    {
+      "type": "creature",
+      "creatureId": "YAKISENBEI",
+      "name": "Scorchcake",
+      "carryMax": 14,
+      "value": 7,
+      "seeds": 10,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 755,
+          "y": -214.5
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "KOGANE",
+      "name": "Iridescent Flint Beetle",
+      "carryMax": 0,
+      "value": 0,
+      "seeds": 0,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 6,
+          "max": 6
+        },
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 10,
+          "max": 10
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 844,
+          "y": 281
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": 331.03055,
+          "y": -378.2652
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -428.6154,
+          "y": -790.6198
+        }
+      }
+    },
+    {
+      "type": "creature",
+      "creatureId": "TOBINKO",
+      "name": "Shearwig",
+      "carryMax": 1,
+      "value": 1,
+      "seeds": 3,
+      "transform": {
+        "translation": {
+          "x": -610.22156,
+          "y": 259.82996
+        }
+      }
+    }
+  ]
+}
