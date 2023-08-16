@@ -61,7 +61,7 @@ export const getImageLayersForMap = (mapData: MapData, waterboxes: Waterbox[]) =
   // TODO: hacky way to get folderpath
   const folderpath = mapData.mapId !== 'HeroStory010'
     ? mapData.imageUrl.substring(0, mapData.imageUrl.lastIndexOf('/'))
-    : '/images/maps/Area010'
+    : process.env.PUBLIC_URL + '/images/maps/Area010'
 
   const waterLayers = waterboxes
     .filter(wb => wb.normal.image)

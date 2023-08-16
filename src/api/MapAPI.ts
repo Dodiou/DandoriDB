@@ -166,7 +166,7 @@ export const getMapData = async (mapId: string): Promise<MapData> => {
 
   return {
     mapId,
-    imageUrl: `/images/maps/${mapId}/T_ui_Map_${mapId}_D.png`,
+    imageUrl: `${process.env.PUBLIC_URL}/images/maps/${mapId}/T_ui_Map_${mapId}_D.png`,
     rotation: mapTransform.rotation,
     extent: extentOverride || mapTransform.extent,
     waterboxes: water as any[],
@@ -174,7 +174,7 @@ export const getMapData = async (mapId: string): Promise<MapData> => {
 }
 
 const _getMarkerData = async (mapId: string) => {
-  let dataUrl = '/data';
+  let dataUrl = process.env.PUBLIC_URL + '/data';
   if (mapId.startsWith('Cave')) {
     const caveId = mapId.split('_')[0];
     dataUrl += `/${caveId}/${mapId}.json`;

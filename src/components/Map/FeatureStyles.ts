@@ -130,7 +130,7 @@ export enum MarkerIcons {
   ShortcutString = 'shortcut-string',
   ShortcutSquashBag = 'shortcut-squashbag',
   ShortcutRoot = 'shortcut-root',
-  ShortcutRope = 'shortcut-rope',
+  StructureGeyser = 'shortcut-geyser',
   ShortcutZipline = 'shortcut-zipline',
   SpoutBubble = 'spout-bubble',
   SpoutElectric = 'spout-electric',
@@ -148,10 +148,10 @@ export enum MarkerIcons {
   Treasure = 'treasure',
   TunnelNormal = 'tunnel-normal',
   TunnelCaptain = 'tunnel-captain',
-  TunnelOatchi = 'tunnel-oatchi',
+  TunnelOatchi = 'tunnel-pup',
 }
 
-const ROOT_ICON_URL = '/images/icons/radar';
+const ROOT_ICON_URL = process.env.PUBLIC_URL + '/images/icons/radar';
 const getIconOptions = (type: MarkerIcons): Pick<Options, 'src' | 'scale'> => {
   if (type === MarkerIcons.Mound) {
     return {
