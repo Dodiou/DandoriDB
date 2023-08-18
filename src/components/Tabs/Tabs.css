@@ -1,0 +1,36 @@
+.Tabs__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.Tabs__tab-bar {
+  flex: 0 0 auto;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  gap: 0.5rem;
+}
+
+.Tabs__tab-content {
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+.Tab__container {
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+
+  color: var(--normal-fg);
+}
+.Tab__container:hover {
+  background-color: var(--normal-hover-bg);
+  color: var(--normal-hover-fg);
+}
+
+.Tab__container.Tab__container__selected {
+  border-bottom: 4px inset var(--normal-selected-bd);
+}

@@ -3,6 +3,7 @@ import { Legend } from "../Legend/Legend";
 import { MapDebugInfo, MapDebugInfoProps } from "../MapDebugInfo/MapDebugInfo";
 import { MapSelect, MapSelectProps } from "../MapSelect/MapSelect";
 import { SegmentedButton, SegmentedButtonOption, SegmentedButtonProps } from "../SegmentedButton/SegmentedButton";
+import { Tab, Tabs } from "../Tabs/Tabs";
 
 import './NavigationPanel.css';
 
@@ -49,8 +50,14 @@ export const NavigationPanel = ({
         onSelect={onTimeChange}
       />
     }
-    <Legend />
-    <MapSelect onSelect={onMapChange} />
+    <Tabs>
+      <Tab id="maps" label="Maps">
+        <MapSelect onSelect={onMapChange} />
+      </Tab>
+      <Tab id="legend" label="Legend">
+        <Legend />
+      </Tab>
+    </Tabs>
     { mapDebugInfo && <MapDebugInfo { ...mapDebugInfo }/> }
   </div>;
 };
