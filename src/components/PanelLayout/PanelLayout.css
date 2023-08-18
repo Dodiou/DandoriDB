@@ -18,6 +18,7 @@
 
 .PanelLayout__center {
   height: 100%;
+  min-width: 20rem;
   flex: 1 1 auto;
 }
 
