@@ -29,9 +29,12 @@
   --normal-hover-bd: rgb(59, 77, 96);
   --normal-hover-bg: rgb(39, 43, 47);
   --normal-hover-fg: rgb(126, 180, 230);
-  --normal-selected-bd: rgb(59, 77, 96);
-  --normal-selected-bg: rgb(16, 16, 16);
-  --normal-selected-bf: rgb(126, 180, 230);
+  --normal-selected-bd: rgb(136, 67, 168);
+  --normal-selected-bg: rgb(49, 27, 65);
+  --normal-selected-fg: rgb(220, 223, 229);
+  /* --normal-selected-bd: rgb(59, 77, 96); */
+  /* --normal-selected-bg: rgb(16, 16, 16); */
+  /* --normal-selected-fg: rgb(126, 180, 230); */
 
   --primary-bd: rgb(42, 73, 100);
   --primary-bg: rgb(42, 73, 100);

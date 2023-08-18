@@ -1,0 +1,40 @@
+.SegmentedButton__button {
+  padding: 0.5rem;
+
+  background-color: var(--normal-bg);
+  border: 2px solid var(--normal-bd);
+  color: var(--normal-fg);
+
+  border-inline-end: none;
+}
+.SegmentedButton__button:first-child {
+  border-start-start-radius: 0.5rem;
+  border-end-start-radius: 0.5rem;
+}
+.SegmentedButton__button:last-child {
+  border-inline-end: 2px solid var(--normal-bd);
+
+  border-start-end-radius: 0.5rem;
+  border-end-end-radius: 0.5rem;
+}
+
+.SegmentedButton__button:hover {
+  background-color: var(--normal-hover-bg);
+  border-color: var(--normal-hover-bd);
+  color: var(--normal-hover-fg);
+}
+
+.SegmentedButton__button.SegmentedButton__button__selected {
+  background-color: var(--normal-selected-bg);
+  border-color: var(--normal-selected-bd);
+  color: var(--normal-selected-fg);
+}
+.SegmentedButton__button.SegmentedButton__button__selected + .SegmentedButton__button {
+  border-inline-start-color: var(--normal-selected-bd);
+}
+
+.SegmentedButton__button.SegmentedButton__button__selected:hover {
+  background-color: var(--normal-selected-bg);
+  border-color: var(--normal-selected-bd);
+  color: var(--normal-selected-fg);
+}

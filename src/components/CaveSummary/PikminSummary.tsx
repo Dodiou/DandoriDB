@@ -1,5 +1,5 @@
 import { PikminCount } from "../../api/MapAPI";
-import { IconCount } from "../IconCount/IconCount";
+import { IconCount } from "../Icon/IconCount";
 
 import "./PikminSummary.css";
 
@@ -23,6 +23,6 @@ export const PikminSummary = ({ pikmin = {}, candypops = false }: PikminSummaryP
   const allPikminTypes = { ...EMPTY_PIKMIN_COUNT, ...pikmin };
 
   return <div className="PikminSummary__list">
-    { Object.entries(allPikminTypes).map(([type, amount]) => <IconCount key={type} iconUrl={type} amount={amount} />)}
+    { Object.entries(allPikminTypes).map(([type, amount]) => <div key={type} >{ amount }</div>)}
   </div>;
 };

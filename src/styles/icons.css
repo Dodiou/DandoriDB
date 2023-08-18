@@ -1,0 +1,23 @@
+.DandoriDB__icon::before {
+  display: inline-block;
+  content: '';
+  width: 1.25rem;
+  height: 1.25rem;
+  background-size: cover;
+}
+
+.DandoriDB__icon.Afternoon::before {
+  background-image: url('/public/images/icons/ui/afternoon.png');
+}
+.DandoriDB__icon.Day::before {
+  background-image: url('/public/images/icons/ui/day.png');
+}
+.DandoriDB__icon.Night::before {
+  background-image: url('/public/images/icons/ui/night.png');
+}
+.DandoriDB__icon.Olimar::before {
+  background-image: url('/public/images/icons/ui/olimar.png');
+}
+.DandoriDB__icon.Sparklium::before {
+  background-image: url('/public/images/icons/ui/sparklium.png');
+}

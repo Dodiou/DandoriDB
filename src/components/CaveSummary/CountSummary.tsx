@@ -1,8 +1,9 @@
 import { PikminCount, TreasureData } from "../../api/MapAPI";
-import { IconCount } from "../IconCount/IconCount";
+import { IconCount } from "../Icon/IconCount";
 import { PikminSummary } from "./PikminSummary";
 
 import './CountSummary.css';
+import { CSSIcon } from "../Icon/Icon";
 
 export interface CountSummaryProps {
   treasures?: TreasureData[];
@@ -16,8 +17,8 @@ export const CountSummary = ({ treasures = [], castaways = 0, pikmin, candypops 
 
   return <div className="CountSummary__container">
     <div className="CountSummary__column">
-      <IconCount iconUrl='treasure' amount={treasureValue} />
-      <IconCount iconUrl='castaway' amount={castaways} />
+      <IconCount icon={CSSIcon.Day} amount={treasureValue} />
+      <IconCount icon={CSSIcon.Night} amount={castaways} />
     </div>
     <div className="CountSummary__column">
       <PikminSummary pikmin={pikmin} />
