@@ -1,3 +1,22 @@
+
+export const PikminColor = {
+  Red: 'red',
+  Yellow: 'yellow',
+  Blue: 'blue',
+  Purple: 'purple',
+  White: 'white',
+  Rock: 'rock',
+  Wing: 'wing',
+  Ice: 'ice',
+  Glow: 'glow',
+}
+
+export const PikminSpawnState = {
+  Sprouts: 'sprouts',
+  Fighting: 'fighting',
+  Idle: 'idle',
+}
+
 export enum MarkerType {
   // collectibles
   Treasure = 'treasure',
@@ -40,19 +59,22 @@ export enum MarkerType {
   // breakables
   BreakableHydrojelly = 'breakable-hydrojelly',
   BreakablePot = 'breakable-pot',
-  MushroomLarge = 'mushroom-large',
-  MushroomSmall = 'mushroom-small',
+  BreakableKingcapnormal = 'breakable-kingcapnormal',
+  BreakableSpotcapnormal = 'breakable-spotcapnormal',
+  BreakableKingcappoison = 'breakable-kingcappoison',
+  BreakableSpotcappoison = 'breakable-spotcappoison',
+  MiscGroupdropmanager = 'misc-groupdropmanager',
   BreakableStraw = 'breakable-straw',
   BreakableIcebox = 'breakable-icebox',
   FirepitLit = 'firepit-lit',
   FirepitUnlit = 'firepit-unlit',
   BreakableCrystal = 'breakable-crystal',
   // items
-  WorkableMound = 'workable-mound',
-  MiscEgg = 'misc-egg',
-  MiscBomb = 'misc-itembomb',
-  MiscIcebomb = 'misc-itemicebomb',
-  MiscSpicy = 'misc-spicy', // not an actual map marker, but is a drop marker
+  BreakableMound = 'breakable-mound',
+  BreakableEgg = 'breakable-egg',
+  MiscBomb = 'miscitem-bomb',
+  MiscIcebomb = 'miscitem-icebomb',
+  MiscSpicy = 'miscitem-spicy', // not an actual map marker, but is a drop marker
   MiscSpiderwort = 'misc-spiderwort',
   // hazards
   HazardSpoutFire = 'hazardspout-fire',
@@ -62,14 +84,15 @@ export enum MarkerType {
   HazardSpoutIce = 'hazardspout-ice',
   HazardSpoutBubble = 'hazardspout-bubble',
   HazardFloorfire = 'hazardradial-floorfire',
-  HazardFloorCharcoal = 'hazardmisc-charcoal',
+  HazardCharcoal = 'hazardmisc-charcoal',
   HazardFloormushroom = 'hazardradial-floormushroom',
   // shortcuts
   ShortcutClipboardhigh = 'shortcut-clipboardhigh',
   ShortcutClipboardlow = 'shortcut-clipboardlow',
   ShortcutPushbag = 'shortcut-pushbag',
   ShortcutRoot = 'shortcut-root',
-  ShortcutString = 'shortcut-string',
+  ShortcutStringup = 'shortcut-stringup',
+  ShortcutStringdown = 'shortcut-stringdown',
   RidableGeyser = 'ridable-geyser',
   RidableZipline = 'ridable-zipline',
   TunnelAny = 'tunnel-any',
@@ -85,12 +108,12 @@ export enum MarkerType {
   GateElectric = 'gate-electric',
   GateIce = 'gate-ice',
   GateNumbered = 'gate-numbered',
-  GateSquashbag = 'gate-squashbag',
+  ShortcutSquashbag = 'shortcut-squashbag',
   // switchables
   SwitchConveyor = 'switchable-conveyor',
   SwitchFan = 'switchable-fan',
-  SwitchFenceIron = 'switchable-fenceiron',
-  SwitchFenceNormal = 'switchable-fencenormal',
+  SwitchFenceiron = 'switchable-fenceiron',
+  SwitchFencenormal = 'switchable-fencenormal',
   SwitchSingle = 'switchable-singleswitch',
   SwitchDouble = 'switchable-doubleswitch',
   // locations
@@ -100,34 +123,34 @@ export enum MarkerType {
   CaveExit = 'cave-exit',
   CaveChallenge = 'cave-challenge',
   CaveBattle = 'cave-battle',
-  // workables
-  WorkablePullrope = 'workable-pullrope',
-  WorkableStick = 'workable-stick',
   // water
   WaterWater = 'water-water',
   WaterSwamp = 'water-swamp',
-  WaterDrain = 'workable-drain',
+  SwitchDrain = 'switchable-drain',
   // misc
+  MiscPullrope = 'misc-pullrope',
+  MiscStick = 'misc-stick',
   MiscIcicle = 'misc-icicle',
-  MiscHoney = 'misc-honey',
+  MiscHoney = 'miscitem-honey',
   MiscPellet = 'misc-pellet',
   // night
   NightLumiknoll = 'night-lumiknoll',
   NightTricknoll = 'night-tricknoll',
-  NightGlowpellets = 'pile-glowpellets',
+  PileGlowpellets = 'pile-glowpellets',
 }
 
-export enum InfoRenderer {
+export enum InfoType {
   Treasure = 'treasure',
   Castaway = 'castaway',
+  Creature = 'creature',
   Onion = 'onion',
   Pikmin = 'pikmin',
   Candypop = 'candypop',
   Structure = 'structure',
   Pile = 'pile',
-  Hazardradial = 'hazardradial',
-  Hazardspout = 'hazardspout',
-  Hazardmisc = 'hazardmisc',
+  Breakable = 'breakable',
+  Firepit = 'firepit',
+  Hazard = 'hazard',
   Shortcut = 'shortcut',
   Ridable = 'ridable',
   Platform = 'platform',
@@ -136,23 +159,29 @@ export enum InfoRenderer {
   Switchable = 'switchable',
   Base = 'base',
   Cave = 'cave',
-  Workable = 'workable',
   Water = 'water',
   Misc = 'misc',
   Night = 'night',
 }
 
+export interface __DropFUTURE {
+  type: MarkerType;
+  infoType: InfoType;
+  chance: number;
+  min: number;
+  max: number;
+}
+
 export interface Drop {
-  type: InfoRenderer;
-  variant: MarkerType;
+  item: string,
   chance: number;
   min: number;
   max: number;
 }
 
 export interface MarkerBase {
-  type: InfoRenderer;
-  variant: MarkerType;
+  type: MarkerType;
+  infoType: MarkerType;
   drops?: Drop[];
 }
 
@@ -191,7 +220,7 @@ interface DropPriority {
   type: MarkerType;
   weight: number;
 }
-const getDropPriority = (drops: Drop[]): DropPriority => {
+const getDropPriority = (drops: __DropFUTURE[]): DropPriority => {
   let maxIndex = 0;
   let maxWeight = WeightedDropPriorities[drops[0].type] || 0;
 
@@ -199,7 +228,7 @@ const getDropPriority = (drops: Drop[]): DropPriority => {
   for (let i = 0; i < drops.length; i++) {
     if (drops[i].type in StaticDropPriorities) {
       return {
-        type: drops[i].variant,
+        type: drops[i].type,
         weight: 1_000_000
       };
     }
@@ -211,7 +240,7 @@ const getDropPriority = (drops: Drop[]): DropPriority => {
     }
   }
   return {
-    type: drops[maxIndex].variant,
+    type: drops[maxIndex].type,
     weight: maxWeight
   };
 }
@@ -226,38 +255,43 @@ const MarkerFilterWeights: {[key: string]: number} = {
   [MarkerType.GateElectric]: 1000,
   [MarkerType.GateIce]: 1000,
   [MarkerType.GateNumbered]: 1000,
-  [MarkerType.GateSquashbag]: 1000,
+  [MarkerType.ShortcutSquashbag]: 1000,
   // don't overide mounds, unless it has items or lots of mats
-  [MarkerType.WorkableMound]: 2.5,
+  [MarkerType.BreakableMound]: 2.5,
   // breakables
   [MarkerType.BreakableHydrojelly]: 1.5, // takes awhile to break
   [MarkerType.BreakablePot]: 1,
-  [MarkerType.MushroomLarge]: 1.5, // takes awhile to break
-  [MarkerType.MushroomSmall]: 1,
+  [MarkerType.BreakableKingcapnormal]: 1.5, // takes awhile to break
+  [MarkerType.BreakableKingcappoison]: 1.5, // takes awhile to break
+  [MarkerType.BreakableSpotcapnormal]: 1,
+  [MarkerType.BreakableSpotcappoison]: 1,
   // misc
-  [MarkerType.MiscEgg]: 2.5, // don't override unless items
+  [MarkerType.BreakableEgg]: 2.5, // don't override unless items
 }
 export const getFilterType = (marker: MarkerBase): MarkerType => {
-  if (!marker.drops) {
-    return marker.variant;
-  }
+  return marker.type;
+  // if (!marker.drops) {
+  //   return marker.type;
+  // }
 
-  // check the drops for the marker filter type
-  const dropPriority = getDropPriority(marker.drops);
-  const markerWeight = MarkerFilterWeights[marker.variant] || 0;
+  // // check the drops for the marker filter type
+  // const dropPriority = getDropPriority(marker.drops);
+  // const markerWeight = MarkerFilterWeights[marker.type] || 0;
 
-  return dropPriority.weight > markerWeight
-    ? dropPriority.type
-    : marker.variant;
+  // return dropPriority.weight > markerWeight
+  //   ? dropPriority.type
+  //   : marker.type;
 }
 
 export const getDropType = (marker: MarkerBase): MarkerType | undefined => {
-  if (!marker.drops) {
-    return undefined;
-  }
+  return undefined;
 
-  // highest priority drop
-  return getDropPriority(marker.drops).type;
+  // if (!marker.drops) {
+  //   return undefined;
+  // }
+
+  // // highest priority drop
+  // return getDropPriority(marker.drops).type;
 }
 
 export interface Category {
@@ -321,8 +355,10 @@ export const Categories: Category[] = [
     markers: [
       MarkerType.BreakableHydrojelly,
       MarkerType.BreakablePot,
-      MarkerType.MushroomLarge,
-      MarkerType.MushroomSmall,
+      MarkerType.BreakableKingcapnormal,
+      MarkerType.BreakableKingcappoison,
+      MarkerType.BreakableSpotcapnormal,
+      MarkerType.BreakableSpotcappoison,
       MarkerType.BreakableStraw,
       MarkerType.BreakableIcebox,
       MarkerType.FirepitLit,
@@ -333,10 +369,11 @@ export const Categories: Category[] = [
   {
     label: 'Items',
     markers: [
-      MarkerType.WorkableMound,
-      MarkerType.MiscEgg,
+      MarkerType.BreakableMound,
+      MarkerType.BreakableEgg,
       MarkerType.MiscBomb,
       MarkerType.MiscIcebomb,
+      MarkerType.MiscSpicy,
       MarkerType.MiscSpiderwort
     ]
   },
@@ -350,7 +387,7 @@ export const Categories: Category[] = [
       MarkerType.HazardSpoutIce,
       MarkerType.HazardSpoutBubble,
       MarkerType.HazardFloorfire,
-      MarkerType.HazardFloorCharcoal,
+      MarkerType.HazardCharcoal,
       MarkerType.HazardFloormushroom
     ]
   },
@@ -361,7 +398,8 @@ export const Categories: Category[] = [
       MarkerType.ShortcutClipboardlow,
       MarkerType.ShortcutPushbag,
       MarkerType.ShortcutRoot,
-      MarkerType.ShortcutString,
+      MarkerType.ShortcutStringup,
+      MarkerType.ShortcutStringdown,
       MarkerType.RidableGeyser,
       MarkerType.RidableZipline,
       MarkerType.TunnelAny,
@@ -381,7 +419,7 @@ export const Categories: Category[] = [
       MarkerType.GateElectric,
       MarkerType.GateIce,
       MarkerType.GateNumbered,
-      MarkerType.GateSquashbag
+      MarkerType.ShortcutSquashbag
     ]
   },
   {
@@ -389,8 +427,8 @@ export const Categories: Category[] = [
     markers: [
       MarkerType.SwitchConveyor,
       MarkerType.SwitchFan,
-      MarkerType.SwitchFenceIron,
-      MarkerType.SwitchFenceNormal,
+      MarkerType.SwitchFenceiron,
+      MarkerType.SwitchFencenormal,
       MarkerType.SwitchSingle,
       MarkerType.SwitchDouble,
     ]
@@ -409,8 +447,6 @@ export const Categories: Category[] = [
   {
     label: 'Workable',
     markers: [
-      MarkerType.WorkablePullrope,
-      MarkerType.WorkableStick
     ]
   },
   {
@@ -418,12 +454,14 @@ export const Categories: Category[] = [
     markers: [
       MarkerType.WaterWater,
       MarkerType.WaterSwamp,
-      MarkerType.WaterDrain,
+      MarkerType.SwitchDrain,
     ]
   },
   {
     label: 'Misc',
     markers: [
+      MarkerType.MiscPullrope,
+      MarkerType.MiscStick,
       MarkerType.MiscIcicle,
       MarkerType.MiscHoney,
       MarkerType.MiscPellet,
@@ -434,7 +472,7 @@ export const Categories: Category[] = [
     markers: [
       MarkerType.NightLumiknoll,
       MarkerType.NightTricknoll,
-      MarkerType.NightGlowpellets,
+      MarkerType.PileGlowpellets,
     ]
   },
 ];
