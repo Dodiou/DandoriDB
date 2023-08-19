@@ -130,7 +130,7 @@ export enum MarkerIcons {
   ShortcutString = 'shortcut-string',
   ShortcutSquashBag = 'shortcut-squashbag',
   ShortcutRoot = 'shortcut-root',
-  StructureGeyser = 'shortcut-geyser',
+  ShortcutGeyser = 'shortcut-geyser',
   ShortcutZipline = 'shortcut-zipline',
   SpoutBubble = 'spout-bubble',
   SpoutElectric = 'spout-electric',
@@ -184,7 +184,8 @@ const getIconOptions = (type: MarkerIcons): Pick<Options, 'src' | 'scale'> => {
   }
   else if (type === MarkerIcons.ShortcutStick) {
     return {
-      src: 'https://www.pikminwiki.com/images/2/2d/Wooden_stake_icon.png',
+      src: 'https://www.pikminwiki.com/images/b/b5/Climbing_stick_icon.png',
+      scale: 1.3
     }
   }
 
