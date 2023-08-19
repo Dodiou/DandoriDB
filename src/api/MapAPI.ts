@@ -2,10 +2,11 @@ import { Feature } from 'ol';
 import { default as MapExtentOverrides } from './extent-overrides.json';
 import { default as MapTransforms } from './map-transforms.json';
 import { Point } from 'ol/geom';
-import { MarkerStyles, ObjectTypes, getMarkerStyle } from '../components/Map/FeatureStyles';
+import { getMarkerStyle } from '../components/Map/FeatureStyles';
 import VectorLayer from 'ol/layer/Vector';
 import VectorSource from 'ol/source/Vector';
 import { Waterbox } from './getImageLayers';
+import { Marker, MarkerType } from './types';
 
 type MapExtent = {
   xMin: number;
@@ -190,22 +191,17 @@ const _getMarkerData = async (mapId: string) => {
   const mapMarkerReq = await fetch(dataUrl);
   const mapMarkerData: {[key: string]: Marker[]} = await mapMarkerReq.json();
 
+  // TODO: need to think about water more
+  mapMarkerData.water = [
+    ...(mapMarkerData[MarkerType.WaterWater] || []),
+    ...(mapMarkerData[MarkerType.WaterSwamp] || [])
+  ];
+  delete mapMarkerData[MarkerType.WaterWater];
+  delete mapMarkerData[MarkerType.WaterSwamp];
+
   return mapMarkerData;
 }
 
-type Marker = {
-  type: ObjectTypes;
-  variant?: string;
-  color?: string;
-  transform: {
-    translation: {
-      x: number;
-      y: number;
-    };
-    rotation?: number;
-    scale?: number;
-  };
-}
 export const getMarkerData = async (mapId: string): Promise<any> => {
   const { water, ...mapMarkerData } = await _getMarkerData(mapId);
 
@@ -216,7 +212,7 @@ export const getMarkerData = async (mapId: string): Promise<any> => {
   const markers = objectLocations.map(obj => {
     const marker = new Feature({
       // Why are x and y flipped???
-      geometry: new Point([(obj.transform.translation.y), obj.transform.translation.x]),
+      geometry: new Point([obj.transform.translation.y, obj.transform.translation.x]),
       data: obj
     });
 
@@ -228,7 +224,7 @@ export const getMarkerData = async (mapId: string): Promise<any> => {
       markerStyle.getImage().setRotateWithView(true);
       // I *think* object look off b/c the images might need to be flipped along y = x, but I'm not sure.
       // except conveyors... those rotations look correct
-      if (obj.type !== ObjectTypes.Conveyor) {
+      if (obj.type !== MarkerType.SwitchConveyor) {
         obj.transform.rotation += 90;
       }
       markerStyle.getImage().setRotation(-(obj.transform.rotation) * Math.PI / 180);

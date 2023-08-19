@@ -1,7 +1,8 @@
-import { ObjectTypes } from "../Map/FeatureStyles";
+import { InfoType, MarkerType } from "../../api/types";
 
 export interface Creature {
-  type: ObjectTypes.Creature;
+  type: MarkerType.Creature;
+  infoType: InfoType.Creature;
   creatureId: string;
   name: string;
   value: number;

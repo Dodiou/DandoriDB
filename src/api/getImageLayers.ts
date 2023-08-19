@@ -1,23 +1,12 @@
 import { Coordinate, rotate } from "ol/coordinate";
 import { Extent } from "ol/extent";
 import { Projection, ProjectionLike, addCoordinateTransforms, addProjection, get as getProjection } from "ol/proj";
-import { ObjectTypes } from "../components/Map/FeatureStyles";
 import { Image } from "ol/layer";
 import { ImageStatic } from "ol/source";
 import { MapData } from "./MapAPI";
+import { InfoType, Marker, MarkerType } from "./types";
 
-interface MarkerBase {
-  type: ObjectTypes;
-}
-// interface Marker extends MarkerBase {
-//   transformation: {
-//     translation: {
-//       x: number;
-//       y: number;
-//     };
-//   };
-// }
-interface MarkerWithRotation extends MarkerBase {
+interface MarkerWithRotation extends Marker {
   transform: {
     translation: {
       x: number;
@@ -32,8 +21,8 @@ interface WaterInfo {
   canSink?: boolean;
 }
 export interface Waterbox extends MarkerWithRotation {
-  type: ObjectTypes.Water;
-  variant: 'water' | 'swamp';
+  type: MarkerType.WaterWater | MarkerType.WaterSwamp;
+  infoType: InfoType.Water;
   normal: WaterInfo;
   dynamic?: WaterInfo;
 }

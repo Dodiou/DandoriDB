@@ -1,8 +1,8 @@
 {
-  "gate": [
+  "gate-numbered": [
     {
-      "type": "gate",
-      "variant": "numbered",
+      "type": "gate-numbered",
+      "infoType": "gate",
       "transform": {
         "translation": {
           "x": 767.5,
@@ -12,22 +12,22 @@
       }
     }
   ],
-  "caveLink": [
+  "cave-exit": [
     {
-      "type": "caveLink",
-      "variant": "exit",
-      "link": "Area003",
+      "type": "cave-exit",
+      "infoType": "cave",
       "transform": {
         "translation": {
           "x": 825.00006,
           "y": -613
         }
       }
-    },
+    }
+  ],
+  "cave-entrance": [
     {
-      "type": "caveLink",
-      "variant": "cave",
-      "link": "Cave014_F03",
+      "type": "cave-entrance",
+      "infoType": "cave",
       "transform": {
         "translation": {
           "x": 1000,
@@ -36,10 +36,12 @@
       }
     }
   ],
-  "castaway": [
+  "castaway-normal": [
     {
-      "type": "castaway",
+      "type": "castaway-normal",
+      "infoType": "castaway",
       "isLeafling": false,
+      "isKoppaite": false,
       "weight": 3,
       "carryMax": 6,
       "transform": {
@@ -50,12 +52,12 @@
       }
     }
   ],
-  "candypop": [
+  "candypop-purple": [
     {
-      "type": "candypop",
+      "type": "candypop-purple",
+      "infoType": "candypop",
       "color": "purple",
-      "amount": 1,
-      "replacementCondition": 51,
+      "disappearsAt": 51,
       "transform": {
         "translation": {
           "x": 587.5,
@@ -64,10 +66,10 @@
       }
     },
     {
-      "type": "candypop",
+      "type": "candypop-purple",
+      "infoType": "candypop",
       "color": "purple",
-      "amount": 1,
-      "replacementCondition": 51,
+      "disappearsAt": 51,
       "transform": {
         "translation": {
           "x": 550.5,
@@ -76,14 +78,15 @@
       }
     }
   ],
-  "pikmin": [
+  "pikmin-blue": [
     {
-      "type": "pikmin",
+      "type": "pikmin-blue",
+      "infoType": "pikmin",
       "color": "blue",
-      "variant": "sprouts",
+      "state": "sprouts",
       "amount": 5,
-      "replacementCondition": 51,
-      "replacement": "other",
+      "disappearsAt": 51,
+      "replacedBy": "GEgg_C",
       "transform": {
         "translation": {
           "x": 1100,
@@ -92,10 +95,10 @@
       }
     }
   ],
-  "base": [
+  "base-onion": [
     {
-      "type": "base",
-      "variant": "beagle",
+      "type": "base-onion",
+      "infoType": "base",
       "baseId": 0,
       "transform": {
         "translation": {
@@ -105,8 +108,8 @@
       }
     },
     {
-      "type": "base",
-      "variant": "beagle",
+      "type": "base-onion",
+      "infoType": "base",
       "baseId": 1,
       "transform": {
         "translation": {
@@ -119,6 +122,7 @@
   "treasure": [
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAPAINTSPPL",
       "name": "Noble Goo",
       "weight": 3,
@@ -132,10 +136,10 @@
       }
     }
   ],
-  "shortcut": [
+  "shortcut-squashbag": [
     {
-      "type": "shortcut",
-      "variant": "squashbag",
+      "type": "shortcut-squashbag",
+      "infoType": "shortcut",
       "weight": 100,
       "transform": {
         "translation": {
@@ -149,6 +153,7 @@
   "creature": [
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "AMEBOZU",
       "name": "Waterwraith",
       "carryMax": 0,
@@ -176,9 +181,10 @@
       }
     }
   ],
-  "egg": [
+  "breakable-egg": [
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": false,
       "drops": [
         {
@@ -208,7 +214,8 @@
       }
     },
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": true,
       "transform": {
         "translation": {
@@ -218,7 +225,8 @@
       }
     },
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": false,
       "drops": [
         {
@@ -248,7 +256,8 @@
       }
     },
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": true,
       "drops": [
         {

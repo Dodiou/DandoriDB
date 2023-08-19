@@ -179,12 +179,18 @@ export interface Drop {
   max: number;
 }
 
-export interface MarkerBase {
+export interface Marker {
   type: MarkerType;
-  infoType: MarkerType;
+  infoType: InfoType;
   drops?: Drop[];
+  transform: {
+    translation: {
+      x: number;
+      y: number;
+    };
+    rotation?: number;
+  }
 }
-
 // Order of priorities of drop items.
 // Static drops, the chance does not matter
 const StaticDropPriorities: {[key: string]: number} = Object.fromEntries(
@@ -268,7 +274,7 @@ const MarkerFilterWeights: {[key: string]: number} = {
   // misc
   [MarkerType.BreakableEgg]: 2.5, // don't override unless items
 }
-export const getFilterType = (marker: MarkerBase): MarkerType => {
+export const getFilterType = (marker: Marker): MarkerType => {
   return marker.type;
   // if (!marker.drops) {
   //   return marker.type;
@@ -283,7 +289,7 @@ export const getFilterType = (marker: MarkerBase): MarkerType => {
   //   : marker.type;
 }
 
-export const getDropType = (marker: MarkerBase): MarkerType | undefined => {
+export const getDropType = (marker: Marker): MarkerType | undefined => {
   return undefined;
 
   // if (!marker.drops) {
@@ -431,6 +437,7 @@ export const Categories: Category[] = [
       MarkerType.SwitchFencenormal,
       MarkerType.SwitchSingle,
       MarkerType.SwitchDouble,
+      MarkerType.SwitchDrain,
     ]
   },
   {
@@ -447,14 +454,6 @@ export const Categories: Category[] = [
   {
     label: 'Workable',
     markers: [
-    ]
-  },
-  {
-    label: 'Water',
-    markers: [
-      MarkerType.WaterWater,
-      MarkerType.WaterSwamp,
-      MarkerType.SwitchDrain,
     ]
   },
   {
