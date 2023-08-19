@@ -1,6 +1,10 @@
 import { Style, Icon } from 'ol/style';
 import { Options } from 'ol/style/Icon';
-import { MarkerType } from '../../api/types';
+import { Categories, Marker, MarkerType } from '../../api/types';
+import VectorLayer from 'ol/layer/Vector';
+import VectorSource from 'ol/source/Vector';
+import { Feature } from 'ol';
+import { Point } from 'ol/geom';
 
 const ROOT_ICON_URL = process.env.PUBLIC_URL + '/images/icons/radar';
 // TODO
@@ -58,17 +62,71 @@ const getIconOptions = (type: MarkerType): Pick<Options, 'src' | 'scale'> => {
   };
 }
 
-export const MarkerStyles = Object.fromEntries(
-  Object.values(MarkerType).map(obj => {
-    return [
-      obj,
-      new Style({
-        image: new Icon(getIconOptions(obj)),
-      })
-    ];
-  })
+const MarkerStyles = Object.fromEntries(
+  Object.values(MarkerType)
+    .filter(type => type !== MarkerType.WaterSwamp && type !== MarkerType.WaterWater)
+    .map(obj => {
+      return [
+        obj,
+        new Style({
+          image: new Icon(getIconOptions(obj)),
+        })
+      ];
+    })
 );
 
-export const getMarkerStyle = (obj: any) => {
-  return MarkerStyles[obj.type];
+const getFeatures = (markerType: MarkerType, markers: Marker[]): Feature[] => {
+  const globalMarkerStyle = MarkerStyles[markerType];
+  return markers.map(marker => {
+    const feature = new Feature({
+      // Why are x and y flipped???
+      geometry: new Point([marker.transform.translation.y, marker.transform.translation.x]),
+      data: marker
+    });
+
+    let markerStyle = globalMarkerStyle;
+    if (marker.transform.rotation !== undefined) {
+      markerStyle = markerStyle.clone();
+      markerStyle.getImage().setRotateWithView(true);
+      // I *think* rotations look off b/c the images might need to be flipped along y = x, but I'm not sure.
+      //   except conveyors... those rotations look correct
+      markerStyle.getImage().setRotation(-(marker.transform.rotation) * Math.PI / 180);
+    }
+
+    feature.setStyle(markerStyle);
+    return feature;
+  });
+}
+
+export type MapFeatureLayers = {
+  [Type in Exclude<MarkerType, MarkerType.WaterWater | MarkerType.WaterSwamp>]?: VectorLayer<VectorSource>;
+}
+
+const LayerOrder: MarkerType[] = Categories.reduce((markerTypes, category) => {
+  return [...markerTypes, ...category.markers];
+}, [] as MarkerType[]);
+
+export const getFeatureLayers = (groupedData: any): MapFeatureLayers => {
+  const featureLayers: MapFeatureLayers = {};
+
+  for (let i = 0; i < LayerOrder.length; i++) {
+    const markerType = LayerOrder[i];
+    if (!groupedData[markerType] || markerType === MarkerType.WaterWater || markerType === MarkerType.WaterSwamp) {
+      continue;
+    }
+
+    // Categories are sorted by layer importance.
+    const layerZIndex = 1000 - i;
+    const features = getFeatures(markerType, groupedData[markerType]);
+    const layer = new VectorLayer({
+      source: new VectorSource({
+        features
+      }),
+      zIndex: layerZIndex
+    })
+
+    featureLayers[markerType] = layer;
+  }
+
+  return featureLayers;
 };

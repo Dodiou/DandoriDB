@@ -1,10 +1,6 @@
-import { Feature } from 'ol';
 import { default as MapExtentOverrides } from './extent-overrides.json';
 import { default as MapTransforms } from './map-transforms.json';
-import { Point } from 'ol/geom';
-import { getMarkerStyle } from '../components/Map/FeatureStyles';
-import VectorLayer from 'ol/layer/Vector';
-import VectorSource from 'ol/source/Vector';
+import { MapFeatureLayers, getFeatureLayers } from '../components/Map/FeatureStyles';
 import { Waterbox } from './getImageLayers';
 import { Marker, MarkerType } from './types';
 
@@ -202,38 +198,7 @@ const _getMarkerData = async (mapId: string) => {
   return mapMarkerData;
 }
 
-export const getMarkerData = async (mapId: string): Promise<any> => {
+export const getMarkerData = async (mapId: string): Promise<MapFeatureLayers> => {
   const { water, ...mapMarkerData } = await _getMarkerData(mapId);
-
-  const objectLocations: Marker[] = Object.values(mapMarkerData).reduce((collector, values) => {
-    return [...collector, ...values];
-  }, [] as Marker[]);
-
-  const markers = objectLocations.map(obj => {
-    const marker = new Feature({
-      // Why are x and y flipped???
-      geometry: new Point([obj.transform.translation.y, obj.transform.translation.x]),
-      data: obj
-    });
-
-    // TODO: hack-y way to get correct icons showing up. need to revisit
-    let markerStyle = getMarkerStyle(obj);
-
-    if (obj.transform.rotation !== undefined) {
-      markerStyle = markerStyle.clone();
-      markerStyle.getImage().setRotateWithView(true);
-      // I *think* object look off b/c the images might need to be flipped along y = x, but I'm not sure.
-      // except conveyors... those rotations look correct
-      if (obj.type !== MarkerType.SwitchConveyor) {
-        obj.transform.rotation += 90;
-      }
-      markerStyle.getImage().setRotation(-(obj.transform.rotation) * Math.PI / 180);
-    }
-
-    marker.setStyle(markerStyle);
-    return marker;
-  });
-  return new VectorLayer({
-    source: new VectorSource({ features: markers })
-  });
+  return getFeatureLayers(mapMarkerData);
 }

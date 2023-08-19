@@ -361,6 +361,7 @@ export const Categories: Category[] = [
     markers: [
       MarkerType.BreakableHydrojelly,
       MarkerType.BreakablePot,
+      MarkerType.MiscGroupdropmanager,
       MarkerType.BreakableKingcapnormal,
       MarkerType.BreakableKingcappoison,
       MarkerType.BreakableSpotcapnormal,

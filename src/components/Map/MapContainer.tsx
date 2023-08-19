@@ -40,13 +40,13 @@ export const MapContainer = ({ mapId, onSelect, onMouseMove }: MapContainerProps
       });
 
       // add markers
-      const markerLayer = await getMarkerData(mapId);
+      const markerLayers = await getMarkerData(mapId);
 
       // TODO figure out why map.setLayers and map.setView aren't working
       const map = new Map({
         layers: [
           ...imageLayers,
-          markerLayer
+          ...Object.values(markerLayers)
         ],
         target: 'map',
         view,
