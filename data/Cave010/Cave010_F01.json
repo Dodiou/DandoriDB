@@ -1,7 +1,8 @@
 {
-  "materials": [
+  "pile-materials": [
     {
-      "type": "materials",
+      "type": "pile-materials",
+      "infoType": "pile",
       "amount": 15,
       "transform": {
         "translation": {
@@ -11,10 +12,10 @@
       }
     }
   ],
-  "fence": [
+  "switchable-fencenormal": [
     {
-      "type": "fence",
-      "variant": "normal",
+      "type": "switchable-fencenormal",
+      "infoType": "switchable",
       "transform": {
         "translation": {
           "x": 376.94992,
@@ -24,10 +25,10 @@
       }
     }
   ],
-  "water": [
+  "water-water": [
     {
-      "type": "water",
-      "variant": "water",
+      "type": "water-water",
+      "infoType": "water",
       "normal": {
         "image": "T_ui_Map_Cave010_F01_WaterBox00_D.png",
         "amountToFreeze": 5
@@ -44,6 +45,7 @@
   "treasure": [
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTATAKENOKO",
       "name": "Anxious Sprout",
       "weight": 10,
@@ -58,6 +60,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAPAINTSBLK",
       "name": "Ambiguous Goo",
       "weight": 5,
@@ -71,11 +74,10 @@
       }
     }
   ],
-  "caveLink": [
+  "cave-entrance": [
     {
-      "type": "caveLink",
-      "variant": "cave",
-      "link": "Cave010_F02",
+      "type": "cave-entrance",
+      "infoType": "cave",
       "transform": {
         "translation": {
           "x": -866.15234,
@@ -84,13 +86,14 @@
       }
     }
   ],
-  "pikmin": [
+  "pikmin-rock": [
     {
-      "type": "pikmin",
+      "type": "pikmin-rock",
+      "infoType": "pikmin",
       "color": "rock",
-      "variant": "fighting",
+      "state": "fighting",
       "amount": 5,
-      "replacementCondition": 51,
+      "disappearsAt": 51,
       "transform": {
         "translation": {
           "x": -381.8414,
@@ -99,12 +102,13 @@
       }
     },
     {
-      "type": "pikmin",
+      "type": "pikmin-rock",
+      "infoType": "pikmin",
       "color": "rock",
-      "variant": "fighting",
+      "state": "fighting",
       "amount": 5,
-      "replacementCondition": 51,
-      "replacement": "candypop",
+      "disappearsAt": 51,
+      "replacedBy": "candypop-rock",
       "candypopOffset": {
         "X": 0,
         "Y": 155.56754,
@@ -118,10 +122,11 @@
       }
     }
   ],
-  "gate": [
+  "gate-crystal": [
     {
-      "type": "gate",
-      "variant": "crystal",
+      "type": "gate-crystal",
+      "infoType": "gate",
+      "health": 1120,
       "transform": {
         "translation": {
           "x": -670,
@@ -131,8 +136,9 @@
       }
     },
     {
-      "type": "gate",
-      "variant": "crystal",
+      "type": "gate-crystal",
+      "infoType": "gate",
+      "health": 1120,
       "transform": {
         "translation": {
           "x": -550,
@@ -142,8 +148,9 @@
       }
     },
     {
-      "type": "gate",
-      "variant": "crystal",
+      "type": "gate-crystal",
+      "infoType": "gate",
+      "health": 1120,
       "transform": {
         "translation": {
           "x": 273,
@@ -153,10 +160,10 @@
       }
     }
   ],
-  "base": [
+  "base-onion": [
     {
-      "type": "base",
-      "variant": "beagle",
+      "type": "base-onion",
+      "infoType": "base",
       "baseId": 0,
       "transform": {
         "translation": {
@@ -169,10 +176,12 @@
   "creature": [
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TENTENCHAPPY",
       "name": "Orange Bulborb",
       "carryMax": 20,
       "value": 12,
+      "health": 1800,
       "seeds": 12,
       "drops": [
         {
@@ -191,10 +200,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TENKOCHAPPY",
       "name": "Dwarf Orange Bulborb",
       "carryMax": 6,
       "value": 3,
+      "health": 200,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -205,10 +216,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TENKOCHAPPY",
       "name": "Dwarf Orange Bulborb",
       "carryMax": 6,
       "value": 3,
+      "health": 200,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -219,10 +232,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TENKOCHAPPY",
       "name": "Dwarf Orange Bulborb",
       "carryMax": 6,
       "value": 3,
+      "health": 200,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -233,10 +248,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TENKOCHAPPY",
       "name": "Dwarf Orange Bulborb",
       "carryMax": 6,
       "value": 3,
+      "health": 200,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -247,10 +264,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -269,10 +288,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -291,10 +312,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -313,10 +336,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -335,10 +360,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -357,10 +384,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -379,10 +408,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -401,10 +432,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -423,10 +456,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -445,10 +480,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {

@@ -1,9 +1,8 @@
 {
-  "caveLink": [
+  "cave-entrance": [
     {
-      "type": "caveLink",
-      "variant": "cave",
-      "link": "Cave019_F04",
+      "type": "cave-entrance",
+      "infoType": "cave",
       "transform": {
         "translation": {
           "x": 1351.6102,
@@ -12,9 +11,10 @@
       }
     }
   ],
-  "materials": [
+  "pile-materials": [
     {
-      "type": "materials",
+      "type": "pile-materials",
+      "infoType": "pile",
       "amount": 15,
       "transform": {
         "translation": {
@@ -24,10 +24,11 @@
       }
     }
   ],
-  "gate": [
+  "gate-dirt": [
     {
-      "type": "gate",
-      "variant": "dirt",
+      "type": "gate-dirt",
+      "infoType": "gate",
+      "health": 8000,
       "transform": {
         "translation": {
           "x": 1205.5997,
@@ -37,10 +38,10 @@
       }
     }
   ],
-  "fence": [
+  "switchable-fencenormal": [
     {
-      "type": "fence",
-      "variant": "normal",
+      "type": "switchable-fencenormal",
+      "infoType": "switchable",
       "transform": {
         "translation": {
           "x": 417,
@@ -50,9 +51,10 @@
       }
     }
   ],
-  "pot": [
+  "breakable-pot": [
     {
-      "type": "pot",
+      "type": "breakable-pot",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": -700.31573,
@@ -61,7 +63,8 @@
       }
     },
     {
-      "type": "pot",
+      "type": "breakable-pot",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": -806.94745,
@@ -70,7 +73,8 @@
       }
     },
     {
-      "type": "pot",
+      "type": "breakable-pot",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GOtaDice6WHT_C",
@@ -87,7 +91,8 @@
       }
     },
     {
-      "type": "pot",
+      "type": "breakable-pot",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": -762.9449,
@@ -99,6 +104,7 @@
   "treasure": [
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "KINKAISTATION",
       "name": "Gold Nugget",
       "amount": 15,
@@ -114,6 +120,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAPUZZLEF",
       "name": "Memory Fragment (Center Left)",
       "weight": 2,
@@ -128,6 +135,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTARAPPA",
       "name": "Mega Horn",
       "weight": 15,
@@ -141,10 +149,10 @@
       }
     }
   ],
-  "floor": [
+  "hazardradial-floormushroom": [
     {
-      "type": "floor",
-      "variant": "mushroom",
+      "type": "hazardradial-floormushroom",
+      "infoType": "hazard",
       "isPoison": false,
       "radius": 175,
       "transform": {
@@ -155,8 +163,8 @@
       }
     },
     {
-      "type": "floor",
-      "variant": "mushroom",
+      "type": "hazardradial-floormushroom",
+      "infoType": "hazard",
       "isPoison": false,
       "radius": 175,
       "transform": {
@@ -167,8 +175,8 @@
       }
     },
     {
-      "type": "floor",
-      "variant": "mushroom",
+      "type": "hazardradial-floormushroom",
+      "infoType": "hazard",
       "isPoison": false,
       "radius": 175,
       "transform": {
@@ -179,8 +187,8 @@
       }
     },
     {
-      "type": "floor",
-      "variant": "mushroom",
+      "type": "hazardradial-floormushroom",
+      "infoType": "hazard",
       "isPoison": false,
       "radius": 175,
       "transform": {
@@ -191,8 +199,8 @@
       }
     },
     {
-      "type": "floor",
-      "variant": "mushroom",
+      "type": "hazardradial-floormushroom",
+      "infoType": "hazard",
       "isPoison": false,
       "radius": 175,
       "transform": {
@@ -203,11 +211,10 @@
       }
     }
   ],
-  "mushroom": [
+  "breakable-kingcapnormal": [
     {
-      "type": "mushroom",
-      "isPoison": false,
-      "isLarge": true,
+      "type": "breakable-kingcapnormal",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GHoney_C",
@@ -222,11 +229,12 @@
           "y": -67.54755
         }
       }
-    },
+    }
+  ],
+  "breakable-spotcapnormal": [
     {
-      "type": "mushroom",
-      "isPoison": false,
-      "isLarge": false,
+      "type": "breakable-spotcapnormal",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": -1361.09,
@@ -235,9 +243,8 @@
       }
     },
     {
-      "type": "mushroom",
-      "isPoison": false,
-      "isLarge": false,
+      "type": "breakable-spotcapnormal",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": -1457.7408,
@@ -246,9 +253,8 @@
       }
     },
     {
-      "type": "mushroom",
-      "isPoison": false,
-      "isLarge": false,
+      "type": "breakable-spotcapnormal",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": -1453.2618,
@@ -257,57 +263,23 @@
       }
     },
     {
-      "type": "mushroom",
-      "isPoison": false,
-      "isLarge": false,
+      "type": "breakable-spotcapnormal",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": -1435.5546,
           "y": -59.217896
         }
       }
-    },
-    {
-      "type": "mushroom",
-      "isPoison": true,
-      "isLarge": false,
-      "transform": {
-        "translation": {
-          "x": 885,
-          "y": 225
-        }
-      }
-    },
-    {
-      "type": "mushroom",
-      "isPoison": true,
-      "isLarge": false,
-      "transform": {
-        "translation": {
-          "x": 830,
-          "y": 245
-        }
-      }
-    },
-    {
-      "type": "mushroom",
-      "isPoison": true,
-      "isLarge": false,
-      "transform": {
-        "translation": {
-          "x": 880,
-          "y": 310
-        }
-      }
     }
   ],
-  "candypop": [
+  "candypop-white": [
     {
-      "type": "candypop",
+      "type": "candypop-white",
+      "infoType": "candypop",
       "color": "white",
-      "amount": 1,
-      "replacementCondition": 51,
-      "replacement": "other",
+      "disappearsAt": 51,
+      "replacedBy": "GEgg_C",
       "transform": {
         "translation": {
           "x": -1422.398,
@@ -316,11 +288,11 @@
       }
     },
     {
-      "type": "candypop",
+      "type": "candypop-white",
+      "infoType": "candypop",
       "color": "white",
-      "amount": 1,
-      "replacementCondition": 51,
-      "replacement": "other",
+      "disappearsAt": 51,
+      "replacedBy": "GEgg_C",
       "transform": {
         "translation": {
           "x": 160.70815,
@@ -329,10 +301,10 @@
       }
     }
   ],
-  "tunnel": [
+  "tunnel-any": [
     {
-      "type": "tunnel",
-      "variant": "normal",
+      "type": "tunnel-any",
+      "infoType": "tunnel",
       "tunnelId": "TunnelID_0",
       "transform": {
         "translation": {
@@ -342,8 +314,8 @@
       }
     },
     {
-      "type": "tunnel",
-      "variant": "normal",
+      "type": "tunnel-any",
+      "infoType": "tunnel",
       "tunnelId": "TunnelID_0",
       "transform": {
         "translation": {
@@ -353,10 +325,10 @@
       }
     }
   ],
-  "base": [
+  "base-onion": [
     {
-      "type": "base",
-      "variant": "beagle",
+      "type": "base-onion",
+      "infoType": "base",
       "baseId": 0,
       "transform": {
         "translation": {
@@ -366,13 +338,47 @@
       }
     }
   ],
+  "breakable-spotcappoison": [
+    {
+      "type": "breakable-spotcappoison",
+      "infoType": "breakable",
+      "transform": {
+        "translation": {
+          "x": 885,
+          "y": 225
+        }
+      }
+    },
+    {
+      "type": "breakable-spotcappoison",
+      "infoType": "breakable",
+      "transform": {
+        "translation": {
+          "x": 830,
+          "y": 245
+        }
+      }
+    },
+    {
+      "type": "breakable-spotcappoison",
+      "infoType": "breakable",
+      "transform": {
+        "translation": {
+          "x": 880,
+          "y": 310
+        }
+      }
+    }
+  ],
   "creature": [
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "SARAI",
       "name": "Swooping Snitchbug",
       "carryMax": 6,
       "value": 3,
+      "health": 1000,
       "seeds": 4,
       "drops": [
         {
@@ -391,10 +397,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TOBIKABURI",
       "name": "Flighty Joustmite",
       "carryMax": 14,
       "value": 5,
+      "health": 600,
       "seeds": 8,
       "drops": [
         {
@@ -413,10 +421,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KABURI",
       "name": "Joustmite",
       "carryMax": 14,
       "value": 5,
+      "health": 450,
       "seeds": 6,
       "drops": [
         {
@@ -435,10 +445,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TOBIKABURI",
       "name": "Flighty Joustmite",
       "carryMax": 14,
       "value": 5,
+      "health": 600,
       "seeds": 8,
       "drops": [
         {
@@ -457,10 +469,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TOBINKO",
       "name": "Shearwig",
       "carryMax": 1,
       "value": 1,
+      "health": 74,
       "seeds": 3,
       "drops": [
         {
@@ -480,10 +494,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TOBINKO",
       "name": "Shearwig",
       "carryMax": 1,
       "value": 1,
+      "health": 74,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -495,10 +511,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TOBIKABURI",
       "name": "Flighty Joustmite",
       "carryMax": 14,
       "value": 5,
+      "health": 600,
       "seeds": 8,
       "drops": [
         {
@@ -517,10 +535,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "SARAI",
       "name": "Swooping Snitchbug",
       "carryMax": 6,
       "value": 3,
+      "health": 1000,
       "seeds": 4,
       "drops": [
         {
@@ -539,10 +559,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "GASKOGANE",
       "name": "Doodlebug",
       "carryMax": 0,
       "value": 0,
+      "health": 400,
       "seeds": 0,
       "drops": [
         {
@@ -579,10 +601,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -607,10 +631,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -635,10 +661,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -663,10 +691,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -691,10 +721,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -719,10 +751,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -747,10 +781,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -775,10 +811,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -803,10 +841,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -831,10 +871,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {

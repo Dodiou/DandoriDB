@@ -1,9 +1,8 @@
 {
-  "caveLink": [
+  "cave-entrance": [
     {
-      "type": "caveLink",
-      "variant": "cave",
-      "link": "Cave012_F02",
+      "type": "cave-entrance",
+      "infoType": "cave",
       "transform": {
         "translation": {
           "x": -415.0005,
@@ -12,9 +11,10 @@
       }
     }
   ],
-  "hydroJelly": [
+  "breakable-hydrojelly": [
     {
-      "type": "hydroJelly",
+      "type": "breakable-hydrojelly",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 960,
@@ -23,7 +23,8 @@
       }
     },
     {
-      "type": "hydroJelly",
+      "type": "breakable-hydrojelly",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 897.66785,
@@ -32,10 +33,10 @@
       }
     }
   ],
-  "water": [
+  "water-water": [
     {
-      "type": "water",
-      "variant": "water",
+      "type": "water-water",
+      "infoType": "water",
       "normal": {
         "image": "T_ui_Map_Cave012_F01_WaterBox00_D.png",
         "amountToFreeze": 5
@@ -49,8 +50,8 @@
       }
     },
     {
-      "type": "water",
-      "variant": "water",
+      "type": "water-water",
+      "infoType": "water",
       "normal": {
         "image": "T_ui_Map_Cave012_F01_WaterBox01_D.png",
         "amountToFreeze": 10
@@ -64,8 +65,8 @@
       }
     },
     {
-      "type": "water",
-      "variant": "water",
+      "type": "water-water",
+      "infoType": "water",
       "normal": {
         "image": "T_ui_Map_Cave012_F01_WaterBox02_D.png",
         "amountToFreeze": 5
@@ -79,10 +80,10 @@
       }
     }
   ],
-  "heatObstacle": [
+  "breakable-icebox": [
     {
-      "type": "heatObstacle",
-      "variant": "iceBox",
+      "type": "breakable-icebox",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GPiecePick_C",
@@ -99,8 +100,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "iceBox",
+      "type": "breakable-icebox",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": -411.95508,
@@ -109,8 +110,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "iceBox",
+      "type": "breakable-icebox",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": -685.9445,
@@ -119,24 +120,23 @@
       }
     }
   ],
-  "switch": [
+  "switchable-singleswitch": [
     {
-      "type": "switch",
-      "variant": "single",
+      "type": "switchable-singleswitch",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
           "x": -125.25983,
           "y": -237.18921
-        },
-        "rotation": 0
+        }
       }
     }
   ],
-  "fence": [
+  "switchable-fenceiron": [
     {
-      "type": "fence",
-      "variant": "iron",
+      "type": "switchable-fenceiron",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -147,8 +147,8 @@
       }
     },
     {
-      "type": "fence",
-      "variant": "iron",
+      "type": "switchable-fenceiron",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -159,8 +159,8 @@
       }
     },
     {
-      "type": "fence",
-      "variant": "iron",
+      "type": "switchable-fenceiron",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -169,34 +169,12 @@
         },
         "rotation": -90
       }
-    },
-    {
-      "type": "fence",
-      "variant": "normal",
-      "transform": {
-        "translation": {
-          "x": 740,
-          "y": -1098
-        },
-        "rotation": 90
-      }
-    },
-    {
-      "type": "fence",
-      "variant": "normal",
-      "transform": {
-        "translation": {
-          "x": 740,
-          "y": -939
-        },
-        "rotation": 90
-      }
     }
   ],
-  "shortcut": [
+  "shortcut-pushbag": [
     {
-      "type": "shortcut",
-      "variant": "pushbag",
+      "type": "shortcut-pushbag",
+      "infoType": "shortcut",
       "weight": 10,
       "transform": {
         "translation": {
@@ -207,9 +185,10 @@
       }
     }
   ],
-  "materials": [
+  "pile-materials": [
     {
-      "type": "materials",
+      "type": "pile-materials",
+      "infoType": "pile",
       "amount": 20,
       "transform": {
         "translation": {
@@ -219,39 +198,28 @@
       }
     }
   ],
-  "candypop": [
+  "candypop-white": [
     {
-      "type": "candypop",
+      "type": "candypop-white",
+      "infoType": "candypop",
       "color": "white",
-      "amount": 1,
-      "changeToCondition": 50,
-      "changeToColor": "ice",
-      "replacementCondition": 52,
-      "replacement": "candypop",
+      "changesAt": 50,
+      "changesTo": "ice",
+      "disappearsAt": 52,
       "transform": {
         "translation": {
           "x": -736,
           "y": -218
         }
       }
-    },
-    {
-      "type": "candypop",
-      "color": "ice",
-      "amount": 1,
-      "replacementCondition": 11,
-      "transform": {
-        "translation": {
-          "x": 429.2568,
-          "y": 254.37396
-        }
-      }
     }
   ],
-  "castaway": [
+  "castaway-normal": [
     {
-      "type": "castaway",
+      "type": "castaway-normal",
+      "infoType": "castaway",
       "isLeafling": false,
+      "isKoppaite": false,
       "weight": 3,
       "carryMax": 6,
       "transform": {
@@ -262,39 +230,26 @@
       }
     }
   ],
-  "pikmin": [
+  "pikmin-blue": [
     {
-      "type": "pikmin",
+      "type": "pikmin-blue",
+      "infoType": "pikmin",
       "color": "blue",
-      "variant": "sprouts",
+      "state": "sprouts",
       "amount": 5,
-      "replacementCondition": 6,
+      "disappearsAt": 6,
       "transform": {
         "translation": {
           "x": 660.10986,
           "y": -578.70374
         }
       }
-    },
-    {
-      "type": "pikmin",
-      "color": "ice",
-      "variant": "sprouts",
-      "amount": 5,
-      "replacementCondition": 51,
-      "replacement": "other",
-      "transform": {
-        "translation": {
-          "x": 670.10986,
-          "y": 23.296265
-        }
-      }
     }
   ],
-  "base": [
+  "base-onion": [
     {
-      "type": "base",
-      "variant": "beagle",
+      "type": "base-onion",
+      "infoType": "base",
       "baseId": 0,
       "transform": {
         "translation": {
@@ -304,10 +259,10 @@
       }
     }
   ],
-  "spout": [
+  "hazardspout-poison": [
     {
-      "type": "spout",
-      "variant": "poison",
+      "type": "hazardspout-poison",
+      "infoType": "hazard",
       "transform": {
         "translation": {
           "x": 835,
@@ -319,6 +274,7 @@
   "treasure": [
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAPUZZLEE",
       "name": "Memory Fragment (Left Edge)",
       "weight": 2,
@@ -333,6 +289,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAPAINTSWHT",
       "name": "True Goo",
       "weight": 3,
@@ -346,9 +303,65 @@
       }
     }
   ],
-  "icicle": [
+  "pikmin-ice": [
     {
-      "type": "icicle",
+      "type": "pikmin-ice",
+      "infoType": "pikmin",
+      "color": "ice",
+      "state": "sprouts",
+      "amount": 5,
+      "disappearsAt": 51,
+      "replacedBy": "GEgg_C",
+      "transform": {
+        "translation": {
+          "x": 670.10986,
+          "y": 23.296265
+        }
+      }
+    }
+  ],
+  "switchable-fencenormal": [
+    {
+      "type": "switchable-fencenormal",
+      "infoType": "switchable",
+      "transform": {
+        "translation": {
+          "x": 740,
+          "y": -1098
+        },
+        "rotation": 90
+      }
+    },
+    {
+      "type": "switchable-fencenormal",
+      "infoType": "switchable",
+      "transform": {
+        "translation": {
+          "x": 740,
+          "y": -939
+        },
+        "rotation": 90
+      }
+    }
+  ],
+  "candypop-ice": [
+    {
+      "type": "candypop-ice",
+      "infoType": "candypop",
+      "color": "ice",
+      "disappearsAt": 11,
+      "transform": {
+        "translation": {
+          "x": 429.2568,
+          "y": 254.37396
+        }
+      }
+    }
+  ],
+  "misc-icicle": [
+    {
+      "type": "misc-icicle",
+      "infoType": "misc",
       "transform": {
         "translation": {
           "x": -443,
@@ -357,7 +370,8 @@
       }
     },
     {
-      "type": "icicle",
+      "type": "misc-icicle",
+      "infoType": "misc",
       "transform": {
         "translation": {
           "x": 530,
@@ -366,7 +380,8 @@
       }
     },
     {
-      "type": "icicle",
+      "type": "misc-icicle",
+      "infoType": "misc",
       "transform": {
         "translation": {
           "x": 389,
@@ -375,7 +390,8 @@
       }
     },
     {
-      "type": "icicle",
+      "type": "misc-icicle",
+      "infoType": "misc",
       "transform": {
         "translation": {
           "x": 137,
@@ -384,7 +400,8 @@
       }
     },
     {
-      "type": "icicle",
+      "type": "misc-icicle",
+      "infoType": "misc",
       "transform": {
         "translation": {
           "x": -683.33875,
@@ -396,10 +413,12 @@
   "creature": [
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TOBIUO",
       "name": "Puckering Blinnow",
       "carryMax": 1,
       "value": 1,
+      "health": 74,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -410,10 +429,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TOBIUO",
       "name": "Puckering Blinnow",
       "carryMax": 1,
       "value": 1,
+      "health": 74,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -424,10 +445,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TOBIUO",
       "name": "Puckering Blinnow",
       "carryMax": 1,
       "value": 1,
+      "health": 74,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -438,10 +461,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "ICEOTAKARA",
       "name": "Iceblown Dweevil",
       "carryMax": 4,
       "value": 2,
+      "health": 300,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -452,10 +477,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "YUKIFUTAKUCHI",
       "name": "Arctic Cannon Larva",
       "carryMax": 14,
       "value": 7,
+      "health": 900,
       "seeds": 8,
       "transform": {
         "translation": {
@@ -466,10 +493,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "YUKIFUTAKUCHI",
       "name": "Arctic Cannon Larva",
       "carryMax": 14,
       "value": 7,
+      "health": 900,
       "seeds": 8,
       "transform": {
         "translation": {

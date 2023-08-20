@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/DandoriDB/static/css/main.adaaa6e4.css",
-    "main.js": "/DandoriDB/static/js/main.941337df.js",
+    "main.css": "/DandoriDB/static/css/main.c9516763.css",
+    "main.js": "/DandoriDB/static/js/main.029a1e8e.js",
     "static/js/787.488c33bb.chunk.js": "/DandoriDB/static/js/787.488c33bb.chunk.js",
     "index.html": "/DandoriDB/index.html",
-    "main.adaaa6e4.css.map": "/DandoriDB/static/css/main.adaaa6e4.css.map",
-    "main.941337df.js.map": "/DandoriDB/static/js/main.941337df.js.map",
+    "main.c9516763.css.map": "/DandoriDB/static/css/main.c9516763.css.map",
+    "main.029a1e8e.js.map": "/DandoriDB/static/js/main.029a1e8e.js.map",
     "787.488c33bb.chunk.js.map": "/DandoriDB/static/js/787.488c33bb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.adaaa6e4.css",
-    "static/js/main.941337df.js"
+    "static/css/main.c9516763.css",
+    "static/js/main.029a1e8e.js"
   ]
 }

@@ -1,9 +1,8 @@
 {
-  "caveLink": [
+  "cave-entrance": [
     {
-      "type": "caveLink",
-      "variant": "cave",
-      "link": "Cave021_F02",
+      "type": "cave-entrance",
+      "infoType": "cave",
       "transform": {
         "translation": {
           "x": -1185,
@@ -12,10 +11,10 @@
       }
     }
   ],
-  "switch": [
+  "switchable-doubleswitch": [
     {
-      "type": "switch",
-      "variant": "double",
+      "type": "switchable-doubleswitch",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -26,10 +25,10 @@
       }
     }
   ],
-  "gate": [
+  "gate-numbered": [
     {
-      "type": "gate",
-      "variant": "numbered",
+      "type": "gate-numbered",
+      "infoType": "gate",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -40,8 +39,8 @@
       }
     },
     {
-      "type": "gate",
-      "variant": "numbered",
+      "type": "gate-numbered",
+      "infoType": "gate",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -52,8 +51,8 @@
       }
     },
     {
-      "type": "gate",
-      "variant": "numbered",
+      "type": "gate-numbered",
+      "infoType": "gate",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -64,8 +63,8 @@
       }
     },
     {
-      "type": "gate",
-      "variant": "numbered",
+      "type": "gate-numbered",
+      "infoType": "gate",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -76,8 +75,8 @@
       }
     },
     {
-      "type": "gate",
-      "variant": "numbered",
+      "type": "gate-numbered",
+      "infoType": "gate",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -88,8 +87,8 @@
       }
     },
     {
-      "type": "gate",
-      "variant": "numbered",
+      "type": "gate-numbered",
+      "infoType": "gate",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -100,8 +99,8 @@
       }
     },
     {
-      "type": "gate",
-      "variant": "numbered",
+      "type": "gate-numbered",
+      "infoType": "gate",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -115,6 +114,7 @@
   "treasure": [
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "KINKAISTATION",
       "name": "Gold Nugget",
       "amount": 50,
@@ -130,6 +130,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAMATDOLLSA",
       "name": "Granddaughter Doll Head",
       "weight": 3,
@@ -144,6 +145,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTANESCLASSICMINI",
       "name": "Life Controller",
       "weight": 10,
@@ -158,6 +160,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAMATDOLLSB",
       "name": "Gifting Vase",
       "weight": 3,
@@ -171,14 +174,15 @@
       }
     }
   ],
-  "pikmin": [
+  "pikmin-ice": [
     {
-      "type": "pikmin",
+      "type": "pikmin-ice",
+      "infoType": "pikmin",
       "color": "ice",
-      "variant": "sprouts",
+      "state": "sprouts",
       "amount": 5,
-      "replacementCondition": 51,
-      "replacement": "other",
+      "disappearsAt": 51,
+      "replacedBy": "GEgg_C",
       "transform": {
         "translation": {
           "x": 324.6741,
@@ -187,10 +191,10 @@
       }
     }
   ],
-  "water": [
+  "water-water": [
     {
-      "type": "water",
-      "variant": "water",
+      "type": "water-water",
+      "infoType": "water",
       "normal": {
         "image": "T_ui_Map_Cave021_F01_WaterBox00_D.png",
         "amountToFreeze": 20
@@ -204,13 +208,13 @@
       }
     }
   ],
-  "candypop": [
+  "candypop-white": [
     {
-      "type": "candypop",
+      "type": "candypop-white",
+      "infoType": "candypop",
       "color": "white",
-      "amount": 1,
-      "replacementCondition": 51,
-      "replacement": "other",
+      "disappearsAt": 51,
+      "replacedBy": "GEgg_C",
       "transform": {
         "translation": {
           "x": -860,
@@ -219,10 +223,10 @@
       }
     }
   ],
-  "spout": [
+  "hazardspout-water": [
     {
-      "type": "spout",
-      "variant": "water",
+      "type": "hazardspout-water",
+      "infoType": "hazard",
       "transform": {
         "translation": {
           "x": -413,
@@ -231,8 +235,8 @@
       }
     },
     {
-      "type": "spout",
-      "variant": "water",
+      "type": "hazardspout-water",
+      "infoType": "hazard",
       "transform": {
         "translation": {
           "x": -957.75446,
@@ -241,10 +245,10 @@
       }
     }
   ],
-  "base": [
+  "base-onion": [
     {
-      "type": "base",
-      "variant": "beagle",
+      "type": "base-onion",
+      "infoType": "base",
       "baseId": 0,
       "transform": {
         "translation": {
@@ -254,10 +258,10 @@
       }
     }
   ],
-  "tunnel": [
+  "tunnel-any": [
     {
-      "type": "tunnel",
-      "variant": "normal",
+      "type": "tunnel-any",
+      "infoType": "tunnel",
       "tunnelId": "TunnelID_0",
       "transform": {
         "translation": {
@@ -267,8 +271,8 @@
       }
     },
     {
-      "type": "tunnel",
-      "variant": "normal",
+      "type": "tunnel-any",
+      "infoType": "tunnel",
       "tunnelId": "TunnelID_0",
       "transform": {
         "translation": {
@@ -281,10 +285,12 @@
   "creature": [
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NISEZAKO",
       "name": "Gildemandwee",
       "carryMax": 10,
       "value": 5,
+      "health": 500,
       "seeds": 6,
       "drops": [
         {
@@ -303,10 +309,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NISEZAKO",
       "name": "Gildemandwee",
       "carryMax": 10,
       "value": 5,
+      "health": 500,
       "seeds": 6,
       "drops": [
         {
@@ -325,10 +333,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "HARIUO",
       "name": "Pricklepuff",
       "carryMax": 14,
       "value": 5,
+      "health": 300,
       "seeds": 8,
       "drops": [
         {
@@ -347,10 +357,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KINOKOCHAPPY",
       "name": "Moldy Dwarf Bulborb",
       "carryMax": 6,
       "value": 3,
+      "health": 150,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -361,10 +373,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KINOKOCHAPPY",
       "name": "Moldy Dwarf Bulborb",
       "carryMax": 6,
       "value": 3,
+      "health": 150,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -375,10 +389,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -403,10 +419,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -431,10 +449,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -459,10 +479,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -487,10 +509,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -515,10 +539,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -543,10 +569,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -571,10 +599,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -599,10 +629,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -627,10 +659,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TAMAGOMUSHI",
       "name": "Mitite",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 2,
       "drops": [
         {
@@ -654,9 +688,10 @@
       }
     }
   ],
-  "egg": [
+  "breakable-egg": [
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": false,
       "drops": [
         {

@@ -1,9 +1,8 @@
 {
-  "caveLink": [
+  "cave-entrance": [
     {
-      "type": "caveLink",
-      "variant": "cave",
-      "link": "Cave007_F02",
+      "type": "cave-entrance",
+      "infoType": "cave",
       "transform": {
         "translation": {
           "x": 778.13043,
@@ -12,9 +11,10 @@
       }
     }
   ],
-  "materials": [
+  "pile-materials": [
     {
-      "type": "materials",
+      "type": "pile-materials",
+      "infoType": "pile",
       "amount": 15,
       "transform": {
         "translation": {
@@ -24,23 +24,23 @@
       }
     }
   ],
-  "shortcut": [
+  "misc-stick": [
     {
-      "type": "shortcut",
-      "variant": "stick",
+      "type": "misc-stick",
+      "infoType": "misc",
       "transform": {
         "translation": {
           "x": 6.9995046,
           "y": -1100.8198
-        },
-        "rotation": 90
+        }
       }
     }
   ],
-  "gate": [
+  "gate-dirt": [
     {
-      "type": "gate",
-      "variant": "dirt",
+      "type": "gate-dirt",
+      "infoType": "gate",
+      "health": 8000,
       "transform": {
         "translation": {
           "x": 114,
@@ -50,10 +50,10 @@
       }
     }
   ],
-  "spout": [
+  "hazardspout-water": [
     {
-      "type": "spout",
-      "variant": "water",
+      "type": "hazardspout-water",
+      "infoType": "hazard",
       "transform": {
         "translation": {
           "x": 408,
@@ -62,8 +62,8 @@
       }
     },
     {
-      "type": "spout",
-      "variant": "water",
+      "type": "hazardspout-water",
+      "infoType": "hazard",
       "transform": {
         "translation": {
           "x": 232,
@@ -72,8 +72,8 @@
       }
     },
     {
-      "type": "spout",
-      "variant": "water",
+      "type": "hazardspout-water",
+      "infoType": "hazard",
       "transform": {
         "translation": {
           "x": -209,
@@ -82,10 +82,10 @@
       }
     }
   ],
-  "water": [
+  "water-water": [
     {
-      "type": "water",
-      "variant": "water",
+      "type": "water-water",
+      "infoType": "water",
       "normal": {
         "image": "T_ui_Map_Cave007_F01_WaterBox00_D.png",
         "amountToFreeze": 10
@@ -99,14 +99,15 @@
       }
     }
   ],
-  "pikmin": [
+  "pikmin-yellow": [
     {
-      "type": "pikmin",
+      "type": "pikmin-yellow",
+      "infoType": "pikmin",
       "color": "yellow",
-      "variant": "sprouts",
+      "state": "sprouts",
       "amount": 5,
-      "replacementCondition": 51,
-      "replacement": "other",
+      "disappearsAt": 51,
+      "replacedBy": "GEgg_C",
       "transform": {
         "translation": {
           "x": -140,
@@ -115,10 +116,12 @@
       }
     }
   ],
-  "castaway": [
+  "castaway-normal": [
     {
-      "type": "castaway",
+      "type": "castaway-normal",
+      "infoType": "castaway",
       "isLeafling": false,
+      "isKoppaite": false,
       "weight": 3,
       "carryMax": 6,
       "transform": {
@@ -132,6 +135,7 @@
   "treasure": [
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAHANDBELL",
       "name": "Time Marker",
       "weight": 12,
@@ -146,6 +150,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAHANAFUDAB",
       "name": "Talisman of Life (Cherry Blossom)",
       "weight": 2,
@@ -160,6 +165,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAKIWI",
       "name": "Disguised Delicacy",
       "weight": 5,
@@ -173,10 +179,10 @@
       }
     }
   ],
-  "base": [
+  "base-onion": [
     {
-      "type": "base",
-      "variant": "beagle",
+      "type": "base-onion",
+      "infoType": "base",
       "baseId": 0,
       "transform": {
         "translation": {
@@ -186,9 +192,10 @@
       }
     }
   ],
-  "egg": [
+  "breakable-egg": [
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": false,
       "drops": [
         {
@@ -218,7 +225,8 @@
       }
     },
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": false,
       "drops": [
         {
@@ -251,10 +259,12 @@
   "creature": [
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "ELECOTAKARA",
       "name": "Anode Dweevil",
       "carryMax": 4,
       "value": 2,
+      "health": 300,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -265,10 +275,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "ELECOTAKARA",
       "name": "Anode Dweevil",
       "carryMax": 4,
       "value": 2,
+      "health": 300,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -279,10 +291,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "ELECOTAKARA",
       "name": "Anode Dweevil",
       "carryMax": 4,
       "value": 2,
+      "health": 300,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -293,10 +307,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "ELECOTAKARA",
       "name": "Anode Dweevil",
       "carryMax": 4,
       "value": 2,
+      "health": 300,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -307,10 +323,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "FROG",
       "name": "Yellow Wollyhop",
       "carryMax": 10,
       "value": 5,
+      "health": 900,
       "seeds": 6,
       "drops": [
         {
@@ -329,10 +347,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "FROG",
       "name": "Yellow Wollyhop",
       "carryMax": 10,
       "value": 5,
+      "health": 900,
       "seeds": 6,
       "drops": [
         {

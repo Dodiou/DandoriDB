@@ -1,20 +1,20 @@
 {
-  "caveLink": [
+  "cave-entrance": [
     {
-      "type": "caveLink",
-      "variant": "cave",
-      "link": "Cave016_F12",
+      "type": "cave-entrance",
+      "infoType": "cave",
       "transform": {
         "translation": {
           "x": -127.841736,
           "y": -898.52
         }
       }
-    },
+    }
+  ],
+  "cave-exit": [
     {
-      "type": "caveLink",
-      "variant": "exit",
-      "link": "Area006",
+      "type": "cave-exit",
+      "infoType": "cave",
       "transform": {
         "translation": {
           "x": 325.41882,
@@ -23,13 +23,13 @@
       }
     }
   ],
-  "candypop": [
+  "candypop-purple": [
     {
-      "type": "candypop",
+      "type": "candypop-purple",
+      "infoType": "candypop",
       "color": "purple",
-      "amount": 1,
-      "replacementCondition": 51,
-      "replacement": "other",
+      "disappearsAt": 51,
+      "replacedBy": "GEgg_C",
       "transform": {
         "translation": {
           "x": -687.5422,
@@ -38,10 +38,10 @@
       }
     },
     {
-      "type": "candypop",
+      "type": "candypop-purple",
+      "infoType": "candypop",
       "color": "purple",
-      "amount": 1,
-      "replacementCondition": 51,
+      "disappearsAt": 51,
       "transform": {
         "translation": {
           "x": 434.36,
@@ -50,10 +50,10 @@
       }
     }
   ],
-  "tunnel": [
+  "tunnel-any": [
     {
-      "type": "tunnel",
-      "variant": "normal",
+      "type": "tunnel-any",
+      "infoType": "tunnel",
       "tunnelId": "TunnelID_0",
       "transform": {
         "translation": {
@@ -63,8 +63,8 @@
       }
     },
     {
-      "type": "tunnel",
-      "variant": "normal",
+      "type": "tunnel-any",
+      "infoType": "tunnel",
       "tunnelId": "TunnelID_0",
       "transform": {
         "translation": {
@@ -74,10 +74,10 @@
       }
     }
   ],
-  "base": [
+  "base-onion": [
     {
-      "type": "base",
-      "variant": "beagle",
+      "type": "base-onion",
+      "infoType": "base",
       "baseId": 0,
       "transform": {
         "translation": {
@@ -90,6 +90,7 @@
   "treasure": [
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAVENUS",
       "name": "Unfinished Statue",
       "weight": 30,
@@ -106,10 +107,12 @@
   "creature": [
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "REDSHIJIMI",
       "name": "Red Spectralids",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 1,
       "drops": [
         {
@@ -128,10 +131,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "YELLOWSHIJIMI",
       "name": "Yellow Spectralids",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 1,
       "drops": [
         {
@@ -150,10 +155,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "YELLOWSHIJIMI",
       "name": "Yellow Spectralids",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 1,
       "drops": [
         {
@@ -172,10 +179,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "REDSHIJIMI",
       "name": "Red Spectralids",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 1,
       "drops": [
         {
@@ -194,10 +203,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "WHITESHIJIMI",
       "name": "White Spectralids",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 1,
       "drops": [
         {
@@ -216,10 +227,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "WHITESHIJIMI",
       "name": "White Spectralids",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 1,
       "drops": [
         {
@@ -238,10 +251,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "YELLOWSHIJIMI",
       "name": "Yellow Spectralids",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 1,
       "drops": [
         {
@@ -260,10 +275,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "REDSHIJIMI",
       "name": "Red Spectralids",
       "carryMax": 1,
       "value": 1,
+      "health": 1,
       "seeds": 1,
       "drops": [
         {
@@ -282,10 +299,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "OOKOGANE",
       "name": "Iridescent Glint Beetle",
       "carryMax": 0,
       "value": 0,
+      "health": 600,
       "seeds": 0,
       "drops": [
         {

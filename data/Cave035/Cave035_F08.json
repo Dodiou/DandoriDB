@@ -1,8 +1,8 @@
 {
-  "base": [
+  "base-onion": [
     {
-      "type": "base",
-      "variant": "beagle",
+      "type": "base-onion",
+      "infoType": "base",
       "baseId": 0,
       "transform": {
         "translation": {
@@ -12,11 +12,12 @@
       }
     }
   ],
-  "pikmin": [
+  "pikmin-rock": [
     {
-      "type": "pikmin",
+      "type": "pikmin-rock",
+      "infoType": "pikmin",
       "color": "rock",
-      "variant": "sprouts",
+      "state": "sprouts",
       "amount": 5,
       "transform": {
         "translation": {
@@ -26,11 +27,12 @@
       }
     }
   ],
-  "candypop": [
+  "candypop-purple": [
     {
-      "type": "candypop",
+      "type": "candypop-purple",
+      "infoType": "candypop",
       "color": "purple",
-      "amount": 1,
+      "disappearsAt": null,
       "transform": {
         "translation": {
           "x": 816,
@@ -39,9 +41,10 @@
       }
     },
     {
-      "type": "candypop",
+      "type": "candypop-purple",
+      "infoType": "candypop",
       "color": "purple",
-      "amount": 1,
+      "disappearsAt": null,
       "transform": {
         "translation": {
           "x": -595,
@@ -50,9 +53,10 @@
       }
     },
     {
-      "type": "candypop",
+      "type": "candypop-purple",
+      "infoType": "candypop",
       "color": "purple",
-      "amount": 1,
+      "disappearsAt": null,
       "transform": {
         "translation": {
           "x": 525,
@@ -61,10 +65,11 @@
       }
     }
   ],
-  "gate": [
+  "gate-crystal": [
     {
-      "type": "gate",
-      "variant": "crystal",
+      "type": "gate-crystal",
+      "infoType": "gate",
+      "health": 1120,
       "transform": {
         "translation": {
           "x": -694,
@@ -74,8 +79,9 @@
       }
     },
     {
-      "type": "gate",
-      "variant": "crystal",
+      "type": "gate-crystal",
+      "infoType": "gate",
+      "health": 1120,
       "transform": {
         "translation": {
           "x": 277,
@@ -85,10 +91,10 @@
       }
     }
   ],
-  "fence": [
+  "switchable-fencenormal": [
     {
-      "type": "fence",
-      "variant": "normal",
+      "type": "switchable-fencenormal",
+      "infoType": "switchable",
       "transform": {
         "translation": {
           "x": 137,
@@ -98,9 +104,10 @@
       }
     }
   ],
-  "mound": [
+  "breakable-mound": [
     {
-      "type": "mound",
+      "type": "breakable-mound",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GHotExtract_C",
@@ -120,10 +127,12 @@
   "creature": [
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "MITSUMOCHI",
       "name": "Foolix",
       "carryMax": 10,
       "value": 20,
+      "health": 12000,
       "seeds": 30,
       "transform": {
         "translation": {
@@ -134,10 +143,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "BIGUJINKO",
       "name": "Mama Sheargrub",
       "carryMax": 20,
       "value": 10,
+      "health": 1000,
       "seeds": 10,
       "transform": {
         "translation": {
@@ -148,10 +159,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "BIGUJINKO",
       "name": "Mama Sheargrub",
       "carryMax": 20,
       "value": 10,
+      "health": 1000,
       "seeds": 10,
       "transform": {
         "translation": {
@@ -162,10 +175,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KINGCHAPPY",
       "name": "Emperor Bulblax",
       "carryMax": 30,
       "value": 15,
+      "health": 3000,
       "seeds": 20,
       "transform": {
         "translation": {
@@ -176,10 +191,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "SNAKECROW",
       "name": "Burrowing Snagret",
       "carryMax": 30,
       "value": 15,
+      "health": 2500,
       "seeds": 20,
       "transform": {
         "translation": {
@@ -190,10 +207,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "HARI",
       "name": "Porquillion",
       "carryMax": 24,
       "value": 12,
+      "health": 5000,
       "seeds": 20,
       "transform": {
         "translation": {

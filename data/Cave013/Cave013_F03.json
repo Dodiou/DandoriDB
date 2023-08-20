@@ -1,9 +1,8 @@
 {
-  "caveLink": [
+  "cave-entrance": [
     {
-      "type": "caveLink",
-      "variant": "cave",
-      "link": "Cave013_F04",
+      "type": "cave-entrance",
+      "infoType": "cave",
       "transform": {
         "translation": {
           "x": 1237.5,
@@ -12,9 +11,10 @@
       }
     }
   ],
-  "sprinkler": [
+  "hazardradial-sprinkler": [
     {
-      "type": "sprinkler",
+      "type": "hazardradial-sprinkler",
+      "infoType": "hazard",
       "valveId": "valve1",
       "radius": 300,
       "transform": {
@@ -28,6 +28,7 @@
   "treasure": [
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "KINKAISTATION",
       "name": "Gold Nugget",
       "amount": 15,
@@ -43,6 +44,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTABILLIARDBALL4",
       "name": "Sphere of Beginnings",
       "weight": 7,
@@ -56,10 +58,10 @@
       }
     }
   ],
-  "spout": [
+  "hazardspout-bubble": [
     {
-      "type": "spout",
-      "variant": "bubble",
+      "type": "hazardspout-bubble",
+      "infoType": "hazard",
       "transform": {
         "translation": {
           "x": -1375,
@@ -68,8 +70,8 @@
       }
     },
     {
-      "type": "spout",
-      "variant": "bubble",
+      "type": "hazardspout-bubble",
+      "infoType": "hazard",
       "transform": {
         "translation": {
           "x": 512.5,
@@ -78,8 +80,8 @@
       }
     },
     {
-      "type": "spout",
-      "variant": "bubble",
+      "type": "hazardspout-bubble",
+      "infoType": "hazard",
       "transform": {
         "translation": {
           "x": 0,
@@ -88,10 +90,10 @@
       }
     }
   ],
-  "fence": [
+  "switchable-fenceiron": [
     {
-      "type": "fence",
-      "variant": "iron",
+      "type": "switchable-fenceiron",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -102,8 +104,8 @@
       }
     },
     {
-      "type": "fence",
-      "variant": "iron",
+      "type": "switchable-fenceiron",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -114,10 +116,11 @@
       }
     }
   ],
-  "gate": [
+  "gate-dirt": [
     {
-      "type": "gate",
-      "variant": "dirt",
+      "type": "gate-dirt",
+      "infoType": "gate",
+      "health": 8000,
       "transform": {
         "translation": {
           "x": -607.5,
@@ -127,24 +130,23 @@
       }
     }
   ],
-  "switch": [
+  "switchable-singleswitch": [
     {
-      "type": "switch",
-      "variant": "single",
+      "type": "switchable-singleswitch",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
           "x": 275,
           "y": -471.77393
-        },
-        "rotation": 90
+        }
       }
     }
   ],
-  "floor": [
+  "hazardradial-floorfire": [
     {
-      "type": "floor",
-      "variant": "fire",
+      "type": "hazardradial-floorfire",
+      "infoType": "hazard",
       "radius": 525,
       "transform": {
         "translation": {
@@ -154,8 +156,8 @@
       }
     },
     {
-      "type": "floor",
-      "variant": "fire",
+      "type": "hazardradial-floorfire",
+      "infoType": "hazard",
       "radius": 350,
       "transform": {
         "translation": {
@@ -165,10 +167,10 @@
       }
     }
   ],
-  "shortcut": [
+  "shortcut-clipboardhigh": [
     {
-      "type": "shortcut",
-      "variant": "clipboardYellow",
+      "type": "shortcut-clipboardhigh",
+      "infoType": "shortcut",
       "weight": 10,
       "transform": {
         "translation": {
@@ -177,23 +179,12 @@
         },
         "rotation": -180
       }
-    },
-    {
-      "type": "shortcut",
-      "variant": "geyser",
-      "hasCrystal": true,
-      "transform": {
-        "translation": {
-          "x": -1100,
-          "y": -90
-        }
-      }
     }
   ],
-  "tunnel": [
+  "tunnel-oatchi": [
     {
-      "type": "tunnel",
-      "variant": "pup",
+      "type": "tunnel-oatchi",
+      "infoType": "tunnel",
       "tunnelId": "HappyDoorID_0",
       "transform": {
         "translation": {
@@ -203,8 +194,8 @@
       }
     },
     {
-      "type": "tunnel",
-      "variant": "pup",
+      "type": "tunnel-oatchi",
+      "infoType": "tunnel",
       "tunnelId": "HappyDoorID_0",
       "transform": {
         "translation": {
@@ -214,49 +205,39 @@
       }
     }
   ],
-  "candypop": [
+  "ridable-geyser": [
     {
-      "type": "candypop",
+      "type": "ridable-geyser",
+      "infoType": "ridable",
+      "hasCrystal": true,
+      "transform": {
+        "translation": {
+          "x": -1100,
+          "y": -90
+        }
+      }
+    }
+  ],
+  "candypop-wing": [
+    {
+      "type": "candypop-wing",
+      "infoType": "candypop",
       "color": "wing",
-      "amount": 1,
-      "replacementCondition": 51,
+      "disappearsAt": 51,
       "transform": {
         "translation": {
           "x": -900,
           "y": 135
         }
       }
-    },
-    {
-      "type": "candypop",
-      "color": "yellow",
-      "amount": 1,
-      "replacementCondition": 6,
-      "transform": {
-        "translation": {
-          "x": -1159.0183,
-          "y": 159.1177
-        }
-      }
-    },
-    {
-      "type": "candypop",
-      "color": "red",
-      "amount": 1,
-      "replacementCondition": 6,
-      "transform": {
-        "translation": {
-          "x": -1322.8596,
-          "y": 110.37032
-        }
-      }
     }
   ],
-  "pikmin": [
+  "pikmin-red": [
     {
-      "type": "pikmin",
+      "type": "pikmin-red",
+      "infoType": "pikmin",
       "color": "red",
-      "variant": "fighting",
+      "state": "fighting",
       "amount": 2,
       "transform": {
         "translation": {
@@ -266,9 +247,10 @@
       }
     },
     {
-      "type": "pikmin",
+      "type": "pikmin-red",
+      "infoType": "pikmin",
       "color": "red",
-      "variant": "fighting",
+      "state": "fighting",
       "amount": 3,
       "transform": {
         "translation": {
@@ -278,10 +260,10 @@
       }
     }
   ],
-  "base": [
+  "base-onion": [
     {
-      "type": "base",
-      "variant": "beagle",
+      "type": "base-onion",
+      "infoType": "base",
       "baseId": 0,
       "transform": {
         "translation": {
@@ -291,11 +273,11 @@
       }
     }
   ],
-  "structure": [
+  "structure-valve": [
     {
       "valveId": "valve1",
-      "type": "structure",
-      "variant": "valve",
+      "type": "structure-valve",
+      "infoType": "structure",
       "materialsNeeded": 16,
       "transform": {
         "translation": {
@@ -305,13 +287,43 @@
       }
     }
   ],
+  "candypop-yellow": [
+    {
+      "type": "candypop-yellow",
+      "infoType": "candypop",
+      "color": "yellow",
+      "disappearsAt": 6,
+      "transform": {
+        "translation": {
+          "x": -1159.0183,
+          "y": 159.1177
+        }
+      }
+    }
+  ],
+  "candypop-red": [
+    {
+      "type": "candypop-red",
+      "infoType": "candypop",
+      "color": "red",
+      "disappearsAt": 6,
+      "transform": {
+        "translation": {
+          "x": -1322.8596,
+          "y": 110.37032
+        }
+      }
+    }
+  ],
   "creature": [
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KAJIOKOSHI",
       "name": "Pyroclasmic Slooch",
       "carryMax": 6,
       "value": 3,
+      "health": 300,
       "seeds": 4,
       "transform": {
         "translation": {
@@ -322,10 +334,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "RUSHER",
       "name": "Tusked Blowhog",
       "carryMax": 14,
       "value": 7,
+      "health": 900,
       "seeds": 6,
       "drops": [
         {
@@ -350,10 +364,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KAJIOKOSHI",
       "name": "Pyroclasmic Slooch",
       "carryMax": 6,
       "value": 3,
+      "health": 300,
       "seeds": 4,
       "transform": {
         "translation": {
@@ -364,10 +380,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "FIRETANK",
       "name": "Fiery Blowhog",
       "carryMax": 10,
       "value": 5,
+      "health": 1000,
       "seeds": 5,
       "drops": [
         {
@@ -386,10 +404,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "FIRETANK",
       "name": "Fiery Blowhog",
       "carryMax": 10,
       "value": 5,
+      "health": 1000,
       "seeds": 5,
       "drops": [
         {
@@ -408,10 +428,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KURIONE",
       "name": "Honeywisp",
       "carryMax": 0,
       "value": 0,
+      "health": 1,
       "seeds": 0,
       "drops": [
         {
@@ -436,10 +458,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KURIONE",
       "name": "Honeywisp",
       "carryMax": 0,
       "value": 0,
+      "health": 1,
       "seeds": 0,
       "drops": [
         {

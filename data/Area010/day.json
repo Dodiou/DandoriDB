@@ -1,9 +1,8 @@
 {
-  "caveLink": [
+  "cave-entrance": [
     {
-      "type": "caveLink",
-      "variant": "cave",
-      "link": "Cave021_F00",
+      "type": "cave-entrance",
+      "infoType": "cave",
       "transform": {
         "translation": {
           "x": 1289.4199,
@@ -12,9 +11,8 @@
       }
     },
     {
-      "type": "caveLink",
-      "variant": "cave",
-      "link": "Cave023_F00",
+      "type": "cave-entrance",
+      "infoType": "cave",
       "transform": {
         "translation": {
           "x": -725.8672,
@@ -23,20 +21,8 @@
       }
     },
     {
-      "type": "caveLink",
-      "variant": "challenge",
-      "link": "CaveSP006_F00",
-      "transform": {
-        "translation": {
-          "x": 1028.5068,
-          "y": -4107.469
-        }
-      }
-    },
-    {
-      "type": "caveLink",
-      "variant": "cave",
-      "link": "Cave022_F00",
+      "type": "cave-entrance",
+      "infoType": "cave",
       "disabledPikmin": {
         "blue": true,
         "yellow": true,
@@ -54,31 +40,20 @@
       }
     },
     {
-      "type": "caveLink",
-      "link": "Cave022_F03",
+      "type": "cave-entrance",
+      "infoType": "cave",
       "transform": {
         "translation": {
           "x": 3053.0625,
           "y": -3859.9768
         }
       }
-    },
-    {
-      "type": "caveLink",
-      "variant": "battle",
-      "link": "CaveVS003_F00",
-      "transform": {
-        "translation": {
-          "x": 3336.0002,
-          "y": 511.99963
-        }
-      }
     }
   ],
-  "water": [
+  "water-water": [
     {
-      "type": "water",
-      "variant": "water",
+      "type": "water-water",
+      "infoType": "water",
       "normal": {
         "image": "T_ui_Map_Area010_WaterBox00_D.png",
         "amountToFreeze": 15
@@ -92,10 +67,10 @@
       }
     }
   ],
-  "switch": [
+  "switchable-doubleswitch": [
     {
-      "type": "switch",
-      "variant": "double",
+      "type": "switchable-doubleswitch",
+      "infoType": "switchable",
       "switchId": "CirculatorSwitch00",
       "transform": {
         "translation": {
@@ -106,20 +81,8 @@
       }
     },
     {
-      "type": "switch",
-      "variant": "single",
-      "switchId": "WaterBox00",
-      "transform": {
-        "translation": {
-          "x": 3133.001,
-          "y": -2178
-        },
-        "rotation": 90
-      }
-    },
-    {
-      "type": "switch",
-      "variant": "double",
+      "type": "switchable-doubleswitch",
+      "infoType": "switchable",
       "switchId": "CirculatorSwitch01",
       "transform": {
         "translation": {
@@ -130,8 +93,8 @@
       }
     },
     {
-      "type": "switch",
-      "variant": "double",
+      "type": "switchable-doubleswitch",
+      "infoType": "switchable",
       "switchId": "CirculatorSwitch04",
       "transform": {
         "translation": {
@@ -142,8 +105,8 @@
       }
     },
     {
-      "type": "switch",
-      "variant": "double",
+      "type": "switchable-doubleswitch",
+      "infoType": "switchable",
       "switchId": "CirculatorSwitch05",
       "transform": {
         "translation": {
@@ -154,9 +117,23 @@
       }
     }
   ],
-  "fan": [
+  "switchable-singleswitch": [
     {
-      "type": "fan",
+      "type": "switchable-singleswitch",
+      "infoType": "switchable",
+      "switchId": "WaterBox00",
+      "transform": {
+        "translation": {
+          "x": 3133.001,
+          "y": -2178
+        }
+      }
+    }
+  ],
+  "switchable-fan": [
+    {
+      "type": "switchable-fan",
+      "infoType": "switchable",
       "switchId": "CirculatorSwitch01",
       "transform": {
         "translation": {
@@ -166,7 +143,8 @@
       }
     },
     {
-      "type": "fan",
+      "type": "switchable-fan",
+      "infoType": "switchable",
       "switchId": "CirculatorSwitch00",
       "transform": {
         "translation": {
@@ -176,7 +154,8 @@
       }
     },
     {
-      "type": "fan",
+      "type": "switchable-fan",
+      "infoType": "switchable",
       "switchId": "CirculatorSwitch04",
       "transform": {
         "translation": {
@@ -186,7 +165,8 @@
       }
     },
     {
-      "type": "fan",
+      "type": "switchable-fan",
+      "infoType": "switchable",
       "switchId": "CirculatorSwitch04",
       "transform": {
         "translation": {
@@ -196,7 +176,8 @@
       }
     },
     {
-      "type": "fan",
+      "type": "switchable-fan",
+      "infoType": "switchable",
       "switchId": "CirculatorSwitch05",
       "transform": {
         "translation": {
@@ -206,7 +187,8 @@
       }
     },
     {
-      "type": "fan",
+      "type": "switchable-fan",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -216,62 +198,79 @@
       }
     }
   ],
-  "floor": [
+  "ridable-movefloor": [
     {
-      "type": "floor",
-      "variant": "movable",
+      "type": "ridable-movefloor",
+      "infoType": "ridable",
       "transform": {
         "translation": {
           "x": 2227,
           "y": -437
-        }
+        },
+        "rotation": 0
       }
     },
     {
-      "type": "floor",
-      "variant": "movable",
+      "type": "ridable-movefloor",
+      "infoType": "ridable",
       "transform": {
         "translation": {
           "x": -405,
           "y": -547
-        }
+        },
+        "rotation": -180
       }
     },
     {
-      "type": "floor",
-      "variant": "movable",
+      "type": "ridable-movefloor",
+      "infoType": "ridable",
       "transform": {
         "translation": {
           "x": 1521,
           "y": 1184
-        }
+        },
+        "rotation": 180
       }
     },
     {
-      "type": "floor",
-      "variant": "movable",
+      "type": "ridable-movefloor",
+      "infoType": "ridable",
       "transform": {
         "translation": {
           "x": -269,
           "y": 3182
-        }
+        },
+        "rotation": 0
       }
     },
     {
-      "type": "floor",
-      "variant": "movable",
+      "type": "ridable-movefloor",
+      "infoType": "ridable",
       "transform": {
         "translation": {
           "x": 1986,
           "y": -3459
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "cave-challenge": [
+    {
+      "type": "cave-challenge",
+      "infoType": "cave",
+      "transform": {
+        "translation": {
+          "x": 1028.5068,
+          "y": -4107.469
         }
       }
     }
   ],
-  "structure": [
+  "structure-wall": [
     {
-      "type": "structure",
-      "variant": "wall",
+      "type": "structure-wall",
+      "infoType": "structure",
       "materialsNeeded": 30,
       "transform": {
         "translation": {
@@ -280,10 +279,12 @@
         },
         "rotation": 90
       }
-    },
+    }
+  ],
+  "structure-slope": [
     {
-      "type": "structure",
-      "variant": "slope",
+      "type": "structure-slope",
+      "infoType": "structure",
       "materialsNeeded": 21,
       "transform": {
         "translation": {
@@ -294,10 +295,10 @@
       }
     }
   ],
-  "tunnel": [
+  "tunnel-captain": [
     {
-      "type": "tunnel",
-      "variant": "captain",
+      "type": "tunnel-captain",
+      "infoType": "tunnel",
       "tunnelId": "TunnelID_02",
       "transform": {
         "translation": {
@@ -307,8 +308,8 @@
       }
     },
     {
-      "type": "tunnel",
-      "variant": "captain",
+      "type": "tunnel-captain",
+      "infoType": "tunnel",
       "tunnelId": "TunnelID_02",
       "transform": {
         "translation": {
@@ -316,78 +317,12 @@
           "y": -805
         }
       }
-    },
-    {
-      "type": "tunnel",
-      "variant": "normal",
-      "tunnelId": "WarpCarryID_3",
-      "transform": {
-        "translation": {
-          "x": -1071,
-          "y": 857
-        }
-      }
-    },
-    {
-      "type": "tunnel",
-      "variant": "normal",
-      "tunnelId": "WarpCarryID_3",
-      "transform": {
-        "translation": {
-          "x": -520,
-          "y": 767
-        }
-      }
-    },
-    {
-      "type": "tunnel",
-      "variant": "normal",
-      "tunnelId": "WarpCarryID_04",
-      "transform": {
-        "translation": {
-          "x": 1727,
-          "y": -1540
-        }
-      }
-    },
-    {
-      "type": "tunnel",
-      "variant": "normal",
-      "tunnelId": "WarpCarryID_04",
-      "transform": {
-        "translation": {
-          "x": 1715,
-          "y": -1263
-        }
-      }
-    },
-    {
-      "type": "tunnel",
-      "variant": "normal",
-      "tunnelId": "TunnelID_0",
-      "transform": {
-        "translation": {
-          "x": 4097,
-          "y": 2030
-        }
-      }
-    },
-    {
-      "type": "tunnel",
-      "variant": "normal",
-      "tunnelId": "TunnelID_0",
-      "transform": {
-        "translation": {
-          "x": 4099,
-          "y": 1760
-        }
-      }
     }
   ],
-  "shortcut": [
+  "shortcut-pushbag": [
     {
-      "type": "shortcut",
-      "variant": "pushbag",
+      "type": "shortcut-pushbag",
+      "infoType": "shortcut",
       "weight": 10,
       "transform": {
         "translation": {
@@ -398,8 +333,22 @@
       }
     },
     {
-      "type": "shortcut",
-      "variant": "string",
+      "type": "shortcut-pushbag",
+      "infoType": "shortcut",
+      "weight": 10,
+      "transform": {
+        "translation": {
+          "x": 93,
+          "y": -1218
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "shortcut-stringup": [
+    {
+      "type": "shortcut-stringup",
+      "infoType": "shortcut",
       "weight": 5,
       "transform": {
         "translation": {
@@ -410,8 +359,8 @@
       }
     },
     {
-      "type": "shortcut",
-      "variant": "string",
+      "type": "shortcut-stringup",
+      "infoType": "shortcut",
       "weight": 5,
       "transform": {
         "translation": {
@@ -422,8 +371,90 @@
       }
     },
     {
-      "type": "shortcut",
-      "variant": "zipline",
+      "type": "shortcut-stringup",
+      "infoType": "shortcut",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": 3719,
+          "y": 1677
+        },
+        "rotation": 0
+      }
+    }
+  ],
+  "tunnel-any": [
+    {
+      "type": "tunnel-any",
+      "infoType": "tunnel",
+      "tunnelId": "WarpCarryID_3",
+      "transform": {
+        "translation": {
+          "x": -1071,
+          "y": 857
+        }
+      }
+    },
+    {
+      "type": "tunnel-any",
+      "infoType": "tunnel",
+      "tunnelId": "WarpCarryID_3",
+      "transform": {
+        "translation": {
+          "x": -520,
+          "y": 767
+        }
+      }
+    },
+    {
+      "type": "tunnel-any",
+      "infoType": "tunnel",
+      "tunnelId": "WarpCarryID_04",
+      "transform": {
+        "translation": {
+          "x": 1727,
+          "y": -1540
+        }
+      }
+    },
+    {
+      "type": "tunnel-any",
+      "infoType": "tunnel",
+      "tunnelId": "WarpCarryID_04",
+      "transform": {
+        "translation": {
+          "x": 1715,
+          "y": -1263
+        }
+      }
+    },
+    {
+      "type": "tunnel-any",
+      "infoType": "tunnel",
+      "tunnelId": "TunnelID_0",
+      "transform": {
+        "translation": {
+          "x": 4097,
+          "y": 2030
+        }
+      }
+    },
+    {
+      "type": "tunnel-any",
+      "infoType": "tunnel",
+      "tunnelId": "TunnelID_0",
+      "transform": {
+        "translation": {
+          "x": 4099,
+          "y": 1760
+        }
+      }
+    }
+  ],
+  "ridable-zipline": [
+    {
+      "type": "ridable-zipline",
+      "infoType": "ridable",
       "transform": {
         "translation": {
           "x": 3000,
@@ -433,32 +464,8 @@
       }
     },
     {
-      "type": "shortcut",
-      "variant": "pushbag",
-      "weight": 10,
-      "transform": {
-        "translation": {
-          "x": 93,
-          "y": -1218
-        },
-        "rotation": 0
-      }
-    },
-    {
-      "type": "shortcut",
-      "variant": "string",
-      "weight": 5,
-      "transform": {
-        "translation": {
-          "x": 3719,
-          "y": 1677
-        },
-        "rotation": 0
-      }
-    },
-    {
-      "type": "shortcut",
-      "variant": "zipline",
+      "type": "ridable-zipline",
+      "infoType": "ridable",
       "transform": {
         "translation": {
           "x": -482.4806,
@@ -466,24 +473,12 @@
         },
         "rotation": 0
       }
-    },
-    {
-      "type": "shortcut",
-      "variant": "string",
-      "weight": 5,
-      "transform": {
-        "translation": {
-          "x": 2072,
-          "y": 1034
-        },
-        "rotation": 167
-      }
     }
   ],
-  "base": [
+  "base-beagle": [
     {
-      "type": "base",
-      "variant": "onion",
+      "type": "base-beagle",
+      "infoType": "base",
       "baseId": 0,
       "transform": {
         "translation": {
@@ -493,19 +488,8 @@
       }
     },
     {
-      "type": "base",
-      "variant": "beagle",
-      "baseId": 0,
-      "transform": {
-        "translation": {
-          "x": -1322.1783,
-          "y": 2874.1682
-        }
-      }
-    },
-    {
-      "type": "base",
-      "variant": "onion",
+      "type": "base-beagle",
+      "infoType": "base",
       "baseId": 1,
       "guardedBy": [
         "NOMI"
@@ -518,19 +502,8 @@
       }
     },
     {
-      "type": "base",
-      "variant": "beagle",
-      "baseId": 1,
-      "transform": {
-        "translation": {
-          "x": 28.42218,
-          "y": -2517.9668
-        }
-      }
-    },
-    {
-      "type": "base",
-      "variant": "onion",
+      "type": "base-beagle",
+      "infoType": "base",
       "baseId": 2,
       "guardedBy": [
         "BILLY"
@@ -541,10 +514,34 @@
           "y": 2394.9512
         }
       }
+    }
+  ],
+  "base-onion": [
+    {
+      "type": "base-onion",
+      "infoType": "base",
+      "baseId": 0,
+      "transform": {
+        "translation": {
+          "x": -1322.1783,
+          "y": 2874.1682
+        }
+      }
     },
     {
-      "type": "base",
-      "variant": "beagle",
+      "type": "base-onion",
+      "infoType": "base",
+      "baseId": 1,
+      "transform": {
+        "translation": {
+          "x": 28.42218,
+          "y": -2517.9668
+        }
+      }
+    },
+    {
+      "type": "base-onion",
+      "infoType": "base",
       "baseId": 2,
       "transform": {
         "translation": {
@@ -554,9 +551,10 @@
       }
     }
   ],
-  "spout": [
+  "hazardspout-fire": [
     {
-      "type": "spout",
+      "type": "hazardspout-fire",
+      "infoType": "hazard",
       "transform": {
         "translation": {
           "x": 2884.7532,
@@ -565,9 +563,22 @@
       }
     }
   ],
-  "pot": [
+  "cave-battle": [
     {
-      "type": "pot",
+      "type": "cave-battle",
+      "infoType": "cave",
+      "transform": {
+        "translation": {
+          "x": 3336.0002,
+          "y": 511.99963
+        }
+      }
+    }
+  ],
+  "breakable-pot": [
+    {
+      "type": "breakable-pot",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 3345,
@@ -576,7 +587,8 @@
       }
     },
     {
-      "type": "pot",
+      "type": "breakable-pot",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GPiecePick_C",
@@ -593,7 +605,8 @@
       }
     },
     {
-      "type": "pot",
+      "type": "breakable-pot",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 3236,
@@ -602,7 +615,8 @@
       }
     },
     {
-      "type": "pot",
+      "type": "breakable-pot",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 4010,
@@ -611,7 +625,8 @@
       }
     },
     {
-      "type": "pot",
+      "type": "breakable-pot",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 3999.0002,
@@ -620,7 +635,8 @@
       }
     },
     {
-      "type": "pot",
+      "type": "breakable-pot",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 2940,
@@ -629,7 +645,8 @@
       }
     },
     {
-      "type": "pot",
+      "type": "breakable-pot",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 3015,
@@ -638,7 +655,8 @@
       }
     },
     {
-      "type": "pot",
+      "type": "breakable-pot",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 2971,
@@ -647,7 +665,8 @@
       }
     },
     {
-      "type": "pot",
+      "type": "breakable-pot",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 2946.9312,
@@ -656,7 +675,8 @@
       }
     },
     {
-      "type": "pot",
+      "type": "breakable-pot",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GOtaRoboHandR_C",
@@ -673,7 +693,8 @@
       }
     },
     {
-      "type": "pot",
+      "type": "breakable-pot",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GNiseZako_C",
@@ -690,7 +711,8 @@
       }
     },
     {
-      "type": "pot",
+      "type": "breakable-pot",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GNiseZako_C",
@@ -707,7 +729,8 @@
       }
     },
     {
-      "type": "pot",
+      "type": "breakable-pot",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GOtaApricot_C",
@@ -724,9 +747,24 @@
       }
     }
   ],
+  "shortcut-stringdown": [
+    {
+      "type": "shortcut-stringdown",
+      "infoType": "shortcut",
+      "weight": 5,
+      "transform": {
+        "translation": {
+          "x": 2072,
+          "y": 1034
+        },
+        "rotation": 167
+      }
+    }
+  ],
   "treasure": [
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAPAPERCRANEGLD",
       "name": "Priceless Bird",
       "weight": 3,
@@ -741,6 +779,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTABANKCARDA",
       "name": "Courage Emblem",
       "weight": 1,
@@ -755,6 +794,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTABANKCARDB",
       "name": "Power Emblem",
       "weight": 1,
@@ -769,6 +809,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTATOMATOM",
       "name": "Love Nugget",
       "weight": 10,
@@ -783,6 +824,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTATOMATOM",
       "name": "Love Nugget",
       "weight": 10,
@@ -797,6 +839,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTABANKCARDC",
       "name": "Wisdom Emblem",
       "weight": 1,
@@ -811,6 +854,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAROBOHEAD",
       "name": "Think-Tank Combobot",
       "weight": 5,
@@ -825,6 +869,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTASPONGEA",
       "name": "Doggy Bed",
       "weight": 7,
@@ -839,6 +884,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAROBOHANDL",
       "name": "Peacemaker Combobot",
       "weight": 7,
@@ -853,6 +899,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAROBOLEGL",
       "name": "Sure-Footed Combobot",
       "weight": 10,
@@ -867,6 +914,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTADENTAKU",
       "name": "Number Jumper",
       "weight": 12,
@@ -881,6 +929,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTADARTS",
       "name": "Relentless Spear",
       "weight": 7,
@@ -895,6 +944,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAENGAGERING",
       "name": "Unbreakable Promise",
       "weight": 10,
@@ -909,6 +959,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAMACARONB",
       "name": "S.S. Peppermint",
       "weight": 3,
@@ -923,6 +974,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAPINBADGEE",
       "name": "Shooting-Star Shield",
       "weight": 2,
@@ -937,6 +989,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAPHOTOFRAME",
       "name": "Buddy Display",
       "weight": 20,
@@ -951,6 +1004,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAMUSICBOXC",
       "name": "Mechanical Harp (Windmills)",
       "weight": 7,
@@ -965,6 +1019,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAGBAROMBLK",
       "name": "Spinning Memories Plank",
       "weight": 5,
@@ -979,6 +1034,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAMACARONC",
       "name": "S.S. Chocolate",
       "weight": 3,
@@ -993,6 +1049,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTABUTTONMETAL",
       "name": "Trap Lid",
       "weight": 1,
@@ -1007,6 +1064,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "KINKAISTATION",
       "name": "Gold Nugget",
       "amount": 5,
@@ -1021,9 +1079,10 @@
       }
     }
   ],
-  "materials": [
+  "pile-materials": [
     {
-      "type": "materials",
+      "type": "pile-materials",
+      "infoType": "pile",
       "amount": 25,
       "transform": {
         "translation": {
@@ -1033,7 +1092,8 @@
       }
     },
     {
-      "type": "materials",
+      "type": "pile-materials",
+      "infoType": "pile",
       "amount": 30,
       "transform": {
         "translation": {
@@ -1043,7 +1103,8 @@
       }
     },
     {
-      "type": "materials",
+      "type": "pile-materials",
+      "infoType": "pile",
       "amount": 30,
       "transform": {
         "translation": {
@@ -1053,7 +1114,8 @@
       }
     },
     {
-      "type": "materials",
+      "type": "pile-materials",
+      "infoType": "pile",
       "amount": 15,
       "transform": {
         "translation": {
@@ -1063,7 +1125,8 @@
       }
     },
     {
-      "type": "materials",
+      "type": "pile-materials",
+      "infoType": "pile",
       "amount": 15,
       "transform": {
         "translation": {
@@ -1073,7 +1136,8 @@
       }
     },
     {
-      "type": "materials",
+      "type": "pile-materials",
+      "infoType": "pile",
       "amount": 6,
       "transform": {
         "translation": {
@@ -1083,9 +1147,10 @@
       }
     }
   ],
-  "onion": [
+  "onion-ice": [
     {
-      "type": "onion",
+      "type": "onion-ice",
+      "infoType": "onion",
       "color": "ice",
       "weight": 30,
       "transform": {
@@ -1094,9 +1159,12 @@
           "y": -3451
         }
       }
-    },
+    }
+  ],
+  "onion-flarlic": [
     {
-      "type": "onion",
+      "type": "onion-flarlic",
+      "infoType": "onion",
       "color": "flarlic",
       "weight": 5,
       "transform": {
@@ -1107,9 +1175,10 @@
       }
     }
   ],
-  "pellet": [
+  "misc-pellet": [
     {
-      "type": "pellet",
+      "type": "misc-pellet",
+      "infoType": "misc",
       "color": "yellow",
       "seeds": 5,
       "transform": {
@@ -1120,7 +1189,8 @@
       }
     },
     {
-      "type": "pellet",
+      "type": "misc-pellet",
+      "infoType": "misc",
       "color": "red",
       "seeds": 1,
       "transform": {
@@ -1131,10 +1201,12 @@
       }
     }
   ],
-  "castaway": [
+  "castaway-leafling": [
     {
-      "type": "castaway",
+      "type": "castaway-leafling",
+      "infoType": "castaway",
       "isLeafling": true,
+      "isKoppaite": false,
       "weight": 3,
       "carryMax": 6,
       "transform": {
@@ -1145,8 +1217,10 @@
       }
     },
     {
-      "type": "castaway",
+      "type": "castaway-leafling",
+      "infoType": "castaway",
       "isLeafling": true,
+      "isKoppaite": false,
       "weight": 3,
       "carryMax": 6,
       "transform": {
@@ -1157,9 +1231,10 @@
       }
     }
   ],
-  "hydroJelly": [
+  "breakable-hydrojelly": [
     {
-      "type": "hydroJelly",
+      "type": "breakable-hydrojelly",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 1509,
@@ -1168,9 +1243,10 @@
       }
     }
   ],
-  "crystal": [
+  "breakable-crystal": [
     {
-      "type": "crystal",
+      "type": "breakable-crystal",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GPiecePick_C",
@@ -1187,7 +1263,8 @@
       }
     },
     {
-      "type": "crystal",
+      "type": "breakable-crystal",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GPiecePick_C",
@@ -1204,7 +1281,8 @@
       }
     },
     {
-      "type": "crystal",
+      "type": "breakable-crystal",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GPiecePick_C",
@@ -1221,7 +1299,8 @@
       }
     },
     {
-      "type": "crystal",
+      "type": "breakable-crystal",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GPiecePick_C",
@@ -1238,7 +1317,8 @@
       }
     },
     {
-      "type": "crystal",
+      "type": "breakable-crystal",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GPiecePick_C",
@@ -1255,7 +1335,8 @@
       }
     },
     {
-      "type": "crystal",
+      "type": "breakable-crystal",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GPiecePick_C",
@@ -1272,7 +1353,8 @@
       }
     },
     {
-      "type": "crystal",
+      "type": "breakable-crystal",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GPiecePick_C",
@@ -1289,7 +1371,8 @@
       }
     },
     {
-      "type": "crystal",
+      "type": "breakable-crystal",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GPiecePick_C",
@@ -1306,7 +1389,8 @@
       }
     },
     {
-      "type": "crystal",
+      "type": "breakable-crystal",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GPiecePick_C",
@@ -1323,7 +1407,8 @@
       }
     },
     {
-      "type": "crystal",
+      "type": "breakable-crystal",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GPiecePick_C",
@@ -1340,7 +1425,8 @@
       }
     },
     {
-      "type": "crystal",
+      "type": "breakable-crystal",
+      "infoType": "breakable",
       "drops": [
         {
           "item": "GPiecePick_C",
@@ -1357,10 +1443,10 @@
       }
     }
   ],
-  "item": [
+  "miscitem-bomb": [
     {
-      "type": "item",
-      "variant": "bomb",
+      "type": "miscitem-bomb",
+      "infoType": "misc",
       "transform": {
         "translation": {
           "x": 1708,
@@ -1369,9 +1455,10 @@
       }
     }
   ],
-  "honey": [
+  "miscitem-honey": [
     {
-      "type": "honey",
+      "type": "miscitem-honey",
+      "infoType": "misc",
       "transform": {
         "translation": {
           "x": 2747,
@@ -1380,9 +1467,10 @@
       }
     }
   ],
-  "egg": [
+  "breakable-egg": [
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": false,
       "drops": [
         {
@@ -1400,7 +1488,8 @@
       }
     },
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": false,
       "drops": [
         {
@@ -1418,7 +1507,8 @@
       }
     },
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": false,
       "drops": [
         {
@@ -1448,7 +1538,8 @@
       }
     },
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": false,
       "drops": [
         {
@@ -1478,7 +1569,8 @@
       }
     },
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": false,
       "drops": [
         {
@@ -1508,7 +1600,8 @@
       }
     },
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": true,
       "drops": [
         {
@@ -1526,7 +1619,8 @@
       }
     },
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": false,
       "drops": [
         {
@@ -1556,7 +1650,8 @@
       }
     },
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": false,
       "drops": [
         {
@@ -1589,10 +1684,12 @@
   "creature": [
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "HARI",
       "name": "Porquillion",
       "carryMax": 24,
       "value": 12,
+      "health": 5000,
       "seeds": 20,
       "drops": [
         {
@@ -1611,10 +1708,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "IWAKKO",
       "name": "Skutterchuck",
       "carryMax": 6,
       "value": 3,
+      "health": 300,
       "seeds": 3,
       "drops": [
         {
@@ -1633,10 +1732,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "IWAKKO",
       "name": "Skutterchuck",
       "carryMax": 6,
       "value": 3,
+      "health": 300,
       "seeds": 3,
       "drops": [
         {
@@ -1655,10 +1756,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "BILLY",
       "name": "Bearded Amprat",
       "carryMax": 14,
       "value": 7,
+      "health": 750,
       "seeds": 6,
       "drops": [
         {
@@ -1677,10 +1780,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -1691,10 +1796,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -1706,10 +1813,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -1720,10 +1829,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -1734,10 +1845,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "ICEKOCHAPPY",
       "name": "Dwarf Frosty Bulborb",
       "carryMax": 6,
       "value": 3,
+      "health": 100,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -1748,10 +1861,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "ICEKOCHAPPY",
       "name": "Dwarf Frosty Bulborb",
       "carryMax": 6,
       "value": 3,
+      "health": 100,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -1762,10 +1877,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "RUSHER",
       "name": "Tusked Blowhog",
       "carryMax": 14,
       "value": 7,
+      "health": 900,
       "seeds": 6,
       "transform": {
         "translation": {
@@ -1776,10 +1893,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "ICEKOCHAPPY",
       "name": "Dwarf Frosty Bulborb",
       "carryMax": 6,
       "value": 3,
+      "health": 100,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -1790,10 +1909,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NISEZAKO",
       "name": "Gildemandwee",
       "carryMax": 10,
       "value": 5,
+      "health": 500,
       "seeds": 6,
       "drops": [
         {
@@ -1812,10 +1933,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "SHIPPOZAKO",
       "name": "Miniature Snootwhacker",
       "carryMax": 14,
       "value": 7,
+      "health": 500,
       "seeds": 6,
       "transform": {
         "translation": {
@@ -1826,10 +1949,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "ICECHAPPY",
       "name": "Frosty Bulborb",
       "carryMax": 20,
       "value": 10,
+      "health": 1000,
       "seeds": 12,
       "drops": [
         {
@@ -1848,10 +1973,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "RUSHER",
       "name": "Tusked Blowhog",
       "carryMax": 14,
       "value": 7,
+      "health": 900,
       "seeds": 6,
       "transform": {
         "translation": {
@@ -1862,10 +1989,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NISEZAKO",
       "name": "Gildemandwee",
       "carryMax": 10,
       "value": 5,
+      "health": 500,
       "seeds": 6,
       "drops": [
         {
@@ -1884,10 +2013,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "BILLY",
       "name": "Bearded Amprat",
       "carryMax": 14,
       "value": 7,
+      "health": 750,
       "seeds": 6,
       "drops": [
         {
@@ -1906,10 +2037,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "FUTAKUCHIADULT",
       "name": "Horned Cannon Beetle",
       "carryMax": 60,
       "value": 20,
+      "health": 5000,
       "seeds": 50,
       "drops": [
         {
@@ -1928,10 +2061,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "SHIPPOZAKO",
       "name": "Miniature Snootwhacker",
       "carryMax": 14,
       "value": 7,
+      "health": 500,
       "seeds": 6,
       "transform": {
         "translation": {
@@ -1942,10 +2077,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "IWAKKO",
       "name": "Skutterchuck",
       "carryMax": 6,
       "value": 3,
+      "health": 300,
       "seeds": 3,
       "drops": [
         {
@@ -1964,10 +2101,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "IWAKKO",
       "name": "Skutterchuck",
       "carryMax": 6,
       "value": 3,
+      "health": 300,
       "seeds": 3,
       "drops": [
         {
@@ -1986,10 +2125,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2000,10 +2141,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2014,10 +2157,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "CHASER",
       "name": "Moss",
       "carryMax": 0,
       "value": 0,
+      "health": 7000,
       "seeds": 0,
       "transform": {
         "translation": {
@@ -2028,10 +2173,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "SHIPPOZAKO",
       "name": "Miniature Snootwhacker",
       "carryMax": 14,
       "value": 7,
+      "health": 500,
       "seeds": 6,
       "transform": {
         "translation": {
@@ -2042,10 +2189,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NISEZAKO",
       "name": "Gildemandwee",
       "carryMax": 10,
       "value": 5,
+      "health": 500,
       "seeds": 6,
       "drops": [
         {
@@ -2064,10 +2213,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "RUSHER",
       "name": "Tusked Blowhog",
       "carryMax": 14,
       "value": 7,
+      "health": 900,
       "seeds": 6,
       "transform": {
         "translation": {
@@ -2078,10 +2229,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2092,10 +2245,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "RUSHER",
       "name": "Tusked Blowhog",
       "carryMax": 14,
       "value": 7,
+      "health": 900,
       "seeds": 6,
       "transform": {
         "translation": {
@@ -2106,10 +2261,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2120,10 +2277,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2134,10 +2293,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KURIONE",
       "name": "Honeywisp",
       "carryMax": 0,
       "value": 0,
+      "health": 1,
       "seeds": 0,
       "drops": [
         {
@@ -2162,10 +2323,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KURIONE",
       "name": "Honeywisp",
       "carryMax": 0,
       "value": 0,
+      "health": 1,
       "seeds": 0,
       "drops": [
         {
@@ -2190,10 +2353,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KURIONE",
       "name": "Honeywisp",
       "carryMax": 0,
       "value": 0,
+      "health": 1,
       "seeds": 0,
       "drops": [
         {
@@ -2218,10 +2383,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KURIONE",
       "name": "Honeywisp",
       "carryMax": 0,
       "value": 0,
+      "health": 1,
       "seeds": 0,
       "drops": [
         {
@@ -2246,10 +2413,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2260,10 +2429,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2274,10 +2445,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2288,10 +2461,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2302,10 +2477,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2316,10 +2493,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2330,10 +2509,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2344,10 +2525,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2358,10 +2541,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2372,10 +2557,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2386,10 +2573,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2400,10 +2589,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2414,10 +2605,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2428,10 +2621,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2442,10 +2637,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2456,10 +2653,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "IWAKKO",
       "name": "Skutterchuck",
       "carryMax": 6,
       "value": 3,
+      "health": 300,
       "seeds": 3,
       "drops": [
         {
@@ -2478,10 +2677,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "IWAKKO",
       "name": "Skutterchuck",
       "carryMax": 6,
       "value": 3,
+      "health": 300,
       "seeds": 3,
       "drops": [
         {
@@ -2500,10 +2701,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "ICEMAR",
       "name": "Icy Blowhog",
       "carryMax": 1,
       "value": 7,
+      "health": 3000,
       "seeds": 5,
       "transform": {
         "translation": {
@@ -2514,10 +2717,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "ICEKOCHAPPY",
       "name": "Dwarf Frosty Bulborb",
       "carryMax": 6,
       "value": 3,
+      "health": 100,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -2528,10 +2733,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "ICEKOCHAPPY",
       "name": "Dwarf Frosty Bulborb",
       "carryMax": 6,
       "value": 3,
+      "health": 100,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -2542,10 +2749,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "ICEOTAKARA",
       "name": "Iceblown Dweevil",
       "carryMax": 4,
       "value": 2,
+      "health": 300,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -2556,10 +2765,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "ICEOTAKARA",
       "name": "Iceblown Dweevil",
       "carryMax": 4,
       "value": 2,
+      "health": 300,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -2570,10 +2781,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2584,10 +2797,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2598,10 +2813,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "ICEOTAKARA",
       "name": "Iceblown Dweevil",
       "carryMax": 4,
       "value": 2,
+      "health": 300,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -2612,10 +2829,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2626,10 +2845,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2640,10 +2861,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2654,10 +2877,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2668,10 +2893,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2682,10 +2909,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2696,10 +2925,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2710,10 +2941,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -2724,10 +2957,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KURIONE",
       "name": "Honeywisp",
       "carryMax": 0,
       "value": 0,
+      "health": 1,
       "seeds": 0,
       "drops": [
         {
@@ -2751,9 +2986,10 @@
       }
     }
   ],
-  "groupDropManager": [
+  "misc-groupdropmanager": [
     {
-      "type": "groupDropManager",
+      "type": "misc-groupdropmanager",
+      "infoType": "misc",
       "radius": 100,
       "drops": [
         {
@@ -2771,7 +3007,8 @@
       }
     },
     {
-      "type": "groupDropManager",
+      "type": "misc-groupdropmanager",
+      "infoType": "misc",
       "ignoreIds": [
         "Kemekuji"
       ],

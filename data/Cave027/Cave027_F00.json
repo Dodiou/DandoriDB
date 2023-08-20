@@ -1,7 +1,8 @@
 {
-  "firePit": [
+  "firepit-lit": [
     {
-      "type": "firePit",
+      "type": "firepit-lit",
+      "infoType": "firepit",
       "isLit": true,
       "transform": {
         "translation": {
@@ -9,31 +10,12 @@
           "y": -1247.5
         }
       }
-    },
-    {
-      "type": "firePit",
-      "isLit": false,
-      "transform": {
-        "translation": {
-          "x": -2,
-          "y": 1236
-        }
-      }
-    },
-    {
-      "type": "firePit",
-      "isLit": false,
-      "transform": {
-        "translation": {
-          "x": -1112,
-          "y": 137.5
-        }
-      }
     }
   ],
   "treasure": [
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "KINKAISTATION",
       "name": "Gold Nugget",
       "amount": 60,
@@ -49,6 +31,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "KINKAISTATION",
       "name": "Gold Nugget",
       "amount": 40,
@@ -64,6 +47,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "KINKAISTATION",
       "name": "Gold Nugget",
       "amount": 50,
@@ -79,6 +63,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "KINKAISTATION",
       "name": "Gold Nugget",
       "amount": 71,
@@ -94,6 +79,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAHANDBELL",
       "name": "Time Marker",
       "weight": 12,
@@ -108,6 +94,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTARAPPA",
       "name": "Mega Horn",
       "weight": 15,
@@ -122,6 +109,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTACASTANETS",
       "name": "Harmonic Synthesizer",
       "weight": 7,
@@ -136,6 +124,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAHARMONICA",
       "name": "Wind Detector",
       "weight": 7,
@@ -150,6 +139,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAGARAGARA",
       "name": "Shake-a-Smile",
       "weight": 12,
@@ -164,6 +154,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAOCARINABRN",
       "name": "Ambiguous Hostel",
       "weight": 10,
@@ -178,6 +169,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAWHISTLE",
       "name": "Emperor Whistle",
       "weight": 5,
@@ -191,9 +183,10 @@
       }
     }
   ],
-  "conveyor": [
+  "switchable-conveyor": [
     {
-      "type": "conveyor",
+      "type": "switchable-conveyor",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -204,7 +197,8 @@
       }
     },
     {
-      "type": "conveyor",
+      "type": "switchable-conveyor",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -215,7 +209,8 @@
       }
     },
     {
-      "type": "conveyor",
+      "type": "switchable-conveyor",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -226,7 +221,8 @@
       }
     },
     {
-      "type": "conveyor",
+      "type": "switchable-conveyor",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -237,7 +233,8 @@
       }
     },
     {
-      "type": "conveyor",
+      "type": "switchable-conveyor",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -248,11 +245,12 @@
       }
     }
   ],
-  "candypop": [
+  "candypop-wing": [
     {
-      "type": "candypop",
+      "type": "candypop-wing",
+      "infoType": "candypop",
       "color": "wing",
-      "amount": 1,
+      "disappearsAt": null,
       "transform": {
         "translation": {
           "x": -289,
@@ -261,9 +259,10 @@
       }
     },
     {
-      "type": "candypop",
+      "type": "candypop-wing",
+      "infoType": "candypop",
       "color": "wing",
-      "amount": 1,
+      "disappearsAt": null,
       "transform": {
         "translation": {
           "x": -413.33145,
@@ -272,9 +271,10 @@
       }
     },
     {
-      "type": "candypop",
+      "type": "candypop-wing",
+      "infoType": "candypop",
       "color": "wing",
-      "amount": 1,
+      "disappearsAt": null,
       "transform": {
         "translation": {
           "x": 1077.25,
@@ -283,9 +283,10 @@
       }
     },
     {
-      "type": "candypop",
+      "type": "candypop-wing",
+      "infoType": "candypop",
       "color": "wing",
-      "amount": 1,
+      "disappearsAt": null,
       "transform": {
         "translation": {
           "x": 1152.75,
@@ -294,9 +295,10 @@
       }
     },
     {
-      "type": "candypop",
+      "type": "candypop-wing",
+      "infoType": "candypop",
       "color": "wing",
-      "amount": 1,
+      "disappearsAt": null,
       "transform": {
         "translation": {
           "x": 557,
@@ -305,9 +307,10 @@
       }
     },
     {
-      "type": "candypop",
+      "type": "candypop-wing",
+      "infoType": "candypop",
       "color": "wing",
-      "amount": 1,
+      "disappearsAt": null,
       "transform": {
         "translation": {
           "x": 621,
@@ -316,10 +319,34 @@
       }
     }
   ],
-  "switch": [
+  "firepit-unlit": [
     {
-      "type": "switch",
-      "variant": "double",
+      "type": "firepit-unlit",
+      "infoType": "firepit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": -2,
+          "y": 1236
+        }
+      }
+    },
+    {
+      "type": "firepit-unlit",
+      "infoType": "firepit",
+      "isLit": false,
+      "transform": {
+        "translation": {
+          "x": -1112,
+          "y": 137.5
+        }
+      }
+    }
+  ],
+  "switchable-doubleswitch": [
+    {
+      "type": "switchable-doubleswitch",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -330,10 +357,10 @@
       }
     }
   ],
-  "base": [
+  "base-onion": [
     {
-      "type": "base",
-      "variant": "beagle",
+      "type": "base-onion",
+      "infoType": "base",
       "baseId": 0,
       "transform": {
         "translation": {
@@ -343,10 +370,10 @@
       }
     }
   ],
-  "heatObstacle": [
+  "breakable-straw": [
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": -877,
@@ -355,8 +382,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 138,
@@ -365,8 +392,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 143,
@@ -375,8 +402,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 170,
@@ -385,8 +412,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 322,
@@ -395,8 +422,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 243,
@@ -405,8 +432,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 552,
@@ -415,8 +442,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 832.0098,
@@ -425,8 +452,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 823.02435,
@@ -435,8 +462,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 708,
@@ -445,8 +472,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 821,
@@ -455,8 +482,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 784,
@@ -465,8 +492,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 666.5,
@@ -475,8 +502,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 691,
@@ -485,8 +512,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": -826,
@@ -495,8 +522,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 690,
@@ -505,8 +532,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": -773,
@@ -515,8 +542,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 663,
@@ -525,8 +552,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 689,
@@ -535,8 +562,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 660,
@@ -545,8 +572,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 665.5,
@@ -555,8 +582,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 638.5,
@@ -565,8 +592,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 576,
@@ -575,8 +602,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 515,
@@ -585,8 +612,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 448,
@@ -595,8 +622,8 @@
       }
     },
     {
-      "type": "heatObstacle",
-      "variant": "straw",
+      "type": "breakable-straw",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": 627,
@@ -608,10 +635,12 @@
   "creature": [
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TOBIKABURI",
       "name": "Flighty Joustmite",
       "carryMax": 14,
       "value": 5,
+      "health": 600,
       "seeds": 8,
       "transform": {
         "translation": {
@@ -622,10 +651,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "MAR",
       "name": "Puffy Blowhog",
       "carryMax": 1,
       "value": 7,
+      "health": 3000,
       "seeds": 5,
       "transform": {
         "translation": {
@@ -636,10 +667,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "SARAI",
       "name": "Swooping Snitchbug",
       "carryMax": 6,
       "value": 3,
+      "health": 1000,
       "seeds": 4,
       "transform": {
         "translation": {
@@ -650,10 +683,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "SARAI",
       "name": "Swooping Snitchbug",
       "carryMax": 6,
       "value": 3,
+      "health": 1000,
       "seeds": 4,
       "transform": {
         "translation": {
@@ -664,10 +699,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "SARAI",
       "name": "Swooping Snitchbug",
       "carryMax": 6,
       "value": 3,
+      "health": 1000,
       "seeds": 4,
       "transform": {
         "translation": {
@@ -678,10 +715,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TOBINKO",
       "name": "Shearwig",
       "carryMax": 1,
       "value": 1,
+      "health": 74,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -692,10 +731,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TOBINKO",
       "name": "Shearwig",
       "carryMax": 1,
       "value": 1,
+      "health": 74,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -706,10 +747,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TOBINKO",
       "name": "Shearwig",
       "carryMax": 1,
       "value": 1,
+      "health": 74,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -720,10 +763,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "TOBINKO",
       "name": "Shearwig",
       "carryMax": 1,
       "value": 1,
+      "health": 74,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -733,9 +778,10 @@
       }
     }
   ],
-  "egg": [
+  "breakable-egg": [
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": true,
       "drops": [
         {
@@ -765,7 +811,8 @@
       }
     },
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": true,
       "drops": [
         {
@@ -795,7 +842,8 @@
       }
     },
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": false,
       "drops": [
         {

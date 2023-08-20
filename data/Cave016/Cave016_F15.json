@@ -1,9 +1,8 @@
 {
-  "caveLink": [
+  "cave-entrance": [
     {
-      "type": "caveLink",
-      "variant": "cave",
-      "link": "Cave016_F16",
+      "type": "cave-entrance",
+      "infoType": "cave",
       "transform": {
         "translation": {
           "x": 1102.8126,
@@ -12,10 +11,10 @@
       }
     }
   ],
-  "gate": [
+  "gate-numbered": [
     {
-      "type": "gate",
-      "variant": "numbered",
+      "type": "gate-numbered",
+      "infoType": "gate",
       "transform": {
         "translation": {
           "x": 650,
@@ -23,10 +22,13 @@
         },
         "rotation": 90
       }
-    },
+    }
+  ],
+  "gate-dirt": [
     {
-      "type": "gate",
-      "variant": "dirt",
+      "type": "gate-dirt",
+      "infoType": "gate",
+      "health": 8000,
       "transform": {
         "translation": {
           "x": 659,
@@ -36,8 +38,9 @@
       }
     },
     {
-      "type": "gate",
-      "variant": "dirt",
+      "type": "gate-dirt",
+      "infoType": "gate",
+      "health": 8000,
       "transform": {
         "translation": {
           "x": -767.5,
@@ -47,13 +50,13 @@
       }
     }
   ],
-  "candypop": [
+  "candypop-purple": [
     {
-      "type": "candypop",
+      "type": "candypop-purple",
+      "infoType": "candypop",
       "color": "purple",
-      "amount": 1,
-      "replacementCondition": 51,
-      "replacement": "other",
+      "disappearsAt": 51,
+      "replacedBy": "GEgg_C",
       "transform": {
         "translation": {
           "x": 798.25256,
@@ -62,11 +65,11 @@
       }
     },
     {
-      "type": "candypop",
+      "type": "candypop-purple",
+      "infoType": "candypop",
       "color": "purple",
-      "amount": 1,
-      "replacementCondition": 51,
-      "replacement": "other",
+      "disappearsAt": 51,
+      "replacedBy": "GEgg_C",
       "transform": {
         "translation": {
           "x": -827.2628,
@@ -75,10 +78,10 @@
       }
     }
   ],
-  "shortcut": [
+  "shortcut-root": [
     {
-      "type": "shortcut",
-      "variant": "root",
+      "type": "shortcut-root",
+      "infoType": "shortcut",
       "transform": {
         "translation": {
           "x": 0.23846436,
@@ -88,8 +91,8 @@
       }
     },
     {
-      "type": "shortcut",
-      "variant": "root",
+      "type": "shortcut-root",
+      "infoType": "shortcut",
       "transform": {
         "translation": {
           "x": -549.5925,
@@ -99,10 +102,10 @@
       }
     }
   ],
-  "base": [
+  "base-onion": [
     {
-      "type": "base",
-      "variant": "beagle",
+      "type": "base-onion",
+      "infoType": "base",
       "baseId": 0,
       "transform": {
         "translation": {
@@ -115,10 +118,12 @@
   "creature": [
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "AMEBOZU",
       "name": "Waterwraith",
       "carryMax": 0,
       "value": 0,
+      "health": 1800,
       "seeds": 0,
       "transform": {
         "translation": {
@@ -129,10 +134,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "AMEBOZU",
       "name": "Waterwraith",
       "carryMax": 0,
       "value": 0,
+      "health": 1800,
       "seeds": 0,
       "transform": {
         "translation": {
@@ -142,9 +149,10 @@
       }
     }
   ],
-  "groupDropManager": [
+  "misc-groupdropmanager": [
     {
-      "type": "groupDropManager",
+      "type": "misc-groupdropmanager",
+      "infoType": "misc",
       "radius": 700,
       "drops": [
         {

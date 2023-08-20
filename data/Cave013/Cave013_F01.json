@@ -1,9 +1,8 @@
 {
-  "caveLink": [
+  "cave-entrance": [
     {
-      "type": "caveLink",
-      "variant": "cave",
-      "link": "Cave013_F02",
+      "type": "cave-entrance",
+      "infoType": "cave",
       "transform": {
         "translation": {
           "x": 137.5,
@@ -12,10 +11,10 @@
       }
     }
   ],
-  "fence": [
+  "switchable-fenceiron": [
     {
-      "type": "fence",
-      "variant": "iron",
+      "type": "switchable-fenceiron",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -26,8 +25,8 @@
       }
     },
     {
-      "type": "fence",
-      "variant": "iron",
+      "type": "switchable-fenceiron",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -38,8 +37,8 @@
       }
     },
     {
-      "type": "fence",
-      "variant": "iron",
+      "type": "switchable-fenceiron",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -50,8 +49,8 @@
       }
     },
     {
-      "type": "fence",
-      "variant": "iron",
+      "type": "switchable-fenceiron",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
@@ -62,9 +61,10 @@
       }
     }
   ],
-  "materials": [
+  "pile-materials": [
     {
-      "type": "materials",
+      "type": "pile-materials",
+      "infoType": "pile",
       "amount": 15,
       "transform": {
         "translation": {
@@ -74,49 +74,51 @@
       }
     }
   ],
-  "floor": [
+  "ridable-movefloor": [
     {
-      "type": "floor",
-      "variant": "movable",
+      "type": "ridable-movefloor",
+      "infoType": "ridable",
       "transform": {
         "translation": {
           "x": -687.5,
           "y": 25
-        }
+        },
+        "rotation": 90
       }
     },
     {
-      "type": "floor",
-      "variant": "movable",
+      "type": "ridable-movefloor",
+      "infoType": "ridable",
       "transform": {
         "translation": {
           "x": 962.5,
           "y": 275
-        }
+        },
+        "rotation": 180
       }
     }
   ],
-  "switch": [
+  "switchable-singleswitch": [
     {
-      "type": "switch",
-      "variant": "single",
+      "type": "switchable-singleswitch",
+      "infoType": "switchable",
       "switchId": "switch01",
       "transform": {
         "translation": {
           "x": -973,
           "y": -134
-        },
-        "rotation": 0
+        }
       }
     }
   ],
-  "pikmin": [
+  "pikmin-yellow": [
     {
-      "type": "pikmin",
+      "type": "pikmin-yellow",
+      "infoType": "pikmin",
       "color": "yellow",
-      "variant": "fighting",
+      "state": "fighting",
       "amount": 5,
-      "replacementCondition": 51,
+      "disappearsAt": 51,
       "transform": {
         "translation": {
           "x": 155,
@@ -125,10 +127,11 @@
       }
     }
   ],
-  "gate": [
+  "gate-electric": [
     {
-      "type": "gate",
-      "variant": "electric",
+      "type": "gate-electric",
+      "infoType": "gate",
+      "health": 8000,
       "transform": {
         "translation": {
           "x": -75.08435,
@@ -138,10 +141,10 @@
       }
     }
   ],
-  "spout": [
+  "hazardspout-fire": [
     {
-      "type": "spout",
-      "variant": "fire",
+      "type": "hazardspout-fire",
+      "infoType": "hazard",
       "transform": {
         "translation": {
           "x": 575,
@@ -150,8 +153,8 @@
       }
     },
     {
-      "type": "spout",
-      "variant": "fire",
+      "type": "hazardspout-fire",
+      "infoType": "hazard",
       "transform": {
         "translation": {
           "x": -1191,
@@ -160,8 +163,8 @@
       }
     },
     {
-      "type": "spout",
-      "variant": "fire",
+      "type": "hazardspout-fire",
+      "infoType": "hazard",
       "transform": {
         "translation": {
           "x": -941,
@@ -170,10 +173,10 @@
       }
     }
   ],
-  "base": [
+  "base-onion": [
     {
-      "type": "base",
-      "variant": "beagle",
+      "type": "base-onion",
+      "infoType": "base",
       "baseId": 0,
       "transform": {
         "translation": {
@@ -186,6 +189,7 @@
   "treasure": [
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTAEFFECTSUNIT",
       "name": "Soul Reverberator",
       "weight": 15,
@@ -200,6 +204,7 @@
     },
     {
       "type": "treasure",
+      "infoType": "treasure",
       "treasureId": "OTACANDLE",
       "name": "Olfactory Sculpture",
       "weight": 10,
@@ -216,10 +221,12 @@
   "creature": [
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "BILLY",
       "name": "Bearded Amprat",
       "carryMax": 14,
       "value": 7,
+      "health": 750,
       "seeds": 6,
       "drops": [
         {
@@ -238,10 +245,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "BILLY",
       "name": "Bearded Amprat",
       "carryMax": 14,
       "value": 7,
+      "health": 750,
       "seeds": 6,
       "drops": [
         {
@@ -260,10 +269,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -274,10 +285,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "NOMI",
       "name": "Shearflea",
       "carryMax": 1,
       "value": 1,
+      "health": 45,
       "seeds": 2,
       "transform": {
         "translation": {
@@ -288,10 +301,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KURIONE",
       "name": "Honeywisp",
       "carryMax": 0,
       "value": 0,
+      "health": 1,
       "seeds": 0,
       "drops": [
         {

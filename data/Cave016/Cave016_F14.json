@@ -1,9 +1,8 @@
 {
-  "caveLink": [
+  "cave-entrance": [
     {
-      "type": "caveLink",
-      "variant": "cave",
-      "link": "Cave016_F15",
+      "type": "cave-entrance",
+      "infoType": "cave",
       "transform": {
         "translation": {
           "x": 992.2092,
@@ -12,10 +11,10 @@
       }
     }
   ],
-  "gate": [
+  "gate-numbered": [
     {
-      "type": "gate",
-      "variant": "numbered",
+      "type": "gate-numbered",
+      "infoType": "gate",
       "transform": {
         "translation": {
           "x": 632.5377,
@@ -25,12 +24,12 @@
       }
     }
   ],
-  "candypop": [
+  "candypop-blue": [
     {
-      "type": "candypop",
+      "type": "candypop-blue",
+      "infoType": "candypop",
       "color": "blue",
-      "amount": 1,
-      "replacementCondition": 51,
+      "disappearsAt": 51,
       "transform": {
         "translation": {
           "x": 655.1401,
@@ -39,11 +38,11 @@
       }
     },
     {
-      "type": "candypop",
+      "type": "candypop-blue",
+      "infoType": "candypop",
       "color": "blue",
-      "amount": 1,
-      "replacementCondition": 51,
-      "replacement": "other",
+      "disappearsAt": 51,
+      "replacedBy": "GEgg_C",
       "transform": {
         "translation": {
           "x": -688.05096,
@@ -52,10 +51,10 @@
       }
     }
   ],
-  "water": [
+  "water-water": [
     {
-      "type": "water",
-      "variant": "water",
+      "type": "water-water",
+      "infoType": "water",
       "normal": {
         "image": "T_ui_Map_Cave016_F14_WaterBox00_D.png",
         "amountToFreeze": 10
@@ -67,10 +66,12 @@
         },
         "rotation": 0
       }
-    },
+    }
+  ],
+  "water-swamp": [
     {
-      "type": "water",
-      "variant": "swamp",
+      "type": "water-swamp",
+      "infoType": "water",
       "normal": {
         "image": "T_ui_Map_Cave016_F14_WaterBox01_D.png",
         "amountToFreeze": 10,
@@ -85,10 +86,10 @@
       }
     }
   ],
-  "spout": [
+  "hazardspout-water": [
     {
-      "type": "spout",
-      "variant": "water",
+      "type": "hazardspout-water",
+      "infoType": "hazard",
       "transform": {
         "translation": {
           "x": -545.9193,
@@ -97,8 +98,8 @@
       }
     },
     {
-      "type": "spout",
-      "variant": "water",
+      "type": "hazardspout-water",
+      "infoType": "hazard",
       "transform": {
         "translation": {
           "x": 71.36046,
@@ -107,8 +108,8 @@
       }
     },
     {
-      "type": "spout",
-      "variant": "water",
+      "type": "hazardspout-water",
+      "infoType": "hazard",
       "transform": {
         "translation": {
           "x": 71.36046,
@@ -117,10 +118,10 @@
       }
     }
   ],
-  "base": [
+  "base-onion": [
     {
-      "type": "base",
-      "variant": "beagle",
+      "type": "base-onion",
+      "infoType": "base",
       "baseId": 0,
       "transform": {
         "translation": {
@@ -133,10 +134,12 @@
   "creature": [
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "HAGEDAMAGUMO",
       "name": "Baldy Long Legs",
       "carryMax": 0,
       "value": 0,
+      "health": 3700,
       "seeds": 0,
       "drops": [
         {

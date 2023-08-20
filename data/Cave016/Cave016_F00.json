@@ -1,8 +1,8 @@
 {
-  "gate": [
+  "gate-numbered": [
     {
-      "type": "gate",
-      "variant": "numbered",
+      "type": "gate-numbered",
+      "infoType": "gate",
       "transform": {
         "translation": {
           "x": -70,
@@ -12,11 +12,10 @@
       }
     }
   ],
-  "caveLink": [
+  "cave-entrance": [
     {
-      "type": "caveLink",
-      "variant": "cave",
-      "link": "Cave016_F01",
+      "type": "cave-entrance",
+      "infoType": "cave",
       "transform": {
         "translation": {
           "x": 5,
@@ -25,12 +24,12 @@
       }
     }
   ],
-  "candypop": [
+  "candypop-white": [
     {
-      "type": "candypop",
+      "type": "candypop-white",
+      "infoType": "candypop",
       "color": "white",
-      "amount": 1,
-      "replacementCondition": 51,
+      "disappearsAt": 51,
       "transform": {
         "translation": {
           "x": -621.6007,
@@ -39,10 +38,10 @@
       }
     },
     {
-      "type": "candypop",
+      "type": "candypop-white",
+      "infoType": "candypop",
       "color": "white",
-      "amount": 1,
-      "replacementCondition": 51,
+      "disappearsAt": 51,
       "transform": {
         "translation": {
           "x": 361.9676,
@@ -51,10 +50,10 @@
       }
     }
   ],
-  "floor": [
+  "hazardradial-floormushroom": [
     {
-      "type": "floor",
-      "variant": "mushroom",
+      "type": "hazardradial-floormushroom",
+      "infoType": "hazard",
       "isPoison": false,
       "radius": 175,
       "transform": {
@@ -65,11 +64,10 @@
       }
     }
   ],
-  "mushroom": [
+  "breakable-spotcapnormal": [
     {
-      "type": "mushroom",
-      "isPoison": false,
-      "isLarge": false,
+      "type": "breakable-spotcapnormal",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": -568.3318,
@@ -78,9 +76,8 @@
       }
     },
     {
-      "type": "mushroom",
-      "isPoison": false,
-      "isLarge": false,
+      "type": "breakable-spotcapnormal",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": -653.5725,
@@ -89,9 +86,8 @@
       }
     },
     {
-      "type": "mushroom",
-      "isPoison": false,
-      "isLarge": false,
+      "type": "breakable-spotcapnormal",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": -645,
@@ -100,9 +96,8 @@
       }
     },
     {
-      "type": "mushroom",
-      "isPoison": false,
-      "isLarge": false,
+      "type": "breakable-spotcapnormal",
+      "infoType": "breakable",
       "transform": {
         "translation": {
           "x": -584,
@@ -111,10 +106,10 @@
       }
     }
   ],
-  "base": [
+  "base-onion": [
     {
-      "type": "base",
-      "variant": "beagle",
+      "type": "base-onion",
+      "infoType": "base",
       "baseId": 0,
       "transform": {
         "translation": {
@@ -127,10 +122,12 @@
   "creature": [
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KINOKOCHAPPY",
       "name": "Moldy Dwarf Bulborb",
       "carryMax": 6,
       "value": 3,
+      "health": 150,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -141,10 +138,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KINOKOCHAPPY",
       "name": "Moldy Dwarf Bulborb",
       "carryMax": 6,
       "value": 3,
+      "health": 150,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -155,10 +154,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KINOKOCHAPPY",
       "name": "Moldy Dwarf Bulborb",
       "carryMax": 6,
       "value": 3,
+      "health": 150,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -169,10 +170,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KINOKAJIOKOSHI",
       "name": "Moldy Slooch",
       "carryMax": 6,
       "value": 3,
+      "health": 300,
       "seeds": 4,
       "transform": {
         "translation": {
@@ -183,10 +186,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "DOKUNAMEKO",
       "name": "Toxstool",
       "carryMax": 24,
       "value": 20,
+      "health": 15000,
       "seeds": 20,
       "drops": [
         {
@@ -211,10 +216,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KINOKAJIOKOSHI",
       "name": "Moldy Slooch",
       "carryMax": 6,
       "value": 3,
+      "health": 300,
       "seeds": 4,
       "transform": {
         "translation": {
@@ -225,10 +232,12 @@
     },
     {
       "type": "creature",
+      "infoType": "creature",
       "creatureId": "KINOKOCHAPPY",
       "name": "Moldy Dwarf Bulborb",
       "carryMax": 6,
       "value": 3,
+      "health": 150,
       "seeds": 3,
       "transform": {
         "translation": {
@@ -238,9 +247,10 @@
       }
     }
   ],
-  "egg": [
+  "breakable-egg": [
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": false,
       "drops": [
         {
@@ -270,7 +280,8 @@
       }
     },
     {
-      "type": "egg",
+      "type": "breakable-egg",
+      "infoType": "breakable",
       "isBig": false,
       "drops": [
         {
