@@ -11,16 +11,22 @@ import { getCenter } from 'ol/extent';
 import { SelectEvent } from 'ol/interaction/Select';
 import { MapDebugInfoProps } from '../MapDebugInfo/MapDebugInfo';
 import { getImageLayersForMap, getProjectionForMap } from '../../api/getImageLayers';
+import { MapFeatureLayers } from './FeatureStyles';
+import { FeatureFilter } from '../Legend/Legend';
+import { MarkerType } from '../../api/types';
 
 export interface MapContainerProps {
+  filter: FeatureFilter;
   mapId: string;
   onSelect?: (data: any | undefined) => void;
   onMouseMove?: (data: MapDebugInfoProps) => void;
 }
 
-export const MapContainer = ({ mapId, onSelect, onMouseMove }: MapContainerProps) => {
+export const MapContainer = ({ filter, mapId, onSelect, onMouseMove }: MapContainerProps) => {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const [map, setMap] = useState<Map>(() => new Map({}));
+  const [markerLayers, setMarkerLayers] = useState<MapFeatureLayers>({});
+  const prevFilter = useRef<FeatureFilter>({});
 
   useEffect(() => {
     const load = async () => {
@@ -41,12 +47,15 @@ export const MapContainer = ({ mapId, onSelect, onMouseMove }: MapContainerProps
 
       // add markers
       const markerLayers = await getMarkerData(mapId);
+      const visibleLayers = Object.entries(markerLayers)
+        .filter(([k, _v]) => !!filter[k as MarkerType])
+        .map(([_k, v]) => v);
 
       // TODO figure out why map.setLayers and map.setView aren't working
       const map = new Map({
         layers: [
           ...imageLayers,
-          ...Object.values(markerLayers)
+          ...visibleLayers
         ],
         target: 'map',
         view,
@@ -57,10 +66,32 @@ export const MapContainer = ({ mapId, onSelect, onMouseMove }: MapContainerProps
       });
 
       setMap(map);
+      setMarkerLayers(markerLayers);
     }
 
     load();
   }, [mapId]);
+
+  useEffect(() => {
+    const filterKeys = Object.keys(filter) as MarkerType[];
+    for (const key of filterKeys) {
+      const layer = markerLayers[key];
+      if (!layer) {
+        continue;
+      }
+
+      if (!!filter[key] !== !!prevFilter.current[key]) {
+        if (!filter[key]) {
+          map.removeLayer(layer);
+        }
+        else {
+          map.addLayer(layer);
+        }
+      }
+    }
+
+    prevFilter.current = filter;
+  }, [filter]);
 
   const handleSelect = useCallback((evt: SelectEvent) => {
     const firstFeature = evt.selected[0];

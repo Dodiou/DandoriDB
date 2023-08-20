@@ -359,9 +359,9 @@ export const Categories: Category[] = [
   {
     label: 'Breakables',
     markers: [
+      MarkerType.MiscGroupdropmanager,
       MarkerType.BreakableHydrojelly,
       MarkerType.BreakablePot,
-      MarkerType.MiscGroupdropmanager,
       MarkerType.BreakableKingcapnormal,
       MarkerType.BreakableKingcappoison,
       MarkerType.BreakableSpotcapnormal,
@@ -450,11 +450,6 @@ export const Categories: Category[] = [
       MarkerType.CaveExit,
       MarkerType.CaveChallenge,
       MarkerType.CaveBattle,
-    ]
-  },
-  {
-    label: 'Workable',
-    markers: [
     ]
   },
   {

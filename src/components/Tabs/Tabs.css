@@ -3,6 +3,8 @@
   flex-direction: column;
   flex-wrap: nowrap;
   overflow: hidden;
+
+  width: 100%;
 }
 
 .Tabs__tab-bar {
@@ -18,6 +20,8 @@
 .Tabs__tab-content {
   flex: 1 1 auto;
   overflow: auto;
+
+  padding: 0.25rem;
 }
 
 .Tab__container {

@@ -1,0 +1,13 @@
+.Legend__container {
+  width: 100%;
+}
+
+.FilterCategory__options {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.FilterCategory__option {
+  display: flex;
+  align-items: center;
+}

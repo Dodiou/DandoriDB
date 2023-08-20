@@ -5,6 +5,12 @@
   height: 1.25rem;
   background-size: cover;
 }
+.DandoriDB__image-icon {
+  display: inline-block;
+  content: '';
+  width: 2rem;
+  height: 2rem;
+}
 
 .DandoriDB__icon.Afternoon::before {
   background-image: url('/public/images/icons/ui/afternoon.png');

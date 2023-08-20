@@ -8,7 +8,7 @@ import { Point } from 'ol/geom';
 
 const ROOT_ICON_URL = process.env.PUBLIC_URL + '/images/icons/radar';
 // TODO
-const getIconOptions = (type: MarkerType): Pick<Options, 'src' | 'scale'> => {
+export const getIconOptions = (type: MarkerType): Pick<Options, 'src' | 'scale'> => {
   if (type === MarkerType.BreakableMound) {
     return {
       src: 'https://www.pikminwiki.com/images/9/95/Dirt_mound_icon.png',
@@ -99,7 +99,7 @@ const getFeatures = (markerType: MarkerType, markers: Marker[]): Feature[] => {
 }
 
 export type MapFeatureLayers = {
-  [Type in Exclude<MarkerType, MarkerType.WaterWater | MarkerType.WaterSwamp>]?: VectorLayer<VectorSource>;
+  [Type in MarkerType]?: VectorLayer<VectorSource>;
 }
 
 const LayerOrder: MarkerType[] = Categories.reduce((markerTypes, category) => {
