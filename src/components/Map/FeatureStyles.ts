@@ -50,9 +50,15 @@ export const getIconOptions = (type: MarkerType): Pick<Options, 'src' | 'scale'>
       scale: 1.3
     }
   }
-  else if (type === MarkerType.MiscSpiderwort) {
+  else if (type === MarkerType.SwitchDrain) {
     return {
-      src: 'https://www.pikminwiki.com/images/0/0b/Burgeoning_Spiderwort_P4_icon.png',
+      src: 'https://www.pikminwiki.com/images/d/d1/Clog_icon.png',
+      scale: 1.3
+    }
+  }
+  else if (type === MarkerType.MiscSpiderwort || type === MarkerType.MiscPellet) {
+    return {
+      src: ROOT_ICON_URL + '/' + type + '.png',
       scale: 0.25
     }
   }
