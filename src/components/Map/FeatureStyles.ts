@@ -7,64 +7,38 @@ import { Feature } from 'ol';
 import { Point } from 'ol/geom';
 
 const ROOT_ICON_URL = process.env.PUBLIC_URL + '/images/icons/radar';
-// TODO
-export const getIconOptions = (type: MarkerType): Pick<Options, 'src' | 'scale'> => {
-  if (type === MarkerType.BreakableMound) {
-    return {
-      src: 'https://www.pikminwiki.com/images/9/95/Dirt_mound_icon.png',
-      scale: 1.3
-    }
-  }
-  else if (type === MarkerType.MiscIcicle) {
-    return {
-      src: 'https://www.pikminwiki.com/images/9/94/Icicle-like_crystal_icon.png'
-    };
-  }
-  else if (type === MarkerType.BreakableCrystal) {
-    return {
-      src: 'https://www.pikminwiki.com/images/8/81/Small_crystal_icon.png',
-      scale: 1.3
-    }
-  }
-  else if (type === MarkerType.BreakableEgg) {
-    return {
-      src: 'https://www.pikminwiki.com/images/9/95/Egg_P3_icon.png',
-      scale: 1.6
-    }
-  }
-  else if (type === MarkerType.MiscHoney) {
-    return {
-      src: 'https://www.pikminwiki.com/images/1/1f/Nectar_icon.png',
-      scale: 1.3
-    }
-  }
-  else if (type === MarkerType.MiscStick) {
-    return {
-      src: 'https://www.pikminwiki.com/images/b/b5/Climbing_stick_icon.png',
-      scale: 1.3
-    }
-  }
-  else if (type === MarkerType.MiscSpicy) {
-    return {
-      src: 'https://www.pikminwiki.com/images/7/7a/Ultra-spicy_nectar_icon.png',
-      scale: 1.3
-    }
-  }
-  else if (type === MarkerType.SwitchDrain) {
-    return {
-      src: 'https://www.pikminwiki.com/images/d/d1/Clog_icon.png',
-      scale: 1.3
-    }
-  }
-  else if (type === MarkerType.MiscSpiderwort || type === MarkerType.MiscPellet) {
-    return {
-      src: ROOT_ICON_URL + '/' + type + '.png',
-      scale: 0.25
-    }
-  }
 
+const URL_OVERRIDES: {[Type in MarkerType]?: string} = {
+  [MarkerType.BreakableMound]: 'https://www.pikminwiki.com/images/9/95/Dirt_mound_icon.png',
+  [MarkerType.BreakableCrystal]: 'https://www.pikminwiki.com/images/8/81/Small_crystal_icon.png',
+  [MarkerType.BreakableEgg]: 'https://www.pikminwiki.com/images/9/95/Egg_P3_icon.png',
+  [MarkerType.MiscHoney]: 'https://www.pikminwiki.com/images/1/1f/Nectar_icon.png',
+  [MarkerType.MiscIcicle]: 'https://www.pikminwiki.com/images/9/94/Icicle-like_crystal_icon.png',
+  [MarkerType.MiscStick]: 'https://www.pikminwiki.com/images/b/b5/Climbing_stick_icon.png',
+  [MarkerType.MiscSpicy]: 'https://www.pikminwiki.com/images/7/7a/Ultra-spicy_nectar_icon.png',
+  [MarkerType.SwitchDrain]: 'https://www.pikminwiki.com/images/d/d1/Clog_icon.png',
+};
+const SCALE_OVERRIDES: {[Type in MarkerType]?: number} = {
+  [MarkerType.BreakableMound]: 1.3,
+  [MarkerType.BreakableCrystal]: 1.3,
+  [MarkerType.BreakableEgg]: 1.3,
+  [MarkerType.MiscHoney]: 1.3,
+  [MarkerType.MiscStick]: 1.3,
+  [MarkerType.MiscSpicy]: 1.3,
+  [MarkerType.SwitchDrain]: 1.3,
+  [MarkerType.MiscSpiderwort]: 0.25,
+  [MarkerType.MiscPellet]: 0.25,
+}
+export const getIconOptions = (type: MarkerType): Pick<Options, 'src' | 'scale'> => {
+  const imgUrl: string = URL_OVERRIDES[type] || (ROOT_ICON_URL + '/' + type + '.png');
+  const scale: number | undefined = SCALE_OVERRIDES[type]
+
+  if (type === MarkerType.ShortcutPushboxcardboard || type === MarkerType.ShortcutPushboxmetal) {
+    console.log(imgUrl);
+  }
   return {
-    src: ROOT_ICON_URL + '/' + type + '.png'
+    src: imgUrl,
+    scale
   };
 }
 
@@ -83,6 +57,9 @@ const MarkerStyles = Object.fromEntries(
 
 const getFeatures = (markerType: MarkerType, markers: Marker[]): Feature[] => {
   const globalMarkerStyle = MarkerStyles[markerType];
+  if (markerType === MarkerType.ShortcutPushboxcardboard || markerType === MarkerType.ShortcutPushboxmetal) {
+    console.log("HERHE")
+  }
   return markers.map(marker => {
     const feature = new Feature({
       // Why are x and y flipped???

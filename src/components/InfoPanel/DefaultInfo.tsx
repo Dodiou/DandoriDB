@@ -11,17 +11,17 @@ const objectToList = (obj: object | null | undefined) => {
 
   return Object.entries(obj).map(([key, value]) => {
     if (value == null) {
-      return <li>{ key }: undefined</li>;
+      return <li key={key}>{ key }: undefined</li>;
     }
 
     if (typeof value === 'object') {
-      return <li>
+      return <li key={key}>
         { key }
         <ul>{ objectToList(value) }</ul>
       </li>;
     }
 
-    return <li>{ key }: { value + "" }</li>;
+    return <li key={key}>{ key }: { value + "" }</li>;
   });
 }
 

@@ -95,7 +95,6 @@ export const MapContainer = ({ filter, mapId, onSelect, onMouseMove }: MapContai
 
   const handleSelect = useCallback((evt: SelectEvent) => {
     const firstFeature = evt.selected[0];
-    console.log("Fired!")
 
     if (!firstFeature) {
       onSelect?.(undefined);
