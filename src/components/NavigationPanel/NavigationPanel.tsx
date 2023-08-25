@@ -1,7 +1,8 @@
+import { Pin } from "../../api/types";
 import { CSSIcon } from "../Icon/Icon";
 import { Legend, LegendProps } from "../Legend/Legend";
-import { MapDebugInfo, MapDebugInfoProps } from "../MapDebugInfo/MapDebugInfo";
 import { MapSelect, MapSelectProps } from "../MapSelect/MapSelect";
+import { PinsList, PinsListProps } from "../PinsList/PinsList";
 import { SegmentedButton, SegmentedButtonOption, SegmentedButtonProps } from "../SegmentedButton/SegmentedButton";
 import { Tab, Tabs } from "../Tabs/Tabs";
 
@@ -16,24 +17,26 @@ export enum TimeOption {
 
 export interface NavigationPanelProps {
   filter: LegendProps['filter'];
-  mapDebugInfo?: MapDebugInfoProps;
   mapId: string;
+  pins?: Pin[];
   selectedTime: string;
   floor?: string;
   onMapChange?: MapSelectProps['onSelect'];
   onTimeChange?: SegmentedButtonProps['onSelect'];
   onFilterChange?: LegendProps['onFilterChange'];
+  onDeletePin?: PinsListProps['onDeletePin'];
 }
 
 export const NavigationPanel = ({
   filter,
-  mapDebugInfo,
   mapId,
+  pins = [],
   selectedTime,
   floor,
   onMapChange,
   onTimeChange,
-  onFilterChange
+  onFilterChange,
+  onDeletePin
 }: NavigationPanelProps) => {
   const isCave: boolean = false;
   const timeOptions: SegmentedButtonOption[] = isCave ? [] : [
@@ -63,7 +66,9 @@ export const NavigationPanel = ({
           onFilterChange={onFilterChange}
         />
       </Tab>
+      <Tab id="pins" label="Pins">
+        <PinsList pins={pins} onDeletePin={onDeletePin} />
+      </Tab>
     </Tabs>
-    { mapDebugInfo && <MapDebugInfo { ...mapDebugInfo }/> }
   </div>;
 };

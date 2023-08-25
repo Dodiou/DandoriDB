@@ -1,10 +1,15 @@
 import { Style, Icon } from 'ol/style';
 import { Options } from 'ol/style/Icon';
-import { Categories, Marker, MarkerType } from '../../api/types';
 import VectorLayer from 'ol/layer/Vector';
 import VectorSource from 'ol/source/Vector';
 import { Feature } from 'ol';
 import { Point } from 'ol/geom';
+import { hsv } from 'color-convert';
+
+import { randomInteger, round } from '../../util/math';
+import { Categories, InfoType, Marker, MarkerType, Pin } from '../../api/types';
+
+import PinSVG from './map-pin.svg';
 
 const ROOT_ICON_URL = process.env.PUBLIC_URL + '/images/icons/radar';
 
@@ -89,6 +94,7 @@ const LayerOrder: MarkerType[] = Categories.reduce((markerTypes, category) => {
   return [...markerTypes, ...category.markers];
 }, [] as MarkerType[]);
 
+const MAX_MARKER_Z_INDEX = 1000;
 export const getFeatureLayers = (groupedData: any): MapFeatureLayers => {
   const featureLayers: MapFeatureLayers = {};
 
@@ -99,7 +105,7 @@ export const getFeatureLayers = (groupedData: any): MapFeatureLayers => {
     }
 
     // Categories are sorted by layer importance.
-    const layerZIndex = 1000 - i;
+    const layerZIndex = MAX_MARKER_Z_INDEX - i;
     const features = getFeatures(markerType, groupedData[markerType]);
     const layer = new VectorLayer({
       source: new VectorSource({
@@ -113,3 +119,52 @@ export const getFeatureLayers = (groupedData: any): MapFeatureLayers => {
 
   return featureLayers;
 };
+
+export const getNewPin = ({ id, x, y }: { id: string, x: number, y: number }): Pin => {
+  const h = randomInteger(0, 360);
+  const v = randomInteger(50, 100);
+  const color = hsv.rgb([h, 100, v])
+
+  return {
+    type: MarkerType.MapPin,
+    infoType: InfoType.Misc,
+    color,
+    transform: {
+      translation: {
+        x: round(x, 3),
+        y: round(y, 3)
+      }
+    },
+    pinId: id
+  };
+}
+
+export const getMapPins = (pins: Pin[]): VectorLayer<VectorSource<Point>> => {
+  const features = pins.map(pin => {
+    const feature = new Feature({
+      // Note: x and y are flipped for consistency with other objects
+      geometry: new Point([pin.transform.translation.y, pin.transform.translation.x]),
+      data: pin
+    });
+
+    const pinStyle = new Style({
+      image: new Icon({
+        src: PinSVG,
+        scale: 0.6,
+        anchor: [0.5, 1],
+        color: pin.color
+      })
+    });
+
+    feature.setStyle(pinStyle);
+    return feature;
+  });
+
+  return new VectorLayer({
+    source: new VectorSource({
+      features
+    }),
+    // show pins above all markers
+    zIndex: MAX_MARKER_Z_INDEX + 1
+  });
+}

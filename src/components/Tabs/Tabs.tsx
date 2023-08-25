@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren, ReactElement, cloneElement, useState } from "react";
+import { FC, PropsWithChildren, ReactElement, useState } from "react";
 import { CSSIcon, Icon } from "../Icon/Icon";
 
 import './Tabs.css';

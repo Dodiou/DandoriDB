@@ -139,6 +139,8 @@ export enum MarkerType {
   NightLumiknoll = 'night-lumiknoll',
   NightTricknoll = 'night-tricknoll',
   PileGlowpellets = 'pile-glowpellets',
+  // custom
+  MapPin = 'ddb-pin'
 }
 
 export enum InfoType {
@@ -475,3 +477,17 @@ export const Categories: Category[] = [
     ]
   },
 ];
+
+export interface Pin extends Omit<Marker, 'drops'> {
+  type: MarkerType.MapPin;
+  infoType: InfoType.Misc;
+  color: number[];
+  transform: {
+    translation: {
+      x: number;
+      y: number;
+    };
+  };
+  pinId: string;
+}
+

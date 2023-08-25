@@ -9,24 +9,32 @@ import { getMapData, getMarkerData } from "../../api/MapAPI";
 import './MapContainer.css';
 import { getCenter } from 'ol/extent';
 import { SelectEvent } from 'ol/interaction/Select';
-import { MapDebugInfoProps } from '../MapDebugInfo/MapDebugInfo';
 import { getImageLayersForMap, getProjectionForMap } from '../../api/getImageLayers';
-import { MapFeatureLayers } from './FeatureStyles';
+import { MapFeatureLayers, getMapPins, getNewPin } from './FeatureStyles';
 import { FeatureFilter } from '../Legend/Legend';
-import { MarkerType } from '../../api/types';
+import { MarkerType, Pin } from '../../api/types';
+import PointerInteraction from 'ol/interaction/Pointer';
 
 export interface MapContainerProps {
   filter: FeatureFilter;
   mapId: string;
+  pins: Pin[];
   onSelect?: (data: any | undefined) => void;
-  onMouseMove?: (data: MapDebugInfoProps) => void;
+  onAddPin?: (newPins: Pin) => void;
 }
 
-export const MapContainer = ({ filter, mapId, onSelect, onMouseMove }: MapContainerProps) => {
+export const MapContainer = ({
+  filter,
+  mapId,
+  pins = [],
+  onSelect,
+  onAddPin
+}: MapContainerProps) => {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const [map, setMap] = useState<Map>(() => new Map({}));
   const [markerLayers, setMarkerLayers] = useState<MapFeatureLayers>({});
   const prevFilter = useRef<FeatureFilter>({});
+  const pinId = useRef<number>(0);
 
   useEffect(() => {
     const load = async () => {
@@ -93,7 +101,21 @@ export const MapContainer = ({ filter, mapId, onSelect, onMouseMove }: MapContai
     prevFilter.current = filter;
   }, [filter]);
 
+  useEffect(() => {
+    const pinsLayer = getMapPins(pins);
+    map.addLayer(pinsLayer);
+
+    return () => {
+      map.removeLayer(pinsLayer);
+    }
+  }, [pins, map])
+
   const handleSelect = useCallback((evt: SelectEvent) => {
+    if (evt.mapBrowserEvent.originalEvent.shiftKey) {
+      // pin is being added.
+      return;
+    }
+
     const firstFeature = evt.selected[0];
 
     if (!firstFeature) {
@@ -101,39 +123,53 @@ export const MapContainer = ({ filter, mapId, onSelect, onMouseMove }: MapContai
       return;
     }
     onSelect?.(firstFeature.getProperties().data);
-  }, [onSelect])
+  }, [onSelect]);
+
+  const handleAddPin = useCallback((evt: MapBrowserEvent<MouseEvent>) => {
+    if (evt.type !== 'singleclick' || !evt.originalEvent.shiftKey) {
+      // 'true' to continue propagation.
+      return true;
+    }
+    // add new pin
+    const pinNum = pinId.current++;
+    const pin = getNewPin({
+      id: `pin${pinNum}`,
+      // NOTE: flip x and y to be consistent with other objects
+      x: evt.coordinate[1],
+      y: evt.coordinate[0]
+    });
+
+    onAddPin?.(pin);
+    // 'false to stop propagation
+    return false;
+  }, [onAddPin]);
 
   useEffect(() => {
     const selectFeature = new Select({
       style: null
     });
     selectFeature.on('select', handleSelect);
+
+    const clickFeature = new PointerInteraction({
+      handleEvent: handleAddPin
+    });
+
+    map.addInteraction(clickFeature);
     map.addInteraction(selectFeature);
 
     return () => {
       selectFeature.un('select', handleSelect);
       map.removeInteraction(selectFeature);
+      map.removeInteraction(clickFeature);
     }
-  }, [map, handleSelect])
+  }, [map, handleSelect, handleAddPin]);
 
   useEffect(() => {
-    const round = (n: number) => Math.round(1000 * n) / 1000;
-    const moveListener = (event: MapBrowserEvent<any>) => {
-      onMouseMove?.({
-        x: round(event.coordinate[0]),
-        y: round(event.coordinate[1]),
-        scale: round(event.map.getView().getZoom() || -1),
-        rotation: round(event.map.getView().getRotation() * 180 / Math.PI)
-      })
-    };
-
     if (mapContainerRef.current) {
       map.setTarget(mapContainerRef.current);
-      map.on('pointermove', moveListener);
     }
 
     return () => {
-      map.un('pointermove', moveListener);
       map.dispose();
     }
   }, [map]);

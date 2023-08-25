@@ -6,10 +6,9 @@ import './App.css';
 import { PanelLayout } from './components/PanelLayout/PanelLayout';
 import { NavigationPanel, TimeOption } from './components/NavigationPanel/NavigationPanel';
 import { useCallback, useState } from 'react';
-import { MapDebugInfoProps } from './components/MapDebugInfo/MapDebugInfo';
 import { InfoPanel } from './components/InfoPanel/InfoPanel';
 import { FeatureFilter } from './components/Legend/Legend';
-import { MarkerType } from './api/types';
+import { MarkerType, Pin } from './api/types';
 
 const InitialFilter: FeatureFilter = Object.values(MarkerType).reduce((filter, type) => {
   filter[type as MarkerType] = true;
@@ -17,20 +16,16 @@ const InitialFilter: FeatureFilter = Object.values(MarkerType).reduce((filter, t
 }, {} as FeatureFilter);
 
 function App() {
-  // const [data, setData] = useState<CaveData>();
-
-  // useEffect(() => {
-  //   const load = async () => {
-  //     setData(await getCaveData('C0'))
-  //   };
-  //   load();
-  // }, [])
-
   const [mapId, setMapId] = useState<string>('Area001');
   const [time, setTime] = useState<string>(TimeOption.Day);
   const [filter, setFilter] = useState<FeatureFilter>(InitialFilter);
-  const [debugInfo, setDebugInfo] = useState<MapDebugInfoProps>({ x: 0, y: 0, scale: -1, rotation: 0});
+  const [pins, setPins] = useState<Pin[]>([]);
   const [selectedMarker, setSelectedMarker] = useState<{ type: string }>();
+
+  const onMapChange = useCallback((newMapId: string) => {
+    setMapId(newMapId);
+    setPins([]);
+  }, []);
 
   const onFilterChange = useCallback((newFilters: FeatureFilter) => {
     setFilter(prev => {
@@ -41,14 +36,32 @@ function App() {
     })
   }, []);
 
+  const onDeletePin = useCallback((pinId: string) => {
+    setPins(prevPins => {
+      const index = prevPins.findIndex(pin => pin.pinId === pinId);
+      if (index < 0) {
+        return prevPins;
+      }
+
+      const newPins = [...prevPins];
+      newPins.splice(index, 1);
+      return newPins;
+    });
+  }, []);
+
+  const onAddPin = useCallback((pin: Pin) => {
+    setPins(prevPins => [...prevPins, pin]);
+  }, []);
+
   const navPanel = <NavigationPanel
     filter={filter}
     mapId={mapId}
     selectedTime={time}
-    onMapChange={setMapId}
+    pins={pins}
+    onMapChange={onMapChange}
     onTimeChange={setTime}
     onFilterChange={onFilterChange}
-    mapDebugInfo={debugInfo}
+    onDeletePin={onDeletePin}
   />;
   const infoPanel = <InfoPanel marker={selectedMarker} />
 
@@ -57,8 +70,10 @@ function App() {
       <PanelLayout leftPanel={navPanel} rightPanel={infoPanel}>
         <MapContainer
           filter={filter}
-          mapId={mapId} onMouseMove={setDebugInfo}
+          mapId={mapId}
+          pins={pins}
           onSelect={setSelectedMarker}
+          onAddPin={onAddPin}
         />
       </PanelLayout>
     </div>

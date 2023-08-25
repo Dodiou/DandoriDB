@@ -1,0 +1,20 @@
+.PinsList__container {
+  width: 100%;
+  height: 100%;
+}
+
+.PinViewer__container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  margin-bottom: 1rem;
+}
+
+.PinViewer__container > * {
+  flex: 0 0 auto;
+}
+
+.PinViewer__container > .PinViewer__props {
+  flex: 1 1 auto;
+}
