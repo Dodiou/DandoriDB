@@ -38,9 +38,6 @@ export const getIconOptions = (type: MarkerType): Pick<Options, 'src' | 'scale'>
   const imgUrl: string = URL_OVERRIDES[type] || (ROOT_ICON_URL + '/' + type + '.png');
   const scale: number | undefined = SCALE_OVERRIDES[type]
 
-  if (type === MarkerType.ShortcutPushboxcardboard || type === MarkerType.ShortcutPushboxmetal) {
-    console.log(imgUrl);
-  }
   return {
     src: imgUrl,
     scale
@@ -62,9 +59,6 @@ const MarkerStyles = Object.fromEntries(
 
 const getFeatures = (markerType: MarkerType, markers: Marker[]): Feature[] => {
   const globalMarkerStyle = MarkerStyles[markerType];
-  if (markerType === MarkerType.ShortcutPushboxcardboard || markerType === MarkerType.ShortcutPushboxmetal) {
-    console.log("HERHE")
-  }
   return markers.map(marker => {
     const feature = new Feature({
       // Why are x and y flipped???
