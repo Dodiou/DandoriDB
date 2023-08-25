@@ -133,7 +133,7 @@ export const MapContainer = ({
     // add new pin
     const pinNum = pinId.current++;
     const pin = getNewPin({
-      id: `pin${pinNum}`,
+      id: `#${pinNum}`,
       // NOTE: flip x and y to be consistent with other objects
       x: evt.coordinate[1],
       y: evt.coordinate[0]

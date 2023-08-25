@@ -1,4 +1,4 @@
-import { Style, Icon } from 'ol/style';
+import { Style, Icon, Text, Fill, Stroke } from 'ol/style';
 import { Options } from 'ol/style/Icon';
 import VectorLayer from 'ol/layer/Vector';
 import VectorSource from 'ol/source/Vector';
@@ -139,6 +139,13 @@ export const getNewPin = ({ id, x, y }: { id: string, x: number, y: number }): P
   };
 }
 
+const DEFAULT_TEXT_STYLE = new Text({
+  fill: new Fill({ color: [255, 255, 255] }),
+  stroke: new Stroke({ color: [0, 0, 0], width: 2 }),
+  offsetY: 16,
+  scale: 2
+});
+
 export const getMapPins = (pins: Pin[]): VectorLayer<VectorSource<Point>> => {
   const features = pins.map(pin => {
     const feature = new Feature({
@@ -147,13 +154,17 @@ export const getMapPins = (pins: Pin[]): VectorLayer<VectorSource<Point>> => {
       data: pin
     });
 
+    const textStyle = DEFAULT_TEXT_STYLE.clone();
+    textStyle.setText(pin.pinId);
+
     const pinStyle = new Style({
       image: new Icon({
         src: PinSVG,
         scale: 0.6,
         anchor: [0.5, 1],
-        color: pin.color
-      })
+        color: pin.color,
+      }),
+      text: textStyle
     });
 
     feature.setStyle(pinStyle);

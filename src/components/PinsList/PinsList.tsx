@@ -14,6 +14,9 @@ const PinViewer = ({ pin, onDelete }: PinViewerProps) => {
   return <div className="PinViewer__container">
     <span className="DandoriDB__image-icon" style={{ 'backgroundColor': pinColor }}></span>
     <span className="PinViewer__props">
+      <div>ID: { pin.pinId }</div>
+    </span>
+    <span className="PinViewer__props">
       <div>X: { pin.transform.translation.x }</div>
       <div>Y: { pin.transform.translation.y }</div>
     </span>
