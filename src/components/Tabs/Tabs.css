@@ -28,11 +28,11 @@
   padding-inline: 1rem;
   padding-block: 0.5rem;
 
-  color: var(--normal-fg);
+  color: var(--color-medium-fg);
 }
 .Tab__container:hover {
   background-color: var(--normal-hover-bg);
-  color: var(--normal-hover-fg);
+  color: var(--color-medium-fg);
 }
 
 .Tab__container.Tab__container__selected {

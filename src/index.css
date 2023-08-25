@@ -22,3 +22,7 @@ code {
 :root *,body *,#root * {
   box-sizing: border-box;
 }
+
+:link {
+  color: var(--color-medium-fg)
+}
