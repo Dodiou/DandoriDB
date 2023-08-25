@@ -57,6 +57,30 @@ const MarkerStyles = Object.fromEntries(
     })
 );
 
+const TREASURE_TEXT_STYLE = new Text({
+  fill: new Fill({ color: [255, 255, 255] }),
+  stroke: new Stroke({ color: [0, 0, 0], width: 2 }),
+  offsetY: 40,
+  scale: 2
+});
+const PIN_TEXT_STYLE = TREASURE_TEXT_STYLE.clone();
+PIN_TEXT_STYLE.setOffsetY(16);
+
+interface TreasureMarker extends Omit<Marker, 'drops'> {
+  type: MarkerType.Treasure;
+  infoType: InfoType.Treasure;
+  weight: number;
+  carryMax: number;
+  value: number;
+  amount?: number;
+  name: string;
+  treasureId: string;
+}
+
+const isTreasure = (marker: Marker): marker is TreasureMarker => {
+  return marker.infoType === InfoType.Treasure;
+}
+
 const getFeatures = (markerType: MarkerType, markers: Marker[]): Feature[] => {
   const globalMarkerStyle = MarkerStyles[markerType];
   return markers.map(marker => {
@@ -66,13 +90,26 @@ const getFeatures = (markerType: MarkerType, markers: Marker[]): Feature[] => {
       data: marker
     });
 
-    let markerStyle = globalMarkerStyle;
+    let markerStyle = globalMarkerStyle.clone();
     if (marker.transform.rotation !== undefined) {
-      markerStyle = markerStyle.clone();
       markerStyle.getImage().setRotateWithView(true);
       // I *think* rotations look off b/c the images might need to be flipped along y = x, but I'm not sure.
       //   except conveyors... those rotations look correct
       markerStyle.getImage().setRotation(-(marker.transform.rotation) * Math.PI / 180);
+    }
+
+    if (isTreasure(marker)) {
+      // include Gold Nugget amount as total weight
+      const totalWeight = marker.weight * (marker.amount || 1);
+      const totalValue = marker.value * (marker.amount || 1);
+      // total value can be 0 for OST ship parts
+      // TODO: remove value for challenge caves somehow
+      const label = totalValue ? `${totalWeight} / ${totalValue}` : totalWeight + "";
+
+      const textStyle = TREASURE_TEXT_STYLE.clone();
+      textStyle.setText(label);
+
+      markerStyle.setText(textStyle);
     }
 
     feature.setStyle(markerStyle);
@@ -133,13 +170,6 @@ export const getNewPin = ({ id, x, y }: { id: string, x: number, y: number }): P
   };
 }
 
-const DEFAULT_TEXT_STYLE = new Text({
-  fill: new Fill({ color: [255, 255, 255] }),
-  stroke: new Stroke({ color: [0, 0, 0], width: 2 }),
-  offsetY: 16,
-  scale: 2
-});
-
 export const getMapPins = (pins: Pin[]): VectorLayer<VectorSource<Point>> => {
   const features = pins.map(pin => {
     const feature = new Feature({
@@ -148,7 +178,7 @@ export const getMapPins = (pins: Pin[]): VectorLayer<VectorSource<Point>> => {
       data: pin
     });
 
-    const textStyle = DEFAULT_TEXT_STYLE.clone();
+    const textStyle = PIN_TEXT_STYLE.clone();
     textStyle.setText(pin.pinId);
 
     const pinStyle = new Style({
