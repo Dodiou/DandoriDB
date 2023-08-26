@@ -11,6 +11,12 @@ import { Categories, InfoType, Marker, MarkerType, Pin } from '../../api/types';
 
 import PinSVG from './map-pin.svg';
 
+// MAJOR TODO:
+// Set all creature/treasure icon URLs to their respective folders elegantly
+// Set all creature/treasure icon scales to 0.25 (besides treasure-kinkaistation.png) elegantly
+// Do whatever else is needed to implement this lmao
+//    i got the files and types set up, i'm not smart enough to figure out the rest
+
 const ROOT_ICON_URL = process.env.PUBLIC_URL + '/images/icons/radar';
 
 const URL_OVERRIDES: {[Type in MarkerType]?: string} = {
