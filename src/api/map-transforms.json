@@ -53,6 +53,15 @@
       "yMax": 6000
     }
   },
+  "Area500": {
+    "rotation": 0,
+    "extent": {
+      "xMin": -4000,
+      "xMax": 4000,
+      "yMin": -4000,
+      "yMax": 4000
+    }
+  },
   "Cave000_F00": {
     "rotation": 180,
     "extent": {
