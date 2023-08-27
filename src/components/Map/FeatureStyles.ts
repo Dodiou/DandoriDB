@@ -12,6 +12,8 @@ import { Categories, InfoType, Marker, MarkerType, Pin } from '../../api/types';
 import PinSVG from './map-pin.svg';
 
 const ROOT_ICON_URL = process.env.PUBLIC_URL + '/images/icons/radar';
+const ROOT_TREASURE_URL = process.env.PUBLIC_URL + '/images/treasures';
+const ROOT_CREATURE_URL = process.env.PUBLIC_URL + '/images/creatures';
 
 const URL_OVERRIDES: {[Type in MarkerType]?: string} = {
   [MarkerType.BreakableMound]: 'https://www.pikminwiki.com/images/9/95/Dirt_mound_icon.png',
@@ -77,9 +79,68 @@ interface TreasureMarker extends Omit<Marker, 'drops'> {
   treasureId: string;
 }
 
+interface CreatureMarker extends Marker {
+  type: MarkerType.Creature;
+  infoType: InfoType.Creature;
+  weight: number;
+  carryMax: number;
+  value: number;
+  health: number;
+  seeds: number;
+  spawnNum?: number;
+  name: string;
+  creatureId: string;
+}
+
 const isTreasure = (marker: Marker): marker is TreasureMarker => {
   return marker.infoType === InfoType.Treasure;
-}
+};
+
+const isCreature = (marker: Marker): marker is CreatureMarker => {
+  return marker.infoType === InfoType.Creature;
+};
+
+// TODO create a style cache for creatures and treasures?
+const getFeatureStyle = (marker: Marker, globalMarkerStyle: Style): Style => {
+  if (isCreature(marker)) {
+    return new Style({
+      image: new Icon({
+        src: `${ROOT_CREATURE_URL}/creature-${marker.creatureId.toLowerCase()}.png`,
+        scale: 0.35
+      }),
+    });
+  }
+  else if (isTreasure(marker)) {
+    // include Gold Nugget amount as total weight
+    const totalWeight = marker.weight * (marker.amount || 1);
+    const totalValue = marker.value * (marker.amount || 1);
+    // total value can be 0 for OST ship parts
+    // TODO: remove value for challenge caves somehow
+    const label = totalValue ? `${totalWeight} / ${totalValue}` : totalWeight + "";
+
+    const textStyle = TREASURE_TEXT_STYLE.clone();
+    textStyle.setText(label);
+
+    return new Style({
+      image: new Icon({
+        src: `${ROOT_TREASURE_URL}/treasure-${marker.treasureId.toLowerCase()}.png`,
+        scale: 0.35
+      }),
+      text: textStyle,
+    });
+  }
+
+  // must copy any icons that need to be rotated.
+  if (marker.transform.rotation !== undefined) {
+    const markerStyle = globalMarkerStyle.clone();
+    markerStyle.getImage().setRotateWithView(true);
+    // I *think* rotations look off b/c the images might need to be flipped along y = x, but I'm not sure.
+    //   except conveyors... those rotations look correct
+    markerStyle.getImage().setRotation(-(marker.transform.rotation) * Math.PI / 180);
+    return markerStyle;
+  }
+  return globalMarkerStyle;
+};
 
 const getFeatures = (markerType: MarkerType, markers: Marker[]): Feature[] => {
   const globalMarkerStyle = MarkerStyles[markerType];
@@ -90,29 +151,9 @@ const getFeatures = (markerType: MarkerType, markers: Marker[]): Feature[] => {
       data: marker
     });
 
-    let markerStyle = globalMarkerStyle.clone();
-    if (marker.transform.rotation !== undefined) {
-      markerStyle.getImage().setRotateWithView(true);
-      // I *think* rotations look off b/c the images might need to be flipped along y = x, but I'm not sure.
-      //   except conveyors... those rotations look correct
-      markerStyle.getImage().setRotation(-(marker.transform.rotation) * Math.PI / 180);
-    }
-
-    if (isTreasure(marker)) {
-      // include Gold Nugget amount as total weight
-      const totalWeight = marker.weight * (marker.amount || 1);
-      const totalValue = marker.value * (marker.amount || 1);
-      // total value can be 0 for OST ship parts
-      // TODO: remove value for challenge caves somehow
-      const label = totalValue ? `${totalWeight} / ${totalValue}` : totalWeight + "";
-
-      const textStyle = TREASURE_TEXT_STYLE.clone();
-      textStyle.setText(label);
-
-      markerStyle.setText(textStyle);
-    }
-
-    feature.setStyle(markerStyle);
+    feature.setStyle(
+      getFeatureStyle(marker, globalMarkerStyle)
+    );
     return feature;
   });
 }
