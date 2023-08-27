@@ -1,5 +1,283 @@
 import './MapSelect.css';
 
+const Caves = Object.fromEntries(
+  [
+    {
+      id: "Cave000",
+      label: "Burrow of Beginnings",
+      sublevels: 1
+    },
+    {
+      id: "Cave001",
+      label: "Last-Frost Cavern",
+      sublevels: 1
+    },
+    {
+      id: "Cave002",
+      label: "Crackling Cauldron",
+      sublevels: 2
+    },
+    {
+      id: "Cave003",
+      label: "Dandori Day Care",
+      sublevels: 1
+    },
+    {
+      id: "Cave004",
+      label: "Aquiferous Summit",
+      sublevels: 2
+    },
+    {
+      id: "Cave005",
+      label: "Industrial Maze",
+      sublevels: 2
+    },
+    {
+      id: "Cave006",
+      label: "Drafty Gallery",
+      sublevels: 4
+    },
+    {
+      id: "Cave007",
+      label: "Secluded Courtyard",
+      sublevels: 4
+    },
+    {
+      id: "Cave008",
+      label: "Hotshock Canyon",
+      sublevels: 1
+    },
+    {
+      id: "Cave009",
+      label: "Sightless Passage",
+      sublevels: 1
+    },
+    {
+      id: "Cave010",
+      label: "Kingdom of Beasts",
+      sublevels: 6
+    },
+    {
+      id: "Cave011",
+      label: "Seafloor Resort",
+      sublevels: 4
+    },
+    {
+      id: "Cave012",
+      label: "Subzero Sauna",
+      sublevels: 3
+    },
+    {
+      id: "Cave013",
+      label: "Below-Grade Discotheque",
+      sublevels: 5
+    },
+    {
+      id: "Cave014",
+      label: "Engulfed Castle",
+      sublevels: 5
+    },
+    {
+      id: "Cave015",
+      label: "Test Tubs",
+      sublevels: 1
+    },
+    {
+      id: "Cave016",
+      label: "Cavern for a King",
+      sublevels: 20
+    },
+    {
+      id: "Cave017",
+      label: "Toggle Training",
+      sublevels: 1
+    },
+    {
+      id: "Cave018",
+      label: "The Mud Pit",
+      sublevels: 3
+    },
+    {
+      id: "Cave019",
+      label: "Subterranean Swarm",
+      sublevels: 5
+    },
+    {
+      id: "Cave020",
+      label: "Cliff-Hanger's Hold",
+      sublevels: 1
+    },
+    {
+      id: "Cave021",
+      label: "Doppelgänger's Den",
+      sublevels: 4
+    },
+    {
+      id: "Cave022",
+      label: "Frozen Inferno",
+      sublevels: 4
+    },
+    {
+      id: "Cave023",
+      label: "Plunder Palace",
+      sublevels: 5
+    },
+    {
+      id: "Cave024",
+      label: "Ultimate Testing Range",
+      sublevels: 5
+    },
+    {
+      id: "Cave025",
+      label: "Dream Home",
+      sublevels: 1
+    },
+    {
+      id: "Cave026",
+      label: "Cradle of the Beast",
+      sublevels: 3
+    },
+    {
+      id: "Cave027",
+      label: "Aerial Incinerator",
+      sublevels: 1
+    },
+    {
+      id: "Cave028",
+      label: "Strategic Freezeway",
+      sublevels: 1
+    },
+    {
+      id: "Cave029",
+      label: "Rockaway Cellars",
+      sublevels: 1
+    },
+    {
+      id: "Cave030",
+      label: "Planning Pools",
+      sublevels: 1
+    },
+    {
+      id: "Cave031",
+      label: "Hefty Haulway",
+      sublevels: 1
+    },
+    {
+      id: "Cave032",
+      label: "Oasis of Order",
+      sublevels: 1
+    },
+    {
+      id: "Cave033",
+      label: "Hectic Hollows",
+      sublevels: 2
+    },
+    {
+      id: "Cave034",
+      label: "Ice-Cross Course",
+      sublevels: 1
+    },
+    {
+      id: "Cave035",
+      label: "Trial of the Sage Leaf",
+      sublevels: 10
+    }
+  ].map(m => [m.id, m])
+);
+
+const Areas = [
+  {
+    label: "Rescue Command Post",
+    id: "Area500",
+    caves: [
+      Caves['Cave000'],
+      Caves['Cave035']
+    ]
+  },
+  {
+    label: "Sun-Speckled Terrace",
+    id: "Area001",
+    caves: [
+      Caves['Cave001'],
+      Caves['Cave002'],
+      Caves['Cave004'],
+      Caves['Cave005'],
+      Caves['Cave033'],
+    ],
+    timeOptions: ['day', 'night', 'olimar']
+  },
+  {
+    label: "Blossoming Arcadia",
+    id: "Area002",
+    caves: [
+      Caves['Cave006'],
+      Caves['Cave007'],
+      Caves['Cave009'],
+      Caves['Cave010'],
+    ],
+    timeOptions: ['day', 'night', 'olimar']
+  },
+  {
+    label: "Serene Shores",
+    id: "Area003",
+    caves: [
+      Caves['Cave011'],
+      Caves['Cave012'],
+      Caves['Cave013'],
+      Caves['Cave014'],
+    ],
+    timeOptions: ['day', 'afternoon', 'night', 'olimar']
+  },
+  {
+    label: "Hero's Hideaway",
+    id: "Area010",
+    caves: [
+      Caves['Cave021'],
+      Caves['Cave022'],
+      Caves['Cave023'],
+    ],
+    timeOptions: ['day', 'night', 'olimar']
+  },
+  {
+    label: "Giant's Hearth",
+    id: "Area004",
+    caves: [
+      Caves['Cave024'],
+      Caves['Cave025'],
+      Caves['Cave026'],
+    ],
+    timeOptions: ['day', 'night']
+  },
+  {
+    label: "Primordial Thicket",
+    id: "Area006",
+    caves: [
+      Caves['Cave016'],
+      Caves['Cave018'],
+      Caves['Cave019'],
+    ],
+    timeOptions: ['day', 'night']
+  },
+  {
+    label: "Dandori Trials",
+    id: "Challenge",
+    caves: [
+      Caves['Cave003'],
+      Caves['Cave008'],
+      Caves['Cave015'],
+      Caves['Cave017'],
+      Caves['Cave020'],
+      Caves['Cave027'],
+      Caves['Cave028'],
+      Caves['Cave029'],
+      Caves['Cave030'],
+      Caves['Cave031'],
+      Caves['Cave032'],
+      Caves['Cave034'],
+    ]
+  },
+]
+
 const MAPS = [
   "Cave000_F00",
   "Cave001_F00",
@@ -176,6 +454,8 @@ const IdToNameMap: {[key: string]: string} = {
   "HeroStory003": "Serene Shores (OST)",
   "HeroStory010": "Hero's Hideaway (OST)",
 }
+
+
 
 export interface MapSelectProps {
   onSelect?: (mapId: string) => void;

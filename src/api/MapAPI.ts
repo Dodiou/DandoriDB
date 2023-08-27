@@ -1,18 +1,11 @@
-import { default as MapExtentOverrides } from './extent-overrides.json';
 import { default as MapTransforms } from './map-transforms.json';
 import { MapFeatureLayers, getFeatureLayers } from '../components/Map/FeatureStyles';
 import { Waterbox } from './getImageLayers';
 import { Marker, MarkerType } from './types';
 
-type MapExtent = {
-  xMin: number;
-  xMax: number;
-  yMin: number;
-  yMax: number;
-};
 interface MapTransform {
   rotation: number;
-  extent: MapExtent;
+  extentRadius: number;
 }
 export interface MapData extends MapTransform {
   mapId: string;
@@ -147,16 +140,12 @@ export enum ObjectType {
 /*
 TODO:
 extents to check:
-  023_F00
-  023_F03
   030_F00
-  035_F04
 */
 
 
 export const getMapData = async (mapId: string): Promise<MapData> => {
   const mapTransform: MapTransform = MapTransforms[mapId as keyof typeof MapTransforms];
-  const extentOverride: MapExtent | undefined = MapExtentOverrides[mapId as keyof typeof MapExtentOverrides];
 
   // TODO need to reorganize all this stuff
   const { water = [] } =  await _getMarkerData(mapId);
@@ -165,7 +154,7 @@ export const getMapData = async (mapId: string): Promise<MapData> => {
     mapId,
     imageUrl: `${process.env.PUBLIC_URL}/images/maps/${mapId}/T_ui_Map_${mapId}_D.png`,
     rotation: mapTransform.rotation,
-    extent: extentOverride || mapTransform.extent,
+    extentRadius: mapTransform.extentRadius,
     waterboxes: water as any[],
   }
 }

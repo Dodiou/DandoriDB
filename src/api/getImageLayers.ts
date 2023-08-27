@@ -76,10 +76,10 @@ export const getImageLayersForMap = (mapData: MapData, waterboxes: Waterbox[]) =
 };
 
 const buildMapProjection = (mapData: MapData): Projection => {
-  const mapProjection = new Projection({
+    const mapProjection = new Projection({
     code: mapData.mapId,
     units: 'pixels',
-    extent: [mapData.extent.xMin, mapData.extent.yMin, mapData.extent.xMax, mapData.extent.yMax]
+    extent: [-mapData.extentRadius, -mapData.extentRadius, mapData.extentRadius, mapData.extentRadius]
   });
   addProjection(mapProjection);
   return mapProjection;
@@ -216,7 +216,7 @@ const WaterBoxRadii = {
   // Strategic Freezeway (no waterboxes)
   // Rockaway Cellars (no waterboxes)
   // Planning Pools
-  'T_ui_Map_Cave030_F00_WaterBox00_D.png': 2125,
+  'T_ui_Map_Cave030_F00_WaterBox00_D.png': 2200,
   // Hefty Haulway
   'T_ui_Map_Cave031_F00_WaterBox00_D.png': 525,
   'T_ui_Map_Cave031_F00_WaterBox01_D.png': 550,
