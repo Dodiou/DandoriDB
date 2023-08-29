@@ -17,6 +17,7 @@
     {
       "type": "gate-numbered",
       "infoType": "gate",
+      "width": 145,
       "transform": {
         "translation": {
           "x": 650,
@@ -31,6 +32,7 @@
     {
       "type": "gate-dirt",
       "infoType": "gate",
+      "width": 145,
       "health": 8000,
       "transform": {
         "translation": {
@@ -44,6 +46,7 @@
     {
       "type": "gate-dirt",
       "infoType": "gate",
+      "width": 145,
       "health": 8000,
       "transform": {
         "translation": {
@@ -111,9 +114,9 @@
       }
     }
   ],
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {
@@ -172,12 +175,6 @@
           "chance": 1,
           "min": 1,
           "max": 1
-        },
-        {
-          "item": "GHoney_C",
-          "chance": 1,
-          "min": 5,
-          "max": 5
         }
       ],
       "transform": {

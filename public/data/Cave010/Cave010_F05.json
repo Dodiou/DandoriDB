@@ -18,6 +18,7 @@
     {
       "type": "gate-numbered",
       "infoType": "gate",
+      "width": 170,
       "transform": {
         "translation": {
           "x": -71,
@@ -121,9 +122,9 @@
       }
     }
   ],
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {
@@ -150,12 +151,6 @@
           "chance": 1,
           "min": 1,
           "max": 1
-        },
-        {
-          "item": "GPiecePick_C",
-          "chance": 1,
-          "min": 15,
-          "max": 15
         }
       ],
       "transform": {

@@ -116,6 +116,7 @@
     {
       "type": "gate-electric",
       "infoType": "gate",
+      "width": 180,
       "health": 8000,
       "drops": [
         {
@@ -139,6 +140,7 @@
     {
       "type": "gate-dirt",
       "infoType": "gate",
+      "width": 170,
       "health": 8000,
       "drops": [
         {
@@ -566,9 +568,9 @@
       }
     }
   ],
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {
@@ -580,7 +582,7 @@
       }
     },
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 1,
       "transform": {
@@ -592,7 +594,7 @@
       }
     },
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 2,
       "guardedBy": [
@@ -607,7 +609,7 @@
       }
     },
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 3,
       "guardedBy": [
@@ -648,7 +650,7 @@
     {
       "type": "hazardradial-floorfire",
       "infoType": "hazard",
-      "radius": 350,
+      "radius": 175,
       "transform": {
         "translation": {
           "x": -1250.1802,
@@ -660,7 +662,7 @@
     {
       "type": "hazardradial-floorfire",
       "infoType": "hazard",
-      "radius": 350,
+      "radius": 175,
       "transform": {
         "translation": {
           "x": -969.55396,

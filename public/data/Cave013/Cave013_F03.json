@@ -18,7 +18,7 @@
       "type": "hazardradial-sprinkler",
       "infoType": "hazard",
       "valveId": "valve1",
-      "radius": 300,
+      "radius": -1,
       "transform": {
         "translation": {
           "x": 550,
@@ -130,6 +130,7 @@
     {
       "type": "gate-dirt",
       "infoType": "gate",
+      "width": 145,
       "health": 8000,
       "drops": [
         {
@@ -167,7 +168,7 @@
     {
       "type": "hazardradial-floorfire",
       "infoType": "hazard",
-      "radius": 525,
+      "radius": 262.5,
       "transform": {
         "translation": {
           "x": 550,
@@ -179,7 +180,7 @@
     {
       "type": "hazardradial-floorfire",
       "infoType": "hazard",
-      "radius": 350,
+      "radius": 175,
       "transform": {
         "translation": {
           "x": 583.76355,
@@ -289,9 +290,9 @@
       }
     }
   ],
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {

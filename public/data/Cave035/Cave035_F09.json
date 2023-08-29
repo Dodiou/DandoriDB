@@ -1,7 +1,7 @@
 {
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {
@@ -226,6 +226,7 @@
     {
       "type": "gate-numbered",
       "infoType": "gate",
+      "width": 145,
       "transform": {
         "translation": {
           "x": 105,
@@ -280,6 +281,7 @@
     {
       "type": "gate-crystal",
       "infoType": "gate",
+      "width": 175,
       "health": 747,
       "transform": {
         "translation": {
@@ -295,6 +297,7 @@
     {
       "type": "gate-dirt",
       "infoType": "gate",
+      "width": 145,
       "health": 5333,
       "transform": {
         "translation": {
@@ -310,6 +313,7 @@
     {
       "type": "gate-ice",
       "infoType": "gate",
+      "width": 180,
       "health": 2667,
       "transform": {
         "translation": {
@@ -326,7 +330,7 @@
       "type": "hazardradial-floormushroom",
       "infoType": "hazard",
       "isPoison": false,
-      "radius": 175,
+      "radius": 87.5,
       "drops": [
         {
           "item": "GHoney_C",

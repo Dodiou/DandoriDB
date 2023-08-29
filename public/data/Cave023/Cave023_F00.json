@@ -31,6 +31,7 @@
     {
       "type": "gate-dirt",
       "infoType": "gate",
+      "width": 245,
       "health": 5333,
       "transform": {
         "translation": {
@@ -140,9 +141,9 @@
       }
     }
   ],
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {

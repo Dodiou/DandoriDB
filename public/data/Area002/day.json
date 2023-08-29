@@ -189,6 +189,7 @@
     {
       "type": "gate-electric",
       "infoType": "gate",
+      "width": 200,
       "health": 8000,
       "drops": [
         {
@@ -210,6 +211,7 @@
     {
       "type": "gate-electric",
       "infoType": "gate",
+      "width": 230,
       "health": 8000,
       "drops": [
         {
@@ -262,6 +264,7 @@
     {
       "type": "gate-dirt",
       "infoType": "gate",
+      "width": 195,
       "health": 8000,
       "drops": [
         {
@@ -566,6 +569,7 @@
     {
       "type": "gate-bomb",
       "infoType": "gate",
+      "width": 400,
       "health": 30000,
       "drops": [
         {
@@ -589,6 +593,7 @@
     {
       "type": "gate-ice",
       "infoType": "gate",
+      "width": 330,
       "health": 4000,
       "drops": [
         {
@@ -610,6 +615,7 @@
     {
       "type": "gate-ice",
       "infoType": "gate",
+      "width": 217.5,
       "health": 4000,
       "drops": [
         {
@@ -669,9 +675,9 @@
       }
     }
   ],
-  "base-beagle": [
+  "base-onion": [
     {
-      "type": "base-beagle",
+      "type": "base-onion",
       "infoType": "base",
       "baseId": 2,
       "transform": {
@@ -683,7 +689,7 @@
       }
     },
     {
-      "type": "base-beagle",
+      "type": "base-onion",
       "infoType": "base",
       "baseId": 1,
       "guardedBy": [
@@ -698,7 +704,7 @@
       }
     },
     {
-      "type": "base-beagle",
+      "type": "base-onion",
       "infoType": "base",
       "baseId": 0,
       "transform": {
@@ -710,9 +716,9 @@
       }
     }
   ],
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 2,
       "transform": {
@@ -724,7 +730,7 @@
       }
     },
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 1,
       "transform": {
@@ -736,7 +742,7 @@
       }
     },
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {

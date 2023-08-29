@@ -676,6 +676,7 @@
     {
       "type": "gate-electric",
       "infoType": "gate",
+      "width": 230,
       "health": 5333,
       "transform": {
         "translation": {
@@ -850,9 +851,9 @@
       }
     }
   ],
-  "base-beagle": [
+  "base-onion": [
     {
-      "type": "base-beagle",
+      "type": "base-onion",
       "infoType": "base",
       "baseId": 1,
       "transform": {
@@ -864,7 +865,7 @@
       }
     },
     {
-      "type": "base-beagle",
+      "type": "base-onion",
       "infoType": "base",
       "baseId": 0,
       "transform": {
@@ -876,7 +877,7 @@
       }
     },
     {
-      "type": "base-beagle",
+      "type": "base-onion",
       "infoType": "base",
       "baseId": 2,
       "guardedBy": [
@@ -891,9 +892,9 @@
       }
     }
   ],
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 1,
       "transform": {
@@ -905,7 +906,7 @@
       }
     },
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {
@@ -917,7 +918,7 @@
       }
     },
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 2,
       "transform": {
@@ -946,6 +947,7 @@
     {
       "type": "gate-dirt",
       "infoType": "gate",
+      "width": 270,
       "health": 8000,
       "transform": {
         "translation": {

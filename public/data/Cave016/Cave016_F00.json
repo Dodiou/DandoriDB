@@ -3,6 +3,7 @@
     {
       "type": "gate-numbered",
       "infoType": "gate",
+      "width": 170,
       "transform": {
         "translation": {
           "x": -70,
@@ -60,7 +61,7 @@
       "type": "hazardradial-floormushroom",
       "infoType": "hazard",
       "isPoison": false,
-      "radius": 175,
+      "radius": 87.5,
       "transform": {
         "translation": {
           "x": -618.4275,
@@ -116,9 +117,9 @@
       }
     }
   ],
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {

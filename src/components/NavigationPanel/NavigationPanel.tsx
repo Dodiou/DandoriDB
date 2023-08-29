@@ -1,4 +1,5 @@
 import { Pin } from "../../api/types";
+// import { HackingTools } from "../HackingTools/HackingTools";
 import { CSSIcon } from "../Icon/Icon";
 import { Legend, LegendProps } from "../Legend/Legend";
 import { MapSelect, MapSelectProps } from "../MapSelect/MapSelect";
@@ -69,6 +70,9 @@ export const NavigationPanel = ({
       <Tab id="pins" label="Pins">
         <PinsList pins={pins} onDeletePin={onDeletePin} />
       </Tab>
+      {/* <Tab id="tools" label="Tools">
+        <HackingTools />
+      </Tab> */}
     </Tabs>
   </div>;
 };

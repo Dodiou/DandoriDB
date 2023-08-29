@@ -218,7 +218,7 @@
     {
       "type": "hazardradial-floorfire",
       "infoType": "hazard",
-      "radius": 175,
+      "radius": 87.5,
       "transform": {
         "translation": {
           "x": -826,
@@ -256,6 +256,7 @@
     {
       "type": "gate-crystal",
       "infoType": "gate",
+      "width": 200,
       "health": 1120,
       "drops": [
         {
@@ -275,9 +276,9 @@
       }
     }
   ],
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {

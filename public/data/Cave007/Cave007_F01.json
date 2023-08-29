@@ -44,6 +44,7 @@
     {
       "type": "gate-dirt",
       "infoType": "gate",
+      "width": 145,
       "health": 5333,
       "drops": [
         {
@@ -201,9 +202,9 @@
       }
     }
   ],
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {

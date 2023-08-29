@@ -209,6 +209,7 @@
     {
       "type": "gate-ice",
       "infoType": "gate",
+      "width": 180,
       "health": 1333,
       "transform": {
         "translation": {
@@ -222,6 +223,7 @@
     {
       "type": "gate-ice",
       "infoType": "gate",
+      "width": 180,
       "health": 1333,
       "transform": {
         "translation": {
@@ -377,9 +379,9 @@
       }
     }
   ],
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {
