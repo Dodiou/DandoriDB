@@ -2,7 +2,7 @@ import { Pin } from "../../api/types";
 // import { HackingTools } from "../HackingTools/HackingTools";
 import { CSSIcon } from "../Icon/Icon";
 import { Legend, LegendProps } from "../Legend/Legend";
-import { MapSelect, MapSelectProps } from "../MapSelect/MapSelect";
+import { MapSelect, MapSelectProps } from "../MapSelect/MapsList";
 import { PinsList, PinsListProps } from "../PinsList/PinsList";
 import { SegmentedButton, SegmentedButtonOption, SegmentedButtonProps } from "../SegmentedButton/SegmentedButton";
 import { Tab, Tabs } from "../Tabs/Tabs";

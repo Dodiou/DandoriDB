@@ -134,8 +134,6 @@ const getFeatureStyle = (marker: Marker, globalMarkerStyle: Style): Style => {
   if (marker.transform.rotation !== undefined) {
     const markerStyle = globalMarkerStyle.clone();
     markerStyle.getImage().setRotateWithView(true);
-    // I *think* rotations look off b/c the images might need to be flipped along y = x, but I'm not sure.
-    //   except conveyors... those rotations look correct
     markerStyle.getImage().setRotation(-(marker.transform.rotation) * Math.PI / 180);
     return markerStyle;
   }

@@ -4,6 +4,36 @@ import { ValidatorFn, useValidation } from "../../hooks/useValidation";
 
 const getByteAsHex = (byte: number) => ('00' + byte.toString(16)).slice(-2);
 
+interface StringMatch {
+  index: number;
+  value: string;
+}
+
+const scanForStrings = (byteArray: number[]) => {
+  const strings: StringMatch[] = [];
+  // minus 6, since the shortest (non-empty) string length is '2, 0, 0, 0, x, 0'
+  for (let i = 0; i < byteArray.length - 6; i++) {
+    const strStart = i + 4;
+    const cstrLength = byteArrToInt(byteArray.slice(i, i + 4).reverse());
+    if (cstrLength !== 0 && cstrLength > byteArray.length - strStart) {
+      continue;
+    }
+
+    const nextNullTerminator = byteArray.indexOf(0, strStart);
+    // remove null from cstr
+    if (nextNullTerminator - strStart !== cstrLength - 1) {
+      continue;
+    }
+
+    strings.push({
+      index: i,
+      // add 4 to get the length + 4 length bytes
+      value: byteArrToStr(byteArray.slice(i, i + cstrLength + 4))
+    })
+  }
+  return strings;
+}
+
 const padArray = (arr: number[], len = 4, fill = 0) => {
   return arr.slice().concat(
     Array(len).fill(fill)
@@ -46,6 +76,15 @@ const byteArrToInt = (nums: number[]) => {
   return byteArrToDataView(nums).getInt32(0);
 }
 
+const byteArrToStr = (nums: number[]) => {
+  const cstrLength = byteArrToInt(nums.slice(0, 4).reverse());
+  // length - 4 to remove the cstrLength bytes
+  return cstrLength === nums.length - 4
+  // -1 to remove null terminator
+    ? nums.slice(4, -1).map(n => String.fromCharCode(n)).join('')
+    : '';
+}
+
 const byteStringPatternValidator: ValidatorFn<string> = (value) => {
   if (!value) {
     return undefined;
@@ -80,12 +119,12 @@ export const HackingTools = () => {
   const { isValid: byteStringIsValid } = useValidation({ value: byteString, validators: [byteStringPatternValidator] });
   const { isValid: floatIsValid } = useValidation({ value: floatString, validators: [floatStringPatternValidator] });
 
-  const { bytesAsFloat, bytesAsInt, bytesAsString } = useMemo(() => {
+  const { bytesAsFloat, bytesAsInt, stringsInBytes } = useMemo(() => {
     if (!byteStringIsValid) {
       return {
         bytesAsFloat: '',
         bytesAsInt: '',
-        bytesAsString: ''
+        stringsInBytes: []
       };
     }
 
@@ -95,14 +134,10 @@ export const HackingTools = () => {
     const byteArr = padArray(rawBytes).reverse();
     const bytesAsInt = byteArrToInt(byteArr);
 
-    const bytesAsString = bytesAsInt === rawBytes.length - 4
-      ? rawBytes.slice(4, -1).map(n => String.fromCharCode(n)).join('')
-      : '';
-
     return {
       bytesAsFloat: byteArrToFloat(byteArr),
       bytesAsInt,
-      bytesAsString
+      stringsInBytes: scanForStrings(rawBytes)
     }
   }, [byteString, byteStringIsValid]);
 
@@ -146,7 +181,14 @@ export const HackingTools = () => {
     />
     <div>Int: { bytesAsInt }</div>
     <div>Float: { bytesAsFloat }</div>
-    <div>String: { bytesAsString }</div>
+    <div>
+      Strings:
+      {
+        stringsInBytes.map(s => {
+          return <div>{ s.value }</div>
+        })
+      }
+    </div>
 
     <br />
     <textarea value={stringString} onChange={(evt) => setStringString(evt.target.value)} />
