@@ -52,6 +52,7 @@
     {
       "type": "gate-dirt",
       "infoType": "gate",
+      "width": 220,
       "health": 5333,
       "drops": [
         {
@@ -73,6 +74,7 @@
     {
       "type": "gate-dirt",
       "infoType": "gate",
+      "width": 170,
       "health": 5333,
       "drops": [
         {
@@ -124,7 +126,7 @@
     {
       "type": "hazardradial-floorfire",
       "infoType": "hazard",
-      "radius": 175,
+      "radius": 87.5,
       "transform": {
         "translation": {
           "x": -823.7805,
@@ -136,7 +138,7 @@
     {
       "type": "hazardradial-floorfire",
       "infoType": "hazard",
-      "radius": 175,
+      "radius": 87.5,
       "transform": {
         "translation": {
           "x": 503.62012,
@@ -148,7 +150,7 @@
     {
       "type": "hazardradial-floorfire",
       "infoType": "hazard",
-      "radius": 350,
+      "radius": 175,
       "transform": {
         "translation": {
           "x": 129,
@@ -247,9 +249,9 @@
       }
     }
   ],
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {

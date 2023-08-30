@@ -17,6 +17,7 @@
     {
       "type": "gate-numbered",
       "infoType": "gate",
+      "width": 145,
       "transform": {
         "translation": {
           "x": 546,
@@ -191,9 +192,9 @@
       }
     }
   ],
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {

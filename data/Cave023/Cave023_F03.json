@@ -244,9 +244,9 @@
       }
     }
   ],
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {
@@ -262,6 +262,7 @@
     {
       "type": "gate-crystal",
       "infoType": "gate",
+      "width": 275,
       "health": 1120,
       "drops": [
         {

@@ -333,6 +333,7 @@
       "type": "gate-numbered",
       "infoType": "gate",
       "switchId": "switch01",
+      "width": 145,
       "transform": {
         "translation": {
           "x": -745,
@@ -377,9 +378,9 @@
       }
     }
   ],
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {
@@ -391,7 +392,7 @@
       }
     },
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 1,
       "transform": {

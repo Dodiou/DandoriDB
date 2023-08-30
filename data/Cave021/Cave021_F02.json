@@ -361,7 +361,7 @@
       "type": "hazardradial-floormushroom",
       "infoType": "hazard",
       "isPoison": true,
-      "radius": 100,
+      "radius": -1,
       "transform": {
         "translation": {
           "x": -1138.499,
@@ -374,7 +374,7 @@
       "type": "hazardradial-floormushroom",
       "infoType": "hazard",
       "isPoison": false,
-      "radius": 175,
+      "radius": 87.5,
       "transform": {
         "translation": {
           "x": -972.5293,
@@ -387,7 +387,7 @@
       "type": "hazardradial-floormushroom",
       "infoType": "hazard",
       "isPoison": false,
-      "radius": 175,
+      "radius": 87.5,
       "drops": [
         {
           "item": "GPiecePick_C",
@@ -408,7 +408,7 @@
       "type": "hazardradial-floormushroom",
       "infoType": "hazard",
       "isPoison": false,
-      "radius": 175,
+      "radius": 87.5,
       "transform": {
         "translation": {
           "x": 420,
@@ -668,9 +668,9 @@
       }
     }
   ],
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {
@@ -682,7 +682,7 @@
       }
     },
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 1,
       "guardedBy": [
@@ -822,6 +822,14 @@
       "type": "misc-groupdropmanager",
       "infoType": "misc",
       "radius": 140,
+      "drops": [
+        {
+          "item": "GPiecePick_C",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
       "transform": {
         "translation": {
           "x": -1511.9696,

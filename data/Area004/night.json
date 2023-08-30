@@ -86,6 +86,7 @@
     {
       "type": "gate-bomb",
       "infoType": "gate",
+      "width": 225,
       "health": 30000,
       "drops": [
         {
@@ -1244,9 +1245,9 @@
       }
     }
   ],
-  "base-beagle": [
+  "base-onion": [
     {
-      "type": "base-beagle",
+      "type": "base-onion",
       "infoType": "base",
       "baseId": 0,
       "transform": {
@@ -1258,7 +1259,7 @@
       }
     },
     {
-      "type": "base-beagle",
+      "type": "base-onion",
       "infoType": "base",
       "baseId": 1,
       "guardedBy": [
@@ -1273,7 +1274,7 @@
       }
     },
     {
-      "type": "base-beagle",
+      "type": "base-onion",
       "infoType": "base",
       "baseId": 2,
       "guardedBy": [
@@ -1288,9 +1289,9 @@
       }
     }
   ],
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {
@@ -1302,7 +1303,7 @@
       }
     },
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 1,
       "transform": {
@@ -1314,7 +1315,7 @@
       }
     },
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 2,
       "transform": {
@@ -1345,7 +1346,7 @@
       "type": "hazardradial-sprinkler",
       "infoType": "hazard",
       "valveId": "valve3",
-      "radius": 300,
+      "radius": -1,
       "transform": {
         "translation": {
           "x": -118,
@@ -1358,7 +1359,7 @@
       "type": "hazardradial-sprinkler",
       "infoType": "hazard",
       "valveId": "valve3",
-      "radius": 300,
+      "radius": -1,
       "transform": {
         "translation": {
           "x": -838,
@@ -1371,7 +1372,7 @@
       "type": "hazardradial-sprinkler",
       "infoType": "hazard",
       "valveId": "valve4",
-      "radius": 300,
+      "radius": -1,
       "transform": {
         "translation": {
           "x": -76,
@@ -1413,6 +1414,7 @@
     {
       "type": "gate-crystal",
       "infoType": "gate",
+      "width": 325,
       "health": 1120,
       "drops": [
         {

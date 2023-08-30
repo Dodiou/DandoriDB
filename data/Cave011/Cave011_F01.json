@@ -211,6 +211,7 @@
     {
       "type": "gate-ice",
       "infoType": "gate",
+      "width": 180,
       "health": 4000,
       "drops": [
         {
@@ -314,9 +315,9 @@
       }
     }
   ],
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {

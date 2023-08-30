@@ -220,6 +220,7 @@
     {
       "type": "gate-dirt",
       "infoType": "gate",
+      "width": 225,
       "health": 8000,
       "drops": [
         {
@@ -241,6 +242,7 @@
     {
       "type": "gate-dirt",
       "infoType": "gate",
+      "width": 220,
       "health": 8000,
       "drops": [
         {
@@ -262,6 +264,7 @@
     {
       "type": "gate-dirt",
       "infoType": "gate",
+      "width": 220,
       "health": 5333,
       "drops": [
         {
@@ -283,6 +286,7 @@
     {
       "type": "gate-dirt",
       "infoType": "gate",
+      "width": 220,
       "health": 8000,
       "drops": [
         {
@@ -623,9 +627,9 @@
       }
     }
   ],
-  "base-beagle": [
+  "base-onion": [
     {
-      "type": "base-beagle",
+      "type": "base-onion",
       "infoType": "base",
       "baseId": 0,
       "transform": {
@@ -637,7 +641,7 @@
       }
     },
     {
-      "type": "base-beagle",
+      "type": "base-onion",
       "infoType": "base",
       "baseId": 2,
       "guardedBy": [
@@ -652,7 +656,7 @@
       }
     },
     {
-      "type": "base-beagle",
+      "type": "base-onion",
       "infoType": "base",
       "baseId": 1,
       "guardedBy": [
@@ -667,9 +671,9 @@
       }
     }
   ],
-  "base-onion": [
+  "base-beagle": [
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 0,
       "transform": {
@@ -681,7 +685,7 @@
       }
     },
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 2,
       "transform": {
@@ -693,7 +697,7 @@
       }
     },
     {
-      "type": "base-onion",
+      "type": "base-beagle",
       "infoType": "base",
       "baseId": 1,
       "transform": {
