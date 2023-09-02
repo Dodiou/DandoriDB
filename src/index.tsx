@@ -3,9 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import './styles/variables.css';
 import './styles/icons.css';
+
+import { shared as IconImageCache } from 'ol/style/IconImageCache';
 import 'ol/ol.css';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+IconImageCache.setSize(500);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

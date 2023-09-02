@@ -108,12 +108,18 @@ const getFeatureStyle = (marker: Marker, globalMarkerStyle: Style): Style => {
     markerStyle.getImage().setRotation(-(marker.transform.rotation) * Math.PI / 180);
   }
 
-  const treasureDrop = marker.drops?.find(drop => isTreasure(drop)) as any;
-  if (treasureDrop as Omit<TreasureMarker, 'transform'>) {
-    // include Gold Nugget amount as total weight
-    const totalWeight = treasureDrop.weight * (treasureDrop.amount || 1);
-    const totalValue = treasureDrop.value * (treasureDrop.amount || 1);
-    // total value can be 0 for OST ship parts
+  const [totalWeight, totalValue] = (marker.drops || [])
+    .reduce((sums, drop) => {
+      if (!isTreasure(drop)) {
+        return sums;
+      }
+
+      return [
+        sums[0] + drop.weight * (drop.amount || 1),
+        sums[1] + drop.value * (drop.amount || 1)
+      ]
+    }, [0, 0]);
+  if (totalWeight || totalValue > 0) {
     // TODO: remove value for challenge caves somehow
     const label = totalValue ? `${totalWeight} / ${totalValue}` : totalWeight + "";
 
