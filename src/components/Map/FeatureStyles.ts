@@ -97,7 +97,7 @@ const getFeatureStyle = (marker: Marker, globalMarkerStyle: Style): Style => {
     });
   }
 
-  if (!marker.transform.rotation && !marker.drops) {
+  if (marker.transform.rotation === undefined && !marker.drops) {
     return globalMarkerStyle;
   }
 
