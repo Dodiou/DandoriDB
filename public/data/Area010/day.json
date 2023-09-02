@@ -655,7 +655,8 @@
       "infoType": "breakable",
       "drops": [
         {
-          "item": "GPiecePick_C",
+          "type": "pile-materials",
+          "infoType": "pile",
           "chance": 1,
           "min": 10,
           "max": 10
@@ -751,7 +752,13 @@
       "infoType": "breakable",
       "drops": [
         {
-          "item": "GOtaRoboHandR_C",
+          "type": "treasure",
+          "infoType": "treasure",
+          "treasureId": "OTAROBOHANDR",
+          "name": "Fist-Force Combobot",
+          "weight": 5,
+          "carryMax": 10,
+          "value": 80,
           "chance": 1,
           "min": 1,
           "max": 1
@@ -770,7 +777,14 @@
       "infoType": "breakable",
       "drops": [
         {
-          "item": "GNiseZako_C",
+          "type": "creature",
+          "infoType": "creature",
+          "creatureId": "NISEZAKO",
+          "name": "Gildemandwee",
+          "carryMax": 10,
+          "value": 5,
+          "health": 500,
+          "seeds": 6,
           "chance": 1,
           "min": 1,
           "max": 1
@@ -789,7 +803,14 @@
       "infoType": "breakable",
       "drops": [
         {
-          "item": "GNiseZako_C",
+          "type": "creature",
+          "infoType": "creature",
+          "creatureId": "NISEZAKO",
+          "name": "Gildemandwee",
+          "carryMax": 10,
+          "value": 5,
+          "health": 500,
+          "seeds": 6,
           "chance": 1,
           "min": 1,
           "max": 1
@@ -808,7 +829,13 @@
       "infoType": "breakable",
       "drops": [
         {
-          "item": "GOtaApricot_C",
+          "type": "treasure",
+          "infoType": "treasure",
+          "treasureId": "OTAAPRICOT",
+          "name": "Searing Acidshock",
+          "weight": 3,
+          "carryMax": 6,
+          "value": 50,
           "chance": 1,
           "min": 1,
           "max": 1
@@ -1281,12 +1308,17 @@
       }
     }
   ],
-  "misc-pellet": [
+  "creature": [
     {
-      "type": "misc-pellet",
-      "infoType": "misc",
-      "color": "yellow",
+      "type": "creature",
+      "infoType": "creature",
+      "creatureId": "PELLET5",
+      "name": "Pellet (5)",
+      "carryMax": 10,
+      "value": 4,
+      "health": 0,
       "seeds": 5,
+      "color": "yellow",
       "transform": {
         "translation": {
           "x": 1824,
@@ -1296,10 +1328,15 @@
       }
     },
     {
-      "type": "misc-pellet",
-      "infoType": "misc",
+      "type": "creature",
+      "infoType": "creature",
+      "creatureId": "PELLET1",
+      "name": "Pellet (1)",
+      "carryMax": 2,
+      "value": 2,
+      "health": 0,
+      "seeds": 2,
       "color": "red",
-      "seeds": 1,
       "transform": {
         "translation": {
           "x": 1869,
@@ -1307,537 +1344,7 @@
           "z": 708
         }
       }
-    }
-  ],
-  "castaway-leafling": [
-    {
-      "type": "castaway-leafling",
-      "infoType": "castaway",
-      "isLeafling": true,
-      "isKoppaite": false,
-      "weight": 3,
-      "carryMax": 6,
-      "transform": {
-        "translation": {
-          "x": 3132,
-          "y": 506,
-          "z": 422.3601
-        }
-      }
     },
-    {
-      "type": "castaway-leafling",
-      "infoType": "castaway",
-      "isLeafling": true,
-      "isKoppaite": false,
-      "weight": 3,
-      "carryMax": 6,
-      "transform": {
-        "translation": {
-          "x": 917.8382,
-          "y": -3932.423,
-          "z": 615.58124
-        }
-      }
-    }
-  ],
-  "breakable-hydrojelly": [
-    {
-      "type": "breakable-hydrojelly",
-      "infoType": "breakable",
-      "transform": {
-        "translation": {
-          "x": 1509,
-          "y": -3451,
-          "z": 486.06088
-        }
-      }
-    }
-  ],
-  "breakable-crystal": [
-    {
-      "type": "breakable-crystal",
-      "infoType": "breakable",
-      "drops": [
-        {
-          "item": "GPiecePick_C",
-          "chance": 1,
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "transform": {
-        "translation": {
-          "x": 2779,
-          "y": 520,
-          "z": 16
-        }
-      }
-    },
-    {
-      "type": "breakable-crystal",
-      "infoType": "breakable",
-      "drops": [
-        {
-          "item": "GPiecePick_C",
-          "chance": 1,
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "transform": {
-        "translation": {
-          "x": 1899,
-          "y": 2762,
-          "z": 21.358337
-        }
-      }
-    },
-    {
-      "type": "breakable-crystal",
-      "infoType": "breakable",
-      "drops": [
-        {
-          "item": "GPiecePick_C",
-          "chance": 1,
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "transform": {
-        "translation": {
-          "x": 1774,
-          "y": 2920,
-          "z": 21.358337
-        }
-      }
-    },
-    {
-      "type": "breakable-crystal",
-      "infoType": "breakable",
-      "drops": [
-        {
-          "item": "GPiecePick_C",
-          "chance": 1,
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "transform": {
-        "translation": {
-          "x": 2032,
-          "y": 3000,
-          "z": 21.358337
-        }
-      }
-    },
-    {
-      "type": "breakable-crystal",
-      "infoType": "breakable",
-      "drops": [
-        {
-          "item": "GPiecePick_C",
-          "chance": 1,
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "transform": {
-        "translation": {
-          "x": 1688,
-          "y": 3639,
-          "z": 16
-        }
-      }
-    },
-    {
-      "type": "breakable-crystal",
-      "infoType": "breakable",
-      "drops": [
-        {
-          "item": "GPiecePick_C",
-          "chance": 1,
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "transform": {
-        "translation": {
-          "x": 1860,
-          "y": 3812,
-          "z": 16
-        }
-      }
-    },
-    {
-      "type": "breakable-crystal",
-      "infoType": "breakable",
-      "drops": [
-        {
-          "item": "GPiecePick_C",
-          "chance": 1,
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "transform": {
-        "translation": {
-          "x": 1868,
-          "y": 865,
-          "z": 21.5
-        }
-      }
-    },
-    {
-      "type": "breakable-crystal",
-      "infoType": "breakable",
-      "drops": [
-        {
-          "item": "GPiecePick_C",
-          "chance": 1,
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "transform": {
-        "translation": {
-          "x": 1498,
-          "y": 1047,
-          "z": 21.5
-        }
-      }
-    },
-    {
-      "type": "breakable-crystal",
-      "infoType": "breakable",
-      "drops": [
-        {
-          "item": "GPiecePick_C",
-          "chance": 1,
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "transform": {
-        "translation": {
-          "x": 1520,
-          "y": 855,
-          "z": 21.5
-        }
-      }
-    },
-    {
-      "type": "breakable-crystal",
-      "infoType": "breakable",
-      "drops": [
-        {
-          "item": "GPiecePick_C",
-          "chance": 1,
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "transform": {
-        "translation": {
-          "x": 1794,
-          "y": 646,
-          "z": 21.3
-        }
-      }
-    },
-    {
-      "type": "breakable-crystal",
-      "infoType": "breakable",
-      "drops": [
-        {
-          "item": "GPiecePick_C",
-          "chance": 1,
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "transform": {
-        "translation": {
-          "x": 2958,
-          "y": 260,
-          "z": 16
-        }
-      }
-    }
-  ],
-  "miscitem-bomb": [
-    {
-      "type": "miscitem-bomb",
-      "infoType": "misc",
-      "transform": {
-        "translation": {
-          "x": 1708,
-          "y": 834,
-          "z": 14.25
-        }
-      }
-    }
-  ],
-  "miscitem-honey": [
-    {
-      "type": "miscitem-honey",
-      "infoType": "misc",
-      "transform": {
-        "translation": {
-          "x": 2747,
-          "y": -2592,
-          "z": 702
-        }
-      }
-    }
-  ],
-  "misc-spiderwort": [
-    {
-      "type": "misc-spiderwort",
-      "infoType": "misc",
-      "transform": {
-        "translation": {
-          "x": 3384.462,
-          "y": 1748.5924,
-          "z": 162
-        }
-      }
-    },
-    {
-      "type": "misc-spiderwort",
-      "infoType": "misc",
-      "transform": {
-        "translation": {
-          "x": 3940.4883,
-          "y": 1573.2502,
-          "z": 293
-        }
-      }
-    }
-  ],
-  "breakable-egg": [
-    {
-      "type": "breakable-egg",
-      "infoType": "breakable",
-      "isBig": false,
-      "drops": [
-        {
-          "item": "GHotExtract_C",
-          "chance": 1,
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "transform": {
-        "translation": {
-          "x": 2145,
-          "y": 961,
-          "z": 21.1781
-        }
-      }
-    },
-    {
-      "type": "breakable-egg",
-      "infoType": "breakable",
-      "isBig": false,
-      "drops": [
-        {
-          "item": "GMiniMochi_C",
-          "chance": 1,
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "transform": {
-        "translation": {
-          "x": 2850.7236,
-          "y": -2502.5784,
-          "z": 705.6
-        }
-      }
-    },
-    {
-      "type": "breakable-egg",
-      "infoType": "breakable",
-      "isBig": false,
-      "drops": [
-        {
-          "item": "GHoney_C",
-          "chance": 0.75,
-          "min": 1,
-          "max": 1
-        },
-        {
-          "item": "GPiecePick_C",
-          "chance": 0.2,
-          "min": 1,
-          "max": 1
-        },
-        {
-          "item": "GHotExtract_C",
-          "chance": 0.05,
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "transform": {
-        "translation": {
-          "x": 2813,
-          "y": -2631,
-          "z": 705.6
-        }
-      }
-    },
-    {
-      "type": "breakable-egg",
-      "infoType": "breakable",
-      "isBig": false,
-      "drops": [
-        {
-          "item": "GHoney_C",
-          "chance": 0.75,
-          "min": 1,
-          "max": 1
-        },
-        {
-          "item": "GPiecePick_C",
-          "chance": 0.2,
-          "min": 1,
-          "max": 1
-        },
-        {
-          "item": "GHotExtract_C",
-          "chance": 0.05,
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "transform": {
-        "translation": {
-          "x": 2320,
-          "y": -1251,
-          "z": 705
-        }
-      }
-    },
-    {
-      "type": "breakable-egg",
-      "infoType": "breakable",
-      "isBig": false,
-      "drops": [
-        {
-          "item": "GHoney_C",
-          "chance": 0.75,
-          "min": 1,
-          "max": 1
-        },
-        {
-          "item": "GPiecePick_C",
-          "chance": 0.2,
-          "min": 1,
-          "max": 1
-        },
-        {
-          "item": "GHotExtract_C",
-          "chance": 0.05,
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "transform": {
-        "translation": {
-          "x": 409,
-          "y": -2085,
-          "z": 655.70355
-        }
-      }
-    },
-    {
-      "type": "breakable-egg",
-      "infoType": "breakable",
-      "isBig": true,
-      "drops": [
-        {
-          "item": "GMiniMochi_C",
-          "chance": 1,
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "transform": {
-        "translation": {
-          "x": 487,
-          "y": -2128,
-          "z": 668.545
-        }
-      }
-    },
-    {
-      "type": "breakable-egg",
-      "infoType": "breakable",
-      "isBig": false,
-      "drops": [
-        {
-          "item": "GHoney_C",
-          "chance": 0.75,
-          "min": 1,
-          "max": 1
-        },
-        {
-          "item": "GPiecePick_C",
-          "chance": 0.2,
-          "min": 1,
-          "max": 1
-        },
-        {
-          "item": "GHotExtract_C",
-          "chance": 0.05,
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "transform": {
-        "translation": {
-          "x": 1704,
-          "y": -3417,
-          "z": 115
-        }
-      }
-    },
-    {
-      "type": "breakable-egg",
-      "infoType": "breakable",
-      "isBig": false,
-      "drops": [
-        {
-          "item": "GHoney_C",
-          "chance": 0.75,
-          "min": 1,
-          "max": 1
-        },
-        {
-          "item": "GPiecePick_C",
-          "chance": 0.2,
-          "min": 1,
-          "max": 1
-        },
-        {
-          "item": "GHotExtract_C",
-          "chance": 0.05,
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "transform": {
-        "translation": {
-          "x": 1759,
-          "y": -3461,
-          "z": 115
-        }
-      }
-    }
-  ],
-  "creature": [
     {
       "type": "creature",
       "infoType": "creature",
@@ -1849,7 +1356,8 @@
       "seeds": 20,
       "drops": [
         {
-          "item": "GPiecePick_C",
+          "type": "pile-materials",
+          "infoType": "pile",
           "chance": 1,
           "min": 1,
           "max": 1
@@ -1874,7 +1382,8 @@
       "seeds": 3,
       "drops": [
         {
-          "item": "GPiecePick_C",
+          "type": "pile-materials",
+          "infoType": "pile",
           "chance": 1,
           "min": 1,
           "max": 1
@@ -1899,7 +1408,8 @@
       "seeds": 3,
       "drops": [
         {
-          "item": "GPiecePick_C",
+          "type": "pile-materials",
+          "infoType": "pile",
           "chance": 1,
           "min": 1,
           "max": 1
@@ -1924,7 +1434,8 @@
       "seeds": 6,
       "drops": [
         {
-          "item": "GPiecePick_C",
+          "type": "pile-materials",
+          "infoType": "pile",
           "chance": 1,
           "min": 1,
           "max": 1
@@ -2086,7 +1597,8 @@
       "seeds": 6,
       "drops": [
         {
-          "item": "GPiecePick_C",
+          "type": "pile-materials",
+          "infoType": "pile",
           "chance": 1,
           "min": 1,
           "max": 1
@@ -2128,7 +1640,8 @@
       "seeds": 12,
       "drops": [
         {
-          "item": "GPiecePick_C",
+          "type": "pile-materials",
+          "infoType": "pile",
           "chance": 1,
           "min": 1,
           "max": 1
@@ -2170,7 +1683,8 @@
       "seeds": 6,
       "drops": [
         {
-          "item": "GPiecePick_C",
+          "type": "pile-materials",
+          "infoType": "pile",
           "chance": 1,
           "min": 1,
           "max": 1
@@ -2195,7 +1709,8 @@
       "seeds": 6,
       "drops": [
         {
-          "item": "GPiecePick_C",
+          "type": "pile-materials",
+          "infoType": "pile",
           "chance": 1,
           "min": 1,
           "max": 1
@@ -2220,7 +1735,13 @@
       "seeds": 50,
       "drops": [
         {
-          "item": "GOtaPaperballoon_C",
+          "type": "treasure",
+          "infoType": "treasure",
+          "treasureId": "OTAPAPERBALLOON",
+          "name": "Divine Balloon",
+          "weight": 3,
+          "carryMax": 6,
+          "value": 40,
           "chance": 1,
           "min": 1,
           "max": 1
@@ -2262,7 +1783,8 @@
       "seeds": 3,
       "drops": [
         {
-          "item": "GPiecePick_C",
+          "type": "pile-materials",
+          "infoType": "pile",
           "chance": 1,
           "min": 1,
           "max": 1
@@ -2287,7 +1809,8 @@
       "seeds": 3,
       "drops": [
         {
-          "item": "GPiecePick_C",
+          "type": "pile-materials",
+          "infoType": "pile",
           "chance": 1,
           "min": 1,
           "max": 1
@@ -2380,7 +1903,8 @@
       "seeds": 6,
       "drops": [
         {
-          "item": "GPiecePick_C",
+          "type": "pile-materials",
+          "infoType": "pile",
           "chance": 1,
           "min": 1,
           "max": 1
@@ -2490,13 +2014,15 @@
       "seeds": 0,
       "drops": [
         {
-          "item": "GHoney_C",
+          "type": "miscitem-honey",
+          "infoType": "misc",
           "chance": 0.5,
           "min": 1,
           "max": 1
         },
         {
-          "item": "GHotExtract_C",
+          "type": "miscitem-spicy",
+          "infoType": "misc",
           "chance": 0.5,
           "min": 1,
           "max": 1
@@ -2521,13 +2047,15 @@
       "seeds": 0,
       "drops": [
         {
-          "item": "GHoney_C",
+          "type": "miscitem-honey",
+          "infoType": "misc",
           "chance": 0.5,
           "min": 1,
           "max": 1
         },
         {
-          "item": "GHotExtract_C",
+          "type": "miscitem-spicy",
+          "infoType": "misc",
           "chance": 0.5,
           "min": 1,
           "max": 1
@@ -2552,13 +2080,15 @@
       "seeds": 0,
       "drops": [
         {
-          "item": "GHoney_C",
+          "type": "miscitem-honey",
+          "infoType": "misc",
           "chance": 0.5,
           "min": 1,
           "max": 1
         },
         {
-          "item": "GHotExtract_C",
+          "type": "miscitem-spicy",
+          "infoType": "misc",
           "chance": 0.5,
           "min": 1,
           "max": 1
@@ -2583,13 +2113,15 @@
       "seeds": 0,
       "drops": [
         {
-          "item": "GHoney_C",
+          "type": "miscitem-honey",
+          "infoType": "misc",
           "chance": 0.5,
           "min": 1,
           "max": 1
         },
         {
-          "item": "GHotExtract_C",
+          "type": "miscitem-spicy",
+          "infoType": "misc",
           "chance": 0.5,
           "min": 1,
           "max": 1
@@ -2869,7 +2401,8 @@
       "seeds": 3,
       "drops": [
         {
-          "item": "GPiecePick_C",
+          "type": "pile-materials",
+          "infoType": "pile",
           "chance": 1,
           "min": 1,
           "max": 1
@@ -2894,7 +2427,8 @@
       "seeds": 3,
       "drops": [
         {
-          "item": "GPiecePick_C",
+          "type": "pile-materials",
+          "infoType": "pile",
           "chance": 1,
           "min": 1,
           "max": 1
@@ -2919,7 +2453,14 @@
       "seeds": 5,
       "drops": [
         {
-          "item": "GPellet5_C",
+          "type": "creature",
+          "infoType": "creature",
+          "creatureId": "PELLET5",
+          "name": "Pellet (5)",
+          "carryMax": 10,
+          "value": 4,
+          "health": 0,
+          "seeds": 5,
           "chance": 1,
           "min": 3,
           "max": 3
@@ -3199,13 +2740,15 @@
       "seeds": 0,
       "drops": [
         {
-          "item": "GHoney_C",
+          "type": "miscitem-honey",
+          "infoType": "misc",
           "chance": 0.5,
           "min": 1,
           "max": 1
         },
         {
-          "item": "GHotExtract_C",
+          "type": "miscitem-spicy",
+          "infoType": "misc",
           "chance": 0.5,
           "min": 1,
           "max": 1
@@ -3220,6 +2763,575 @@
       }
     }
   ],
+  "castaway-leafling": [
+    {
+      "type": "castaway-leafling",
+      "infoType": "castaway",
+      "isLeafling": true,
+      "isKoppaite": false,
+      "weight": 3,
+      "carryMax": 6,
+      "transform": {
+        "translation": {
+          "x": 3132,
+          "y": 506,
+          "z": 422.3601
+        }
+      }
+    },
+    {
+      "type": "castaway-leafling",
+      "infoType": "castaway",
+      "isLeafling": true,
+      "isKoppaite": false,
+      "weight": 3,
+      "carryMax": 6,
+      "transform": {
+        "translation": {
+          "x": 917.8382,
+          "y": -3932.423,
+          "z": 615.58124
+        }
+      }
+    }
+  ],
+  "breakable-hydrojelly": [
+    {
+      "type": "breakable-hydrojelly",
+      "infoType": "breakable",
+      "transform": {
+        "translation": {
+          "x": 1509,
+          "y": -3451,
+          "z": 486.06088
+        }
+      }
+    }
+  ],
+  "breakable-crystal": [
+    {
+      "type": "breakable-crystal",
+      "infoType": "breakable",
+      "drops": [
+        {
+          "type": "pile-materials",
+          "infoType": "pile",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 2779,
+          "y": 520,
+          "z": 16
+        }
+      }
+    },
+    {
+      "type": "breakable-crystal",
+      "infoType": "breakable",
+      "drops": [
+        {
+          "type": "pile-materials",
+          "infoType": "pile",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1899,
+          "y": 2762,
+          "z": 21.358337
+        }
+      }
+    },
+    {
+      "type": "breakable-crystal",
+      "infoType": "breakable",
+      "drops": [
+        {
+          "type": "pile-materials",
+          "infoType": "pile",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1774,
+          "y": 2920,
+          "z": 21.358337
+        }
+      }
+    },
+    {
+      "type": "breakable-crystal",
+      "infoType": "breakable",
+      "drops": [
+        {
+          "type": "pile-materials",
+          "infoType": "pile",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 2032,
+          "y": 3000,
+          "z": 21.358337
+        }
+      }
+    },
+    {
+      "type": "breakable-crystal",
+      "infoType": "breakable",
+      "drops": [
+        {
+          "type": "pile-materials",
+          "infoType": "pile",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1688,
+          "y": 3639,
+          "z": 16
+        }
+      }
+    },
+    {
+      "type": "breakable-crystal",
+      "infoType": "breakable",
+      "drops": [
+        {
+          "type": "pile-materials",
+          "infoType": "pile",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1860,
+          "y": 3812,
+          "z": 16
+        }
+      }
+    },
+    {
+      "type": "breakable-crystal",
+      "infoType": "breakable",
+      "drops": [
+        {
+          "type": "pile-materials",
+          "infoType": "pile",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1868,
+          "y": 865,
+          "z": 21.5
+        }
+      }
+    },
+    {
+      "type": "breakable-crystal",
+      "infoType": "breakable",
+      "drops": [
+        {
+          "type": "pile-materials",
+          "infoType": "pile",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1498,
+          "y": 1047,
+          "z": 21.5
+        }
+      }
+    },
+    {
+      "type": "breakable-crystal",
+      "infoType": "breakable",
+      "drops": [
+        {
+          "type": "pile-materials",
+          "infoType": "pile",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1520,
+          "y": 855,
+          "z": 21.5
+        }
+      }
+    },
+    {
+      "type": "breakable-crystal",
+      "infoType": "breakable",
+      "drops": [
+        {
+          "type": "pile-materials",
+          "infoType": "pile",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1794,
+          "y": 646,
+          "z": 21.3
+        }
+      }
+    },
+    {
+      "type": "breakable-crystal",
+      "infoType": "breakable",
+      "drops": [
+        {
+          "type": "pile-materials",
+          "infoType": "pile",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 2958,
+          "y": 260,
+          "z": 16
+        }
+      }
+    }
+  ],
+  "miscitem-bomb": [
+    {
+      "type": "miscitem-bomb",
+      "infoType": "misc",
+      "transform": {
+        "translation": {
+          "x": 1708,
+          "y": 834,
+          "z": 14.25
+        }
+      }
+    }
+  ],
+  "miscitem-honey": [
+    {
+      "type": "miscitem-honey",
+      "infoType": "misc",
+      "transform": {
+        "translation": {
+          "x": 2747,
+          "y": -2592,
+          "z": 702
+        }
+      }
+    }
+  ],
+  "misc-spiderwort": [
+    {
+      "type": "misc-spiderwort",
+      "infoType": "misc",
+      "transform": {
+        "translation": {
+          "x": 3384.462,
+          "y": 1748.5924,
+          "z": 162
+        }
+      }
+    },
+    {
+      "type": "misc-spiderwort",
+      "infoType": "misc",
+      "transform": {
+        "translation": {
+          "x": 3940.4883,
+          "y": 1573.2502,
+          "z": 293
+        }
+      }
+    }
+  ],
+  "breakable-egg": [
+    {
+      "type": "breakable-egg",
+      "infoType": "breakable",
+      "isBig": false,
+      "drops": [
+        {
+          "type": "miscitem-spicy",
+          "infoType": "misc",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 2145,
+          "y": 961,
+          "z": 21.1781
+        }
+      }
+    },
+    {
+      "type": "breakable-egg",
+      "infoType": "breakable",
+      "isBig": false,
+      "drops": [
+        {
+          "type": "creature",
+          "infoType": "creature",
+          "creatureId": "MINIMOCHI",
+          "name": "Sunsquish",
+          "carryMax": 1,
+          "value": 3,
+          "health": 450,
+          "seeds": 4,
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 2850.7236,
+          "y": -2502.5784,
+          "z": 705.6
+        }
+      }
+    },
+    {
+      "type": "breakable-egg",
+      "infoType": "breakable",
+      "isBig": false,
+      "drops": [
+        {
+          "type": "miscitem-honey",
+          "infoType": "misc",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "type": "pile-materials",
+          "infoType": "pile",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "type": "miscitem-spicy",
+          "infoType": "misc",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 2813,
+          "y": -2631,
+          "z": 705.6
+        }
+      }
+    },
+    {
+      "type": "breakable-egg",
+      "infoType": "breakable",
+      "isBig": false,
+      "drops": [
+        {
+          "type": "miscitem-honey",
+          "infoType": "misc",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "type": "pile-materials",
+          "infoType": "pile",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "type": "miscitem-spicy",
+          "infoType": "misc",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 2320,
+          "y": -1251,
+          "z": 705
+        }
+      }
+    },
+    {
+      "type": "breakable-egg",
+      "infoType": "breakable",
+      "isBig": false,
+      "drops": [
+        {
+          "type": "miscitem-honey",
+          "infoType": "misc",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "type": "pile-materials",
+          "infoType": "pile",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "type": "miscitem-spicy",
+          "infoType": "misc",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 409,
+          "y": -2085,
+          "z": 655.70355
+        }
+      }
+    },
+    {
+      "type": "breakable-egg",
+      "infoType": "breakable",
+      "isBig": true,
+      "drops": [
+        {
+          "type": "creature",
+          "infoType": "creature",
+          "creatureId": "MINIMOCHI",
+          "name": "Sunsquish",
+          "carryMax": 1,
+          "value": 3,
+          "health": 450,
+          "seeds": 4,
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 487,
+          "y": -2128,
+          "z": 668.545
+        }
+      }
+    },
+    {
+      "type": "breakable-egg",
+      "infoType": "breakable",
+      "isBig": false,
+      "drops": [
+        {
+          "type": "miscitem-honey",
+          "infoType": "misc",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "type": "pile-materials",
+          "infoType": "pile",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "type": "miscitem-spicy",
+          "infoType": "misc",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1704,
+          "y": -3417,
+          "z": 115
+        }
+      }
+    },
+    {
+      "type": "breakable-egg",
+      "infoType": "breakable",
+      "isBig": false,
+      "drops": [
+        {
+          "type": "miscitem-honey",
+          "infoType": "misc",
+          "chance": 0.75,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "type": "pile-materials",
+          "infoType": "pile",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "type": "miscitem-spicy",
+          "infoType": "misc",
+          "chance": 0.05,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "transform": {
+        "translation": {
+          "x": 1759,
+          "y": -3461,
+          "z": 115
+        }
+      }
+    }
+  ],
   "misc-groupdropmanager": [
     {
       "type": "misc-groupdropmanager",
@@ -3227,7 +3339,14 @@
       "radius": 100,
       "drops": [
         {
-          "item": "GNiseZako_C",
+          "type": "creature",
+          "infoType": "creature",
+          "creatureId": "NISEZAKO",
+          "name": "Gildemandwee",
+          "carryMax": 10,
+          "value": 5,
+          "health": 500,
+          "seeds": 6,
           "chance": 1,
           "min": 1,
           "max": 1
@@ -3250,7 +3369,14 @@
       "radius": 150,
       "drops": [
         {
-          "item": "GOtaButtonWood_C",
+          "type": "treasure",
+          "infoType": "treasure",
+          "treasureId": "OTABUTTONWOOD",
+          "name": "Perforated Raft",
+          "weight": 1,
+          "carryMax": 2,
+          "value": 10,
+          "amount": 5,
           "chance": 1,
           "min": 5,
           "max": 5

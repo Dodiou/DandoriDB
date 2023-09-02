@@ -34,7 +34,6 @@
       "type": "candypop-purple",
       "infoType": "candypop",
       "color": "purple",
-      "disappearsAt": null,
       "transform": {
         "translation": {
           "x": 816,
@@ -47,7 +46,6 @@
       "type": "candypop-purple",
       "infoType": "candypop",
       "color": "purple",
-      "disappearsAt": null,
       "transform": {
         "translation": {
           "x": -595,
@@ -60,7 +58,6 @@
       "type": "candypop-purple",
       "infoType": "candypop",
       "color": "purple",
-      "disappearsAt": null,
       "transform": {
         "translation": {
           "x": 525,
@@ -120,7 +117,8 @@
       "infoType": "breakable",
       "drops": [
         {
-          "item": "GHotExtract_C",
+          "type": "miscitem-spicy",
+          "infoType": "misc",
           "chance": 1,
           "min": 1,
           "max": 1

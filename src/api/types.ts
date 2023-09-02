@@ -134,7 +134,6 @@ export enum MarkerType {
   MiscStick = 'misc-stick',
   MiscIcicle = 'misc-icicle',
   MiscHoney = 'miscitem-honey',
-  MiscPellet = 'misc-pellet',
   // night
   NightLumiknoll = 'night-lumiknoll',
   NightTricknoll = 'night-tricknoll',
@@ -168,24 +167,18 @@ export enum InfoType {
   Night = 'night',
 }
 
-export interface __DropFUTURE {
+interface MarkerBase {
   type: MarkerType;
   infoType: InfoType;
+}
+
+export interface Drop extends MarkerBase{
   chance: number;
   min: number;
   max: number;
 }
 
-export interface Drop {
-  item: string,
-  chance: number;
-  min: number;
-  max: number;
-}
-
-export interface Marker {
-  type: MarkerType;
-  infoType: InfoType;
+export interface Marker extends MarkerBase {
   drops?: Drop[];
   transform: {
     translation: {
@@ -195,6 +188,39 @@ export interface Marker {
     rotation?: number;
   }
 }
+
+export interface TreasureMarker extends Omit<Marker, 'drops'> {
+  type: MarkerType.Treasure;
+  infoType: InfoType.Treasure;
+  weight: number;
+  carryMax: number;
+  value: number;
+  amount?: number;
+  name: string;
+  treasureId: string;
+}
+
+export interface CreatureMarker extends Marker {
+  type: MarkerType.Creature;
+  infoType: InfoType.Creature;
+  weight: number;
+  carryMax: number;
+  value: number;
+  health: number;
+  seeds: number;
+  spawnNum?: number;
+  name: string;
+  creatureId: string;
+}
+
+export const isTreasure = (marker: MarkerBase): marker is TreasureMarker => {
+  return marker.infoType === InfoType.Treasure;
+};
+
+export const isCreature = (marker: MarkerBase): marker is CreatureMarker => {
+  return marker.infoType === InfoType.Creature;
+};
+
 // Order of priorities of drop items.
 // Static drops, the chance does not matter
 const StaticDropPriorities: {[key: string]: number} = Object.fromEntries(
@@ -222,15 +248,13 @@ const WeightedDropPriorities: {[key: string]: number} = {
   [MarkerType.MiscSpicy]:     100 / 31 / 1,
   [MarkerType.PileMaterials]: 100 / 50 / 5,
   [MarkerType.MiscHoney]:     100 / 75 / 1,
-  // no one cares about pellet drops
-  [MarkerType.MiscPellet]:    100 / 80 / 1,
 };
 
 interface DropPriority {
   type: MarkerType;
   weight: number;
 }
-const getDropPriority = (drops: __DropFUTURE[]): DropPriority => {
+const getDropPriority = (drops: Drop[]): DropPriority => {
   let maxIndex = 0;
   let maxWeight = WeightedDropPriorities[drops[0].type] || 0;
 
@@ -465,7 +489,6 @@ export const Categories: Category[] = [
       MarkerType.MiscStick,
       MarkerType.MiscIcicle,
       MarkerType.MiscHoney,
-      MarkerType.MiscPellet,
     ]
   },
   {

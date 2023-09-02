@@ -7,7 +7,7 @@ import { Point } from 'ol/geom';
 import { hsv } from 'color-convert';
 
 import { randomInteger, round } from '../../util/math';
-import { Categories, InfoType, Marker, MarkerType, Pin } from '../../api/types';
+import { Categories, InfoType, Marker, MarkerType, Pin, TreasureMarker, isCreature, isTreasure } from '../../api/types';
 
 import PinSVG from './map-pin.svg';
 
@@ -34,7 +34,6 @@ const SCALE_OVERRIDES: {[Type in MarkerType]?: number} = {
   [MarkerType.MiscSpicy]: 1.3,
   [MarkerType.SwitchDrain]: 1.3,
   [MarkerType.MiscSpiderwort]: 0.25,
-  [MarkerType.MiscPellet]: 0.25,
 }
 export const getIconOptions = (type: MarkerType): Pick<Options, 'src' | 'scale'> => {
   const imgUrl: string = URL_OVERRIDES[type] || (ROOT_ICON_URL + '/' + type + '.png');
@@ -68,42 +67,10 @@ const TREASURE_TEXT_STYLE = new Text({
 const PIN_TEXT_STYLE = TREASURE_TEXT_STYLE.clone();
 PIN_TEXT_STYLE.setOffsetY(16);
 
-interface TreasureMarker extends Omit<Marker, 'drops'> {
-  type: MarkerType.Treasure;
-  infoType: InfoType.Treasure;
-  weight: number;
-  carryMax: number;
-  value: number;
-  amount?: number;
-  name: string;
-  treasureId: string;
-}
-
-interface CreatureMarker extends Marker {
-  type: MarkerType.Creature;
-  infoType: InfoType.Creature;
-  weight: number;
-  carryMax: number;
-  value: number;
-  health: number;
-  seeds: number;
-  spawnNum?: number;
-  name: string;
-  creatureId: string;
-}
-
-const isTreasure = (marker: Marker): marker is TreasureMarker => {
-  return marker.infoType === InfoType.Treasure;
-};
-
-const isCreature = (marker: Marker): marker is CreatureMarker => {
-  return marker.infoType === InfoType.Creature;
-};
-
 // TODO create a style cache for creatures and treasures?
 const getFeatureStyle = (marker: Marker, globalMarkerStyle: Style): Style => {
   if (isCreature(marker)) {
-    return new Style({
+    globalMarkerStyle = new Style({
       image: new Icon({
         src: `${ROOT_CREATURE_URL}/creature-${marker.creatureId.toLowerCase()}.png`,
         scale: 0.35
@@ -130,14 +97,31 @@ const getFeatureStyle = (marker: Marker, globalMarkerStyle: Style): Style => {
     });
   }
 
-  // must copy any icons that need to be rotated.
+  if (!marker.transform.rotation && !marker.drops) {
+    return globalMarkerStyle;
+  }
+
+  // must copy any icons that need to be edited.
+  const markerStyle = globalMarkerStyle.clone();
   if (marker.transform.rotation !== undefined) {
-    const markerStyle = globalMarkerStyle.clone();
     markerStyle.getImage().setRotateWithView(true);
     markerStyle.getImage().setRotation(-(marker.transform.rotation) * Math.PI / 180);
-    return markerStyle;
   }
-  return globalMarkerStyle;
+
+  const treasureDrop = marker.drops?.find(drop => isTreasure(drop)) as any;
+  if (treasureDrop as Omit<TreasureMarker, 'transform'>) {
+    // include Gold Nugget amount as total weight
+    const totalWeight = treasureDrop.weight * (treasureDrop.amount || 1);
+    const totalValue = treasureDrop.value * (treasureDrop.amount || 1);
+    // total value can be 0 for OST ship parts
+    // TODO: remove value for challenge caves somehow
+    const label = totalValue ? `${totalWeight} / ${totalValue}` : totalWeight + "";
+
+    const textStyle = TREASURE_TEXT_STYLE.clone();
+    textStyle.setText(label);
+    markerStyle.setText(textStyle);
+  }
+  return markerStyle;
 };
 
 const getFeatures = (markerType: MarkerType, markers: Marker[]): Feature[] => {
