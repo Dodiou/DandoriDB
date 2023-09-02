@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/DandoriDB/static/css/main.2c836605.css",
-    "main.js": "/DandoriDB/static/js/main.edd67ea9.js",
+    "main.css": "/DandoriDB/static/css/main.3509bde9.css",
+    "main.js": "/DandoriDB/static/js/main.705d0bf1.js",
     "static/js/787.488c33bb.chunk.js": "/DandoriDB/static/js/787.488c33bb.chunk.js",
     "index.html": "/DandoriDB/index.html",
     "static/media/map-pin.svg": "/DandoriDB/static/media/map-pin.f1ef3b4c247cd4fbe6b3d6aab1f98ff7.svg",
-    "main.2c836605.css.map": "/DandoriDB/static/css/main.2c836605.css.map",
-    "main.edd67ea9.js.map": "/DandoriDB/static/js/main.edd67ea9.js.map",
+    "main.3509bde9.css.map": "/DandoriDB/static/css/main.3509bde9.css.map",
+    "main.705d0bf1.js.map": "/DandoriDB/static/js/main.705d0bf1.js.map",
     "787.488c33bb.chunk.js.map": "/DandoriDB/static/js/787.488c33bb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c836605.css",
-    "static/js/main.edd67ea9.js"
+    "static/css/main.3509bde9.css",
+    "static/js/main.705d0bf1.js"
   ]
 }
