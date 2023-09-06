@@ -176,6 +176,7 @@ export interface Drop extends MarkerBase{
   chance: number;
   min: number;
   max: number;
+  revisitOnly?: boolean;
 }
 
 export interface Marker extends MarkerBase {
@@ -211,6 +212,7 @@ export interface CreatureMarker extends Marker {
   spawnNum?: number;
   name: string;
   creatureId: string;
+  freezeDropType: string;
 }
 
 export const isTreasure = (marker: MarkerBase): marker is TreasureMarker => {

@@ -1,14 +1,18 @@
 import { CreatureAggregate } from "../../api/MapAPI";
+import { MarkerType } from "../../api/types";
 import { Card } from "../Card/Card";
 import { CardList } from "../Card/CardList";
+import { ValueCard } from "../Card/ValueCard";
 
 export interface CreaturesProps {
   creatures: CreatureAggregate[];
 }
 
-const DEFAULT_IMAGE = 'https://pikmin.wiki.gallery/images/f/fc/P4PiklopediaIcon.png';
 export const Creatures = ({ creatures }: CreaturesProps) => {
   return <CardList>
-    { creatures.map(({ id, name, imageUrl = DEFAULT_IMAGE, amount, value }) => <Card key={id} title={name} imageUrl={imageUrl} amount={amount} value={value} />) }
+    {
+      creatures.map(({ id, name, amount, value }) =>
+        <ValueCard key={id} name={name} type={MarkerType.Creature} id={id} amount={amount} value={value} />)
+    }
   </CardList>;
 };

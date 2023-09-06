@@ -1,5 +1,5 @@
 import { PikminCount } from "../../api/MapAPI";
-import { IconCount } from "../Icon/IconCount";
+// import { IconLabel } from "../Icon/IconLabel";
 
 import "./PikminSummary.css";
 

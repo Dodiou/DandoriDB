@@ -1,21 +1,23 @@
+import { ReactNode } from "react";
+import { MarkerType } from "../../api/types";
+import { MarkerIcon } from "../Icon/Icon";
+import './Card.css';
 
 export interface CardProps {
   title: string;
-  imageUrl: string;
-  amount?: number;
-  value?: number;
+  imgType: MarkerType;
+  imgId?: string;
+  footer?: ReactNode;
 }
 
-export const Card = ({ title, imageUrl, amount = 0, value }: CardProps) => {
-  const showAmount = amount > 1;
-
+export const Card = ({ title, imgId, imgType, footer }: CardProps) => {
   return <div className="Card__container">
-    <h3>{ title }</h3>
-    <img src={imageUrl} alt={title} />
-    <div>
-      { showAmount && <span className='Card__amount'>{ amount }</span> }
-      { showAmount && !!value && <span className='Card__multiply-symbol'>x</span> }
-      { !!value && <span className='Card__value'>{ value }</span> }
+    <MarkerIcon type={imgType} id={imgId} size="medium" />
+    <div className="Card__content">
+      <h4 className="Card__header" title={title}>{ title }</h4>
+      {
+        footer && <div className="Card__footer">{ footer }</div>
+      }
     </div>
   </div>;
 };

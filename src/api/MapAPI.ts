@@ -18,6 +18,7 @@ export interface TreasureData {
   imageUrl?: string;
   name: string;
   value: number;
+  amount?: number;
 }
 
 export interface CreatureAggregate {
@@ -52,54 +53,15 @@ export interface PikminCount {
 }
 
 export enum OnionType {
-  Flarlic = 'flarlic',
-  Red = 'red',
-  Yellow = 'yellow',
-  Blue = 'blue',
-  Purple = 'purple',
-  White = 'white',
-  Rock = 'rock',
-  Wing = 'wing',
-  Ice = 'ice',
-}
-
-export const OnionData: {[key in OnionType]: { name: string, weight: number }} = {
-  [OnionType.Flarlic]: {
-    name: "Flarlic",
-    weight: 5
-  },
-  [OnionType.Red]: {
-    name: "Red Onion",
-    weight: 20
-  },
-  [OnionType.Yellow]: {
-    name: "Yellow Onion",
-    weight: 20
-  },
-  [OnionType.Blue]: {
-    name: "Blue Onion",
-    weight: 20
-  },
-  [OnionType.Purple]: {
-    name: "Purple Onion",
-    weight: 100
-  },
-  [OnionType.White]: {
-    name: "White Onion",
-    weight: 10
-  },
-  [OnionType.Rock]: {
-    name: "Rock Onion",
-    weight: 20
-  },
-  [OnionType.Wing]: {
-    name: "Wing Onion",
-    weight: 20
-  },
-  [OnionType.Ice]: {
-    name: "Ice Onion",
-    weight: 20
-  },
+  Flarlic = MarkerType.OnionFlarlic,
+  Red = MarkerType.OnionRed,
+  Yellow = MarkerType.OnionYellow,
+  Blue = MarkerType.OnionBlue,
+  Purple = MarkerType.OnionPurple,
+  White = MarkerType.OnionWhite,
+  Rock = MarkerType.OnionRock,
+  Wing = MarkerType.OnionWing,
+  Ice = MarkerType.OnionIce,
 }
 
 export interface CaveData {

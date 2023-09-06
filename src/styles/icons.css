@@ -1,8 +1,8 @@
 .DandoriDB__icon::before {
   display: inline-block;
   content: '';
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
   background-size: cover;
 }
 .DandoriDB__image-icon {
@@ -12,11 +12,24 @@
   height: 2rem;
 }
 
+.DandoriDB__icon__medium.DandoriDB__image-icon {
+  width: 4rem;
+  height: 4rem;
+}
+.DandoriDB__icon__large.DandoriDB__image-icon {
+  width: 16rem;
+  height: 16rem;
+}
+
+
 .DandoriDB__icon.Afternoon::before {
   background-image: url('/public/images/icons/ui/afternoon.png');
 }
 .DandoriDB__icon.Day::before {
   background-image: url('/public/images/icons/ui/day.png');
+}
+.DandoriDB__icon.Health::before {
+  background-image: url('/public/images/icons/ui/health.png');
 }
 .DandoriDB__icon.Night::before {
   background-image: url('/public/images/icons/ui/night.png');
@@ -26,4 +39,10 @@
 }
 .DandoriDB__icon.Sparklium::before {
   background-image: url('/public/images/icons/ui/sparklium.png');
+}
+.DandoriDB__icon.Seeds::before {
+  background-image: url('/public/images/icons/ui/seeds.png');
+}
+.DandoriDB__icon.Weight::before {
+  background-image: url('/public/images/icons/ui/weight.png');
 }

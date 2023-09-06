@@ -8,7 +8,7 @@ import { NavigationPanel, TimeOption } from './components/NavigationPanel/Naviga
 import { useCallback, useState } from 'react';
 import { InfoPanel } from './components/InfoPanel/InfoPanel';
 import { FeatureFilter } from './components/Legend/Legend';
-import { MarkerType, Pin } from './api/types';
+import { Marker, MarkerType, Pin } from './api/types';
 
 const InitialFilter: FeatureFilter = Object.values(MarkerType).reduce((filter, type) => {
   filter[type as MarkerType] = true;
@@ -20,7 +20,7 @@ function App() {
   const [time, setTime] = useState<string>(TimeOption.Day);
   const [filter, setFilter] = useState<FeatureFilter>(InitialFilter);
   const [pins, setPins] = useState<Pin[]>([]);
-  const [selectedMarker, setSelectedMarker] = useState<{ type: string }>();
+  const [selectedMarker, setSelectedMarker] = useState<Marker>();
 
   const onMapChange = useCallback((newMapId: string) => {
     setMapId(newMapId);

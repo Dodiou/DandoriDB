@@ -21,7 +21,7 @@ export const CaveSummary = ({
     <CountSummary treasures={treasures} pikmin={pikmin} candypops={candypops} castaways={castaways} />
     <Sublevels amount={sublevels} caveId={id} />
     { treasures && <Treasures treasures={treasures} /> }
-    { onions && <Onions onions={onions} /> }
+    { onions && <Onions onions={[]} /> }
     { creatures && <Creatures creatures={creatures} /> }
   </>
 };

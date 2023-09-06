@@ -1,7 +1,8 @@
 import { useMemo } from "react";
+import { Marker } from "../../api/types";
 
 export interface DefaultInfoProps {
-  marker?: { type: string };
+  marker: Marker;
 }
 
 const objectToList = (obj: object | null | undefined) => {
@@ -32,7 +33,7 @@ export const DefaultInfo = ({
     return objectToList(marker);
   }, [marker]);
 
-  return <ul className="DefaultInfo__container">
+  return <ul className="DefaultInfo__container" style={{ overflow: 'auto' }}>
     { propertiesList }
   </ul>;
 };

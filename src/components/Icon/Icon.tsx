@@ -6,7 +6,10 @@ export enum CSSIcon {
   Afternoon = 'Afternoon',
   Night = 'Night',
   Olimar = 'Olimar',
-  Sparklium = 'Sparklium'
+  Sparklium = 'Sparklium',
+  Health = 'Health',
+  Seeds = 'Seeds',
+  Weight = 'Weight'
 }
 
 export interface IconProps {
@@ -19,6 +22,14 @@ export const Icon = ({ icon, tooltip }: IconProps) =>
 
 export interface MarkerIconProps {
   type: MarkerType;
+  id?: string;
+  size?: 'small' | 'medium' | 'large'
 }
-export const MarkerIcon = ({ type }: MarkerIconProps) =>
-  <img className="DandoriDB__image-icon" src={getIconOptions(type).src} />;
+export const MarkerIcon = ({ type, id, size = 'small' }: MarkerIconProps) => {
+  const sizeClass = 'DandoriDB__icon__' + size;
+  const src = !id
+    ? getIconOptions(type).src
+    : process.env.PUBLIC_URL + `/images/${type}s/${type}-${id.toLowerCase()}.png`;
+
+  return <img className={`DandoriDB__image-icon ${sizeClass}`} src={src} />;
+}

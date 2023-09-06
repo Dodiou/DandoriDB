@@ -5,11 +5,13 @@ export interface ExpandPanelProps {
 }
 
 export const ExpandPanel = ({ label, children }: PropsWithChildren<ExpandPanelProps>) => {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(true);
 
   return <div className="ExpandPanel__container">
     <h2 className="ExpandPanel__label">
-      <button onClick={() => setExpanded(!expanded)}>+</button> { label }
+      <button onClick={() => setExpanded(prev => !prev)}>
+        { expanded ? '-' : '+' }
+      </button> { label }
     </h2>
     {
       expanded && <div className="ExpandPanel__content">
