@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import { Icon, CSSIcon } from "../Icon/Icon";
 
 import './SegmentedButton.css';
@@ -21,9 +22,11 @@ export const SegmentedButton = ({
   onSelect
 }: SegmentedButtonProps) => {
   const buttons = options.map(({ icon, id, label }) => {
-    const buttonClass = 'SegmentedButton__button' + (id === selectedId ? ' SegmentedButton__button__selected' : '');
-
-    return <button key={id} className={buttonClass} onClick={() => onSelect?.(id)}>
+    return <button
+      key={id}
+      className={cn('SegmentedButton__button', (id === selectedId) && 'SegmentedButton__button__selected')}
+      onClick={() => onSelect?.(id)}
+    >
       { icon && <Icon icon={icon} tooltip={label} /> }
       { (!hideLabel || !icon) && <span className="SegmentedButton__label">{ label }</span> }
     </button>;

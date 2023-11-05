@@ -1,3 +1,4 @@
+import cn from 'classnames';
 
 export interface LegendItemProps {
   name: string;
@@ -12,9 +13,10 @@ export const LegendItem = ({
   count,
   onClick
 }: LegendItemProps) => {
-  const containerClass = 'LegendItem__container' + selected ? '' : 'LegendItem__container__deselected';
-
-  return <button className={containerClass} onClick={() => onClick}>
+  return <button
+    className={cn('LegendItem__container', selected && 'LegendItem__container__deselected')}
+    onClick={() => onClick}
+  >
     <img className='DandoriDB__icon' src='/icons/radar/caveEntrance.png' />
     <span className='LegendItem__name'>{ name }</span>
     { count !== undefined && <span>{ count }</span> }

@@ -1,4 +1,5 @@
 import { FC, PropsWithChildren, ReactElement, useState } from "react";
+import cn from "classnames";
 import { CSSIcon, Icon } from "../Icon/Icon";
 
 import './Tabs.css';
@@ -15,8 +16,10 @@ interface TabBarTabProps extends TabProps {
   onSelect: () => void;
 }
 const TabBarTab = ({ label, icon, isSelected, onSelect }: TabBarTabProps) => {
-  const tabClasses = 'Tab__container' + (isSelected ? ' Tab__container__selected' : '')
-  return <div className={tabClasses} onClick={onSelect} >
+  return <div
+    className={cn('Tab__container', isSelected && 'Tab__container__selected')}
+    onClick={onSelect}
+  >
     { icon && <Icon icon={icon} /> }
     <span className="Tab__label">{ label }</span>
   </div>;
